@@ -64,10 +64,10 @@ function tokenMatches(token, targetCh) {
 }
 
 export function matchFood(text, query) {
-  const q = query.trim()
+  const q = query.trim().normalize('NFC')
   if (!q) return true
   const tokens = buildTokens(q)
-  const chars = [...text]
+  const chars = [...text.normalize('NFC')]
   if (tokens.length > chars.length) return false
   for (let s = 0; s <= chars.length - tokens.length; s++) {
     let ok = true

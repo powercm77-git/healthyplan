@@ -3,7 +3,7 @@ import { matchFood } from './chosung.js'
 
 describe('matchFood — 김치찌개', () => {
   const name = '김치찌개'
-  const cases = ['ㄱㅊㅉ', 'ㄱㅊㅉㄱ', '김ㅊ', '김치ㅉ', '김치찌ㄱ', '김치찌']
+  const cases = ['ㄱㅊㅉ', 'ㄱㅊㅉㄱ', '김ㅊ', '김치ㅉ', '김치찌ㄱ', '김치찌', '김치찌개']
   for (const q of cases) {
     it(`"${q}" 입력 시 매칭되어야 한다`, () => {
       expect(matchFood(name, q)).toBe(true)
@@ -19,6 +19,19 @@ describe('matchFood — 된장찌개 (IME 조합 중간 상태)', () => {
       expect(matchFood(name, q)).toBe(true)
     })
   }
+})
+
+describe('matchFood — 분해형(NFD) 유니코드 입력도 매칭되어야 한다', () => {
+  // 일부 안드로이드 키보드/브라우저는 완성형(NFC) 대신 자모가 분리된 NFD로
+  // input value를 전달한다. 예: '김' -> 'ᄀ'+'ᅵ'+'ᆷ' (3개 코드포인트)
+  it('NFD로 정규화된 전체 검색어가 NFC 이름과 매칭된다', () => {
+    const nfdQuery = '김치찌개'.normalize('NFD')
+    expect(matchFood('김치찌개', nfdQuery)).toBe(true)
+  })
+  it('NFD로 정규화된 이름도 NFC 검색어와 매칭된다', () => {
+    const nfdName = '김치찌개'.normalize('NFD')
+    expect(matchFood(nfdName, '김치찌개')).toBe(true)
+  })
 })
 
 describe('matchFood — 관련 없는 검색어는 매칭되지 않아야 한다', () => {

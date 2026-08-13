@@ -50,3 +50,13 @@ describe('foods.json — 별칭 검색이 실제로 결과를 찾아야 한다',
     })
   }
 })
+
+describe('foods.json — "달걀"로 검색하면 계란 요리 전반이 나와야 한다', () => {
+  it('"달걀" 검색 결과가 "계란후라이" 하나만이 아니라 여러 개여야 한다', () => {
+    const results = foods.filter((f) => matchFoodItem(f, '달걀'))
+    expect(results.length).toBeGreaterThanOrEqual(5)
+  })
+  it('"삶은달걀" 검색 시 결과가 1개 이상이어야 한다', () => {
+    expect(foods.some((f) => matchFoodItem(f, '삶은달걀'))).toBe(true)
+  })
+})
