@@ -45,11 +45,13 @@ export default function ExerciseDetail({ exercise: ex, byId, inRoutine, onBack, 
           <span>최종 자세</span>
         </div>
       </div>
-      {videos.length > 0 && (
+      {videos.length > 0 ? (
         <div className="card">
           <p className="eyebrow">▶ 실제 영상으로 보기</p>
           <ExerciseVideoPlayer videos={videos} size="large" />
         </div>
+      ) : (
+        <p className="novideo-hint">이 운동은 아래 그림 설명을 참고하세요</p>
       )}
       <div className="chips" style={{ justifyContent: 'center', marginBottom: 16 }}>
         <span className="chip on" style={{ cursor: 'default' }}>{ex.bodyParts.join(' · ')}</span>

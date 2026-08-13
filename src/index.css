@@ -246,6 +246,9 @@ input::placeholder{color:#5E5980}
   background:rgba(94,200,250,.12);border:1px solid rgba(94,200,250,.3);color:var(--sky);
   border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:700;cursor:pointer;
 }
+.novideo-hint{
+  text-align:center;font-size:.8rem;color:var(--sub);margin:-4px 0 10px;
+}
 .mistakebox{
   background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.28);
   border-radius:16px;padding:16px;margin-bottom:14px;

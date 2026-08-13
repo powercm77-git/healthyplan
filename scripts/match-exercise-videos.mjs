@@ -8,8 +8,14 @@
 //   1. 운동명 완전 일치 (공백·괄호 제거 후 비교)
 //   2. 운동명 부분 일치 + 부위 일치
 //   3. aliases 일치
-//   4. 부위 + 기구 + 난이도 조합 일치 → 후보 중 대표 1개만
 // 운동당 최대 3개, matchType 좋은 순 정렬. 매칭 없으면 빈 배열(가짜 링크 금지).
+//
+// ⚠ "부위+기구+난이도 조합"(운동명을 전혀 안 보는) fallback 4단계는 2026-08-14 발주자
+// 검수에서 제거했다 — 스모 스쿼트→슈퍼맨자세, 무릎 대고 푸시업→앉아서 옆구리 늘려주기처럼
+// 완전히 다른 동작을 붙이는 사례가 다수 발견됨(§8 "매칭 안 된 운동에 아무 영상이나 연결
+// 금지" 위반). 앞으로도 이 4단계를 다시 넣지 말 것 — 영상이 적은 것보다 틀린 영상이 훨씬
+// 위험하다는 것이 발주자의 명시적 지시다. 매칭 규칙은 운동명(exName/alias) 대조를 반드시
+// 포함해야 하고, 부위·기구·난이도만으로 통과시키는 조건은 금지.
 //
 // 사용법: node scripts/match-exercise-videos.mjs  (사전에 fetch-kspo-videos.mjs 필요)
 
@@ -87,26 +93,6 @@ function bodyPartOverlap(v, exercise) {
   return exercise.bodyParts.some((bp) => (BODYPART_KEYWORDS[bp] || [bp]).some((kw) => text.includes(kw)))
 }
 
-function equipmentOverlap(v, equipment) {
-  if (equipment === '없음') return true // 맨몸 운동은 기구 조건을 걸지 않음(과도한 배제 방지)
-  const tool = normalize(v.tool_nm).replace(/머신|기구/g, '')
-  const eq = normalize(equipment).replace(/머신|기구/g, '')
-  if (!tool || !eq) return false
-  return tool.includes(eq) || eq.includes(tool)
-}
-
-const LEVEL_MAP = { '초급': 1, '중급': 2, '고급': 3 }
-function levelMatches(v, level) {
-  const vLevel = LEVEL_MAP[v.ftns_lvl_nm]
-  if (!vLevel) return true // 난이도 정보 없는 엔드포인트는 조건에서 제외(과도한 배제 방지)
-  return vLevel === level
-}
-
-function metadataCompleteness(v) {
-  return ['trng_part_nm', 'trng_mscl_part', 'tool_nm', 'aggrp_nm', 'ftns_lvl_nm', 'trng_plc_nm']
-    .filter((f) => v[f] && String(v[f]).trim()).length
-}
-
 function videoUrl(v) {
   return `${v.file_url}${v.file_nm}`.replace(/^http:/, 'https:')
 }
@@ -126,6 +112,21 @@ function toEntry(v, matchType) {
     matchType,
   }
 }
+
+// partial(부분일치) 단계는 "포함 관계"만 보므로, 방향/변형을 나타내는 수식어가 한쪽에만
+// 있으면 실제로는 다른 운동을 붙이게 된다. 2026-08-14 발주자 검수에서 발견된 구체적 사례를
+// (운동 id, 잘못 붙은 영상 file_nm) 쌍으로 직접 배제한다 — 이런 사례가 또 나오면 이 목록에
+// 추가할 것. 일반 규칙으로 자동화하기엔 "수식어가 있으면 무조건 배제"가 오히려 정상적인
+// 부분일치(예: 런지+팔올리기 변형)까지 지워버려 과도하다.
+//   - lunge-reverse/lunge-side → "런지"(00139): 방향 수식어(리버스/사이드)가 빠진 일반
+//     런지 영상. 리버스 런지와 사이드 런지는 발 딛는 방향 자체가 다른 운동이라 위험하다.
+//   - crunch-basic → "크런치 싸이클"(00892): 이름은 "크런치"를 포함하지만 실제로는 바이시클
+//     크런치(엘보-니 교차 회전 동작)로, 기본 크런치와 동작 자체가 다르다.
+const PARTIAL_EXCLUDE = new Set([
+  'lunge-reverse:0AUDLJ08S_00139.mp4',
+  'lunge-side:0AUDLJ08S_00139.mp4',
+  'crunch-basic:0AUDLJ08S_00892.mp4',
+])
 
 // ── 3) 운동 하나에 대해 매칭 ──
 function matchExercise(exercise, videos) {
@@ -153,10 +154,14 @@ function matchExercise(exercise, videos) {
       const vName = normalize(v.trng_nm)
       if (!vName) continue
       const partial = vName.includes(exName) || exName.includes(vName)
-      if (partial && bodyPartOverlap(v, exercise)) add(v, 'partial')
+      if (partial && bodyPartOverlap(v, exercise) && !PARTIAL_EXCLUDE.has(`${exercise.id}:${v.file_nm}`)) add(v, 'partial')
     }
   }
-  // 3) aliases 일치
+  // 3) aliases 일치 — 반드시 완전 일치만 인정한다(부분 포함 금지). 부분 포함을 허용하면
+  // "점프"처럼 짧고 일반적인 trng_nm이 "스쿼트점프"/"플랭크점프"류 복합 별칭에 우연히
+  // 포함되어 전혀 다른 운동(제자리 점프 영상)이 붙는 사례가 실제로 발생했다(2026-08-14
+  // 발주자 검수). "옆플랭크"⊃"플랭크", "뒤로차기"⊂"서서다리뒤로차기"처럼 상위/하위 개념이
+  // 다른 운동인 경우도 부분 포함으로는 걸러지지 않는다 — 완전 일치만 안전하다.
   if (picked.length < 3 && exercise.aliases?.length) {
     for (const alias of exercise.aliases) {
       const a = normalize(alias)
@@ -164,20 +169,10 @@ function matchExercise(exercise, videos) {
       for (const v of videos) {
         if (picked.length >= 3) break
         const vName = normalize(v.trng_nm)
-        if (vName === a || vName.includes(a) || a.includes(vName)) add(v, 'alias')
+        if (vName === a) add(v, 'alias')
       }
     }
   }
-  // 4) 부위+기구+난이도 조합 → 대표 1개만
-  if (picked.length < 3) {
-    const candidates = videos.filter((v) =>
-      !seen.has(v.file_nm) && bodyPartOverlap(v, exercise) && equipmentOverlap(v, exercise.equipment) && levelMatches(v, exercise.level))
-    if (candidates.length > 0) {
-      candidates.sort((a, b) => metadataCompleteness(b) - metadataCompleteness(a))
-      add(candidates[0], 'fallback')
-    }
-  }
-
   return picked
 }
 
@@ -186,7 +181,7 @@ function main() {
   const exercises = JSON.parse(fs.readFileSync(EXERCISES_PATH, 'utf-8'))
 
   const result = {}
-  const stats = { exact: 0, partial: 0, alias: 0, fallback: 0 }
+  const stats = { exact: 0, partial: 0, alias: 0 }
   const unmatched = []
 
   for (const ex of exercises) {
@@ -207,7 +202,6 @@ function main() {
   console.log(`  exact(완전일치): ${stats.exact}`)
   console.log(`  partial(부분일치+부위): ${stats.partial}`)
   console.log(`  alias(별칭일치): ${stats.alias}`)
-  console.log(`  fallback(부위+기구+난이도): ${stats.fallback}`)
   console.log(`  매칭됨: ${matchedCount}/${exercises.length}`)
   console.log(`  매칭 실패(빈 배열, 영상 버튼 안 뜸): ${unmatched.length}`)
   if (unmatched.length) {

@@ -310,12 +310,14 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
           <StickFigure pose={ex.animation} size={200} tempoSec={pacerActive ? cycleLen : undefined} highlightParts={ex.bodyParts} showDirection />
         </div>
       )}
-      {videos.length > 0 && (
+      {videos.length > 0 ? (
         <div style={{ textAlign: 'center', marginTop: -4, marginBottom: 6 }}>
           <button type="button" className="videotogglebtn" onClick={() => setShowVideo((v) => !v)}>
             {showVideo ? '애니메이션 보기' : '▶ 영상'}
           </button>
         </div>
+      ) : (
+        <p className="novideo-hint">이 운동은 아래 그림 설명을 참고하세요</p>
       )}
 
       {pacerSub && (
