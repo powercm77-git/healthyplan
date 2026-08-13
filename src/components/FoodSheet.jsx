@@ -1,7 +1,7 @@
 // FoodSheet.jsx — 음식 검색·추가 바텀시트 (초성 검색 지원)
 import { useEffect, useMemo, useRef, useState } from 'react'
 import foods from '../data/foods.json'
-import { matchFoodItem } from '../lib/chosung.js'
+import { matchFoodItem, rankFoodItem } from '../lib/chosung.js'
 
 export default function FoodSheet({ open, mealName, onClose, onAdd, recentNames }) {
   const [query, setQuery] = useState('')
@@ -11,7 +11,11 @@ export default function FoodSheet({ open, mealName, onClose, onAdd, recentNames 
     const q = query.trim()
     let list = foods
     if (q) {
-      list = foods.filter((f) => matchFoodItem(f, q))
+      list = foods
+        .filter((f) => matchFoodItem(f, q))
+        .map((f) => ({ f, rank: rankFoodItem(f, q) }))
+        .sort((a, b) => a.rank - b.rank)
+        .map(({ f }) => f)
     } else if (recentNames?.length) {
       const recentSet = new Set(recentNames)
       const recent = foods.filter((f) => recentSet.has(f.name))

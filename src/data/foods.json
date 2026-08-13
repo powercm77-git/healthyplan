@@ -234,7 +234,10 @@
     "carbs": 66,
     "protein": 8,
     "fat": 3,
-    "category": "밥"
+    "category": "밥",
+    "aliases": [
+      "곤드레밥"
+    ]
   },
   {
     "name": "영양돌솥밥",
@@ -390,7 +393,10 @@
     "carbs": 30,
     "protein": 6,
     "fat": 6,
-    "category": "밥"
+    "category": "밥",
+    "aliases": [
+      "삼각김밥(참치마요)"
+    ]
   },
   {
     "name": "전주비빔삼각김밥",
@@ -399,7 +405,10 @@
     "carbs": 32,
     "protein": 4,
     "fat": 4,
-    "category": "밥"
+    "category": "밥",
+    "aliases": [
+      "삼각김밥(전주비빔)"
+    ]
   },
   {
     "name": "불고기도시락",
@@ -417,7 +426,10 @@
     "carbs": 12,
     "protein": 16,
     "fat": 14,
-    "category": "국찌개"
+    "category": "국찌개",
+    "aliases": [
+      "김찌"
+    ]
   },
   {
     "name": "된장찌개",
@@ -426,7 +438,10 @@
     "carbs": 14,
     "protein": 15,
     "fat": 11,
-    "category": "국찌개"
+    "category": "국찌개",
+    "aliases": [
+      "된찌"
+    ]
   },
   {
     "name": "순두부찌개",
@@ -471,7 +486,10 @@
     "carbs": 8,
     "protein": 15,
     "fat": 9,
-    "category": "국찌개"
+    "category": "국찌개",
+    "aliases": [
+      "쇠고기미역국"
+    ]
   },
   {
     "name": "콩나물국",
@@ -717,7 +735,10 @@
     "carbs": 9,
     "protein": 6,
     "fat": 3,
-    "category": "국찌개"
+    "category": "국찌개",
+    "aliases": [
+      "아욱국"
+    ]
   },
   {
     "name": "근대된장국",
@@ -726,7 +747,10 @@
     "carbs": 8,
     "protein": 5,
     "fat": 3,
-    "category": "국찌개"
+    "category": "국찌개",
+    "aliases": [
+      "근대국"
+    ]
   },
   {
     "name": "홍합탕",
@@ -816,7 +840,10 @@
     "carbs": 8,
     "protein": 1,
     "fat": 2,
-    "category": "반찬"
+    "category": "반찬",
+    "aliases": [
+      "도라지무침"
+    ]
   },
   {
     "name": "고사리나물",
@@ -834,7 +861,10 @@
     "carbs": 5,
     "protein": 2,
     "fat": 3,
-    "category": "반찬"
+    "category": "반찬",
+    "aliases": [
+      "취나물"
+    ]
   },
   {
     "name": "애호박볶음",
@@ -1146,7 +1176,10 @@
     "carbs": 8,
     "protein": 10,
     "fat": 14,
-    "category": "반찬"
+    "category": "반찬",
+    "aliases": [
+      "소세지야채볶음"
+    ]
   },
   {
     "name": "코다리조림",
@@ -1354,7 +1387,10 @@
     "carbs": 0,
     "protein": 34,
     "fat": 36,
-    "category": "고기생선"
+    "category": "고기생선",
+    "aliases": [
+      "갈매기살"
+    ]
   },
   {
     "name": "소고기불고기",
@@ -1399,7 +1435,10 @@
     "carbs": 0,
     "protein": 40,
     "fat": 34,
-    "category": "고기생선"
+    "category": "고기생선",
+    "aliases": [
+      "스테이크(등심 200g)"
+    ]
   },
   {
     "name": "닭가슴살구이",
@@ -1428,7 +1467,8 @@
     "fat": 52,
     "category": "고기생선",
     "aliases": [
-      "프라이드치킨"
+      "프라이드치킨",
+      "후라이드치킨(2조각)"
     ]
   },
   {
@@ -1645,7 +1685,10 @@
     "carbs": 20,
     "protein": 22,
     "fat": 13,
-    "category": "고기생선"
+    "category": "고기생선",
+    "aliases": [
+      "쭈꾸미볶음"
+    ]
   },
   {
     "name": "새우구이",
@@ -1894,7 +1937,10 @@
     "carbs": 78,
     "protein": 10,
     "fat": 16,
-    "category": "면분식"
+    "category": "면분식",
+    "aliases": [
+      "라면(봉지)"
+    ]
   },
   {
     "name": "신라면",
@@ -2002,7 +2048,10 @@
     "carbs": 80,
     "protein": 8,
     "fat": 9,
-    "category": "면분식"
+    "category": "면분식",
+    "aliases": [
+      "떡뽀끼"
+    ]
   },
   {
     "name": "라볶이",
@@ -2128,7 +2177,10 @@
     "carbs": 65,
     "protein": 16,
     "fat": 30,
-    "category": "면분식"
+    "category": "면분식",
+    "aliases": [
+      "까르보나라"
+    ]
   },
   {
     "name": "로제파스타",
@@ -2191,7 +2243,10 @@
     "carbs": 35,
     "protein": 8,
     "fat": 15,
-    "category": "면분식"
+    "category": "면분식",
+    "aliases": [
+      "김치부침개"
+    ]
   },
   {
     "name": "해물파전",
@@ -2200,7 +2255,11 @@
     "carbs": 40,
     "protein": 15,
     "fat": 18,
-    "category": "면분식"
+    "category": "면분식",
+    "aliases": [
+      "파전",
+      "파부침개"
+    ]
   },
   {
     "name": "얼큰수제비",
@@ -2707,7 +2766,7 @@
     "carbs": 0,
     "protein": 0,
     "fat": 11,
-    "category": "빵간식"
+    "category": "유제품"
   },
   {
     "name": "토스트",
@@ -2842,7 +2901,7 @@
     "carbs": 20,
     "protein": 12,
     "fat": 19,
-    "category": "빵간식"
+    "category": "유제품"
   },
   {
     "name": "핫도그",
@@ -2941,7 +3000,10 @@
     "carbs": 15,
     "protein": 1,
     "fat": 0,
-    "category": "과일"
+    "category": "과일",
+    "aliases": [
+      "자몽(반개)"
+    ]
   },
   {
     "name": "참외",
@@ -3193,7 +3255,12 @@
     "carbs": 2,
     "protein": 1,
     "fat": 0,
-    "category": "음료"
+    "category": "음료",
+    "aliases": [
+      "아메리카노톨",
+      "아아",
+      "뜨아"
+    ]
   },
   {
     "name": "카페라떼",
@@ -3202,7 +3269,10 @@
     "carbs": 18,
     "protein": 10,
     "fat": 8,
-    "category": "음료"
+    "category": "음료",
+    "aliases": [
+      "라떼"
+    ]
   },
   {
     "name": "카푸치노",
@@ -3322,7 +3392,7 @@
     "carbs": 10,
     "protein": 7,
     "fat": 7,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "저지방우유",
@@ -3331,7 +3401,7 @@
     "carbs": 10,
     "protein": 7,
     "fat": 2,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "두유",
@@ -3340,7 +3410,7 @@
     "carbs": 10,
     "protein": 8,
     "fat": 4,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "초코우유",
@@ -3349,7 +3419,7 @@
     "carbs": 28,
     "protein": 7,
     "fat": 5,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "딸기우유",
@@ -3358,7 +3428,7 @@
     "carbs": 30,
     "protein": 6,
     "fat": 5,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "바나나우유",
@@ -3367,7 +3437,7 @@
     "carbs": 36,
     "protein": 7,
     "fat": 5,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "식혜",
@@ -3475,7 +3545,7 @@
     "carbs": 12,
     "protein": 5,
     "fat": 2,
-    "category": "음료",
+    "category": "유제품",
     "aliases": [
       "요구르트",
       "요쿠르트"
@@ -3986,7 +4056,7 @@
     "carbs": 24,
     "protein": 4,
     "fat": 2,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "야쿠르트",
@@ -3995,7 +4065,7 @@
     "carbs": 13,
     "protein": 1,
     "fat": 0,
-    "category": "음료"
+    "category": "유제품"
   },
   {
     "name": "그릭요거트",
@@ -4004,7 +4074,7 @@
     "carbs": 8,
     "protein": 15,
     "fat": 4,
-    "category": "음료",
+    "category": "유제품",
     "aliases": [
       "그릭요구르트",
       "그릭요쿠르트"
@@ -4154,7 +4224,10 @@
     "carbs": 24,
     "protein": 13,
     "fat": 9,
-    "category": "음료"
+    "category": "음료",
+    "aliases": [
+      "카페라떼그란데"
+    ]
   },
   {
     "name": "디카페인아메리카노",
@@ -4175,7 +4248,7 @@
     "carbs": 5,
     "protein": 1,
     "fat": 4,
-    "category": "음료",
+    "category": "유제품",
     "aliases": [
       "아몬드브리즈",
       "아몬드밀크"
@@ -4188,7 +4261,7 @@
     "carbs": 14,
     "protein": 2,
     "fat": 3,
-    "category": "음료",
+    "category": "유제품",
     "aliases": [
       "오트밀크"
     ]
@@ -4240,5 +4313,2619 @@
     "protein": 0,
     "fat": 0,
     "category": "빵간식"
+  },
+  {
+    "name": "부추전",
+    "serving": "1장 (150g)",
+    "kcal": 220,
+    "carbs": 24,
+    "protein": 6,
+    "fat": 11,
+    "category": "면분식",
+    "aliases": [
+      "부추부침개"
+    ]
+  },
+  {
+    "name": "감자전",
+    "serving": "1장 (200g)",
+    "kcal": 260,
+    "carbs": 40,
+    "protein": 5,
+    "fat": 9,
+    "category": "면분식",
+    "aliases": [
+      "감자부침개"
+    ]
+  },
+  {
+    "name": "녹두전",
+    "serving": "1장 (200g)",
+    "kcal": 280,
+    "carbs": 30,
+    "protein": 10,
+    "fat": 13,
+    "category": "면분식",
+    "aliases": [
+      "빈대떡"
+    ]
+  },
+  {
+    "name": "호박전",
+    "serving": "1장 (120g)",
+    "kcal": 150,
+    "carbs": 14,
+    "protein": 5,
+    "fat": 8,
+    "category": "면분식",
+    "aliases": [
+      "호박부침개"
+    ]
+  },
+  {
+    "name": "동태전",
+    "serving": "1장 (120g)",
+    "kcal": 180,
+    "carbs": 10,
+    "protein": 14,
+    "fat": 9,
+    "category": "면분식"
+  },
+  {
+    "name": "깻잎전",
+    "serving": "5장 (100g)",
+    "kcal": 160,
+    "carbs": 10,
+    "protein": 9,
+    "fat": 9,
+    "category": "면분식"
+  },
+  {
+    "name": "고추전",
+    "serving": "5개 (120g)",
+    "kcal": 170,
+    "carbs": 12,
+    "protein": 8,
+    "fat": 10,
+    "category": "면분식"
+  },
+  {
+    "name": "두부전",
+    "serving": "1접시 (150g)",
+    "kcal": 190,
+    "carbs": 8,
+    "protein": 12,
+    "fat": 12,
+    "category": "면분식"
+  },
+  {
+    "name": "굴전",
+    "serving": "1접시 (150g)",
+    "kcal": 210,
+    "carbs": 12,
+    "protein": 12,
+    "fat": 12,
+    "category": "면분식"
+  },
+  {
+    "name": "새우전",
+    "serving": "1접시 (150g)",
+    "kcal": 200,
+    "carbs": 10,
+    "protein": 14,
+    "fat": 11,
+    "category": "면분식"
+  },
+  {
+    "name": "모듬전",
+    "serving": "1접시 (250g)",
+    "kcal": 380,
+    "carbs": 25,
+    "protein": 20,
+    "fat": 22,
+    "category": "면분식"
+  },
+  {
+    "name": "인절미",
+    "serving": "5개 (120g)",
+    "kcal": 250,
+    "carbs": 54,
+    "protein": 5,
+    "fat": 2,
+    "category": "빵간식"
+  },
+  {
+    "name": "가래떡",
+    "serving": "1줄 (150g)",
+    "kcal": 320,
+    "carbs": 72,
+    "protein": 5,
+    "fat": 1,
+    "category": "빵간식"
+  },
+  {
+    "name": "꿀떡",
+    "serving": "5개 (100g)",
+    "kcal": 220,
+    "carbs": 48,
+    "protein": 3,
+    "fat": 2,
+    "category": "빵간식"
+  },
+  {
+    "name": "백설기",
+    "serving": "1조각 (100g)",
+    "kcal": 210,
+    "carbs": 47,
+    "protein": 3,
+    "fat": 1,
+    "category": "빵간식"
+  },
+  {
+    "name": "시루떡",
+    "serving": "1조각 (120g)",
+    "kcal": 260,
+    "carbs": 55,
+    "protein": 5,
+    "fat": 3,
+    "category": "빵간식"
+  },
+  {
+    "name": "찹쌀떡",
+    "serving": "3개 (120g)",
+    "kcal": 260,
+    "carbs": 56,
+    "protein": 4,
+    "fat": 2,
+    "category": "빵간식"
+  },
+  {
+    "name": "경단",
+    "serving": "8개 (100g)",
+    "kcal": 220,
+    "carbs": 46,
+    "protein": 3,
+    "fat": 3,
+    "category": "빵간식"
+  },
+  {
+    "name": "호박떡",
+    "serving": "1조각 (120g)",
+    "kcal": 250,
+    "carbs": 52,
+    "protein": 4,
+    "fat": 3,
+    "category": "빵간식"
+  },
+  {
+    "name": "약식",
+    "serving": "1조각 (150g)",
+    "kcal": 320,
+    "carbs": 60,
+    "protein": 5,
+    "fat": 7,
+    "category": "빵간식"
+  },
+  {
+    "name": "절편",
+    "serving": "5개 (120g)",
+    "kcal": 250,
+    "carbs": 55,
+    "protein": 4,
+    "fat": 1,
+    "category": "빵간식"
+  },
+  {
+    "name": "무지개떡",
+    "serving": "1조각 (120g)",
+    "kcal": 240,
+    "carbs": 52,
+    "protein": 4,
+    "fat": 2,
+    "category": "빵간식"
+  },
+  {
+    "name": "쑥떡",
+    "serving": "5개 (120g)",
+    "kcal": 250,
+    "carbs": 54,
+    "protein": 4,
+    "fat": 2,
+    "category": "빵간식"
+  },
+  {
+    "name": "한과",
+    "serving": "5개 (80g)",
+    "kcal": 300,
+    "carbs": 55,
+    "protein": 3,
+    "fat": 8,
+    "category": "빵간식"
+  },
+  {
+    "name": "강정",
+    "serving": "5개 (80g)",
+    "kcal": 320,
+    "carbs": 58,
+    "protein": 4,
+    "fat": 8,
+    "category": "빵간식"
+  },
+  {
+    "name": "전병",
+    "serving": "3개 (60g)",
+    "kcal": 240,
+    "carbs": 45,
+    "protein": 3,
+    "fat": 5,
+    "category": "빵간식"
+  },
+  {
+    "name": "다식",
+    "serving": "10개 (50g)",
+    "kcal": 190,
+    "carbs": 40,
+    "protein": 2,
+    "fat": 3,
+    "category": "빵간식"
+  },
+  {
+    "name": "곶감쌈",
+    "serving": "3개 (60g)",
+    "kcal": 150,
+    "carbs": 36,
+    "protein": 1,
+    "fat": 0,
+    "category": "빵간식"
+  },
+  {
+    "name": "정과",
+    "serving": "5개 (60g)",
+    "kcal": 170,
+    "carbs": 42,
+    "protein": 0,
+    "fat": 0,
+    "category": "빵간식"
+  },
+  {
+    "name": "치즈버거",
+    "serving": "1개 (180g)",
+    "kcal": 470,
+    "carbs": 40,
+    "protein": 22,
+    "fat": 25,
+    "category": "빵간식"
+  },
+  {
+    "name": "불고기버거",
+    "serving": "1개 (200g)",
+    "kcal": 480,
+    "carbs": 55,
+    "protein": 20,
+    "fat": 18,
+    "category": "빵간식"
+  },
+  {
+    "name": "새우버거",
+    "serving": "1개 (180g)",
+    "kcal": 420,
+    "carbs": 45,
+    "protein": 15,
+    "fat": 20,
+    "category": "빵간식"
+  },
+  {
+    "name": "치킨버거",
+    "serving": "1개 (200g)",
+    "kcal": 450,
+    "carbs": 42,
+    "protein": 22,
+    "fat": 20,
+    "category": "빵간식"
+  },
+  {
+    "name": "감자튀김(중)",
+    "serving": "1개 (114g)",
+    "kcal": 340,
+    "carbs": 44,
+    "protein": 4,
+    "fat": 17,
+    "category": "간편식",
+    "aliases": [
+      "프렌치프라이"
+    ]
+  },
+  {
+    "name": "치킨너겟(6조각)",
+    "serving": "6조각 (100g)",
+    "kcal": 280,
+    "carbs": 16,
+    "protein": 13,
+    "fat": 18,
+    "category": "간편식",
+    "aliases": [
+      "너겟"
+    ]
+  },
+  {
+    "name": "어니언링",
+    "serving": "1인분 (100g)",
+    "kcal": 280,
+    "carbs": 30,
+    "protein": 4,
+    "fat": 16,
+    "category": "빵간식"
+  },
+  {
+    "name": "리조또",
+    "serving": "1인분 (300g)",
+    "kcal": 480,
+    "carbs": 60,
+    "protein": 14,
+    "fat": 18,
+    "category": "밥"
+  },
+  {
+    "name": "알리오올리오",
+    "serving": "1인분 (350g)",
+    "kcal": 520,
+    "carbs": 68,
+    "protein": 14,
+    "fat": 20,
+    "category": "면분식"
+  },
+  {
+    "name": "그라탕",
+    "serving": "1인분 (250g)",
+    "kcal": 420,
+    "carbs": 30,
+    "protein": 18,
+    "fat": 25,
+    "category": "밥"
+  },
+  {
+    "name": "필라프",
+    "serving": "1인분 (300g)",
+    "kcal": 450,
+    "carbs": 65,
+    "protein": 12,
+    "fat": 14,
+    "category": "밥"
+  },
+  {
+    "name": "크림스프",
+    "serving": "1그릇 (250ml)",
+    "kcal": 210,
+    "carbs": 20,
+    "protein": 5,
+    "fat": 12,
+    "category": "국찌개"
+  },
+  {
+    "name": "양송이스프",
+    "serving": "1그릇 (250ml)",
+    "kcal": 190,
+    "carbs": 18,
+    "protein": 4,
+    "fat": 11,
+    "category": "국찌개"
+  },
+  {
+    "name": "프렌치토스트",
+    "serving": "2쪽 (150g)",
+    "kcal": 320,
+    "carbs": 38,
+    "protein": 10,
+    "fat": 14,
+    "category": "빵간식"
+  },
+  {
+    "name": "에그베네딕트",
+    "serving": "1인분 (220g)",
+    "kcal": 400,
+    "carbs": 25,
+    "protein": 18,
+    "fat": 26,
+    "category": "빵간식"
+  },
+  {
+    "name": "오믈렛",
+    "serving": "1인분 (150g)",
+    "kcal": 260,
+    "carbs": 4,
+    "protein": 16,
+    "fat": 20,
+    "category": "반찬"
+  },
+  {
+    "name": "브런치플레이트",
+    "serving": "1인분 (350g)",
+    "kcal": 550,
+    "carbs": 45,
+    "protein": 25,
+    "fat": 30,
+    "category": "빵간식"
+  },
+  {
+    "name": "간짜장",
+    "serving": "1인분 (500g)",
+    "kcal": 700,
+    "carbs": 95,
+    "protein": 20,
+    "fat": 25,
+    "category": "면분식"
+  },
+  {
+    "name": "쟁반짜장",
+    "serving": "1인분 (600g)",
+    "kcal": 850,
+    "carbs": 120,
+    "protein": 24,
+    "fat": 28,
+    "category": "면분식"
+  },
+  {
+    "name": "울면",
+    "serving": "1인분 (600g)",
+    "kcal": 480,
+    "carbs": 65,
+    "protein": 22,
+    "fat": 14,
+    "category": "면분식"
+  },
+  {
+    "name": "기스면",
+    "serving": "1인분 (550g)",
+    "kcal": 420,
+    "carbs": 55,
+    "protein": 20,
+    "fat": 12,
+    "category": "면분식"
+  },
+  {
+    "name": "마파두부덮밥",
+    "serving": "1인분 (400g)",
+    "kcal": 520,
+    "carbs": 65,
+    "protein": 20,
+    "fat": 18,
+    "category": "밥"
+  },
+  {
+    "name": "돈코츠라멘",
+    "serving": "1그릇 (600g)",
+    "kcal": 550,
+    "carbs": 60,
+    "protein": 26,
+    "fat": 22,
+    "category": "면분식",
+    "aliases": [
+      "돈코츠라면"
+    ]
+  },
+  {
+    "name": "미소라멘",
+    "serving": "1그릇 (600g)",
+    "kcal": 480,
+    "carbs": 55,
+    "protein": 22,
+    "fat": 16,
+    "category": "면분식",
+    "aliases": [
+      "미소라면"
+    ]
+  },
+  {
+    "name": "소바",
+    "serving": "1인분 (400g)",
+    "kcal": 380,
+    "carbs": 70,
+    "protein": 14,
+    "fat": 3,
+    "category": "면분식"
+  },
+  {
+    "name": "냉소바",
+    "serving": "1인분 (400g)",
+    "kcal": 360,
+    "carbs": 65,
+    "protein": 13,
+    "fat": 3,
+    "category": "면분식"
+  },
+  {
+    "name": "우동(냄비)",
+    "serving": "1인분 (600g)",
+    "kcal": 480,
+    "carbs": 75,
+    "protein": 16,
+    "fat": 10,
+    "category": "면분식"
+  },
+  {
+    "name": "가츠동",
+    "serving": "1인분 (450g)",
+    "kcal": 750,
+    "carbs": 95,
+    "protein": 30,
+    "fat": 26,
+    "category": "밥"
+  },
+  {
+    "name": "규동",
+    "serving": "1인분 (400g)",
+    "kcal": 620,
+    "carbs": 80,
+    "protein": 22,
+    "fat": 20,
+    "category": "밥"
+  },
+  {
+    "name": "오야코동",
+    "serving": "1인분 (400g)",
+    "kcal": 560,
+    "carbs": 78,
+    "protein": 26,
+    "fat": 15,
+    "category": "밥"
+  },
+  {
+    "name": "텐동",
+    "serving": "1인분 (450g)",
+    "kcal": 680,
+    "carbs": 95,
+    "protein": 20,
+    "fat": 24,
+    "category": "밥"
+  },
+  {
+    "name": "초밥(모둠 10피스)",
+    "serving": "10피스 (300g)",
+    "kcal": 480,
+    "carbs": 85,
+    "protein": 22,
+    "fat": 5,
+    "category": "밥",
+    "aliases": [
+      "모둠스시",
+      "스시"
+    ]
+  },
+  {
+    "name": "연어초밥",
+    "serving": "5피스 (150g)",
+    "kcal": 260,
+    "carbs": 45,
+    "protein": 12,
+    "fat": 4,
+    "category": "밥",
+    "aliases": [
+      "연어스시"
+    ]
+  },
+  {
+    "name": "광어초밥",
+    "serving": "5피스 (150g)",
+    "kcal": 240,
+    "carbs": 45,
+    "protein": 12,
+    "fat": 2,
+    "category": "밥",
+    "aliases": [
+      "광어스시"
+    ]
+  },
+  {
+    "name": "유부초밥",
+    "serving": "8개 (200g)",
+    "kcal": 380,
+    "carbs": 65,
+    "protein": 10,
+    "fat": 8,
+    "category": "밥",
+    "aliases": [
+      "유부스시"
+    ]
+  },
+  {
+    "name": "마끼",
+    "serving": "1인분 (200g)",
+    "kcal": 320,
+    "carbs": 60,
+    "protein": 8,
+    "fat": 4,
+    "category": "밥"
+  },
+  {
+    "name": "사시미모둠",
+    "serving": "1인분 (250g)",
+    "kcal": 280,
+    "carbs": 2,
+    "protein": 48,
+    "fat": 8,
+    "category": "고기생선",
+    "aliases": [
+      "모둠회"
+    ]
+  },
+  {
+    "name": "분짜",
+    "serving": "1인분 (450g)",
+    "kcal": 480,
+    "carbs": 55,
+    "protein": 25,
+    "fat": 16,
+    "category": "면분식"
+  },
+  {
+    "name": "나시고랭",
+    "serving": "1인분 (400g)",
+    "kcal": 620,
+    "carbs": 80,
+    "protein": 20,
+    "fat": 24,
+    "category": "밥"
+  },
+  {
+    "name": "카오팟",
+    "serving": "1인분 (400g)",
+    "kcal": 580,
+    "carbs": 75,
+    "protein": 18,
+    "fat": 22,
+    "category": "밥"
+  },
+  {
+    "name": "모듬회",
+    "serving": "2인분 (400g)",
+    "kcal": 400,
+    "carbs": 4,
+    "protein": 68,
+    "fat": 10,
+    "category": "고기생선"
+  },
+  {
+    "name": "우럭회",
+    "serving": "1인분 (150g)",
+    "kcal": 160,
+    "carbs": 0,
+    "protein": 30,
+    "fat": 4,
+    "category": "고기생선"
+  },
+  {
+    "name": "물회",
+    "serving": "1그릇 (500g)",
+    "kcal": 380,
+    "carbs": 55,
+    "protein": 30,
+    "fat": 4,
+    "category": "고기생선"
+  },
+  {
+    "name": "조개구이",
+    "serving": "1인분 (400g)",
+    "kcal": 280,
+    "carbs": 12,
+    "protein": 35,
+    "fat": 8,
+    "category": "고기생선"
+  },
+  {
+    "name": "가리비구이",
+    "serving": "5개 (200g)",
+    "kcal": 180,
+    "carbs": 8,
+    "protein": 26,
+    "fat": 4,
+    "category": "고기생선"
+  },
+  {
+    "name": "새우소금구이",
+    "serving": "1인분 (200g)",
+    "kcal": 200,
+    "carbs": 2,
+    "protein": 36,
+    "fat": 5,
+    "category": "고기생선"
+  },
+  {
+    "name": "골뱅이무침",
+    "serving": "1인분 (250g)",
+    "kcal": 220,
+    "carbs": 25,
+    "protein": 20,
+    "fat": 4,
+    "category": "반찬"
+  },
+  {
+    "name": "오징어숙회",
+    "serving": "1인분 (200g)",
+    "kcal": 180,
+    "carbs": 6,
+    "protein": 32,
+    "fat": 2,
+    "category": "고기생선"
+  },
+  {
+    "name": "멍게",
+    "serving": "1접시 (100g)",
+    "kcal": 40,
+    "carbs": 3,
+    "protein": 7,
+    "fat": 0,
+    "category": "고기생선"
+  },
+  {
+    "name": "해삼",
+    "serving": "1접시 (100g)",
+    "kcal": 30,
+    "carbs": 1,
+    "protein": 6,
+    "fat": 0,
+    "category": "고기생선"
+  },
+  {
+    "name": "산낙지",
+    "serving": "1접시 (150g)",
+    "kcal": 130,
+    "carbs": 3,
+    "protein": 24,
+    "fat": 1,
+    "category": "고기생선"
+  },
+  {
+    "name": "홍어무침",
+    "serving": "1인분 (200g)",
+    "kcal": 220,
+    "carbs": 15,
+    "protein": 28,
+    "fat": 5,
+    "category": "반찬"
+  },
+  {
+    "name": "전복구이",
+    "serving": "3마리 (150g)",
+    "kcal": 160,
+    "carbs": 6,
+    "protein": 25,
+    "fat": 4,
+    "category": "고기생선"
+  },
+  {
+    "name": "대게",
+    "serving": "1마리 (가식부 200g)",
+    "kcal": 220,
+    "carbs": 2,
+    "protein": 44,
+    "fat": 4,
+    "category": "고기생선"
+  },
+  {
+    "name": "킹크랩",
+    "serving": "1인분 (가식부 300g)",
+    "kcal": 300,
+    "carbs": 2,
+    "protein": 60,
+    "fat": 6,
+    "category": "고기생선"
+  },
+  {
+    "name": "꽃게찜",
+    "serving": "1인분 (400g)",
+    "kcal": 260,
+    "carbs": 8,
+    "protein": 45,
+    "fat": 6,
+    "category": "고기생선"
+  },
+  {
+    "name": "간장게장",
+    "serving": "1마리 (200g)",
+    "kcal": 280,
+    "carbs": 10,
+    "protein": 30,
+    "fat": 13,
+    "category": "반찬"
+  },
+  {
+    "name": "양념게장",
+    "serving": "1마리 (200g)",
+    "kcal": 320,
+    "carbs": 20,
+    "protein": 28,
+    "fat": 15,
+    "category": "반찬"
+  },
+  {
+    "name": "차돌박이",
+    "serving": "1인분 (150g)",
+    "kcal": 480,
+    "carbs": 0,
+    "protein": 26,
+    "fat": 42,
+    "category": "고기생선"
+  },
+  {
+    "name": "우삼겹",
+    "serving": "1인분 (150g)",
+    "kcal": 460,
+    "carbs": 0,
+    "protein": 24,
+    "fat": 40,
+    "category": "고기생선"
+  },
+  {
+    "name": "소갈비살",
+    "serving": "1인분 (180g)",
+    "kcal": 500,
+    "carbs": 0,
+    "protein": 32,
+    "fat": 40,
+    "category": "고기생선"
+  },
+  {
+    "name": "안창살",
+    "serving": "1인분 (180g)",
+    "kcal": 470,
+    "carbs": 0,
+    "protein": 34,
+    "fat": 36,
+    "category": "고기생선"
+  },
+  {
+    "name": "부채살",
+    "serving": "1인분 (180g)",
+    "kcal": 420,
+    "carbs": 0,
+    "protein": 36,
+    "fat": 30,
+    "category": "고기생선"
+  },
+  {
+    "name": "토시살",
+    "serving": "1인분 (180g)",
+    "kcal": 400,
+    "carbs": 0,
+    "protein": 35,
+    "fat": 28,
+    "category": "고기생선"
+  },
+  {
+    "name": "새우살",
+    "serving": "1인분 (150g)",
+    "kcal": 140,
+    "carbs": 2,
+    "protein": 28,
+    "fat": 2,
+    "category": "고기생선"
+  },
+  {
+    "name": "양념갈비",
+    "serving": "1인분 (200g)",
+    "kcal": 520,
+    "carbs": 20,
+    "protein": 32,
+    "fat": 34,
+    "category": "고기생선"
+  },
+  {
+    "name": "LA갈비",
+    "serving": "1인분 (220g)",
+    "kcal": 560,
+    "carbs": 18,
+    "protein": 34,
+    "fat": 38,
+    "category": "고기생선"
+  },
+  {
+    "name": "닭목살",
+    "serving": "1인분 (200g)",
+    "kcal": 420,
+    "carbs": 2,
+    "protein": 34,
+    "fat": 30,
+    "category": "고기생선"
+  },
+  {
+    "name": "막창",
+    "serving": "1인분 (200g)",
+    "kcal": 480,
+    "carbs": 2,
+    "protein": 24,
+    "fat": 42,
+    "category": "고기생선"
+  },
+  {
+    "name": "곱창",
+    "serving": "1인분 (200g)",
+    "kcal": 460,
+    "carbs": 4,
+    "protein": 22,
+    "fat": 40,
+    "category": "고기생선",
+    "aliases": [
+      "곱창구이"
+    ]
+  },
+  {
+    "name": "대창",
+    "serving": "1인분 (200g)",
+    "kcal": 620,
+    "carbs": 2,
+    "protein": 18,
+    "fat": 60,
+    "category": "고기생선"
+  },
+  {
+    "name": "염통",
+    "serving": "1인분 (150g)",
+    "kcal": 220,
+    "carbs": 0,
+    "protein": 30,
+    "fat": 11,
+    "category": "고기생선"
+  },
+  {
+    "name": "껍데기",
+    "serving": "1인분 (200g)",
+    "kcal": 380,
+    "carbs": 2,
+    "protein": 26,
+    "fat": 30,
+    "category": "고기생선"
+  },
+  {
+    "name": "오돌뼈",
+    "serving": "1인분 (150g)",
+    "kcal": 260,
+    "carbs": 8,
+    "protein": 22,
+    "fat": 16,
+    "category": "고기생선"
+  },
+  {
+    "name": "돼지갈비(양념)",
+    "serving": "1인분 (250g)",
+    "kcal": 560,
+    "carbs": 22,
+    "protein": 32,
+    "fat": 36,
+    "category": "고기생선"
+  },
+  {
+    "name": "아귀찜",
+    "serving": "1인분 (500g)",
+    "kcal": 480,
+    "carbs": 30,
+    "protein": 45,
+    "fat": 18,
+    "category": "고기생선"
+  },
+  {
+    "name": "해물찜",
+    "serving": "1인분 (500g)",
+    "kcal": 420,
+    "carbs": 25,
+    "protein": 40,
+    "fat": 15,
+    "category": "고기생선"
+  },
+  {
+    "name": "닭볶음탕",
+    "serving": "1인분 (500g)",
+    "kcal": 550,
+    "carbs": 30,
+    "protein": 42,
+    "fat": 26,
+    "category": "국찌개"
+  },
+  {
+    "name": "오리백숙",
+    "serving": "1인분 (600g)",
+    "kcal": 620,
+    "carbs": 20,
+    "protein": 50,
+    "fat": 36,
+    "category": "국찌개"
+  },
+  {
+    "name": "닭한마리",
+    "serving": "1인분 (800g)",
+    "kcal": 720,
+    "carbs": 35,
+    "protein": 60,
+    "fat": 36,
+    "category": "국찌개"
+  },
+  {
+    "name": "동태탕",
+    "serving": "1인분 (500g)",
+    "kcal": 220,
+    "carbs": 12,
+    "protein": 32,
+    "fat": 4,
+    "category": "국찌개"
+  },
+  {
+    "name": "대구탕",
+    "serving": "1인분 (500g)",
+    "kcal": 200,
+    "carbs": 10,
+    "protein": 30,
+    "fat": 4,
+    "category": "국찌개"
+  },
+  {
+    "name": "지리탕",
+    "serving": "1인분 (500g)",
+    "kcal": 180,
+    "carbs": 8,
+    "protein": 28,
+    "fat": 3,
+    "category": "국찌개"
+  },
+  {
+    "name": "부대전골",
+    "serving": "1인분 (600g)",
+    "kcal": 620,
+    "carbs": 40,
+    "protein": 32,
+    "fat": 34,
+    "category": "국찌개"
+  },
+  {
+    "name": "버섯전골",
+    "serving": "1인분 (500g)",
+    "kcal": 260,
+    "carbs": 30,
+    "protein": 14,
+    "fat": 8,
+    "category": "국찌개"
+  },
+  {
+    "name": "곱창전골",
+    "serving": "1인분 (500g)",
+    "kcal": 520,
+    "carbs": 25,
+    "protein": 30,
+    "fat": 32,
+    "category": "국찌개"
+  },
+  {
+    "name": "만두전골",
+    "serving": "1인분 (500g)",
+    "kcal": 480,
+    "carbs": 45,
+    "protein": 22,
+    "fat": 22,
+    "category": "국찌개"
+  },
+  {
+    "name": "소고기전골",
+    "serving": "1인분 (500g)",
+    "kcal": 460,
+    "carbs": 20,
+    "protein": 38,
+    "fat": 24,
+    "category": "국찌개"
+  },
+  {
+    "name": "낙지전골",
+    "serving": "1인분 (500g)",
+    "kcal": 380,
+    "carbs": 25,
+    "protein": 35,
+    "fat": 12,
+    "category": "국찌개"
+  },
+  {
+    "name": "뼈해장국",
+    "serving": "1그릇 (600g)",
+    "kcal": 480,
+    "carbs": 20,
+    "protein": 38,
+    "fat": 26,
+    "category": "국찌개"
+  },
+  {
+    "name": "콩나물국밥",
+    "serving": "1그릇 (600g)",
+    "kcal": 420,
+    "carbs": 65,
+    "protein": 18,
+    "fat": 8,
+    "category": "국찌개"
+  },
+  {
+    "name": "순대국밥",
+    "serving": "1그릇 (600g)",
+    "kcal": 550,
+    "carbs": 40,
+    "protein": 32,
+    "fat": 28,
+    "category": "국찌개"
+  },
+  {
+    "name": "소머리국밥",
+    "serving": "1그릇 (600g)",
+    "kcal": 480,
+    "carbs": 35,
+    "protein": 34,
+    "fat": 22,
+    "category": "국찌개"
+  },
+  {
+    "name": "시래기국",
+    "serving": "1그릇 (400g)",
+    "kcal": 90,
+    "carbs": 10,
+    "protein": 6,
+    "fat": 2,
+    "category": "국찌개"
+  },
+  {
+    "name": "김칫국",
+    "serving": "1그릇 (400g)",
+    "kcal": 80,
+    "carbs": 8,
+    "protein": 5,
+    "fat": 3,
+    "category": "국찌개"
+  },
+  {
+    "name": "황태국",
+    "serving": "1그릇 (400g)",
+    "kcal": 110,
+    "carbs": 6,
+    "protein": 15,
+    "fat": 3,
+    "category": "국찌개"
+  },
+  {
+    "name": "소고기무국",
+    "serving": "1그릇 (400g)",
+    "kcal": 150,
+    "carbs": 8,
+    "protein": 16,
+    "fat": 6,
+    "category": "국찌개"
+  },
+  {
+    "name": "오이냉국",
+    "serving": "1그릇 (300g)",
+    "kcal": 40,
+    "carbs": 8,
+    "protein": 2,
+    "fat": 0,
+    "category": "국찌개"
+  },
+  {
+    "name": "비지찌개",
+    "serving": "1인분 (400g)",
+    "kcal": 220,
+    "carbs": 18,
+    "protein": 16,
+    "fat": 10,
+    "category": "국찌개"
+  },
+  {
+    "name": "배추된장국",
+    "serving": "1그릇 (400g)",
+    "kcal": 90,
+    "carbs": 10,
+    "protein": 6,
+    "fat": 3,
+    "category": "국찌개"
+  },
+  {
+    "name": "달래된장국",
+    "serving": "1그릇 (400g)",
+    "kcal": 85,
+    "carbs": 9,
+    "protein": 6,
+    "fat": 3,
+    "category": "국찌개"
+  },
+  {
+    "name": "들깨미역국",
+    "serving": "1그릇 (400g)",
+    "kcal": 160,
+    "carbs": 10,
+    "protein": 8,
+    "fat": 10,
+    "category": "국찌개"
+  },
+  {
+    "name": "돈까스덮밥",
+    "serving": "1인분 (450g)",
+    "kcal": 720,
+    "carbs": 90,
+    "protein": 28,
+    "fat": 26,
+    "category": "밥",
+    "aliases": [
+      "돈가스덮밥"
+    ]
+  },
+  {
+    "name": "치킨마요덮밥",
+    "serving": "1인분 (400g)",
+    "kcal": 650,
+    "carbs": 75,
+    "protein": 26,
+    "fat": 26,
+    "category": "밥"
+  },
+  {
+    "name": "하이라이스",
+    "serving": "1인분 (400g)",
+    "kcal": 580,
+    "carbs": 75,
+    "protein": 18,
+    "fat": 22,
+    "category": "밥"
+  },
+  {
+    "name": "콩나물밥",
+    "serving": "1공기 (300g)",
+    "kcal": 380,
+    "carbs": 72,
+    "protein": 10,
+    "fat": 4,
+    "category": "밥"
+  },
+  {
+    "name": "김치덮밥",
+    "serving": "1인분 (400g)",
+    "kcal": 480,
+    "carbs": 65,
+    "protein": 16,
+    "fat": 16,
+    "category": "밥"
+  },
+  {
+    "name": "알밥",
+    "serving": "1인분 (350g)",
+    "kcal": 480,
+    "carbs": 75,
+    "protein": 14,
+    "fat": 12,
+    "category": "밥"
+  },
+  {
+    "name": "우렁된장비빔밥",
+    "serving": "1인분 (400g)",
+    "kcal": 480,
+    "carbs": 70,
+    "protein": 18,
+    "fat": 12,
+    "category": "밥"
+  },
+  {
+    "name": "열무비빔밥",
+    "serving": "1인분 (400g)",
+    "kcal": 450,
+    "carbs": 78,
+    "protein": 10,
+    "fat": 9,
+    "category": "밥"
+  },
+  {
+    "name": "오징어채무침",
+    "serving": "1접시 (80g)",
+    "kcal": 140,
+    "carbs": 18,
+    "protein": 12,
+    "fat": 3,
+    "category": "반찬"
+  },
+  {
+    "name": "김자반",
+    "serving": "1접시 (30g)",
+    "kcal": 90,
+    "carbs": 6,
+    "protein": 3,
+    "fat": 6,
+    "category": "반찬"
+  },
+  {
+    "name": "떡갈비",
+    "serving": "3개 (150g)",
+    "kcal": 320,
+    "carbs": 12,
+    "protein": 20,
+    "fat": 20,
+    "category": "고기생선"
+  },
+  {
+    "name": "동그랑땡",
+    "serving": "5개 (100g)",
+    "kcal": 220,
+    "carbs": 10,
+    "protein": 12,
+    "fat": 15,
+    "category": "반찬"
+  },
+  {
+    "name": "햄구이",
+    "serving": "1접시 (80g)",
+    "kcal": 180,
+    "carbs": 4,
+    "protein": 10,
+    "fat": 14,
+    "category": "반찬"
+  },
+  {
+    "name": "무나물",
+    "serving": "1접시 (80g)",
+    "kcal": 40,
+    "carbs": 7,
+    "protein": 1,
+    "fat": 1,
+    "category": "반찬"
+  },
+  {
+    "name": "오징어젓",
+    "serving": "1접시 (50g)",
+    "kcal": 70,
+    "carbs": 5,
+    "protein": 9,
+    "fat": 1,
+    "category": "반찬"
+  },
+  {
+    "name": "새우젓",
+    "serving": "1큰술 (15g)",
+    "kcal": 10,
+    "carbs": 0,
+    "protein": 2,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "깻잎장아찌",
+    "serving": "5장 (50g)",
+    "kcal": 40,
+    "carbs": 6,
+    "protein": 2,
+    "fat": 1,
+    "category": "반찬"
+  },
+  {
+    "name": "무장아찌",
+    "serving": "1접시 (50g)",
+    "kcal": 45,
+    "carbs": 9,
+    "protein": 1,
+    "fat": 0,
+    "category": "반찬"
+  },
+  {
+    "name": "백김치",
+    "serving": "1접시 (80g)",
+    "kcal": 25,
+    "carbs": 5,
+    "protein": 1,
+    "fat": 0,
+    "category": "반찬"
+  },
+  {
+    "name": "비빔만두",
+    "serving": "1인분 (200g)",
+    "kcal": 380,
+    "carbs": 45,
+    "protein": 12,
+    "fat": 16,
+    "category": "면분식"
+  },
+  {
+    "name": "왕만두",
+    "serving": "2개 (200g)",
+    "kcal": 420,
+    "carbs": 48,
+    "protein": 16,
+    "fat": 18,
+    "category": "면분식"
+  },
+  {
+    "name": "고기만두",
+    "serving": "5개 (150g)",
+    "kcal": 320,
+    "carbs": 35,
+    "protein": 14,
+    "fat": 14,
+    "category": "면분식"
+  },
+  {
+    "name": "김치만두",
+    "serving": "5개 (150g)",
+    "kcal": 300,
+    "carbs": 34,
+    "protein": 11,
+    "fat": 13,
+    "category": "면분식"
+  },
+  {
+    "name": "돈까스김밥",
+    "serving": "1줄 (280g)",
+    "kcal": 500,
+    "carbs": 65,
+    "protein": 18,
+    "fat": 18,
+    "category": "밥"
+  },
+  {
+    "name": "계란말이김밥",
+    "serving": "1줄 (250g)",
+    "kcal": 420,
+    "carbs": 60,
+    "protein": 14,
+    "fat": 12,
+    "category": "밥",
+    "aliases": [
+      "달걀말이김밥"
+    ]
+  },
+  {
+    "name": "야채김밥",
+    "serving": "1줄 (230g)",
+    "kcal": 380,
+    "carbs": 62,
+    "protein": 8,
+    "fat": 9,
+    "category": "밥"
+  },
+  {
+    "name": "멸치김밥",
+    "serving": "1줄 (230g)",
+    "kcal": 400,
+    "carbs": 60,
+    "protein": 12,
+    "fat": 11,
+    "category": "밥"
+  },
+  {
+    "name": "소떡소떡",
+    "serving": "2개 (150g)",
+    "kcal": 280,
+    "carbs": 40,
+    "protein": 8,
+    "fat": 10,
+    "category": "면분식"
+  },
+  {
+    "name": "컵떡볶이",
+    "serving": "1컵 (200g)",
+    "kcal": 320,
+    "carbs": 65,
+    "protein": 6,
+    "fat": 4,
+    "category": "면분식"
+  },
+  {
+    "name": "국물떡볶이",
+    "serving": "1인분 (350g)",
+    "kcal": 420,
+    "carbs": 85,
+    "protein": 8,
+    "fat": 5,
+    "category": "면분식"
+  },
+  {
+    "name": "로제떡볶이",
+    "serving": "1인분 (350g)",
+    "kcal": 480,
+    "carbs": 80,
+    "protein": 10,
+    "fat": 14,
+    "category": "면분식"
+  },
+  {
+    "name": "치즈떡볶이",
+    "serving": "1인분 (400g)",
+    "kcal": 550,
+    "carbs": 82,
+    "protein": 16,
+    "fat": 17,
+    "category": "면분식"
+  },
+  {
+    "name": "순대볶음",
+    "serving": "1인분 (300g)",
+    "kcal": 420,
+    "carbs": 35,
+    "protein": 20,
+    "fat": 22,
+    "category": "면분식"
+  },
+  {
+    "name": "치킨무",
+    "serving": "1접시 (100g)",
+    "kcal": 30,
+    "carbs": 7,
+    "protein": 0,
+    "fat": 0,
+    "category": "반찬"
+  },
+  {
+    "name": "페퍼로니피자",
+    "serving": "1조각 (130g)",
+    "kcal": 320,
+    "carbs": 32,
+    "protein": 14,
+    "fat": 16,
+    "category": "빵간식"
+  },
+  {
+    "name": "불고기피자",
+    "serving": "1조각 (130g)",
+    "kcal": 300,
+    "carbs": 34,
+    "protein": 13,
+    "fat": 13,
+    "category": "빵간식"
+  },
+  {
+    "name": "고구마피자",
+    "serving": "1조각 (130g)",
+    "kcal": 310,
+    "carbs": 38,
+    "protein": 11,
+    "fat": 13,
+    "category": "빵간식"
+  },
+  {
+    "name": "치즈피자",
+    "serving": "1조각 (130g)",
+    "kcal": 310,
+    "carbs": 32,
+    "protein": 14,
+    "fat": 14,
+    "category": "빵간식"
+  },
+  {
+    "name": "콤비네이션피자",
+    "serving": "1조각 (140g)",
+    "kcal": 330,
+    "carbs": 33,
+    "protein": 15,
+    "fat": 16,
+    "category": "빵간식"
+  },
+  {
+    "name": "감자튀김(배달)",
+    "serving": "1인분 (200g)",
+    "kcal": 560,
+    "carbs": 70,
+    "protein": 7,
+    "fat": 28,
+    "category": "간편식"
+  },
+  {
+    "name": "크림파스타(배달)",
+    "serving": "1인분 (400g)",
+    "kcal": 620,
+    "carbs": 55,
+    "protein": 18,
+    "fat": 35,
+    "category": "면분식"
+  },
+  {
+    "name": "허니콤보",
+    "serving": "1인분 (300g)",
+    "kcal": 750,
+    "carbs": 40,
+    "protein": 42,
+    "fat": 48,
+    "category": "고기생선",
+    "aliases": [
+      "양념반후라이드반"
+    ]
+  },
+  {
+    "name": "컵라면(큰컵)",
+    "serving": "1개 (115g)",
+    "kcal": 500,
+    "carbs": 78,
+    "protein": 10,
+    "fat": 16,
+    "category": "간편식"
+  },
+  {
+    "name": "컵라면(작은컵)",
+    "serving": "1개 (65g)",
+    "kcal": 300,
+    "carbs": 45,
+    "protein": 6,
+    "fat": 11,
+    "category": "간편식"
+  },
+  {
+    "name": "컵밥",
+    "serving": "1개 (280g)",
+    "kcal": 450,
+    "carbs": 75,
+    "protein": 12,
+    "fat": 10,
+    "category": "간편식"
+  },
+  {
+    "name": "즉석밥",
+    "serving": "1개 (210g)",
+    "kcal": 310,
+    "carbs": 68,
+    "protein": 5,
+    "fat": 1,
+    "category": "간편식"
+  },
+  {
+    "name": "냉동만두",
+    "serving": "10개 (200g)",
+    "kcal": 400,
+    "carbs": 45,
+    "protein": 14,
+    "fat": 17,
+    "category": "간편식"
+  },
+  {
+    "name": "핫바",
+    "serving": "1개 (90g)",
+    "kcal": 170,
+    "carbs": 14,
+    "protein": 8,
+    "fat": 9,
+    "category": "간편식"
+  },
+  {
+    "name": "훈제란",
+    "serving": "2개 (100g)",
+    "kcal": 150,
+    "carbs": 1,
+    "protein": 13,
+    "fat": 10,
+    "category": "간편식"
+  },
+  {
+    "name": "편의점도시락",
+    "serving": "1개 (500g)",
+    "kcal": 700,
+    "carbs": 95,
+    "protein": 25,
+    "fat": 24,
+    "category": "간편식"
+  },
+  {
+    "name": "샐러드컵",
+    "serving": "1컵 (200g)",
+    "kcal": 150,
+    "carbs": 15,
+    "protein": 8,
+    "fat": 6,
+    "category": "간편식"
+  },
+  {
+    "name": "단백질음료",
+    "serving": "1병 (240ml)",
+    "kcal": 150,
+    "carbs": 10,
+    "protein": 20,
+    "fat": 3,
+    "category": "간편식"
+  },
+  {
+    "name": "닭가슴살(즉석)",
+    "serving": "1팩 (100g)",
+    "kcal": 110,
+    "carbs": 1,
+    "protein": 24,
+    "fat": 1,
+    "category": "간편식"
+  },
+  {
+    "name": "닭가슴살소시지",
+    "serving": "1개 (50g)",
+    "kcal": 60,
+    "carbs": 2,
+    "protein": 10,
+    "fat": 1,
+    "category": "간편식",
+    "aliases": [
+      "닭가슴살소세지"
+    ]
+  },
+  {
+    "name": "닭가슴살큐브",
+    "serving": "1팩 (100g)",
+    "kcal": 115,
+    "carbs": 2,
+    "protein": 23,
+    "fat": 2,
+    "category": "간편식"
+  },
+  {
+    "name": "즉석국",
+    "serving": "1팩 (300g)",
+    "kcal": 90,
+    "carbs": 8,
+    "protein": 6,
+    "fat": 3,
+    "category": "간편식"
+  },
+  {
+    "name": "닭가슴살샐러드",
+    "serving": "1팩 (300g)",
+    "kcal": 260,
+    "carbs": 20,
+    "protein": 30,
+    "fat": 6,
+    "category": "간편식"
+  },
+  {
+    "name": "연어샐러드",
+    "serving": "1팩 (300g)",
+    "kcal": 320,
+    "carbs": 18,
+    "protein": 24,
+    "fat": 17,
+    "category": "간편식"
+  },
+  {
+    "name": "시저샐러드",
+    "serving": "1접시 (250g)",
+    "kcal": 320,
+    "carbs": 16,
+    "protein": 12,
+    "fat": 24,
+    "category": "반찬"
+  },
+  {
+    "name": "그릭요거트볼",
+    "serving": "1볼 (300g)",
+    "kcal": 320,
+    "carbs": 40,
+    "protein": 18,
+    "fat": 9,
+    "category": "유제품"
+  },
+  {
+    "name": "포케",
+    "serving": "1볼 (400g)",
+    "kcal": 480,
+    "carbs": 55,
+    "protein": 28,
+    "fat": 16,
+    "category": "밥"
+  },
+  {
+    "name": "곤약밥",
+    "serving": "1공기 (210g)",
+    "kcal": 60,
+    "carbs": 12,
+    "protein": 1,
+    "fat": 0,
+    "category": "밥"
+  },
+  {
+    "name": "곤약면",
+    "serving": "1인분 (200g)",
+    "kcal": 20,
+    "carbs": 4,
+    "protein": 0,
+    "fat": 0,
+    "category": "면분식"
+  },
+  {
+    "name": "두부면",
+    "serving": "1인분 (200g)",
+    "kcal": 140,
+    "carbs": 4,
+    "protein": 20,
+    "fat": 6,
+    "category": "면분식"
+  },
+  {
+    "name": "귀리밥",
+    "serving": "1공기 (210g)",
+    "kcal": 280,
+    "carbs": 55,
+    "protein": 8,
+    "fat": 3,
+    "category": "밥"
+  },
+  {
+    "name": "병아리콩",
+    "serving": "1접시 (100g)",
+    "kcal": 160,
+    "carbs": 27,
+    "protein": 9,
+    "fat": 3,
+    "category": "반찬"
+  },
+  {
+    "name": "렌틸콩",
+    "serving": "1접시 (100g)",
+    "kcal": 120,
+    "carbs": 20,
+    "protein": 9,
+    "fat": 0,
+    "category": "반찬"
+  },
+  {
+    "name": "삶은브로콜리",
+    "serving": "1접시 (100g)",
+    "kcal": 35,
+    "carbs": 5,
+    "protein": 3,
+    "fat": 0,
+    "category": "반찬"
+  },
+  {
+    "name": "찐단호박",
+    "serving": "1/4개 (150g)",
+    "kcal": 130,
+    "carbs": 30,
+    "protein": 3,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "찐고구마",
+    "serving": "1개 (200g)",
+    "kcal": 260,
+    "carbs": 60,
+    "protein": 3,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "구운채소",
+    "serving": "1접시 (200g)",
+    "kcal": 140,
+    "carbs": 18,
+    "protein": 4,
+    "fat": 6,
+    "category": "반찬"
+  },
+  {
+    "name": "두부스테이크",
+    "serving": "1인분 (200g)",
+    "kcal": 220,
+    "carbs": 10,
+    "protein": 18,
+    "fat": 12,
+    "category": "반찬"
+  },
+  {
+    "name": "콩고기",
+    "serving": "1인분 (100g)",
+    "kcal": 180,
+    "carbs": 10,
+    "protein": 18,
+    "fat": 8,
+    "category": "반찬"
+  },
+  {
+    "name": "에너지바",
+    "serving": "1개 (40g)",
+    "kcal": 170,
+    "carbs": 24,
+    "protein": 4,
+    "fat": 7,
+    "category": "간편식"
+  },
+  {
+    "name": "시리얼바",
+    "serving": "1개 (30g)",
+    "kcal": 120,
+    "carbs": 20,
+    "protein": 2,
+    "fat": 4,
+    "category": "간편식"
+  },
+  {
+    "name": "견과바",
+    "serving": "1개 (30g)",
+    "kcal": 150,
+    "carbs": 14,
+    "protein": 4,
+    "fat": 9,
+    "category": "간편식"
+  },
+  {
+    "name": "초코바",
+    "serving": "1개 (45g)",
+    "kcal": 230,
+    "carbs": 28,
+    "protein": 3,
+    "fat": 12,
+    "category": "간편식"
+  },
+  {
+    "name": "오트바",
+    "serving": "1개 (35g)",
+    "kcal": 140,
+    "carbs": 22,
+    "protein": 3,
+    "fat": 5,
+    "category": "간편식"
+  },
+  {
+    "name": "밸런스바",
+    "serving": "1개 (40g)",
+    "kcal": 180,
+    "carbs": 22,
+    "protein": 8,
+    "fat": 7,
+    "category": "간편식"
+  },
+  {
+    "name": "닭가슴살바",
+    "serving": "1개 (40g)",
+    "kcal": 90,
+    "carbs": 6,
+    "protein": 14,
+    "fat": 1,
+    "category": "간편식"
+  },
+  {
+    "name": "프로틴쿠키",
+    "serving": "1개 (50g)",
+    "kcal": 200,
+    "carbs": 18,
+    "protein": 14,
+    "fat": 8,
+    "category": "간편식"
+  },
+  {
+    "name": "뉴트리션바",
+    "serving": "1개 (45g)",
+    "kcal": 190,
+    "carbs": 22,
+    "protein": 10,
+    "fat": 8,
+    "category": "간편식"
+  },
+  {
+    "name": "건포도(30g)",
+    "serving": "30g",
+    "kcal": 90,
+    "carbs": 23,
+    "protein": 1,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "건망고(30g)",
+    "serving": "30g",
+    "kcal": 95,
+    "carbs": 23,
+    "protein": 0,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "건자두(30g)",
+    "serving": "30g",
+    "kcal": 75,
+    "carbs": 19,
+    "protein": 1,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "건크랜베리(30g)",
+    "serving": "30g",
+    "kcal": 100,
+    "carbs": 25,
+    "protein": 0,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "바나나칩(30g)",
+    "serving": "30g",
+    "kcal": 150,
+    "carbs": 18,
+    "protein": 1,
+    "fat": 9,
+    "category": "과일"
+  },
+  {
+    "name": "사과칩(20g)",
+    "serving": "20g",
+    "kcal": 75,
+    "carbs": 18,
+    "protein": 0,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "냉동베리믹스",
+    "serving": "1컵 (150g)",
+    "kcal": 80,
+    "carbs": 18,
+    "protein": 1,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "컵과일(모둠)",
+    "serving": "1컵 (200g)",
+    "kcal": 100,
+    "carbs": 25,
+    "protein": 1,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "용과",
+    "serving": "1/2개 (150g)",
+    "kcal": 60,
+    "carbs": 15,
+    "protein": 1,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "코코넛과육",
+    "serving": "100g",
+    "kcal": 350,
+    "carbs": 15,
+    "protein": 3,
+    "fat": 33,
+    "category": "과일"
+  },
+  {
+    "name": "패션후르츠",
+    "serving": "2개 (100g)",
+    "kcal": 70,
+    "carbs": 17,
+    "protein": 1,
+    "fat": 1,
+    "category": "과일"
+  },
+  {
+    "name": "리치",
+    "serving": "10알 (150g)",
+    "kcal": 100,
+    "carbs": 25,
+    "protein": 1,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "살구",
+    "serving": "3개 (150g)",
+    "kcal": 70,
+    "carbs": 16,
+    "protein": 2,
+    "fat": 0,
+    "category": "과일"
+  },
+  {
+    "name": "설탕",
+    "serving": "1큰술 (12g)",
+    "kcal": 46,
+    "carbs": 12,
+    "protein": 0,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "꿀",
+    "serving": "1큰술 (21g)",
+    "kcal": 64,
+    "carbs": 17,
+    "protein": 0,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "물엿",
+    "serving": "1큰술 (20g)",
+    "kcal": 60,
+    "carbs": 15,
+    "protein": 0,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "올리브유",
+    "serving": "1큰술 (14g)",
+    "kcal": 120,
+    "carbs": 0,
+    "protein": 0,
+    "fat": 14,
+    "category": "양념소스"
+  },
+  {
+    "name": "식용유",
+    "serving": "1큰술 (14g)",
+    "kcal": 120,
+    "carbs": 0,
+    "protein": 0,
+    "fat": 14,
+    "category": "양념소스"
+  },
+  {
+    "name": "참기름",
+    "serving": "1큰술 (13g)",
+    "kcal": 115,
+    "carbs": 0,
+    "protein": 0,
+    "fat": 13,
+    "category": "양념소스"
+  },
+  {
+    "name": "들기름",
+    "serving": "1큰술 (13g)",
+    "kcal": 115,
+    "carbs": 0,
+    "protein": 0,
+    "fat": 13,
+    "category": "양념소스"
+  },
+  {
+    "name": "버터(10g)",
+    "serving": "10g",
+    "kcal": 72,
+    "carbs": 0,
+    "protein": 0,
+    "fat": 8,
+    "category": "양념소스"
+  },
+  {
+    "name": "마요네즈",
+    "serving": "1큰술 (14g)",
+    "kcal": 95,
+    "carbs": 0,
+    "protein": 0,
+    "fat": 10,
+    "category": "양념소스"
+  },
+  {
+    "name": "케첩",
+    "serving": "1큰술 (15g)",
+    "kcal": 18,
+    "carbs": 4,
+    "protein": 0,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "머스타드",
+    "serving": "1큰술 (15g)",
+    "kcal": 15,
+    "carbs": 1,
+    "protein": 1,
+    "fat": 1,
+    "category": "양념소스"
+  },
+  {
+    "name": "고추장",
+    "serving": "1큰술 (18g)",
+    "kcal": 35,
+    "carbs": 7,
+    "protein": 1,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "된장",
+    "serving": "1큰술 (18g)",
+    "kcal": 30,
+    "carbs": 4,
+    "protein": 3,
+    "fat": 1,
+    "category": "양념소스"
+  },
+  {
+    "name": "쌈장",
+    "serving": "1큰술 (18g)",
+    "kcal": 35,
+    "carbs": 5,
+    "protein": 2,
+    "fat": 1,
+    "category": "양념소스"
+  },
+  {
+    "name": "간장",
+    "serving": "1큰술 (15ml)",
+    "kcal": 10,
+    "carbs": 1,
+    "protein": 2,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "굴소스",
+    "serving": "1큰술 (18g)",
+    "kcal": 20,
+    "carbs": 4,
+    "protein": 1,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "마늘소스",
+    "serving": "1큰술 (15g)",
+    "kcal": 25,
+    "carbs": 4,
+    "protein": 0,
+    "fat": 1,
+    "category": "양념소스"
+  },
+  {
+    "name": "칠리소스",
+    "serving": "1큰술 (15g)",
+    "kcal": 25,
+    "carbs": 6,
+    "protein": 0,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "돈까스소스",
+    "serving": "1큰술 (15g)",
+    "kcal": 20,
+    "carbs": 5,
+    "protein": 0,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "타르타르소스",
+    "serving": "1큰술 (15g)",
+    "kcal": 70,
+    "carbs": 2,
+    "protein": 0,
+    "fat": 7,
+    "category": "양념소스"
+  },
+  {
+    "name": "드레싱(오리엔탈)",
+    "serving": "1큰술 (15ml)",
+    "kcal": 35,
+    "carbs": 4,
+    "protein": 0,
+    "fat": 2,
+    "category": "양념소스"
+  },
+  {
+    "name": "드레싱(시저)",
+    "serving": "1큰술 (15ml)",
+    "kcal": 75,
+    "carbs": 1,
+    "protein": 1,
+    "fat": 8,
+    "category": "양념소스"
+  },
+  {
+    "name": "스리라차",
+    "serving": "1큰술 (15g)",
+    "kcal": 15,
+    "carbs": 3,
+    "protein": 0,
+    "fat": 0,
+    "category": "양념소스"
+  },
+  {
+    "name": "마라소스",
+    "serving": "1큰술 (15g)",
+    "kcal": 45,
+    "carbs": 2,
+    "protein": 0,
+    "fat": 4,
+    "category": "양념소스"
+  },
+  {
+    "name": "슬라이스치즈",
+    "serving": "1장 (20g)",
+    "kcal": 65,
+    "carbs": 1,
+    "protein": 4,
+    "fat": 5,
+    "category": "유제품"
+  },
+  {
+    "name": "모짜렐라치즈(30g)",
+    "serving": "30g",
+    "kcal": 100,
+    "carbs": 1,
+    "protein": 7,
+    "fat": 8,
+    "category": "유제품"
+  },
+  {
+    "name": "체다치즈",
+    "serving": "1장 (20g)",
+    "kcal": 80,
+    "carbs": 0,
+    "protein": 5,
+    "fat": 7,
+    "category": "유제품"
+  },
+  {
+    "name": "크림치즈",
+    "serving": "1큰술 (15g)",
+    "kcal": 50,
+    "carbs": 1,
+    "protein": 1,
+    "fat": 5,
+    "category": "유제품"
+  },
+  {
+    "name": "리코타치즈",
+    "serving": "30g",
+    "kcal": 45,
+    "carbs": 1,
+    "protein": 3,
+    "fat": 3,
+    "category": "유제품"
+  },
+  {
+    "name": "파마산가루",
+    "serving": "1큰술 (10g)",
+    "kcal": 40,
+    "carbs": 0,
+    "protein": 4,
+    "fat": 3,
+    "category": "유제품"
+  },
+  {
+    "name": "생크림",
+    "serving": "1큰술 (15ml)",
+    "kcal": 50,
+    "carbs": 0,
+    "protein": 0,
+    "fat": 5,
+    "category": "유제품"
+  },
+  {
+    "name": "연유",
+    "serving": "1큰술 (20g)",
+    "kcal": 65,
+    "carbs": 11,
+    "protein": 2,
+    "fat": 2,
+    "category": "유제품"
+  },
+  {
+    "name": "사워크림",
+    "serving": "1큰술 (15g)",
+    "kcal": 30,
+    "carbs": 1,
+    "protein": 0,
+    "fat": 3,
+    "category": "유제품"
+  },
+  {
+    "name": "땅콩버터(1큰술)",
+    "serving": "1큰술 (16g)",
+    "kcal": 95,
+    "carbs": 3,
+    "protein": 4,
+    "fat": 8,
+    "category": "유제품"
+  },
+  {
+    "name": "잼(1큰술)",
+    "serving": "1큰술 (20g)",
+    "kcal": 55,
+    "carbs": 14,
+    "protein": 0,
+    "fat": 0,
+    "category": "유제품"
+  },
+  {
+    "name": "누텔라",
+    "serving": "1큰술 (20g)",
+    "kcal": 105,
+    "carbs": 11,
+    "protein": 1,
+    "fat": 6,
+    "category": "유제품"
+  },
+  {
+    "name": "연두부",
+    "serving": "1팩 (150g)",
+    "kcal": 80,
+    "carbs": 3,
+    "protein": 8,
+    "fat": 4,
+    "category": "반찬"
+  },
+  {
+    "name": "순두부",
+    "serving": "1팩 (300g)",
+    "kcal": 110,
+    "carbs": 5,
+    "protein": 12,
+    "fat": 5,
+    "category": "반찬"
+  },
+  {
+    "name": "미음",
+    "serving": "1공기 (250g)",
+    "kcal": 70,
+    "carbs": 15,
+    "protein": 2,
+    "fat": 0,
+    "category": "밥"
+  },
+  {
+    "name": "잣죽",
+    "serving": "1공기 (300g)",
+    "kcal": 260,
+    "carbs": 30,
+    "protein": 6,
+    "fat": 13,
+    "category": "밥"
+  },
+  {
+    "name": "야채죽",
+    "serving": "1공기 (300g)",
+    "kcal": 220,
+    "carbs": 42,
+    "protein": 6,
+    "fat": 3,
+    "category": "밥"
+  },
+  {
+    "name": "소고기죽",
+    "serving": "1공기 (300g)",
+    "kcal": 260,
+    "carbs": 40,
+    "protein": 12,
+    "fat": 6,
+    "category": "밥"
+  },
+  {
+    "name": "닭죽",
+    "serving": "1공기 (300g)",
+    "kcal": 250,
+    "carbs": 38,
+    "protein": 14,
+    "fat": 5,
+    "category": "밥"
+  },
+  {
+    "name": "이유식",
+    "serving": "1회분 (150g)",
+    "kcal": 90,
+    "carbs": 16,
+    "protein": 3,
+    "fat": 1,
+    "category": "밥"
+  },
+  {
+    "name": "백숙",
+    "serving": "1인분 (500g)",
+    "kcal": 480,
+    "carbs": 10,
+    "protein": 55,
+    "fat": 25,
+    "category": "국찌개"
+  },
+  {
+    "name": "삼계죽",
+    "serving": "1공기 (300g)",
+    "kcal": 270,
+    "carbs": 35,
+    "protein": 18,
+    "fat": 6,
+    "category": "밥"
+  },
+  {
+    "name": "흰쌀밥 반공기",
+    "serving": "반공기 (105g)",
+    "kcal": 150,
+    "carbs": 33,
+    "protein": 3,
+    "fat": 1,
+    "category": "밥"
+  },
+  {
+    "name": "현미밥 반공기",
+    "serving": "반공기 (105g)",
+    "kcal": 155,
+    "carbs": 33,
+    "protein": 4,
+    "fat": 1,
+    "category": "밥"
+  },
+  {
+    "name": "공기밥 작은공기(150g)",
+    "serving": "작은공기 (150g)",
+    "kcal": 215,
+    "carbs": 47,
+    "protein": 4,
+    "fat": 1,
+    "category": "밥"
+  },
+  {
+    "name": "짜장면 곱빼기",
+    "serving": "곱빼기 (700g)",
+    "kcal": 900,
+    "carbs": 140,
+    "protein": 22,
+    "fat": 25,
+    "category": "면분식"
+  },
+  {
+    "name": "짬뽕 곱빼기",
+    "serving": "곱빼기 (800g)",
+    "kcal": 770,
+    "carbs": 93,
+    "protein": 32,
+    "fat": 27,
+    "category": "면분식"
+  },
+  {
+    "name": "라면 2개",
+    "serving": "2개분 (1000g)",
+    "kcal": 1000,
+    "carbs": 156,
+    "protein": 20,
+    "fat": 32,
+    "category": "면분식"
+  },
+  {
+    "name": "아메리카노그란데",
+    "serving": "1잔 (473ml)",
+    "kcal": 20,
+    "carbs": 3,
+    "protein": 1,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "후라이드치킨(한마리)",
+    "serving": "1마리 (900g)",
+    "kcal": 2340,
+    "carbs": 75,
+    "protein": 135,
+    "fat": 156,
+    "category": "고기생선",
+    "aliases": [
+      "프라이드치킨(한마리)"
+    ]
+  },
+  {
+    "name": "피자(라지 1조각)",
+    "serving": "1조각 (160g)",
+    "kcal": 380,
+    "carbs": 44,
+    "protein": 16,
+    "fat": 15,
+    "category": "빵간식"
+  },
+  {
+    "name": "피자(레귤러 1조각)",
+    "serving": "1조각 (100g)",
+    "kcal": 240,
+    "carbs": 28,
+    "protein": 10,
+    "fat": 9,
+    "category": "빵간식"
+  },
+  {
+    "name": "삼겹살구이 1인분(180g)",
+    "serving": "1인분 (180g)",
+    "kcal": 560,
+    "carbs": 0,
+    "protein": 31,
+    "fat": 47,
+    "category": "고기생선"
+  },
+  {
+    "name": "삼겹살구이 100g",
+    "serving": "100g",
+    "kcal": 310,
+    "carbs": 0,
+    "protein": 17,
+    "fat": 26,
+    "category": "고기생선"
   }
 ]

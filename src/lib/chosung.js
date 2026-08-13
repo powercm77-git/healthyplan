@@ -68,3 +68,16 @@ export function matchFoodItem(item, query) {
   if (matchFood(item.name, query)) return true
   return (item.aliases || []).some((alias) => matchFood(alias, query))
 }
+
+// 검색 결과 관련도: 이름 시작(0) > 이름 포함(1) > 별칭(2) > 초성만 일치(3)
+// 숫자가 작을수록 더 관련도가 높다. matchFoodItem이 true인 항목에서만 호출한다.
+export function rankFoodItem(item, query) {
+  const q = query.trim().normalize('NFC').toLowerCase()
+  if (!q) return 0
+  const name = item.name.normalize('NFC').toLowerCase()
+  if (name.startsWith(q)) return 0
+  if (name.includes(q)) return 1
+  const aliases = item.aliases || []
+  if (aliases.some((a) => a.normalize('NFC').toLowerCase().includes(q))) return 2
+  return 3
+}
