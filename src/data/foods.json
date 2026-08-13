@@ -3229,7 +3229,10 @@
     "carbs": 42,
     "protein": 9,
     "fat": 9,
-    "category": "음료"
+    "category": "음료",
+    "aliases": [
+      "카라멜마끼아또"
+    ]
   },
   {
     "name": "믹스커피",
@@ -3472,7 +3475,11 @@
     "carbs": 12,
     "protein": 5,
     "fat": 2,
-    "category": "음료"
+    "category": "음료",
+    "aliases": [
+      "요구르트",
+      "요쿠르트"
+    ]
   },
   {
     "name": "딸기스무디",
@@ -3815,5 +3822,423 @@
     "protein": 0,
     "fat": 0,
     "category": "술"
+  },
+  {
+    "name": "미숫가루(물)",
+    "serving": "1잔 (200ml)",
+    "kcal": 150,
+    "carbs": 30,
+    "protein": 5,
+    "fat": 2,
+    "category": "음료",
+    "aliases": [
+      "미시가루",
+      "미싯가루"
+    ]
+  },
+  {
+    "name": "미숫가루(우유)",
+    "serving": "1잔 (200ml)",
+    "kcal": 230,
+    "carbs": 33,
+    "protein": 9,
+    "fat": 7,
+    "category": "음료"
+  },
+  {
+    "name": "선식",
+    "serving": "1잔 (200ml)",
+    "kcal": 180,
+    "carbs": 32,
+    "protein": 7,
+    "fat": 3,
+    "category": "음료"
+  },
+  {
+    "name": "그린주스",
+    "serving": "1잔 (250ml)",
+    "kcal": 120,
+    "carbs": 25,
+    "protein": 3,
+    "fat": 1,
+    "category": "음료",
+    "aliases": [
+      "그린스무디",
+      "녹즙"
+    ]
+  },
+  {
+    "name": "프로틴쉐이크",
+    "serving": "1잔 (300ml)",
+    "kcal": 160,
+    "carbs": 8,
+    "protein": 25,
+    "fat": 3,
+    "category": "음료",
+    "aliases": [
+      "프로틴셰이크",
+      "단백질쉐이크"
+    ]
+  },
+  {
+    "name": "흑임자죽",
+    "serving": "1공기 (300g)",
+    "kcal": 250,
+    "carbs": 35,
+    "protein": 7,
+    "fat": 9,
+    "category": "밥"
+  },
+  {
+    "name": "아사이볼",
+    "serving": "1볼 (350g)",
+    "kcal": 320,
+    "carbs": 55,
+    "protein": 8,
+    "fat": 9,
+    "category": "빵간식"
+  },
+  {
+    "name": "딸기생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 110,
+    "carbs": 26,
+    "protein": 2,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "수박생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 90,
+    "carbs": 22,
+    "protein": 1,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "키위생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 130,
+    "carbs": 30,
+    "protein": 2,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "바나나생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 150,
+    "carbs": 35,
+    "protein": 2,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "토마토생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 80,
+    "carbs": 16,
+    "protein": 3,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "당근생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 90,
+    "carbs": 20,
+    "protein": 2,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "케일생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 70,
+    "carbs": 14,
+    "protein": 3,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "자몽생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 100,
+    "carbs": 24,
+    "protein": 2,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "오렌지생주스",
+    "serving": "1잔 (300ml)",
+    "kcal": 120,
+    "carbs": 27,
+    "protein": 2,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "마시는요구르트",
+    "serving": "1병 (150ml)",
+    "kcal": 130,
+    "carbs": 24,
+    "protein": 4,
+    "fat": 2,
+    "category": "음료"
+  },
+  {
+    "name": "야쿠르트",
+    "serving": "1병 (65ml)",
+    "kcal": 55,
+    "carbs": 13,
+    "protein": 1,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "그릭요거트",
+    "serving": "1컵 (150g)",
+    "kcal": 130,
+    "carbs": 8,
+    "protein": 15,
+    "fat": 4,
+    "category": "음료",
+    "aliases": [
+      "그릭요구르트",
+      "그릭요쿠르트"
+    ]
+  },
+  {
+    "name": "밀크쉐이크",
+    "serving": "1잔 (300ml)",
+    "kcal": 320,
+    "carbs": 45,
+    "protein": 6,
+    "fat": 13,
+    "category": "음료",
+    "aliases": [
+      "밀크셰이크"
+    ]
+  },
+  {
+    "name": "버블티",
+    "serving": "1잔 (500ml)",
+    "kcal": 350,
+    "carbs": 70,
+    "protein": 4,
+    "fat": 6,
+    "category": "음료",
+    "aliases": [
+      "밀크티",
+      "버블밀크티"
+    ]
+  },
+  {
+    "name": "핫초코",
+    "serving": "1잔 (300ml)",
+    "kcal": 250,
+    "carbs": 38,
+    "protein": 6,
+    "fat": 9,
+    "category": "음료",
+    "aliases": [
+      "핫초콜릿",
+      "코코아"
+    ]
+  },
+  {
+    "name": "생강차",
+    "serving": "1잔 (200ml)",
+    "kcal": 60,
+    "carbs": 15,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "대추차",
+    "serving": "1잔 (200ml)",
+    "kcal": 70,
+    "carbs": 17,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "옥수수수염차",
+    "serving": "1병 (500ml)",
+    "kcal": 5,
+    "carbs": 1,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "결명자차",
+    "serving": "1병 (500ml)",
+    "kcal": 5,
+    "carbs": 1,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "둥굴레차",
+    "serving": "1병 (500ml)",
+    "kcal": 10,
+    "carbs": 2,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "헛개차",
+    "serving": "1병 (500ml)",
+    "kcal": 10,
+    "carbs": 2,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "비타민음료",
+    "serving": "1병 (120ml)",
+    "kcal": 60,
+    "carbs": 15,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료",
+    "aliases": [
+      "비타500"
+    ]
+  },
+  {
+    "name": "자양강장드링크",
+    "serving": "1병 (100ml)",
+    "kcal": 90,
+    "carbs": 20,
+    "protein": 1,
+    "fat": 0,
+    "category": "음료",
+    "aliases": [
+      "박카스"
+    ]
+  },
+  {
+    "name": "캔커피",
+    "serving": "1캔 (240ml)",
+    "kcal": 130,
+    "carbs": 22,
+    "protein": 3,
+    "fat": 3,
+    "category": "음료",
+    "aliases": [
+      "레쓰비"
+    ]
+  },
+  {
+    "name": "카페라떼톨",
+    "serving": "1잔 (355ml)",
+    "kcal": 190,
+    "carbs": 18,
+    "protein": 10,
+    "fat": 7,
+    "category": "음료"
+  },
+  {
+    "name": "카페라떼라지",
+    "serving": "1잔 (473ml)",
+    "kcal": 250,
+    "carbs": 24,
+    "protein": 13,
+    "fat": 9,
+    "category": "음료"
+  },
+  {
+    "name": "디카페인아메리카노",
+    "serving": "1잔 (355ml)",
+    "kcal": 10,
+    "carbs": 2,
+    "protein": 1,
+    "fat": 0,
+    "category": "음료",
+    "aliases": [
+      "디카페인커피"
+    ]
+  },
+  {
+    "name": "아몬드유",
+    "serving": "1팩 (190ml)",
+    "kcal": 60,
+    "carbs": 5,
+    "protein": 1,
+    "fat": 4,
+    "category": "음료",
+    "aliases": [
+      "아몬드브리즈",
+      "아몬드밀크"
+    ]
+  },
+  {
+    "name": "귀리우유",
+    "serving": "1팩 (190ml)",
+    "kcal": 90,
+    "carbs": 14,
+    "protein": 2,
+    "fat": 3,
+    "category": "음료",
+    "aliases": [
+      "오트밀크"
+    ]
+  },
+  {
+    "name": "쌍화차",
+    "serving": "1잔 (200ml)",
+    "kcal": 90,
+    "carbs": 20,
+    "protein": 1,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "율무차",
+    "serving": "1잔 (200ml)",
+    "kcal": 70,
+    "carbs": 15,
+    "protein": 1,
+    "fat": 1,
+    "category": "음료"
+  },
+  {
+    "name": "청포도에이드",
+    "serving": "1잔 (350ml)",
+    "kcal": 180,
+    "carbs": 44,
+    "protein": 0,
+    "fat": 0,
+    "category": "음료"
+  },
+  {
+    "name": "프로틴바",
+    "serving": "1개 (50g)",
+    "kcal": 190,
+    "carbs": 18,
+    "protein": 15,
+    "fat": 7,
+    "category": "빵간식",
+    "aliases": [
+      "단백질바"
+    ]
+  },
+  {
+    "name": "곤약젤리",
+    "serving": "1개 (20g)",
+    "kcal": 15,
+    "carbs": 4,
+    "protein": 0,
+    "fat": 0,
+    "category": "빵간식"
   }
 ]
