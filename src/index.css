@@ -11,13 +11,18 @@
   --radius:20px;
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden}
 body{
   font-family:"Noto Sans KR",-apple-system,"Malgun Gothic",sans-serif;
   background:#08070F; color:var(--ink);
-  min-height:100vh;display:flex;justify-content:center;align-items:flex-start;
+  display:flex;justify-content:center;align-items:flex-start;
 }
+body.no-scroll{overflow:hidden}
+/* 페이지 자체는 스크롤되지 않는다 — 스크롤은 .screen 내부에서만 일어난다.
+   .phone을 뷰포트 높이에 고정해야 .sheet/.tabbar(position:absolute)가
+   항상 화면 안에 보인다(고정 안 하면 내용만큼 늘어나며 문서 맨 아래로 밀려난다). */
 .phone{
-  width:100%;max-width:420px;min-height:100vh;position:relative;overflow:hidden;
+  width:100%;max-width:420px;height:100vh;height:100dvh;position:relative;overflow:hidden;
   background:
     radial-gradient(120% 50% at 85% -8%, rgba(139,92,246,.32), transparent 60%),
     radial-gradient(100% 42% at 0% 4%, rgba(255,78,123,.20), transparent 55%),
@@ -26,7 +31,7 @@ body{
 }
 @media(min-width:480px){
   body{padding:24px 0}
-  .phone{min-height:calc(100vh - 48px);border-radius:34px;box-shadow:0 18px 60px rgba(0,0,0,.6)}
+  .phone{height:calc(100vh - 48px);height:calc(100dvh - 48px);border-radius:34px;box-shadow:0 18px 60px rgba(0,0,0,.6)}
 }
 .display{font-family:"Do Hyeon","Noto Sans KR",sans-serif;letter-spacing:.01em}
 
@@ -176,7 +181,8 @@ input::placeholder{color:#5E5980}
 .sheet-bg.open{display:block}
 .sheet{
   position:absolute;left:0;right:0;bottom:0;background:var(--bg2);
-  border-radius:24px 24px 0 0;padding:20px;max-height:72%;display:none;z-index:21;flex-direction:column;
+  border-radius:24px 24px 0 0;padding:20px;max-height:72vh;max-height:72dvh;
+  display:none;z-index:21;flex-direction:column;
   border-top:1px solid var(--line);
 }
 .sheet.open{display:flex;animation:up .3s ease both}

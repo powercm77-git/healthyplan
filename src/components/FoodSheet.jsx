@@ -31,6 +31,13 @@ export default function FoodSheet({ open, mealName, onClose, onAdd, recentNames 
     if (open) setQuery('')
   }, [open])
 
+  // 시트가 열려 있는 동안 뒤쪽 화면 스크롤 잠금
+  useEffect(() => {
+    if (!open) return
+    document.body.classList.add('no-scroll')
+    return () => document.body.classList.remove('no-scroll')
+  }, [open])
+
   if (!open) return null
 
   return (
