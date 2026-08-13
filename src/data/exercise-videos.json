@@ -1,0 +1,1235 @@
+{
+  "squat-basic": [
+    {
+      "title": "연속 사이드 스쿼트",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00886.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00886/0AUDLJ08S_00886_FR_00006.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "스쿼트 자세에서 미니밴드 엉덩이 운동",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00107.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00107/0AUDLJ08S_00107_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "허리",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "막대기를 이용하여 (스쿼트자세로) 한팔 위로 뻗기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00126.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00126/0AUDLJ08S_00126_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "허리",
+      "level": "",
+      "matchType": "alias"
+    }
+  ],
+  "chair-squat": [
+    {
+      "title": "의자 앞에서 앉았다 일어서기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00520.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00520/0AUDLJ08S_00520_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리,뒤쪽 넓적다리",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "squat-sumo": [
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "squat-jump": [
+    {
+      "title": "콩콩 점프를 해요",
+      "url": "https://openapi.kspo.or.kr/web/video/0CBPJXNMF_00067.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBPJXNMF_00067/0CBPJXNMF_00067_FR_00015.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "실외 자전거타기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00461.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00461/0AUDLJ08S_00461_SC_00004.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리,종아리",
+      "level": "3~5",
+      "matchType": "fallback"
+    }
+  ],
+  "squat-pulse": [
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "wall-sit": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "lunge-forward": [
+    {
+      "title": "런지",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00139.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00139/0AUDLJ08S_00139_SC_00006.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "팔 들어 올리며 런지",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00915.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00915/0AUDLJ08S_00915_FR_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "바깥쪽 어깨,뒤쪽 위팔,앞쪽 넓적다리",
+      "level": "3",
+      "matchType": "partial"
+    },
+    {
+      "title": "런지하며 상체 비틀기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00916.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00916/0AUDLJ08S_00916_FR_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "바깥쪽 어깨,앞쪽 넓적다리",
+      "level": "4~5",
+      "matchType": "partial"
+    }
+  ],
+  "lunge-reverse": [
+    {
+      "title": "런지",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00139.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00139/0AUDLJ08S_00139_SC_00006.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "partial"
+    },
+    {
+      "title": "리버스 런지 후 다리올리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00143.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00143/0AUDLJ08S_00143_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "partial"
+    },
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "lunge-side": [
+    {
+      "title": "런지",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00139.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00139/0AUDLJ08S_00139_SC_00006.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "partial"
+    },
+    {
+      "title": "사이드 런지 후 제기차기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00144.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00144/0AUDLJ08S_00144_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "partial"
+    },
+    {
+      "title": "사이드 런지 후 점프",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00152.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00152/0AUDLJ08S_00152_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "partial"
+    }
+  ],
+  "step-up": [
+    {
+      "title": "계단 오르기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00405.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00405/0AUDLJ08S_00405_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 골반,엉덩이,종아리,앞쪽 넓적다리,뒤쪽 넓적다리,종아리",
+      "level": "중급",
+      "matchType": "alias"
+    },
+    {
+      "title": "의자 앞에서 앉았다 일어서기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00520.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00520/0AUDLJ08S_00520_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리,뒤쪽 넓적다리",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "pushup-standard": [
+    {
+      "title": "팔굽혀펴기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00351.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00351/0AUDLJ08S_00351_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "가슴,바깥쪽 어깨,뒤쪽 위팔",
+      "level": "중급",
+      "matchType": "alias"
+    },
+    {
+      "title": "누워서 뒤로 팔굽혀펴기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00352.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00352/0AUDLJ08S_00352_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "매달려서 뒤로 팔굽혀펴기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00501.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00501/0AUDLJ08S_00501_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "가슴,앞쪽 어깨,뒤쪽 위팔",
+      "level": "3~5",
+      "matchType": "alias"
+    }
+  ],
+  "pushup-knee": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "pushup-incline": [
+    {
+      "title": "가슴 스트레칭",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00725.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00725/0AUDLJ08S_00725_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "가슴,가슴,가슴",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "pushup-diamond": [
+    {
+      "title": "트레드밀에서 걷기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00463.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00463/0AUDLJ08S_00463_SC_00004.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 골반,엉덩이,종아리,앞쪽 넓적다리,뒤쪽 넓적다리,정강이,종아리",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "pushup-wide": [
+    {
+      "title": "팔굽혀펴기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00351.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00351/0AUDLJ08S_00351_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "가슴,바깥쪽 어깨,뒤쪽 위팔",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "plank-forearm": [
+    {
+      "title": "플랭크",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00112.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00112/0AUDLJ08S_00112_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "허리",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "plank-knee": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "plank-side": [
+    {
+      "title": "플랭크",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00112.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00112/0AUDLJ08S_00112_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "허리",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "옆으로 팔 대고 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00363.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00363/0AUDLJ08S_00363_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,엉덩이,복부,바깥쪽 어깨",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "bridge-glute": [
+    {
+      "title": "브릿지 후 뒤꿈치 들기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00137.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00137/0AUDLJ08S_00137_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "partial"
+    },
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "bridge-single-leg": [
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "crunch-basic": [
+    {
+      "title": "크런치 싸이클",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00892.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00892/0AUDLJ08S_00892_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "복부,복부,앞쪽 넓적다리",
+      "level": "4~5",
+      "matchType": "partial"
+    },
+    {
+      "title": "윗몸일으키기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00880.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00880/0AUDLJ08S_00880_SC_00019.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "복부",
+      "level": "3",
+      "matchType": "alias"
+    },
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "crunch-bicycle": [
+    {
+      "title": "옆으로 팔 대고 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00363.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00363/0AUDLJ08S_00363_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,엉덩이,복부,바깥쪽 어깨",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "crunch-reverse": [
+    {
+      "title": "옆으로 팔 대고 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00363.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00363/0AUDLJ08S_00363_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,엉덩이,복부,바깥쪽 어깨",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "mountain-climber": [
+    {
+      "title": "옆으로 팔 대고 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00363.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00363/0AUDLJ08S_00363_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,엉덩이,복부,바깥쪽 어깨",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "burpee": [
+    {
+      "title": "버피 테스트",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00891.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00891/0AUDLJ08S_00891_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    }
+  ],
+  "jumping-jack": [
+    {
+      "title": "팔 벌려 뛰기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00575.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00575/0AUDLJ08S_00575_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "팔 벌려 뛰기-1",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00832.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00832/0AUDLJ08S_00832_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "팔벌려뛰기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00314.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00314/0AUDLJ08S_00314_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    }
+  ],
+  "superman": [
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "exact"
+    },
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "donkey-kick": [
+    {
+      "title": "서서 다리 뒤로차기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00525.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00525/0AUDLJ08S_00525_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 골반",
+      "level": "1~5",
+      "matchType": "alias"
+    },
+    {
+      "title": "서서 다리 뒤로 차기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00268.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00268/0AUDLJ08S_00268_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추,뒤쪽 넓적다리",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "다리 앞으로 당겼다가 뒤로 차기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00158.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00158/0AUDLJ08S_00158_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "무릎",
+      "level": "",
+      "matchType": "alias"
+    }
+  ],
+  "fire-hydrant": [
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "high-knees": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "band-squat": [
+    {
+      "title": "밴드로 다리 올려 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00373.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00373/0AUDLJ08S_00373_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,복부,뒤쪽 넓적다리",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "band-row": [
+    {
+      "title": "앉아서 밴드 당기기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00372.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00372/0AUDLJ08S_00372_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,등,등,옆쪽 어깨",
+      "level": "중급",
+      "matchType": "alias"
+    },
+    {
+      "title": "한발 앞으로 내밀고 앉았다 일어서기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00521.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00521/0AUDLJ08S_00521_SC_00017.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 위팔,앞쪽 넓적다리",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "band-lateral-walk": [
+    {
+      "title": "밴드로 다리 올려 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00373.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00373/0AUDLJ08S_00373_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,복부,뒤쪽 넓적다리",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "band-bicep-curl": [
+    {
+      "title": "한발 앞으로 내밀고 앉았다 일어서기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00521.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00521/0AUDLJ08S_00521_SC_00017.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 위팔,앞쪽 넓적다리",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "dumbbell-curl": [
+    {
+      "title": "고정한 상태에서 덤벨 들고 팔꿈치 굽히기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00506.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00506/0AUDLJ08S_00506_SC_00004.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 위팔",
+      "level": "3~5",
+      "matchType": "fallback"
+    }
+  ],
+  "dumbbell-shoulder-press": [
+    {
+      "title": "허리 굽혀 덤벨 들기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00498.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00498/0AUDLJ08S_00498_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,옆쪽 어깨",
+      "level": "3~5",
+      "matchType": "fallback"
+    }
+  ],
+  "dumbbell-row": [
+    {
+      "title": "허리 굽혀 덤벨 들기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00498.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00498/0AUDLJ08S_00498_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,옆쪽 어깨",
+      "level": "3~5",
+      "matchType": "fallback"
+    }
+  ],
+  "dumbbell-goblet-squat": [
+    {
+      "title": "교차 다리 굽히기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00388.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00388/0AUDLJ08S_00388_FR_00029.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "chair-tricep-dip": [
+    {
+      "title": "의자 잡고 팔 뒤로 굽히기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00357.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00357/0AUDLJ08S_00357_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "바깥쪽 어깨,뒤쪽 위팔",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "towel-row": [
+    {
+      "title": "수건 잡고 팔 들어올리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00618.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00618/0AUDLJ08S_00618_SC_00004.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,뒤쪽 어깨,안쪽 어깨",
+      "level": "공통",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-neck-side": [
+    {
+      "title": "좌우 굴곡",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00606.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00606/0AUDLJ08S_00606_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,뒤쪽 목,뒤쪽 목,앞쪽 목",
+      "level": "공통",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-neck-forward": [
+    {
+      "title": "좌우 굴곡",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00606.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00606/0AUDLJ08S_00606_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,뒤쪽 목,뒤쪽 목,앞쪽 목",
+      "level": "공통",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-shoulder-cross": [
+    {
+      "title": "엎드려 어깨 늘리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00428.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00428/0AUDLJ08S_00428_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,바깥쪽 어깨",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-shoulder-overhead": [
+    {
+      "title": "엎드려 어깨 늘리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00428.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00428/0AUDLJ08S_00428_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,바깥쪽 어깨",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-waist-side": [
+    {
+      "title": "옆구리 스트레칭",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00587.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00587/0AUDLJ08S_00587_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "복부,뒤쪽 넓적다리",
+      "level": "1~5",
+      "matchType": "exact"
+    },
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-waist-twist": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-hamstring-standing": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-hamstring-seated": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-hip-flexor": [
+    {
+      "title": "고관절 스트레칭",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00716.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00716/0AUDLJ08S_00716_SC_00035.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 골반,앞쪽 넓적다리",
+      "level": "2~5",
+      "matchType": "exact"
+    },
+    {
+      "title": "한발 뒤로 빼고 앞으로 굽히기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00425.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00425/0AUDLJ08S_00425_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,뒤쪽 넓적다리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "stretch-pigeon": [
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "yoga-downward-dog": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "yoga-cobra": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "yoga-child-pose": [
+    {
+      "title": "아기자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00928.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00928/0AUDLJ08S_00928_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,척추,바깥쪽 어깨",
+      "level": "1~2",
+      "matchType": "exact"
+    },
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "yoga-cat-cow": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "yoga-mountain": [],
+  "lat-pulldown": [],
+  "chest-press-machine": [],
+  "leg-press": [],
+  "leg-extension": [],
+  "leg-curl": [],
+  "seated-row-machine": [],
+  "cable-tricep-pushdown": [],
+  "cable-crossover": [],
+  "smith-squat": [],
+  "smith-bench-press": [],
+  "dumbbell-bench-press": [
+    {
+      "title": "몸통 옆으로 굽히기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00500.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00500/0AUDLJ08S_00500_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "가슴,복부",
+      "level": "3~5",
+      "matchType": "fallback"
+    }
+  ],
+  "barbell-squat": [
+    {
+      "title": "바벨 들어 올리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00490.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00490/0AUDLJ08S_00490_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 골반,앞쪽 넓적다리,뒤쪽 넓적다리",
+      "level": "4~5",
+      "matchType": "fallback"
+    }
+  ],
+  "barbell-deadlift": [
+    {
+      "title": "바벨 들어 올리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00490.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00490/0AUDLJ08S_00490_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 골반,앞쪽 넓적다리,뒤쪽 넓적다리",
+      "level": "4~5",
+      "matchType": "fallback"
+    }
+  ],
+  "barbell-bent-row": [
+    {
+      "title": "바벨 서서 어깨 들어올리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00495.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00495/0AUDLJ08S_00495_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,위쪽 어깨",
+      "level": "3~5",
+      "matchType": "fallback"
+    }
+  ],
+  "shoulder-press-machine": [],
+  "pec-deck": [],
+  "hip-abductor-machine": [],
+  "hip-adductor-machine": [],
+  "calf-raise-machine": [],
+  "ab-crunch-machine": [],
+  "bar-hang": [
+    {
+      "title": "봉 잡고 앉았다 일어서기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00662.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00662/0AUDLJ08S_00662_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리,뒤쪽 넓적다리",
+      "level": "2~5",
+      "matchType": "fallback"
+    }
+  ],
+  "pull-up-outdoor": [
+    {
+      "title": "턱걸이",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00496.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00496/0AUDLJ08S_00496_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,등",
+      "level": "4~5",
+      "matchType": "partial"
+    },
+    {
+      "title": "턱걸이",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00216.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00216/0AUDLJ08S_00216_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,등,안쪽 어깨",
+      "level": "",
+      "matchType": "partial"
+    },
+    {
+      "title": "봉 잡고 앉았다 일어서기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00662.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00662/0AUDLJ08S_00662_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리,뒤쪽 넓적다리",
+      "level": "2~5",
+      "matchType": "fallback"
+    }
+  ],
+  "parallel-bar-dips": [
+    {
+      "title": "봉 잡고 앉았다 일어서기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00662.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00662/0AUDLJ08S_00662_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리,뒤쪽 넓적다리",
+      "level": "2~5",
+      "matchType": "fallback"
+    }
+  ],
+  "waist-twister": [],
+  "sky-walker": [],
+  "sit-up-bench-outdoor": [
+    {
+      "title": "윗몸일으키기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00880.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00880/0AUDLJ08S_00880_SC_00019.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "복부",
+      "level": "3",
+      "matchType": "partial"
+    }
+  ],
+  "outdoor-leg-press": [
+    {
+      "title": "작은 공을 이용한 동적 루틴 스트레칭",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00599.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00599/0AUDLJ08S_00599_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추,복부,앞쪽 넓적다리",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "outdoor-elliptical": [
+    {
+      "title": "작은 공을 이용한 동적 루틴 스트레칭",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00599.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00599/0AUDLJ08S_00599_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추,복부,앞쪽 넓적다리",
+      "level": "1~5",
+      "matchType": "fallback"
+    }
+  ],
+  "walk": [
+    {
+      "title": "걷기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00459.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00459/0AUDLJ08S_00459_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "걷기-1",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00851.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00851/0AUDLJ08S_00851_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "걷기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00181.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00181/0AUDLJ08S_00181_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    }
+  ],
+  "brisk-walk": [
+    {
+      "title": "빠르게 걷기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00182.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00182/0AUDLJ08S_00182_SC_00012.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "jog": [
+    {
+      "title": "조깅",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00852.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00852/0AUDLJ08S_00852_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "밴드로 다리 올려 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00373.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00373/0AUDLJ08S_00373_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,복부,뒤쪽 넓적다리",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "run": [
+    {
+      "title": "달리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00460.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00460/0AUDLJ08S_00460_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "달리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00183.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00183/0AUDLJ08S_00183_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    },
+    {
+      "title": "왕복 달리기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00403.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00403/0AUDLJ08S_00403_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,엉덩이,종아리,앞쪽 넓적다리,뒤쪽 넓적다리,종아리",
+      "level": "중급",
+      "matchType": "partial"
+    }
+  ],
+  "stair-climb": [
+    {
+      "title": "계단 오르기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00405.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00405/0AUDLJ08S_00405_FR_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 골반,엉덩이,종아리,앞쪽 넓적다리,뒤쪽 넓적다리,종아리",
+      "level": "중급",
+      "matchType": "exact"
+    },
+    {
+      "title": "슈퍼맨자세",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00361.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00361/0AUDLJ08S_00361_SC_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,척추",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "cycle-outdoor": [
+    {
+      "title": "자전거 타기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00853.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00853/0AUDLJ08S_00853_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 넓적다리,뒤쪽 넓적다리,종아리",
+      "level": "공통",
+      "matchType": "exact"
+    },
+    {
+      "title": "실외 자전거타기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00461.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00461/0AUDLJ08S_00461_SC_00004.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리,종아리",
+      "level": "3~5",
+      "matchType": "partial"
+    },
+    {
+      "title": "고정식 자전거 타기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00627.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00627/0AUDLJ08S_00627_FR_00008.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,앞쪽 넓적다리",
+      "level": "3~5",
+      "matchType": "partial"
+    }
+  ],
+  "jump-rope": [
+    {
+      "title": "줄넘기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00464.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00464/0AUDLJ08S_00464_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "3~5",
+      "matchType": "exact"
+    },
+    {
+      "title": "줄넘기 해요(줄없는)",
+      "url": "https://openapi.kspo.or.kr/web/video/0CBNLH06S_00037.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBNLH06S_00037/0CBNLH06S_00037_SC_00003.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "exact"
+    }
+  ],
+  "treadmill": [
+    {
+      "title": "트레드밀에서 걷기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00463.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00463/0AUDLJ08S_00463_SC_00004.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 골반,엉덩이,종아리,앞쪽 넓적다리,뒤쪽 넓적다리,정강이,종아리",
+      "level": "1~5",
+      "matchType": "alias"
+    },
+    {
+      "title": "고정식 트레드밀에서 걷기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00626.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00626/0AUDLJ08S_00626_SC_00007.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "앞쪽 넓적다리,정강이,종아리",
+      "level": "1~5",
+      "matchType": "alias"
+    },
+    {
+      "title": "트레드밀 검사",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00023.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00023/0AUDLJ08S_00023_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    }
+  ],
+  "stationary-bike": [],
+  "elliptical-machine": [],
+  "calf-raise-standing": [
+    {
+      "title": "앉아서 옆구리 늘려주기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00420.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00420/0AUDLJ08S_00420_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "등,허리,뒤쪽 넓적다리,안쪽 넓적다리,종아리",
+      "level": "초급",
+      "matchType": "fallback"
+    }
+  ],
+  "plank-jack": [
+    {
+      "title": "콩콩 점프를 해요",
+      "url": "https://openapi.kspo.or.kr/web/video/0CBPJXNMF_00067.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBPJXNMF_00067/0CBPJXNMF_00067_FR_00015.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "플랭크",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00112.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00112/0AUDLJ08S_00112_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "허리",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "옆으로 팔 대고 버티기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00363.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00363/0AUDLJ08S_00363_FR_00002.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "엉덩이,엉덩이,복부,바깥쪽 어깨",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ],
+  "plank-shoulder-tap": [
+    {
+      "title": "플랭크",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00112.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00112/0AUDLJ08S_00112_SC_00001.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "허리",
+      "level": "",
+      "matchType": "alias"
+    },
+    {
+      "title": "팔굽혀펴기",
+      "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00351.mp4",
+      "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00351/0AUDLJ08S_00351_SC_00005.jpeg",
+      "source": "국민체력100",
+      "bodyPart": "가슴,바깥쪽 어깨,뒤쪽 위팔",
+      "level": "중급",
+      "matchType": "fallback"
+    }
+  ]
+}

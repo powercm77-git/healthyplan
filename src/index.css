@@ -192,6 +192,7 @@ input::placeholder{color:#5E5980}
 .fl-item{display:flex;justify-content:space-between;align-items:center;padding:13px 4px;border-bottom:1px solid var(--line);cursor:pointer}
 .fl-item .fn{font-weight:500}
 .fl-item .fi{font-size:.78rem;color:var(--sub)}
+.fl-item .fsrc{font-size:.68rem;color:var(--sub);opacity:.7;margin-top:2px}
 .fl-item .fc{font-size:.92rem;font-weight:900;color:var(--amber)}
 
 /* ── 운동 라이브러리 ── */
@@ -211,6 +212,40 @@ input::placeholder{color:#5E5980}
 
 /* ── 운동 상세 ── */
 .detail-anim{display:flex;justify-content:center;align-items:center;padding:12px 0 4px}
+.videobox{margin-top:12px}
+.exvideo{width:100%;border-radius:14px;background:#000;display:block}
+.videobox-sm .exvideo{max-height:160px;object-fit:contain}
+.videosrc{font-size:.72rem;color:var(--sub);margin-top:6px;text-align:right}
+.videooffline{font-size:.82rem;color:var(--sub);text-align:center;padding:14px;background:rgba(255,255,255,.04);border-radius:12px;margin-top:10px}
+.startend{display:flex;justify-content:center;gap:22px;margin:0 0 14px}
+.startend-cut{display:flex;flex-direction:column;align-items:center;gap:4px}
+.startend-cut span{font-size:.72rem;color:var(--sub)}
+.briefrow{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.briefrow:last-child{border-bottom:none}
+.briefidx{
+  flex-shrink:0;width:22px;height:22px;border-radius:999px;background:var(--grad);color:#fff;
+  font-size:.72rem;font-weight:900;display:flex;align-items:center;justify-content:center;
+}
+.briefname{flex:1;font-size:.9rem;font-weight:700}
+.briefspec{font-size:.78rem;color:var(--sub);flex-shrink:0}
+.pacerbox{margin-top:6px;text-align:center}
+.pacerlabel{font-size:1.05rem;font-weight:900;color:var(--ink)}
+.pacerlabel span{font-size:.85rem;color:var(--sub);font-weight:700}
+.pacerbar{height:8px;border-radius:5px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:8px}
+.pacerbar i{display:block;height:100%;border-radius:5px;background:var(--grad);transition:width .2s linear}
+.pacertoggle{
+  margin-top:8px;background:none;border:1px solid var(--line);color:var(--sub);
+  border-radius:999px;padding:5px 12px;font-size:.72rem;cursor:pointer;
+}
+.worknotice{
+  margin-top:8px;text-align:center;font-size:.82rem;color:#D8EEFB;
+  background:rgba(94,200,250,.1);border:1px solid rgba(94,200,250,.25);border-radius:12px;padding:8px 12px;
+}
+.worknotice-big{font-size:1.02rem;font-weight:800;padding:14px 16px}
+.videotogglebtn{
+  background:rgba(94,200,250,.12);border:1px solid rgba(94,200,250,.3);color:var(--sky);
+  border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:700;cursor:pointer;
+}
 .mistakebox{
   background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.28);
   border-radius:16px;padding:16px;margin-bottom:14px;

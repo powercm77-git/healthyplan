@@ -60,6 +60,20 @@ describe('foods.json — 데이터 무결성', () => {
   })
 })
 
+describe('foods.json — 2.5단계 §4: 식약처 영양성분 교체', () => {
+  it('모든 항목이 source(식약처|추정)를 갖는다', () => {
+    const bad = foods.filter((f) => f.source !== '식약처' && f.source !== '추정')
+    expect(bad.map((f) => f.name)).toEqual([])
+  })
+  it('source가 식약처인 항목은 sourceFood(채택한 변형명)를 갖는다', () => {
+    const bad = foods.filter((f) => f.source === '식약처' && !f.sourceFood)
+    expect(bad.map((f) => f.name)).toEqual([])
+  })
+  it('식약처로 교체된 항목이 상당수 존재한다(전부 추정으로 남으면 매칭 로직 문제)', () => {
+    expect(foods.filter((f) => f.source === '식약처').length).toBeGreaterThan(foods.length * 0.3)
+  })
+})
+
 describe('foods.json — 요청된 23종 존재 확인', () => {
   const required = [
     '계란후라이', '삶은계란', '스크램블에그', '버터', '주먹밥', '누룽지', '돈까스',

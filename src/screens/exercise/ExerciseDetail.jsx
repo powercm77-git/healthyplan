@@ -1,6 +1,8 @@
 // ExerciseDetail.jsx — 운동 상세 (3-3): 효과 → 방법 → 호흡법 → 주의점 → 기구 사용법 → 난이도 조절 → 바로 하기
 import { useState } from 'react'
 import { StickFigure } from '../../components/exercise-animations/index.js'
+import ExerciseVideoPlayer from '../../components/ExerciseVideoPlayer.jsx'
+import { getVideosFor } from '../../lib/exerciseVideos.js'
 
 const REASONS = [
   { v: '통증', label: '아파요' },
@@ -13,6 +15,8 @@ export default function ExerciseDetail({ exercise: ex, byId, inRoutine, onBack, 
   const [swapTarget, setSwapTarget] = useState(null) // 'easier' | 'harder' | null
 
   if (!ex) return null
+
+  const videos = getVideosFor(ex.id)
 
   function chooseReason(reasonLabel) {
     const newId = swapTarget === 'easier' ? ex.easier : ex.harder
@@ -29,8 +33,24 @@ export default function ExerciseDetail({ exercise: ex, byId, inRoutine, onBack, 
       </div>
 
       <div className="detail-anim">
-        <StickFigure pose={ex.animation} size={140} />
+        <StickFigure pose={ex.animation} size={160} highlightParts={ex.bodyParts} showDirection />
       </div>
+      <div className="startend">
+        <div className="startend-cut">
+          <StickFigure pose={ex.animation} size={80} freeze="start" />
+          <span>시작 자세</span>
+        </div>
+        <div className="startend-cut">
+          <StickFigure pose={ex.animation} size={80} freeze="end" />
+          <span>최종 자세</span>
+        </div>
+      </div>
+      {videos.length > 0 && (
+        <div className="card">
+          <p className="eyebrow">▶ 실제 영상으로 보기</p>
+          <ExerciseVideoPlayer videos={videos} size="large" />
+        </div>
+      )}
       <div className="chips" style={{ justifyContent: 'center', marginBottom: 16 }}>
         <span className="chip on" style={{ cursor: 'default' }}>{ex.bodyParts.join(' · ')}</span>
       </div>

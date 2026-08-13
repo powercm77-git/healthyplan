@@ -94,6 +94,22 @@ describe('exercises.json — 1단계 chosung.js 검색 재사용', () => {
   })
 })
 
+describe('exercises.json — 2.5단계 §3-1: tempo 필드', () => {
+  it('모든 운동이 tempo 키를 가진다(값은 null 가능 — 정적/시간형은 null)', () => {
+    expect(exercises.every((e) => 'tempo' in e)).toBe(true)
+  })
+  it('tempo가 있으면 down·hold·up·cue(3단계)를 갖춘다', () => {
+    const withTempo = exercises.filter((e) => e.tempo)
+    expect(withTempo.length).toBeGreaterThan(0)
+    const bad = withTempo.filter((e) => !('down' in e.tempo && 'hold' in e.tempo && 'up' in e.tempo) || e.tempo.cue?.length !== 3)
+    expect(bad.map((e) => e.id)).toEqual([])
+  })
+  it('시간형(repType=sec) 운동은 tempo가 null이다(페이서 대신 카운트다운 사용)', () => {
+    const bad = exercises.filter((e) => e.repType === 'sec' && e.tempo !== null)
+    expect(bad.map((e) => e.id)).toEqual([])
+  })
+})
+
 describe('exercises.json — 완료 기준 2: 헬스장·야외기구 운동 전부에 equipmentGuide 존재', () => {
   it('기구를 쓰는 헬스장·야외기구 운동은 모두 equipmentGuide를 갖는다', () => {
     const targets = exercises.filter((e) =>

@@ -65,6 +65,7 @@ export default function FoodSheet({ open, mealName, onClose, onAdd, recentNames 
               <div>
                 <div className="fn">{f.name}</div>
                 <div className="fi">{f.serving} · 탄 {f.carbs} · 단 {f.protein} · 지 {f.fat}g</div>
+                {f.source && <div className="fsrc">영양정보: {f.source === '식약처' ? '식약처' : '참고값'}</div>}
               </div>
               <div className="fc">{f.kcal}</div>
             </div>

@@ -41,7 +41,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "chair-squat",
@@ -79,7 +89,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "squat-sumo",
@@ -120,7 +140,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "squat-jump",
@@ -161,7 +191,17 @@
     "defaultReps": 10,
     "restSec": 75,
     "metValue": 8,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "squat-pulse",
@@ -198,7 +238,17 @@
     "defaultReps": 12,
     "restSec": 60,
     "metValue": 5.5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "wall-sit",
@@ -237,7 +287,8 @@
     "defaultReps": 30,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": null
   },
   {
     "id": "lunge-forward",
@@ -279,7 +330,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "lunge"
+    "animation": "lunge",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "무릎 굽히며 내려가기",
+        "잠깐 멈춤",
+        "밀어 올라오기"
+      ]
+    }
   },
   {
     "id": "lunge-reverse",
@@ -319,7 +380,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "lunge"
+    "animation": "lunge",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "무릎 굽히며 내려가기",
+        "잠깐 멈춤",
+        "밀어 올라오기"
+      ]
+    }
   },
   {
     "id": "lunge-side",
@@ -360,7 +431,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4.5,
-    "animation": "lunge"
+    "animation": "lunge",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "무릎 굽히며 내려가기",
+        "잠깐 멈춤",
+        "밀어 올라오기"
+      ]
+    }
   },
   {
     "id": "step-up",
@@ -402,7 +483,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4.5,
-    "animation": "lunge"
+    "animation": "lunge",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "무릎 굽히며 내려가기",
+        "잠깐 멈춤",
+        "밀어 올라오기"
+      ]
+    }
   },
   {
     "id": "pushup-standard",
@@ -443,7 +534,17 @@
     "defaultReps": 8,
     "restSec": 60,
     "metValue": 4,
-    "animation": "pushup"
+    "animation": "pushup",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "pushup-knee",
@@ -482,7 +583,17 @@
     "defaultReps": 8,
     "restSec": 60,
     "metValue": 3.5,
-    "animation": "pushup"
+    "animation": "pushup",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "pushup-incline",
@@ -522,7 +633,17 @@
     "defaultReps": 10,
     "restSec": 50,
     "metValue": 3.5,
-    "animation": "pushup"
+    "animation": "pushup",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "pushup-diamond",
@@ -560,7 +681,17 @@
     "defaultReps": 8,
     "restSec": 75,
     "metValue": 5,
-    "animation": "pushup"
+    "animation": "pushup",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "pushup-wide",
@@ -598,7 +729,17 @@
     "defaultReps": 8,
     "restSec": 60,
     "metValue": 4,
-    "animation": "pushup"
+    "animation": "pushup",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "plank-forearm",
@@ -638,7 +779,8 @@
     "defaultReps": 20,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "plank"
+    "animation": "plank",
+    "tempo": null
   },
   {
     "id": "plank-knee",
@@ -675,7 +817,8 @@
     "defaultReps": 20,
     "restSec": 45,
     "metValue": 3,
-    "animation": "plank"
+    "animation": "plank",
+    "tempo": null
   },
   {
     "id": "plank-side",
@@ -715,7 +858,8 @@
     "defaultReps": 20,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "plank"
+    "animation": "plank",
+    "tempo": null
   },
   {
     "id": "bridge-glute",
@@ -756,7 +900,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "bridge"
+    "animation": "bridge",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "엉덩이 천천히 내리기",
+        "잠깐 멈춤",
+        "엉덩이 들어 올리기"
+      ]
+    }
   },
   {
     "id": "bridge-single-leg",
@@ -794,7 +948,17 @@
     "defaultReps": 10,
     "restSec": 45,
     "metValue": 4,
-    "animation": "bridge"
+    "animation": "bridge",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "엉덩이 천천히 내리기",
+        "잠깐 멈춤",
+        "엉덩이 들어 올리기"
+      ]
+    }
   },
   {
     "id": "crunch-basic",
@@ -832,7 +996,17 @@
     "defaultReps": 15,
     "restSec": 45,
     "metValue": 3,
-    "animation": "crunch"
+    "animation": "crunch",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "배에 힘주며 말아 올리기"
+      ]
+    }
   },
   {
     "id": "crunch-bicycle",
@@ -871,7 +1045,17 @@
     "defaultReps": 16,
     "restSec": 45,
     "metValue": 4,
-    "animation": "crunch"
+    "animation": "crunch",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "배에 힘주며 말아 올리기"
+      ]
+    }
   },
   {
     "id": "crunch-reverse",
@@ -908,7 +1092,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "crunch"
+    "animation": "crunch",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "배에 힘주며 말아 올리기"
+      ]
+    }
   },
   {
     "id": "mountain-climber",
@@ -948,7 +1142,17 @@
     "defaultReps": 20,
     "restSec": 45,
     "metValue": 8,
-    "animation": "mountain-climber"
+    "animation": "mountain-climber",
+    "tempo": {
+      "down": 1,
+      "hold": 0,
+      "up": 1,
+      "cue": [
+        "무릎 당기기",
+        "",
+        "제자리로"
+      ]
+    }
   },
   {
     "id": "burpee",
@@ -989,7 +1193,17 @@
     "defaultReps": 8,
     "restSec": 90,
     "metValue": 8,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "jumping-jack",
@@ -1029,7 +1243,17 @@
     "defaultReps": 20,
     "restSec": 30,
     "metValue": 7,
-    "animation": "jumping-jack"
+    "animation": "jumping-jack",
+    "tempo": {
+      "down": 1,
+      "hold": 0,
+      "up": 1,
+      "cue": [
+        "팔다리 벌리기",
+        "",
+        "팔다리 모으기"
+      ]
+    }
   },
   {
     "id": "superman",
@@ -1068,7 +1292,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "bridge"
+    "animation": "bridge",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "엉덩이 천천히 내리기",
+        "잠깐 멈춤",
+        "엉덩이 들어 올리기"
+      ]
+    }
   },
   {
     "id": "donkey-kick",
@@ -1107,7 +1341,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "bridge"
+    "animation": "bridge",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "엉덩이 천천히 내리기",
+        "잠깐 멈춤",
+        "엉덩이 들어 올리기"
+      ]
+    }
   },
   {
     "id": "fire-hydrant",
@@ -1147,7 +1391,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "bridge"
+    "animation": "bridge",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "엉덩이 천천히 내리기",
+        "잠깐 멈춤",
+        "엉덩이 들어 올리기"
+      ]
+    }
   },
   {
     "id": "high-knees",
@@ -1187,7 +1441,17 @@
     "defaultReps": 20,
     "restSec": 30,
     "metValue": 6.5,
-    "animation": "mountain-climber"
+    "animation": "mountain-climber",
+    "tempo": {
+      "down": 1,
+      "hold": 0,
+      "up": 1,
+      "cue": [
+        "무릎 당기기",
+        "",
+        "제자리로"
+      ]
+    }
   },
   {
     "id": "band-squat",
@@ -1227,7 +1491,17 @@
     "defaultReps": 12,
     "restSec": 60,
     "metValue": 4.5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "band-row",
@@ -1267,7 +1541,17 @@
     "defaultReps": 12,
     "restSec": 50,
     "metValue": 3.5,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "band-lateral-walk",
@@ -1307,7 +1591,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 4,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "band-bicep-curl",
@@ -1346,7 +1640,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "dumbbell-curl",
@@ -1384,7 +1688,17 @@
     "defaultReps": 12,
     "restSec": 50,
     "metValue": 3.5,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "dumbbell-shoulder-press",
@@ -1423,7 +1737,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "press"
+    "animation": "press",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내리기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "dumbbell-row",
@@ -1463,7 +1787,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "dumbbell-goblet-squat",
@@ -1503,7 +1837,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "chair-tricep-dip",
@@ -1542,7 +1886,17 @@
     "defaultReps": 10,
     "restSec": 50,
     "metValue": 4,
-    "animation": "dips"
+    "animation": "dips",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "팔꿈치 굽히며 내려가기",
+        "잠깐 멈춤",
+        "팔 펴며 올라오기"
+      ]
+    }
   },
   {
     "id": "towel-row",
@@ -1582,7 +1936,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "stretch-neck-side",
@@ -1621,7 +1985,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-neck"
+    "animation": "stretch-neck",
+    "tempo": null
   },
   {
     "id": "stretch-neck-forward",
@@ -1660,7 +2025,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-neck"
+    "animation": "stretch-neck",
+    "tempo": null
   },
   {
     "id": "stretch-shoulder-cross",
@@ -1699,7 +2065,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-shoulder"
+    "animation": "stretch-shoulder",
+    "tempo": null
   },
   {
     "id": "stretch-shoulder-overhead",
@@ -1739,7 +2106,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-shoulder"
+    "animation": "stretch-shoulder",
+    "tempo": null
   },
   {
     "id": "stretch-waist-side",
@@ -1780,7 +2148,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "stretch-waist-twist",
@@ -1822,7 +2191,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "stretch-hamstring-standing",
@@ -1863,7 +2233,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-hamstring"
+    "animation": "stretch-hamstring",
+    "tempo": null
   },
   {
     "id": "stretch-hamstring-seated",
@@ -1902,7 +2273,8 @@
     "defaultReps": 25,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-hamstring"
+    "animation": "stretch-hamstring",
+    "tempo": null
   },
   {
     "id": "stretch-hip-flexor",
@@ -1945,7 +2317,8 @@
     "defaultReps": 25,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-hamstring"
+    "animation": "stretch-hamstring",
+    "tempo": null
   },
   {
     "id": "stretch-pigeon",
@@ -1986,7 +2359,8 @@
     "defaultReps": 30,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-hamstring"
+    "animation": "stretch-hamstring",
+    "tempo": null
   },
   {
     "id": "yoga-downward-dog",
@@ -2028,7 +2402,8 @@
     "defaultReps": 30,
     "restSec": 15,
     "metValue": 3,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "yoga-cobra",
@@ -2067,7 +2442,8 @@
     "defaultReps": 20,
     "restSec": 15,
     "metValue": 2.5,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "yoga-child-pose",
@@ -2108,7 +2484,8 @@
     "defaultReps": 40,
     "restSec": 10,
     "metValue": 2,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "yoga-cat-cow",
@@ -2149,7 +2526,8 @@
     "defaultReps": 10,
     "restSec": 10,
     "metValue": 2.5,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "yoga-mountain",
@@ -2191,7 +2569,8 @@
     "defaultReps": 30,
     "restSec": 10,
     "metValue": 2,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "lat-pulldown",
@@ -2232,7 +2611,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "chest-press-machine",
@@ -2273,7 +2662,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "press"
+    "animation": "press",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내리기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "leg-press",
@@ -2314,7 +2713,17 @@
     "defaultReps": 10,
     "restSec": 75,
     "metValue": 4.5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "leg-extension",
@@ -2354,7 +2763,17 @@
     "defaultReps": 12,
     "restSec": 50,
     "metValue": 3.5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "leg-curl",
@@ -2394,7 +2813,17 @@
     "defaultReps": 12,
     "restSec": 50,
     "metValue": 3.5,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "seated-row-machine",
@@ -2435,7 +2864,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "cable-tricep-pushdown",
@@ -2475,7 +2914,17 @@
     "defaultReps": 12,
     "restSec": 50,
     "metValue": 3.5,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "cable-crossover",
@@ -2512,7 +2961,17 @@
     "defaultReps": 12,
     "restSec": 60,
     "metValue": 4,
-    "animation": "press"
+    "animation": "press",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내리기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "smith-squat",
@@ -2553,7 +3012,17 @@
     "defaultReps": 10,
     "restSec": 75,
     "metValue": 5,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "smith-bench-press",
@@ -2594,7 +3063,17 @@
     "defaultReps": 8,
     "restSec": 75,
     "metValue": 5,
-    "animation": "press"
+    "animation": "press",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내리기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "dumbbell-bench-press",
@@ -2633,7 +3112,17 @@
     "defaultReps": 10,
     "restSec": 75,
     "metValue": 5,
-    "animation": "press"
+    "animation": "press",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내리기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "barbell-squat",
@@ -2672,7 +3161,17 @@
     "defaultReps": 8,
     "restSec": 90,
     "metValue": 6,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "barbell-deadlift",
@@ -2714,7 +3213,17 @@
     "defaultReps": 6,
     "restSec": 90,
     "metValue": 6,
-    "animation": "deadlift"
+    "animation": "deadlift",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "엉덩이 빼며 내려가기",
+        "잠깐 멈춤",
+        "바닥 밀며 일어서기"
+      ]
+    }
   },
   {
     "id": "barbell-bent-row",
@@ -2755,7 +3264,17 @@
     "defaultReps": 10,
     "restSec": 75,
     "metValue": 5,
-    "animation": "row"
+    "animation": "row",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "팔 펴며 늘리기",
+        "잠깐 멈춤",
+        "당겨오기"
+      ]
+    }
   },
   {
     "id": "shoulder-press-machine",
@@ -2793,7 +3312,17 @@
     "defaultReps": 10,
     "restSec": 60,
     "metValue": 4,
-    "animation": "press"
+    "animation": "press",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내리기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "pec-deck",
@@ -2832,7 +3361,17 @@
     "defaultReps": 12,
     "restSec": 50,
     "metValue": 3.5,
-    "animation": "press"
+    "animation": "press",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내리기",
+        "잠깐 멈춤",
+        "밀어 올리기"
+      ]
+    }
   },
   {
     "id": "hip-abductor-machine",
@@ -2873,7 +3412,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "hip-adductor-machine",
@@ -2913,7 +3462,17 @@
     "defaultReps": 12,
     "restSec": 45,
     "metValue": 3,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "calf-raise-machine",
@@ -2952,7 +3511,17 @@
     "defaultReps": 15,
     "restSec": 40,
     "metValue": 3,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "ab-crunch-machine",
@@ -2992,7 +3561,17 @@
     "defaultReps": 15,
     "restSec": 45,
     "metValue": 3.5,
-    "animation": "crunch"
+    "animation": "crunch",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "배에 힘주며 말아 올리기"
+      ]
+    }
   },
   {
     "id": "bar-hang",
@@ -3033,7 +3612,8 @@
     "defaultReps": 20,
     "restSec": 60,
     "metValue": 3.5,
-    "animation": "pullup"
+    "animation": "pullup",
+    "tempo": null
   },
   {
     "id": "pull-up-outdoor",
@@ -3073,7 +3653,17 @@
     "defaultReps": 5,
     "restSec": 75,
     "metValue": 4.5,
-    "animation": "pullup"
+    "animation": "pullup",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 2,
+      "cue": [
+        "몸을 늘어뜨리기",
+        "잠깐 멈춤",
+        "당겨 올라가기"
+      ]
+    }
   },
   {
     "id": "parallel-bar-dips",
@@ -3114,7 +3704,17 @@
     "defaultReps": 8,
     "restSec": 75,
     "metValue": 5,
-    "animation": "dips"
+    "animation": "dips",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "팔꿈치 굽히며 내려가기",
+        "잠깐 멈춤",
+        "팔 펴며 올라오기"
+      ]
+    }
   },
   {
     "id": "waist-twister",
@@ -3155,7 +3755,8 @@
     "defaultReps": 30,
     "restSec": 20,
     "metValue": 3,
-    "animation": "stretch-back"
+    "animation": "stretch-back",
+    "tempo": null
   },
   {
     "id": "sky-walker",
@@ -3196,7 +3797,8 @@
     "defaultReps": 180,
     "restSec": 0,
     "metValue": 3.5,
-    "animation": "walk"
+    "animation": "walk",
+    "tempo": null
   },
   {
     "id": "sit-up-bench-outdoor",
@@ -3236,7 +3838,17 @@
     "defaultReps": 12,
     "restSec": 60,
     "metValue": 4,
-    "animation": "crunch"
+    "animation": "crunch",
+    "tempo": {
+      "down": 1,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 내려가기",
+        "잠깐 멈춤",
+        "배에 힘주며 말아 올리기"
+      ]
+    }
   },
   {
     "id": "outdoor-leg-press",
@@ -3276,7 +3888,17 @@
     "defaultReps": 12,
     "restSec": 60,
     "metValue": 4,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "outdoor-elliptical",
@@ -3317,7 +3939,8 @@
     "defaultReps": 300,
     "restSec": 0,
     "metValue": 5,
-    "animation": "walk"
+    "animation": "walk",
+    "tempo": null
   },
   {
     "id": "walk",
@@ -3355,7 +3978,8 @@
     "defaultReps": 1800,
     "restSec": 0,
     "metValue": 3.5,
-    "animation": "walk"
+    "animation": "walk",
+    "tempo": null
   },
   {
     "id": "brisk-walk",
@@ -3395,7 +4019,8 @@
     "defaultReps": 1500,
     "restSec": 0,
     "metValue": 4.5,
-    "animation": "walk"
+    "animation": "walk",
+    "tempo": null
   },
   {
     "id": "jog",
@@ -3433,7 +4058,8 @@
     "defaultReps": 1200,
     "restSec": 0,
     "metValue": 7,
-    "animation": "run"
+    "animation": "run",
+    "tempo": null
   },
   {
     "id": "run",
@@ -3473,7 +4099,8 @@
     "defaultReps": 1200,
     "restSec": 0,
     "metValue": 9.5,
-    "animation": "run"
+    "animation": "run",
+    "tempo": null
   },
   {
     "id": "stair-climb",
@@ -3514,7 +4141,8 @@
     "defaultReps": 600,
     "restSec": 0,
     "metValue": 8,
-    "animation": "walk"
+    "animation": "walk",
+    "tempo": null
   },
   {
     "id": "cycle-outdoor",
@@ -3554,7 +4182,8 @@
     "defaultReps": 1800,
     "restSec": 0,
     "metValue": 7.5,
-    "animation": "cycle"
+    "animation": "cycle",
+    "tempo": null
   },
   {
     "id": "jump-rope",
@@ -3592,7 +4221,8 @@
     "defaultReps": 60,
     "restSec": 45,
     "metValue": 10,
-    "animation": "jumping-jack"
+    "animation": "jumping-jack",
+    "tempo": null
   },
   {
     "id": "treadmill",
@@ -3634,7 +4264,8 @@
     "defaultReps": 1500,
     "restSec": 0,
     "metValue": 7,
-    "animation": "run"
+    "animation": "run",
+    "tempo": null
   },
   {
     "id": "stationary-bike",
@@ -3675,7 +4306,8 @@
     "defaultReps": 1500,
     "restSec": 0,
     "metValue": 7,
-    "animation": "cycle"
+    "animation": "cycle",
+    "tempo": null
   },
   {
     "id": "elliptical-machine",
@@ -3716,7 +4348,8 @@
     "defaultReps": 1500,
     "restSec": 0,
     "metValue": 6,
-    "animation": "cycle"
+    "animation": "cycle",
+    "tempo": null
   },
   {
     "id": "calf-raise-standing",
@@ -3755,7 +4388,17 @@
     "defaultReps": 15,
     "restSec": 40,
     "metValue": 3,
-    "animation": "squat"
+    "animation": "squat",
+    "tempo": {
+      "down": 2,
+      "hold": 1,
+      "up": 1,
+      "cue": [
+        "천천히 앉기",
+        "잠깐 멈춤",
+        "일어서기"
+      ]
+    }
   },
   {
     "id": "plank-jack",
@@ -3795,7 +4438,17 @@
     "defaultReps": 16,
     "restSec": 45,
     "metValue": 7,
-    "animation": "plank"
+    "animation": "plank",
+    "tempo": {
+      "down": 1,
+      "hold": 0,
+      "up": 1,
+      "cue": [
+        "동작 수행",
+        "",
+        "제자리로"
+      ]
+    }
   },
   {
     "id": "plank-shoulder-tap",
@@ -3835,6 +4488,16 @@
     "defaultReps": 16,
     "restSec": 45,
     "metValue": 4,
-    "animation": "plank"
+    "animation": "plank",
+    "tempo": {
+      "down": 1,
+      "hold": 0,
+      "up": 1,
+      "cue": [
+        "동작 수행",
+        "",
+        "제자리로"
+      ]
+    }
   }
 ]

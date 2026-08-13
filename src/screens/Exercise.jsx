@@ -9,6 +9,7 @@ import { useFeedback } from '../components/Feedback.jsx'
 import ExerciseHome from './exercise/ExerciseHome.jsx'
 import ExerciseLibrary from './exercise/ExerciseLibrary.jsx'
 import ExerciseDetail from './exercise/ExerciseDetail.jsx'
+import ExerciseBriefing from './exercise/ExerciseBriefing.jsx'
 import ExerciseSession from './exercise/ExerciseSession.jsx'
 
 export const byId = Object.fromEntries(exercises.map((e) => [e.id, e]))
@@ -18,7 +19,7 @@ export default function Exercise({ profile, onFullscreenChange }) {
   const today = todayKey()
   const [day, setDayState] = useState(null)
   const [meta, setMeta] = useState(new Map())
-  const [sub, setSub] = useState('home') // home | library | detail | session
+  const [sub, setSub] = useState('home') // home | library | detail | briefing | session
   const [detailId, setDetailId] = useState(null)
   const [detailFrom, setDetailFrom] = useState('library') // library | routine
   const [sessionStartIndex, setSessionStartIndex] = useState(0)
@@ -95,7 +96,14 @@ export default function Exercise({ profile, onFullscreenChange }) {
           onPlace={handlePlace} onMinutes={handleMinutes}
           onOpenLibrary={() => setSub('library')}
           onOpenDetail={(id) => openDetail(id, 'routine')}
+          onStart={() => setSub('briefing')}
+        />
+      )}
+      {sub === 'briefing' && (
+        <ExerciseBriefing
+          routineIds={day.routine} byId={byId} profile={profile}
           onStart={() => startSession(null)}
+          onBack={backToHome}
         />
       )}
       {sub === 'library' && (

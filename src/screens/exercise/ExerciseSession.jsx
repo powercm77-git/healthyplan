@@ -1,6 +1,8 @@
 // ExerciseSession.jsx — 운동 실행 화면 (3-4): 세트/휴식 자동 타이머, 음성 안내, Wake Lock, 교체·건너뛰기
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { StickFigure } from '../../components/exercise-animations/index.js'
+import ExerciseVideoPlayer from '../../components/ExerciseVideoPlayer.jsx'
+import { getVideosFor } from '../../lib/exerciseVideos.js'
 import { suggestProgress, calcKcal } from '../../lib/exerciseEngine.js'
 import { addExerciseLog, bumpExerciseCompleted, bumpExerciseSwapped, getDay, setDay as dbSetDay } from '../../lib/db.js'
 import { useFeedback } from '../../components/Feedback.jsx'
@@ -23,9 +25,20 @@ function speak(text, muted) {
   } catch { /* 음성 미지원 환경은 조용히 무시 */ }
 }
 function vibrate(pattern) { try { navigator.vibrate?.(pattern) } catch { /* 무시 */ } }
+const KO_COUNT = ['', '하나', '둘', '셋', '넷', '다섯', '여섯', '일곱', '여덟', '아홉', '열', '열하나', '열둘', '열셋', '열넷', '열다섯', '열여섯', '열일곱', '열여덟', '열아홉', '스물']
+function koCount(n) { return KO_COUNT[n] || String(n) }
 function fmtTime(sec) {
   const s = Math.max(0, Math.round(sec))
   return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`
+}
+function pacerSubPhase(elapsed, tempo) {
+  const { down, hold, up, cue } = tempo
+  const cycle = down + hold + up
+  if (cycle <= 0) return null
+  const pos = elapsed % cycle
+  if (pos < down) return { label: cue[0], remaining: down - pos, total: down || 1 }
+  if (pos < down + hold) return { label: cue[1], remaining: down + hold - pos, total: hold || 1 }
+  return { label: cue[2], remaining: cycle - pos, total: up || 1 }
 }
 
 export default function ExerciseSession({ exerciseIds: initialIds, startIndex, byId, profile, meta, today, onFinish }) {
@@ -44,19 +57,25 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const [saving, setSaving] = useState(false)
   const [summary, setSummary] = useState(null)
   const [repCount, setRepCount] = useState(0)
+  const [repOffset, setRepOffset] = useState(0) // 페이서 자동 카운트에 대한 수동 보정(+/-)
+  const [showVideo, setShowVideo] = useState(false)
+  const [pacerOn, setPacerOn] = useState(true)
 
   const sessionStartRef = useRef(Date.now())
   const logRef = useRef([]) // 완료된 운동별 기록
   const currentSetsRef = useRef([]) // 이번 운동에서 세트별 소요 시간(초)
   const announcedRef = useRef(new Set()) // 이번 phase에서 이미 안내한 문구(10초 남음 등) 중복 방지
+  const lastAnnouncedRepRef = useRef(0) // 음성 카운트 중복 방지
 
   const ex = byId[ids[idx]]
   const exMeta = meta?.get(ex?.id)
   const progress = useMemo(() => (ex ? suggestProgress(ex, exMeta) : null), [ex, exMeta])
   const totalSets = ex?.defaultSets || 1
+  const videos = ex ? getVideosFor(ex.id) : []
   const workTarget = ex ? (progress?.type === 'reps' ? progress.reps : ex.defaultReps) : null
   const workTargetSec = ex && ex.repType === 'sec' ? workTarget : null
   const workTargetReps = ex && ex.repType !== 'sec' ? workTarget : null
+  const cycleLen = ex?.tempo ? ex.tempo.down + ex.tempo.hold + ex.tempo.up : 0
 
   // ── Wake Lock ──
   useEffect(() => {
@@ -75,6 +94,8 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   useEffect(() => {
     announcedRef.current = new Set()
     setRepCount(0)
+    setRepOffset(0)
+    setShowVideo(false)
   }, [phase, idx, curSet])
 
   function elapsedInPhase() {
@@ -107,7 +128,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
     const setSec = elapsedInPhase()
     currentSetsRef.current.push(Math.round(setSec))
     if (curSet < totalSets) {
-      goPhase('rest', { announce: `휴식 ${ex.restSec}초`, vibrate: 150 })
+      goPhase('rest', { announce: `잘하셨어요. ${ex.restSec}초 쉬겠습니다`, vibrate: 150 })
     } else {
       finishExerciseLog()
       advanceExercise()
@@ -127,14 +148,14 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
     if (currentSetsRef.current.length > 0 && currentSetsRef.current.length < totalSets) {
       // 같은 운동의 다음 세트
       setCurSet((c) => c + 1)
-      goPhase('work', { announce: `${curSet + 1}세트 시작`, vibrate: 100 })
+      goPhase('work', { announce: '3, 2, 1, 시작', vibrate: 100 })
     } else {
       const nextIdx = idx + 1
       setIdx(nextIdx)
       setCurSet(1)
       currentSetsRef.current = []
       const nextEx = byId[ids[nextIdx]]
-      goPhase('work', { announce: `${nextEx.name} 시작`, vibrate: 100 })
+      goPhase('work', { announce: `${nextEx.name}. 3, 2, 1, 시작`, vibrate: 100 })
     }
   }
 
@@ -151,12 +172,31 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
     } else if (phase === 'rest') {
       const remaining = ex.restSec - el
       if (remaining <= 10 && remaining > 9 && ex.restSec > 15 && !announcedRef.current.has('warn')) {
-        announcedRef.current.add('warn'); speak('10초 남았습니다', muted)
+        announcedRef.current.add('warn'); speak('10초 후 시작합니다', muted)
       }
       if (remaining <= 0) handleRestComplete()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tick, pausedAt, phase])
+
+  // 템포 페이서: 켜져 있으면 동작 주기(down+hold+up)가 끝날 때마다 자동으로 횟수를 센다
+  useEffect(() => {
+    if (pausedAt || phase !== 'work' || !pacerOn || cycleLen <= 0 || workTargetReps == null) return
+    const autoCount = Math.max(0, Math.floor(elapsedInPhase() / cycleLen) + repOffset)
+    setRepCount((c) => (c === autoCount ? c : autoCount))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tick, pausedAt, phase, pacerOn, cycleLen, repOffset])
+
+  // 음성 카운트: 자동(페이서)이든 탭이든 repCount가 바뀌면 하나·둘·셋… 안내
+  useEffect(() => {
+    if (phase !== 'work' || workTargetReps == null) { lastAnnouncedRepRef.current = 0; return }
+    if (repCount === 0 || repCount === lastAnnouncedRepRef.current) return
+    lastAnnouncedRepRef.current = repCount
+    const remaining = workTargetReps - repCount
+    if (remaining === 1) speak('마지막 하나!', muted)
+    else if (remaining === 2) speak('두 개 남았습니다', muted)
+    else speak(koCount(repCount), muted)
+  }, [repCount, phase, workTargetReps, muted])
 
   function togglePause() {
     if (pausedAt) {
@@ -252,6 +292,8 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const nextUpLabel = phase === 'rest'
     ? (currentSetsRef.current.length < totalSets ? `${curSet + 1}세트` : (idx < ids.length - 1 ? byId[ids[idx + 1]]?.name : '운동 완료'))
     : null
+  const pacerActive = phase === 'work' && pacerOn && ex.tempo && workTargetReps != null
+  const pacerSub = pacerActive ? pacerSubPhase(el, ex.tempo) : null
 
   return (
     <section className="screen active">
@@ -261,10 +303,41 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
         <button className="mutebtn" onClick={() => setMuted((m) => !m)} aria-label="음소거">{muted ? '🔇' : '🔊'}</button>
       </div>
 
-      <div className="detail-anim" style={{ padding: '10px 0' }}>
-        <StickFigure pose={ex.animation} size={120} />
-      </div>
+      {showVideo && videos.length > 0 ? (
+        <ExerciseVideoPlayer videos={videos} size="small" onFail={() => setShowVideo(false)} />
+      ) : (
+        <div className="detail-anim" style={{ padding: '10px 0' }}>
+          <StickFigure pose={ex.animation} size={200} tempoSec={pacerActive ? cycleLen : undefined} highlightParts={ex.bodyParts} showDirection />
+        </div>
+      )}
+      {videos.length > 0 && (
+        <div style={{ textAlign: 'center', marginTop: -4, marginBottom: 6 }}>
+          <button type="button" className="videotogglebtn" onClick={() => setShowVideo((v) => !v)}>
+            {showVideo ? '애니메이션 보기' : '▶ 영상'}
+          </button>
+        </div>
+      )}
+
+      {pacerSub && (
+        <div className="pacerbox">
+          <div className="pacerlabel">{pacerSub.label} <span>({Math.ceil(pacerSub.remaining)}초)</span></div>
+          <div className="pacerbar"><i style={{ width: `${Math.min(100, ((pacerSub.total - pacerSub.remaining) / pacerSub.total) * 100)}%` }} /></div>
+          <button type="button" className="pacertoggle" onClick={() => setPacerOn(false)}>자기 속도로 하기</button>
+        </div>
+      )}
+      {phase === 'work' && ex.tempo && workTargetReps != null && !pacerOn && (
+        <div style={{ textAlign: 'center', marginTop: 4 }}>
+          <button type="button" className="pacertoggle" onClick={() => setPacerOn(true)}>페이서 켜기</button>
+        </div>
+      )}
+
       <p style={{ textAlign: 'center', fontWeight: 900, fontSize: '1.15rem' }}>{ex.name}</p>
+
+      {phase === 'work' && ex.mistakes?.length > 0 && (
+        <div className={`worknotice${el < 3 ? ' worknotice-big' : ''}`}>
+          {el < 3 ? ex.mistakes[0] : ex.mistakes[Math.floor(el / 5) % ex.mistakes.length]}
+        </div>
+      )}
 
       {phase === 'work' && (
         <div className="sessionsteps">
@@ -289,11 +362,11 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
 
       {phase === 'work' && workTargetReps != null && (
         <div className="repcounter">
-          <button type="button" onClick={() => setRepCount((c) => Math.max(0, c - 1))} aria-label="횟수 줄이기">−</button>
+          <button type="button" onClick={() => (pacerOn ? setRepOffset((o) => o - 1) : setRepCount((c) => Math.max(0, c - 1)))} aria-label="횟수 줄이기">−</button>
           <div className={`repnum${repCount >= workTargetReps ? ' reached' : ''}`}>
             {repCount}<span> / {workTargetReps}회</span>
           </div>
-          <button type="button" onClick={() => setRepCount((c) => c + 1)} aria-label="횟수 늘리기">+</button>
+          <button type="button" onClick={() => (pacerOn ? setRepOffset((o) => o + 1) : setRepCount((c) => c + 1))} aria-label="횟수 늘리기">+</button>
         </div>
       )}
 
