@@ -1,10 +1,11 @@
 // FoodSheet.jsx — 음식 검색·추가 바텀시트 (초성 검색 지원)
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import foods from '../data/foods.json'
 import { matchFoodItem } from '../lib/chosung.js'
 
 export default function FoodSheet({ open, mealName, onClose, onAdd, recentNames }) {
   const [query, setQuery] = useState('')
+  const listRef = useRef(null)
 
   const results = useMemo(() => {
     const q = query.trim()
@@ -20,6 +21,16 @@ export default function FoodSheet({ open, mealName, onClose, onAdd, recentNames 
     return list.slice(0, 60)
   }, [query, recentNames])
 
+  // 검색어가 바뀌면 이전 스크롤 위치 때문에 새 결과가 화면 밖에 가려지지 않게 맨 위로
+  useEffect(() => {
+    if (listRef.current) listRef.current.scrollTop = 0
+  }, [results])
+
+  // 시트를 열 때마다 이전 검색어가 남아있지 않게 초기화
+  useEffect(() => {
+    if (open) setQuery('')
+  }, [open])
+
   if (!open) return null
 
   return (
@@ -34,7 +45,7 @@ export default function FoodSheet({ open, mealName, onClose, onAdd, recentNames 
           autoFocus
           onChange={(e) => setQuery(e.target.value)}
         />
-        <div className="foodlist">
+        <div className="foodlist" ref={listRef}>
           {results.length === 0 && (
             <div className="empty" style={{ padding: '14px 4px' }}>검색 결과가 없어요.</div>
           )}
