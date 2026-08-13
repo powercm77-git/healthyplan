@@ -224,7 +224,30 @@ input::placeholder{color:#5E5980}
 }
 .mutebtn{background:none;border:1px solid var(--line);border-radius:10px;width:34px;height:34px;font-size:1rem;cursor:pointer;color:var(--ink)}
 .counter{text-align:center;font-weight:900;font-size:1.05rem;margin-top:6px;color:var(--sub)}
+.counter b{color:var(--ink)}
 .timerbig{text-align:center;font-size:3.4rem;line-height:1.1;margin-top:2px}
+
+.sessionsteps{
+  margin-top:8px;background:rgba(255,255,255,.04);border:1px solid var(--line);
+  border-radius:14px;padding:12px 14px;font-size:.83rem;line-height:1.55;color:var(--ink);
+  max-height:34vh;overflow-y:auto;
+}
+.sessionsteps .stepline{display:flex;gap:9px;margin-top:7px}
+.sessionsteps .stepline:first-child{margin-top:0}
+.sessionsteps .stepnum{
+  flex-shrink:0;width:19px;height:19px;border-radius:999px;background:var(--grad);
+  color:#fff;font-size:.68rem;font-weight:900;display:flex;align-items:center;justify-content:center;
+}
+.sessionsteps .stepnum.breath{background:var(--sky)}
+.repcounter{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:10px}
+.repcounter button{
+  width:46px;height:46px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg2);
+  color:var(--ink);font-size:1.4rem;font-weight:900;cursor:pointer;line-height:1;
+}
+.repcounter button:active{border-color:var(--g2)}
+.repcounter .repnum{font-size:1.7rem;font-weight:900;min-width:84px;text-align:center;color:var(--ink)}
+.repcounter .repnum span{font-size:.9rem;color:var(--sub);font-weight:700}
+.repcounter .repnum.reached{color:var(--g2)}
 
 /* ── 운동 기록(최근 7일) ── */
 .recordstrip{display:flex;justify-content:space-between;align-items:flex-end;gap:6px;height:70px;margin-top:6px}

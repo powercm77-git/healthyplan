@@ -43,6 +43,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const [wakeLockOk, setWakeLockOk] = useState(true)
   const [saving, setSaving] = useState(false)
   const [summary, setSummary] = useState(null)
+  const [repCount, setRepCount] = useState(0)
 
   const sessionStartRef = useRef(Date.now())
   const logRef = useRef([]) // 완료된 운동별 기록
@@ -53,7 +54,9 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const exMeta = meta?.get(ex?.id)
   const progress = useMemo(() => (ex ? suggestProgress(ex, exMeta) : null), [ex, exMeta])
   const totalSets = ex?.defaultSets || 1
-  const workTargetSec = ex ? (ex.repType === 'sec' ? (progress?.type === 'reps' && ex.repType === 'sec' ? progress.reps : ex.defaultReps) : null) : null
+  const workTarget = ex ? (progress?.type === 'reps' ? progress.reps : ex.defaultReps) : null
+  const workTargetSec = ex && ex.repType === 'sec' ? workTarget : null
+  const workTargetReps = ex && ex.repType !== 'sec' ? workTarget : null
 
   // ── Wake Lock ──
   useEffect(() => {
@@ -71,6 +74,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
 
   useEffect(() => {
     announcedRef.current = new Set()
+    setRepCount(0)
   }, [phase, idx, curSet])
 
   function elapsedInPhase() {
@@ -245,6 +249,9 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const el = elapsedInPhase()
   const workRemaining = workTargetSec != null ? Math.max(0, workTargetSec - el) : null
   const restRemaining = phase === 'rest' ? Math.max(0, ex.restSec - el) : null
+  const nextUpLabel = phase === 'rest'
+    ? (currentSetsRef.current.length < totalSets ? `${curSet + 1}세트` : (idx < ids.length - 1 ? byId[ids[idx + 1]]?.name : '운동 완료'))
+    : null
 
   return (
     <section className="screen active">
@@ -258,15 +265,43 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
         <StickFigure pose={ex.animation} size={120} />
       </div>
       <p style={{ textAlign: 'center', fontWeight: 900, fontSize: '1.15rem' }}>{ex.name}</p>
-      <p style={{ textAlign: 'center', color: 'var(--sub)', fontSize: '.82rem', marginTop: 4 }}>{ex.howto[0]}</p>
 
-      <div className="counter">{curSet} / {totalSets}세트</div>
+      {phase === 'work' && (
+        <div className="sessionsteps">
+          {ex.howto.map((step, i) => (
+            <div className="stepline" key={i}>
+              <span className="stepnum">{i + 1}</span>
+              <span>{step}</span>
+            </div>
+          ))}
+          <div className="stepline" style={{ marginTop: 8 }}>
+            <span className="stepnum breath">♦</span>
+            <span>{ex.breathing}</span>
+          </div>
+        </div>
+      )}
+
+      <div className="counter">
+        {curSet} / {totalSets}세트
+        {phase === 'work' && workTargetReps != null && <> · 목표 <b>{workTargetReps}회</b></>}
+        {phase === 'rest' && <> · 다음: {nextUpLabel}</>}
+      </div>
+
+      {phase === 'work' && workTargetReps != null && (
+        <div className="repcounter">
+          <button type="button" onClick={() => setRepCount((c) => Math.max(0, c - 1))} aria-label="횟수 줄이기">−</button>
+          <div className={`repnum${repCount >= workTargetReps ? ' reached' : ''}`}>
+            {repCount}<span> / {workTargetReps}회</span>
+          </div>
+          <button type="button" onClick={() => setRepCount((c) => c + 1)} aria-label="횟수 늘리기">+</button>
+        </div>
+      )}
 
       <div className="timerbig display">
         {phase === 'rest' ? fmtTime(restRemaining) : (workTargetSec != null ? fmtTime(workRemaining) : fmtTime(el))}
       </div>
       <div className="lbl" style={{ textAlign: 'center', color: 'var(--sub)', marginTop: -8, marginBottom: 10 }}>
-        {phase === 'rest' ? '휴식 중' : (workTargetSec != null ? '남은 시간' : '진행 시간 (완료되면 눌러주세요)')}
+        {phase === 'rest' ? '휴식 중' : (workTargetSec != null ? '남은 시간' : '경과 시간')}
       </div>
 
       {!wakeLockOk && (
@@ -276,7 +311,9 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
       )}
 
       {phase === 'work' && workTargetSec == null && (
-        <button className="btn" onClick={handleSetComplete}>세트 완료 ✔</button>
+        <button className="btn" onClick={handleSetComplete}>
+          {workTargetReps != null ? `${workTargetReps}회를 마쳤으면 눌러주세요 ✔` : '세트 완료 ✔'}
+        </button>
       )}
 
       <div className="row2" style={{ marginTop: 12 }}>
