@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/healthyplan/',
   plugins: [
     react(),
     tailwindcss(),
@@ -17,7 +18,8 @@ export default defineConfig({
         theme_color: '#0F0D1C',
         background_color: '#0F0D1C',
         display: 'standalone',
-        start_url: '/',
+        start_url: '/healthyplan/',
+        scope: '/healthyplan/',
         icons: [
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'maskable' },
