@@ -220,6 +220,36 @@ describe('foods.json — 완료 기준 6번: 별칭 검색 테스트', () => {
   }
 })
 
+describe('foods.json — 완성 글자 검색어는 무관한 초성 매칭을 배제해야 한다', () => {
+  it('"생과일" 검색 시 "삼겹살구이"가 나오면 안 된다 (초성만 우연히 겹침)', () => {
+    const results = foods.filter((f) => matchFoodItem(f, '생과일'))
+    expect(results.some((f) => f.name === '삼겹살구이')).toBe(false)
+  })
+
+  it('"생과일" 검색 결과는 있다면 전부 이름/별칭에 "생과일"을 실제로 포함해야 한다', () => {
+    const results = foods.filter((f) => matchFoodItem(f, '생과일'))
+    for (const f of results) {
+      const hit = f.name.includes('생과일') || (f.aliases || []).some((a) => a.includes('생과일'))
+      expect(hit).toBe(true)
+    }
+  })
+
+  it('"김치찌개" 검색은 정상 매칭된다', () => {
+    const results = foods.filter((f) => matchFoodItem(f, '김치찌개'))
+    expect(results.some((f) => f.name === '김치찌개')).toBe(true)
+  })
+
+  it('"ㄱㅊㅉ" 검색은 정상 매칭된다 (초성 낱자음 입력)', () => {
+    const results = foods.filter((f) => matchFoodItem(f, 'ㄱㅊㅉ'))
+    expect(results.some((f) => f.name === '김치찌개')).toBe(true)
+  })
+
+  it('"돈가스" 검색은 정상 매칭된다 (별칭 경유)', () => {
+    const results = foods.filter((f) => matchFoodItem(f, '돈가스'))
+    expect(results.some((f) => f.name === '돈까스')).toBe(true)
+  })
+})
+
 describe('foods.json — 검색 결과 관련도 정렬 (이름 시작 > 이름 포함 > 별칭 > 초성)', () => {
   it('"계란"으로 검색하면 이름이 "계란"으로 시작하는 항목이 맨 앞에 온다', () => {
     const results = foods
