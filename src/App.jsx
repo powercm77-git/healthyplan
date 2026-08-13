@@ -5,6 +5,7 @@ import TabBar from './components/TabBar.jsx'
 import Onboarding from './screens/Onboarding.jsx'
 import Home from './screens/Home.jsx'
 import Meals from './screens/Meals.jsx'
+import Exercise from './screens/Exercise.jsx'
 import Settings from './screens/Settings.jsx'
 import { getProfile, saveProfile } from './lib/db.js'
 
@@ -12,6 +13,7 @@ function AppShell() {
   const [loading, setLoading] = useState(true)
   const [profile, setProfile] = useState(null)
   const [screen, setScreen] = useState('home')
+  const [exerciseFullscreen, setExerciseFullscreen] = useState(false)
 
   useEffect(() => {
     getProfile().then((p) => { setProfile(p || null); setLoading(false) })
@@ -30,14 +32,19 @@ function AppShell() {
   if (loading) return null
   if (!profile) return <Onboarding onComplete={handleOnboardingComplete} />
 
+  const showTabBar = screen !== 'settings' && !(screen === 'exercise' && exerciseFullscreen)
+
   return (
     <>
-      {screen === 'home' && <Home profile={profile} onOpenSettings={() => setScreen('settings')} />}
+      {screen === 'home' && <Home profile={profile} onOpenSettings={() => setScreen('settings')} onOpenExercise={() => setScreen('exercise')} />}
       {screen === 'meals' && <Meals />}
+      {screen === 'exercise' && (
+        <Exercise profile={profile} onFullscreenChange={setExerciseFullscreen} />
+      )}
       {screen === 'settings' && (
         <Settings profile={profile} onSave={handleSettingsSave} onBack={() => setScreen('home')} />
       )}
-      {screen !== 'settings' && <TabBar active={screen} onNavigate={setScreen} />}
+      {showTabBar && <TabBar active={screen} onNavigate={setScreen} />}
     </>
   )
 }

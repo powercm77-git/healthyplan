@@ -86,6 +86,49 @@ async function checkSearchVisible(page, label, query, expectSubstring) {
   await page.waitForSelector('.tabbar.show')
 }
 
+async function elementWithinViewport(page, locator, label) {
+  // .screen은 overflow-y:auto라 긴 콘텐츠는 스크롤해서 봐야 정상이다(버그 아님).
+  // 스크롤해도 안 보이거나(0 사이즈) 화면 폭 밖으로 넘치면 그건 진짜 레이아웃 버그다.
+  await locator.scrollIntoViewIfNeeded()
+  const vw = await page.evaluate(() => window.innerWidth)
+  const vh = await page.evaluate(() => window.innerHeight)
+  const box = await locator.boundingBox()
+  if (!box) throw new Error(`[${label}] 요소가 DOM에 없음`)
+  const visible = rectWithinViewport(
+    { top: box.y, left: box.x, bottom: box.y + box.height, right: box.x + box.width, width: box.width, height: box.height },
+    vw, vh,
+  )
+  console.log(`  - [${label}] boundingBox=${JSON.stringify(box)} visible=${visible}`)
+  if (!visible) throw new Error(`[${label}] 요소가 뷰포트 밖에 렌더링됨`)
+}
+
+// 2단계(운동 모듈): 홈 → 라이브러리 → 상세 → 실행 화면 각 요소가 뷰포트 안에 있는지 확인
+async function checkExerciseFlow(page, label) {
+  await page.locator('.tabbar .tab', { hasText: '운동' }).click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.exo').first(), `${label} 운동홈 오늘의루틴카드`)
+  await elementWithinViewport(page, page.locator('.tabbar'), `${label} 운동홈 탭바`)
+
+  await page.getByText('+ 운동 찾아보기').click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.exitem').first(), `${label} 라이브러리 첫항목`)
+
+  await page.locator('.exitem').first().click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.detail-anim'), `${label} 상세 애니메이션`)
+  await elementWithinViewport(page, page.locator('.mistakebox'), `${label} 상세 주의사항박스`)
+  await elementWithinViewport(page, page.locator('.diffbtns'), `${label} 상세 난이도버튼`)
+
+  await page.getByText('이 운동 바로 하기').click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.timerbig'), `${label} 실행 타이머`)
+  await elementWithinViewport(page, page.locator('.counter'), `${label} 실행 세트카운터`)
+  console.log(`[PASS] ${label}: 운동 홈/라이브러리/상세/실행 화면 전부 뷰포트 안에서 보임`)
+
+  await page.reload()
+  await page.waitForSelector('.tabbar.show')
+}
+
 async function checkPhoneCentered(page, vw) {
   const box = await page.locator('.phone').boundingBox()
   const leftGap = box.x
@@ -114,6 +157,7 @@ async function main() {
       await completeOnboarding(page)
       await checkSearchVisible(page, '모바일 390x844', 'ㄱㅊㅉ', '김치찌개')
       await checkSearchVisible(page, '모바일 390x844', '김치찌개', '김치찌개')
+      await checkExerciseFlow(page, '모바일 390x844')
       await context.close()
     }
 
@@ -125,6 +169,7 @@ async function main() {
       await checkPhoneCentered(page, 1280)
       await checkSearchVisible(page, '데스크톱 1280x950', 'ㄱㅊㅉ', '김치찌개')
       await checkSearchVisible(page, '데스크톱 1280x950', '김치찌개', '김치찌개')
+      await checkExerciseFlow(page, '데스크톱 1280x950')
       await context.close()
     }
 

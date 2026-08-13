@@ -1,0 +1,105 @@
+import { describe, it, expect } from 'vitest'
+import exercises from './exercises.json'
+import { POSE_KEYS } from '../components/exercise-animations/StickFigure.jsx'
+import { matchFoodItem, rankFoodItem } from '../lib/chosung.js'
+
+const byId = new Map(exercises.map((e) => [e.id, e]))
+
+describe('exercises.json — 데이터 무결성', () => {
+  it('80종 이상이어야 한다', () => {
+    expect(exercises.length).toBeGreaterThanOrEqual(80)
+  })
+
+  it('id가 전부 고유해야 한다', () => {
+    const ids = exercises.map((e) => e.id)
+    expect(new Set(ids).size).toBe(ids.length)
+  })
+
+  const REQUIRED_FIELDS = [
+    'id', 'name', 'aliases', 'place', 'type', 'bodyParts', 'level', 'equipment',
+    'benefit', 'howto', 'breathing', 'mistakes', 'easier', 'harder', 'alternatives',
+    'defaultSets', 'defaultReps', 'restSec', 'metValue', 'animation',
+  ]
+  it('모든 항목이 필수 필드를 갖춰야 한다(benefit·howto·breathing·mistakes 포함)', () => {
+    const missing = exercises.filter((e) => REQUIRED_FIELDS.some((f) => !(f in e)))
+    expect(missing.map((e) => e.id)).toEqual([])
+  })
+
+  it('howto는 3~6단계여야 한다', () => {
+    const bad = exercises.filter((e) => e.howto.length < 3 || e.howto.length > 6)
+    expect(bad.map((e) => e.id)).toEqual([])
+  })
+
+  it('mistakes·alternatives는 2개 이상이어야 한다', () => {
+    const bad = exercises.filter((e) => e.mistakes.length < 2 || e.alternatives.length < 2)
+    expect(bad.map((e) => e.id)).toEqual([])
+  })
+
+  it('easier·harder·alternatives는 실제 존재하는 id를 가리켜야 한다', () => {
+    const bad = []
+    for (const e of exercises) {
+      for (const ref of ['easier', 'harder']) if (e[ref] && !byId.has(e[ref])) bad.push(`${e.id}.${ref}`)
+      for (const alt of e.alternatives) if (!byId.has(alt)) bad.push(`${e.id}.alternatives`)
+    }
+    expect(bad).toEqual([])
+  })
+
+  it('animation 필드는 20종 캐노니컬 포즈 중 하나여야 한다', () => {
+    const bad = exercises.filter((e) => !POSE_KEYS.includes(e.animation))
+    expect(bad.map((e) => e.id)).toEqual([])
+    expect(POSE_KEYS.length).toBe(20)
+  })
+})
+
+describe('exercises.json — 장소별 최소 개수 (완료 기준 1)', () => {
+  it('집(맨몸, 기구 없음) 30종 이상', () => {
+    const list = exercises.filter((e) => e.place.includes('home') && e.equipment === '없음' && e.type === 'strength')
+    expect(list.length).toBeGreaterThanOrEqual(30)
+  })
+  it('집(소도구) 10종 이상', () => {
+    const list = exercises.filter((e) => e.place.includes('home') && e.equipment !== '없음')
+    expect(list.length).toBeGreaterThanOrEqual(10)
+  })
+  it('스트레칭·요가 15종 이상', () => {
+    expect(exercises.filter((e) => e.type === 'stretch').length).toBeGreaterThanOrEqual(15)
+  })
+  it('헬스장 기구 20종 이상', () => {
+    const list = exercises.filter((e) => e.place.includes('gym') && !e.place.includes('outdoor-gym'))
+    expect(list.length).toBeGreaterThanOrEqual(20)
+  })
+  it('야외 운동기구 8종 이상', () => {
+    expect(exercises.filter((e) => e.place.includes('outdoor-gym')).length).toBeGreaterThanOrEqual(8)
+  })
+  it('유산소 10종 이상', () => {
+    expect(exercises.filter((e) => e.type === 'cardio').length).toBeGreaterThanOrEqual(10)
+  })
+})
+
+describe('exercises.json — 1단계 chosung.js 검색 재사용', () => {
+  it('초성 검색 "ㅅㅋㅌ"로 "기본 스쿼트"를 찾는다', () => {
+    const results = exercises.filter((e) => matchFoodItem(e, 'ㅅㅋㅌ'))
+    expect(results.some((e) => e.id === 'squat-basic')).toBe(true)
+  })
+  it('완성 단어 "런지" 검색은 이름에 포함된 운동만 찾는다', () => {
+    const results = exercises.filter((e) => matchFoodItem(e, '런지'))
+    expect(results.length).toBeGreaterThan(0)
+    expect(results.every((e) => e.name.includes('런지') || (e.aliases || []).some((a) => a.includes('런지')))).toBe(true)
+  })
+  it('별칭 검색 "풀업"이 "철봉 턱걸이"를 관련도 1순위로 찾는다', () => {
+    const results = exercises
+      .filter((e) => matchFoodItem(e, '풀업'))
+      .map((e) => ({ e, rank: rankFoodItem(e, '풀업') }))
+      .sort((a, b) => a.rank - b.rank)
+    expect(results[0]?.e.id).toBe('pull-up-outdoor')
+  })
+})
+
+describe('exercises.json — 완료 기준 2: 헬스장·야외기구 운동 전부에 equipmentGuide 존재', () => {
+  it('기구를 쓰는 헬스장·야외기구 운동은 모두 equipmentGuide를 갖는다', () => {
+    const targets = exercises.filter((e) =>
+      (e.place.includes('gym') || e.place.includes('outdoor-gym')) && e.equipment !== '없음')
+    expect(targets.length).toBeGreaterThan(0)
+    const missing = targets.filter((e) => !e.equipmentGuide)
+    expect(missing.map((e) => e.id)).toEqual([])
+  })
+})

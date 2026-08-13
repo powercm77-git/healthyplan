@@ -194,6 +194,44 @@ input::placeholder{color:#5E5980}
 .fl-item .fi{font-size:.78rem;color:var(--sub)}
 .fl-item .fc{font-size:.92rem;font-weight:900;color:var(--amber)}
 
+/* ── 운동 라이브러리 ── */
+.filterbar{margin-bottom:14px}
+.exlist{display:flex;flex-direction:column;gap:10px}
+.exitem{
+  display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:10px 14px;cursor:pointer;transition:border-color .15s;
+}
+.exitem:active{border-color:var(--g2)}
+.exipic{
+  width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.06);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.exiname{font-weight:900;font-size:.98rem}
+.exisub{font-size:.78rem;color:var(--sub);margin-top:2px}
+
+/* ── 운동 상세 ── */
+.detail-anim{display:flex;justify-content:center;align-items:center;padding:12px 0 4px}
+.mistakebox{
+  background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.28);
+  border-radius:16px;padding:16px;margin-bottom:14px;
+}
+.diffbtns{display:flex;gap:10px;margin-top:16px}
+
+/* ── 운동 실행 ── */
+.sessionhead{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  font-size:.82rem;color:var(--sub);margin-bottom:6px;
+}
+.mutebtn{background:none;border:1px solid var(--line);border-radius:10px;width:34px;height:34px;font-size:1rem;cursor:pointer;color:var(--ink)}
+.counter{text-align:center;font-weight:900;font-size:1.05rem;margin-top:6px;color:var(--sub)}
+.timerbig{text-align:center;font-size:3.4rem;line-height:1.1;margin-top:2px}
+
+/* ── 운동 기록(최근 7일) ── */
+.recordstrip{display:flex;justify-content:space-between;align-items:flex-end;gap:6px;height:70px;margin-top:6px}
+.recordday{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
+.recordday .rbar{width:100%;max-width:22px;border-radius:5px 5px 3px 3px;background:var(--grad)}
+.recordday .rlbl{font-size:.7rem;color:var(--sub)}
+
 /* ── 설정 ── */
 .disclaimer{font-size:.78rem;color:var(--sub);line-height:1.6;padding:14px;border:1px solid var(--line);border-radius:14px;margin-top:20px}
 

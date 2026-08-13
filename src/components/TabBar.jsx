@@ -4,7 +4,7 @@ import { useFeedback } from './Feedback.jsx'
 const TABS = [
   { id: 'home', label: '홈', icon: '🏠', locked: false },
   { id: 'meals', label: '식단', icon: '🥗', locked: false },
-  { id: 'exercise', label: '운동', icon: '🏃', locked: true, lockMsg: '운동 탭은 2단계에서 열려요' },
+  { id: 'exercise', label: '운동', icon: '🏃', locked: false },
   { id: 'report', label: '리포트', icon: '📈', locked: true, lockMsg: '리포트는 3단계에서 열려요' },
 ]
 

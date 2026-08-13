@@ -1,0 +1,182 @@
+/* poses.css — StickFigure의 기본 골격 스타일 + 20종 동작 키프레임.
+   구조: rot-fig(전신 기울임) > rot-torso(몸통) + hip-l/hip-r(다리 루트)
+   각 관절은 "고정 위치(부모 translate)"와 "회전(자식 rot-*)"이 분리돼 있어
+   자식의 transform은 안전하게 rotate()만 사용한다. */
+
+.stickfig { overflow: visible; }
+.stickfig .head { fill: var(--ink, #F5F3FF); }
+.stickfig line {
+  stroke: var(--ink, #F5F3FF);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+.stickfig .rot-fig, .stickfig .rot-torso,
+.stickfig .rot-arm-l, .stickfig .rot-arm-r, .stickfig .rot-forearm-l, .stickfig .rot-forearm-r,
+.stickfig .rot-thigh-l, .stickfig .rot-thigh-r, .stickfig .rot-shin-l, .stickfig .rot-shin-r {
+  transform-box: fill-box;
+  transform-origin: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stickfig * { animation: none !important; }
+}
+
+/* ── 1. squat ── */
+.pose-squat .rot-fig { animation: sq-fig 1.6s ease-in-out infinite; }
+.pose-squat .rot-thigh-l, .pose-squat .rot-thigh-r { animation: sq-thigh 1.6s ease-in-out infinite; }
+.pose-squat .rot-shin-l, .pose-squat .rot-shin-r { animation: sq-shin 1.6s ease-in-out infinite; }
+.pose-squat .rot-arm-l, .pose-squat .rot-arm-r { animation: sq-arm 1.6s ease-in-out infinite; }
+@keyframes sq-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(14px)} }
+@keyframes sq-thigh { 0%,100%{transform:rotate(0)} 50%{transform:rotate(50deg)} }
+@keyframes sq-shin { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-70deg)} }
+@keyframes sq-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-110deg)} }
+
+/* ── 2. pushup (몸을 눕혀 표현) ── */
+.pose-pushup .rot-fig { animation: pu-fig 1.4s ease-in-out infinite; }
+.pose-pushup .rot-arm-l, .pose-pushup .rot-arm-r { animation: pu-arm 1.4s ease-in-out infinite; }
+@keyframes pu-fig { 0%,100%{transform:rotate(90deg) translateX(0)} 50%{transform:rotate(90deg) translateX(-10px)} }
+@keyframes pu-arm { 0%,100%{transform:rotate(20deg)} 50%{transform:rotate(-40deg)} }
+
+/* ── 3. lunge ── */
+.pose-lunge .rot-thigh-l { animation: lg-thigh-l 1.8s ease-in-out infinite; }
+.pose-lunge .rot-shin-l { animation: lg-shin-l 1.8s ease-in-out infinite; }
+.pose-lunge .rot-thigh-r { animation: lg-thigh-r 1.8s ease-in-out infinite; }
+.pose-lunge .rot-shin-r { animation: lg-shin-r 1.8s ease-in-out infinite; }
+.pose-lunge .rot-fig { animation: lg-fig 1.8s ease-in-out infinite; }
+@keyframes lg-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(10px)} }
+@keyframes lg-thigh-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(45deg)} }
+@keyframes lg-shin-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-70deg)} }
+@keyframes lg-thigh-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-35deg)} }
+@keyframes lg-shin-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(55deg)} }
+
+/* ── 4. plank (버티기 — 미세한 흔들림만) ── */
+.pose-plank .rot-fig { animation: pl-fig 2.4s ease-in-out infinite; }
+@keyframes pl-fig { 0%,100%{transform:rotate(90deg)} 50%{transform:rotate(86deg)} }
+
+/* ── 5. crunch ── */
+.pose-crunch .rot-torso { animation: cr-torso 1.3s ease-in-out infinite; }
+.pose-crunch .rot-thigh-l, .pose-crunch .rot-thigh-r { animation: cr-thigh 1.3s ease-in-out infinite; }
+@keyframes cr-torso { 0%,100%{transform:rotate(0)} 50%{transform:rotate(35deg)} }
+@keyframes cr-thigh { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-25deg)} }
+
+/* ── 6. jumping-jack ── */
+.pose-jumping-jack .rot-fig { animation: jj-fig .7s ease-in-out infinite; }
+.pose-jumping-jack .rot-arm-l { animation: jj-arm-l .7s ease-in-out infinite; }
+.pose-jumping-jack .rot-arm-r { animation: jj-arm-r .7s ease-in-out infinite; }
+.pose-jumping-jack .rot-thigh-l { animation: jj-thigh-l .7s ease-in-out infinite; }
+.pose-jumping-jack .rot-thigh-r { animation: jj-thigh-r .7s ease-in-out infinite; }
+@keyframes jj-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes jj-arm-l { 0%,100%{transform:rotate(10deg)} 50%{transform:rotate(-170deg)} }
+@keyframes jj-arm-r { 0%,100%{transform:rotate(-10deg)} 50%{transform:rotate(170deg)} }
+@keyframes jj-thigh-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(20deg)} }
+@keyframes jj-thigh-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-20deg)} }
+
+/* ── 7. bridge (누워서 골반 들기 — 전신 눕힘) ── */
+.pose-bridge .rot-fig { transform: rotate(90deg); }
+.pose-bridge .rot-thigh-l, .pose-bridge .rot-thigh-r { animation: br-thigh 1.6s ease-in-out infinite; }
+.pose-bridge .rot-shin-l, .pose-bridge .rot-shin-r { animation: br-shin 1.6s ease-in-out infinite; }
+@keyframes br-thigh { 0%,100%{transform:rotate(20deg)} 50%{transform:rotate(-15deg)} }
+@keyframes br-shin { 0%,100%{transform:rotate(-70deg)} 50%{transform:rotate(-70deg)} }
+
+/* ── 8. deadlift ── */
+.pose-deadlift .rot-torso { animation: dl-torso 1.8s ease-in-out infinite; }
+.pose-deadlift .rot-arm-l, .pose-deadlift .rot-arm-r { animation: dl-arm 1.8s ease-in-out infinite; }
+.pose-deadlift .rot-thigh-l, .pose-deadlift .rot-thigh-r { animation: dl-thigh 1.8s ease-in-out infinite; }
+@keyframes dl-torso { 0%,100%{transform:rotate(0)} 50%{transform:rotate(55deg)} }
+@keyframes dl-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(30deg)} }
+@keyframes dl-thigh { 0%,100%{transform:rotate(0)} 50%{transform:rotate(20deg)} }
+
+/* ── 9. press (덤벨/바벨 위로 밀기) ── */
+.pose-press .rot-arm-l, .pose-press .rot-arm-r { animation: pr-arm 1.3s ease-in-out infinite; }
+.pose-press .rot-forearm-l, .pose-press .rot-forearm-r { animation: pr-forearm 1.3s ease-in-out infinite; }
+@keyframes pr-arm { 0%,100%{transform:rotate(20deg)} 50%{transform:rotate(-160deg)} }
+@keyframes pr-forearm { 0%,100%{transform:rotate(90deg)} 50%{transform:rotate(0)} }
+
+/* ── 10. row (당기기) ── */
+.pose-row .rot-torso { transform: rotate(30deg); }
+.pose-row .rot-arm-l, .pose-row .rot-arm-r { animation: rw-arm 1.3s ease-in-out infinite; }
+@keyframes rw-arm { 0%,100%{transform:rotate(-60deg)} 50%{transform:rotate(20deg)} }
+
+/* ── 11. pullup (매달려서 몸 끌어올리기) ── */
+.pose-pullup .rot-arm-l, .pose-pullup .rot-arm-r { transform: rotate(-170deg); }
+.pose-pullup .rot-fig { animation: pl-up-fig 1.5s ease-in-out infinite; }
+@keyframes pl-up-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+
+/* ── 12. dips (평행봉/의자 딥스) ── */
+.pose-dips .rot-arm-l, .pose-dips .rot-arm-r { transform: rotate(-150deg); }
+.pose-dips .rot-forearm-l, .pose-dips .rot-forearm-r { animation: dp-forearm 1.4s ease-in-out infinite; }
+.pose-dips .rot-fig { animation: dp-fig 1.4s ease-in-out infinite; }
+@keyframes dp-forearm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-80deg)} }
+@keyframes dp-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(10px)} }
+
+/* ── 13. walk ── */
+.pose-walk .rot-thigh-l { animation: wk-thigh-l 1.1s ease-in-out infinite; }
+.pose-walk .rot-thigh-r { animation: wk-thigh-r 1.1s ease-in-out infinite; }
+.pose-walk .rot-arm-l { animation: wk-arm-l 1.1s ease-in-out infinite; }
+.pose-walk .rot-arm-r { animation: wk-arm-r 1.1s ease-in-out infinite; }
+.pose-walk .rot-fig { animation: wk-fig 1.1s ease-in-out infinite; }
+@keyframes wk-fig { 0%,50%,100%{transform:translateY(0)} 25%,75%{transform:translateY(-4px)} }
+@keyframes wk-thigh-l { 0%,100%{transform:rotate(25deg)} 50%{transform:rotate(-25deg)} }
+@keyframes wk-thigh-r { 0%,100%{transform:rotate(-25deg)} 50%{transform:rotate(25deg)} }
+@keyframes wk-arm-l { 0%,100%{transform:rotate(-20deg)} 50%{transform:rotate(20deg)} }
+@keyframes wk-arm-r { 0%,100%{transform:rotate(20deg)} 50%{transform:rotate(-20deg)} }
+
+/* ── 14. run ── */
+.pose-run .rot-thigh-l { animation: rn-thigh-l .55s ease-in-out infinite; }
+.pose-run .rot-thigh-r { animation: rn-thigh-r .55s ease-in-out infinite; }
+.pose-run .rot-shin-l { animation: rn-shin-l .55s ease-in-out infinite; }
+.pose-run .rot-shin-r { animation: rn-shin-r .55s ease-in-out infinite; }
+.pose-run .rot-arm-l { animation: wk-arm-l .55s ease-in-out infinite; }
+.pose-run .rot-arm-r { animation: wk-arm-r .55s ease-in-out infinite; }
+.pose-run .rot-fig { animation: rn-fig .55s ease-in-out infinite; }
+.pose-run .rot-torso { transform: rotate(8deg); }
+@keyframes rn-fig { 0%,50%,100%{transform:translateY(0)} 25%,75%{transform:translateY(-10px)} }
+@keyframes rn-thigh-l { 0%,100%{transform:rotate(45deg)} 50%{transform:rotate(-45deg)} }
+@keyframes rn-thigh-r { 0%,100%{transform:rotate(-45deg)} 50%{transform:rotate(45deg)} }
+@keyframes rn-shin-l { 0%,100%{transform:rotate(-90deg)} 50%{transform:rotate(-10deg)} }
+@keyframes rn-shin-r { 0%,100%{transform:rotate(-10deg)} 50%{transform:rotate(-90deg)} }
+
+/* ── 15. mountain-climber (플랭크 자세에서 무릎 당기기) ── */
+.pose-mountain-climber .rot-fig { transform: rotate(90deg); }
+.pose-mountain-climber .rot-thigh-l { animation: mc-thigh-l .6s ease-in-out infinite; }
+.pose-mountain-climber .rot-thigh-r { animation: mc-thigh-r .6s ease-in-out infinite; }
+.pose-mountain-climber .rot-shin-l { animation: mc-shin-l .6s ease-in-out infinite; }
+.pose-mountain-climber .rot-shin-r { animation: mc-shin-r .6s ease-in-out infinite; }
+@keyframes mc-thigh-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-90deg)} }
+@keyframes mc-thigh-r { 0%,100%{transform:rotate(-90deg)} 50%{transform:rotate(0)} }
+@keyframes mc-shin-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(80deg)} }
+@keyframes mc-shin-r { 0%,100%{transform:rotate(80deg)} 50%{transform:rotate(0)} }
+
+/* ── 16. cycle (사이클/자전거 — 앉아서 다리 회전) ── */
+.pose-cycle .rot-torso { transform: rotate(35deg); }
+.pose-cycle .rot-thigh-l { animation: cy-thigh-l 1s linear infinite; }
+.pose-cycle .rot-thigh-r { animation: cy-thigh-r 1s linear infinite; }
+.pose-cycle .rot-shin-l { animation: cy-shin-l 1s linear infinite; }
+.pose-cycle .rot-shin-r { animation: cy-shin-r 1s linear infinite; }
+@keyframes cy-thigh-l { 0%{transform:rotate(-30deg)} 50%{transform:rotate(40deg)} 100%{transform:rotate(-30deg)} }
+@keyframes cy-thigh-r { 0%{transform:rotate(40deg)} 50%{transform:rotate(-30deg)} 100%{transform:rotate(40deg)} }
+@keyframes cy-shin-l { 0%{transform:rotate(-20deg)} 50%{transform:rotate(-60deg)} 100%{transform:rotate(-20deg)} }
+@keyframes cy-shin-r { 0%{transform:rotate(-60deg)} 50%{transform:rotate(-20deg)} 100%{transform:rotate(-60deg)} }
+
+/* ── 17. stretch-neck ── */
+.pose-stretch-neck .rot-torso { animation: sn-head 2s ease-in-out infinite; }
+@keyframes sn-head { 0%,100%{transform:rotate(0)} 50%{transform:rotate(14deg)} }
+
+/* ── 18. stretch-shoulder ── */
+.pose-stretch-shoulder .rot-arm-l { animation: ss-arm 2s ease-in-out infinite; }
+.pose-stretch-shoulder .rot-forearm-r { animation: ss-forearm 2s ease-in-out infinite; }
+@keyframes ss-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-100deg)} }
+@keyframes ss-forearm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(90deg)} }
+
+/* ── 19. stretch-back (허리/옆구리/요가 공용) ── */
+.pose-stretch-back .rot-torso { animation: sb-torso 2.2s ease-in-out infinite; }
+.pose-stretch-back .rot-arm-l { animation: sb-arm 2.2s ease-in-out infinite; }
+@keyframes sb-torso { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-20deg)} }
+@keyframes sb-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-160deg)} }
+
+/* ── 20. stretch-hamstring ── */
+.pose-stretch-hamstring .rot-torso { animation: sh-torso 2.2s ease-in-out infinite; }
+.pose-stretch-hamstring .rot-thigh-l, .pose-stretch-hamstring .rot-thigh-r { transform: rotate(10deg); }
+.pose-stretch-hamstring .rot-shin-r { animation: sh-shin 2.2s ease-in-out infinite; }
+@keyframes sh-torso { 0%,100%{transform:rotate(0)} 50%{transform:rotate(30deg)} }
+@keyframes sh-shin { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-15deg)} }

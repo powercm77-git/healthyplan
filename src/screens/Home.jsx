@@ -1,12 +1,13 @@
-// Home.jsx — 홈 대시보드: 에너지 링, 오늘의 운동, 물·체중 위젯
+// Home.jsx — 홈 대시보드: 에너지 링, 오늘의 운동 요약, 물·체중 위젯
 import { useEffect, useRef, useState } from 'react'
 import EnergyRing from '../components/EnergyRing.jsx'
-import ExerciseCard from '../components/ExerciseCard.jsx'
 import WaterWidget from '../components/WaterWidget.jsx'
+import { StickFigure } from '../components/exercise-animations/index.js'
 import { useFeedback } from '../components/Feedback.jsx'
 import { getMealsByDate, getDay, setDay as dbSetDay, getActiveDates } from '../lib/db.js'
 import { calcStreak } from '../lib/streak.js'
 import { todayKey } from '../lib/date.js'
+import { ensureTodayRoutine } from '../lib/ensureRoutine.js'
 import exercises from '../data/exercises.json'
 
 const byId = Object.fromEntries(exercises.map((e) => [e.id, e]))
@@ -16,7 +17,7 @@ const GREETING = {
   keep: <>오늘도 <span className="hl">건강하게!</span></>,
 }
 
-export default function Home({ profile, onOpenSettings }) {
+export default function Home({ profile, onOpenSettings, onOpenExercise }) {
   const { toast, burst } = useFeedback()
   const today = todayKey()
   const [totals, setTotals] = useState({ eaten: 0, c: 0, p: 0, f: 0 })
@@ -26,9 +27,10 @@ export default function Home({ profile, onOpenSettings }) {
   const firedRef = useRef({ milestone50: false, milestone90: false })
 
   async function load() {
-    const [meals, dayRow, activeDates] = await Promise.all([
+    const [meals, dayRowRaw, activeDates] = await Promise.all([
       getMealsByDate(today), getDay(today), getActiveDates(),
     ])
+    const dayRow = await ensureTodayRoutine(profile, today, dayRowRaw)
     const totalsNext = meals.reduce(
       (acc, m) => ({ eaten: acc.eaten + m.kcal, c: acc.c + m.carbs, p: acc.p + m.protein, f: acc.f + m.fat }),
       { eaten: 0, c: 0, p: 0, f: 0 },
@@ -43,27 +45,15 @@ export default function Home({ profile, onOpenSettings }) {
 
   if (!day) return <section className="screen active" />
 
-  const exercise = byId[day.exerciseId] || exercises[0]
+  const routine = day.routine.map((id) => byId[id]).filter(Boolean)
+  const doneCount = day.routineDone.length
+  const target = profile.target + day.exerciseKcal
 
   async function handleMilestone(key) {
     if (firedRef.current[key]) return
     firedRef.current[key] = true
     await dbSetDay(today, { [key]: true })
     burst(18)
-  }
-
-  async function handleSwap(newId) {
-    const next = await dbSetDay(today, { exerciseId: newId, exerciseDone: false })
-    setDayState(next)
-    toast('바꿨어요! 다음 배정에도 기억해둘게요 ✓')
-  }
-
-  async function handleFinishExercise() {
-    if (day.exerciseDone) return
-    const next = await dbSetDay(today, { exerciseDone: true })
-    setDayState(next)
-    burst(28)
-    toast('대단해요! 🔥 연속 기록이 이어집니다')
   }
 
   async function handleWater(n) {
@@ -98,7 +88,7 @@ export default function Home({ profile, onOpenSettings }) {
       <div className="card">
         <EnergyRing
           eaten={totals.eaten}
-          target={profile.target}
+          target={target}
           carbs={{ val: totals.c, goal: profile.tCarbs }}
           protein={{ val: totals.p, goal: profile.tProtein }}
           fat={{ val: totals.f, goal: profile.tFat }}
@@ -106,13 +96,19 @@ export default function Home({ profile, onOpenSettings }) {
         />
       </div>
 
-      <ExerciseCard
-        exercise={exercise}
-        byId={byId}
-        done={day.exerciseDone}
-        onSwap={handleSwap}
-        onFinish={handleFinishExercise}
-      />
+      <div className="card" onClick={onOpenExercise} style={{ cursor: 'pointer' }}>
+        <p className="eyebrow">오늘의 운동 · 따라만 하세요</p>
+        <div className="exo">
+          <div className="pic"><StickFigure pose={routine[0]?.animation || 'squat'} size={40} /></div>
+          <div>
+            <div className="nm">{routine.length > 0 ? `${routine.length}개 동작` : '운동을 준비하고 있어요'}</div>
+            <div className="st">{doneCount}/{routine.length} 완료{day.exerciseKcal > 0 ? ` · ${day.exerciseKcal}kcal 소모` : ''}</div>
+          </div>
+          <button className="swapbtn" onClick={(e) => { e.stopPropagation(); onOpenExercise() }}>
+            {doneCount > 0 ? '이어하기 ▶' : '시작하기 ▶'}
+          </button>
+        </div>
+      </div>
 
       <div className="widgets">
         <WaterWidget value={day.water} onChange={handleWater} />
