@@ -21,14 +21,35 @@
 .stickfig .thigh { stroke-width: 8; }
 .stickfig .upperarm { stroke-width: 6.5; }
 .stickfig .forearm, .stickfig .shin { stroke-width: 5.5; }
+.stickfig .foot { stroke-width: 5; }
+/* 척추선: 가슴 아랫변~골반 윗변을 잇는 굵은 선 — 몸통이 굽거나 비틀려도 두 조각이 끊겨 보이지 않는다 */
+.stickfig .spine { stroke-width: 11; }
+/* 손: 팔뚝 끝의 작은 채운 원 */
+.stickfig .hand { fill: var(--ink, #F5F3FF); }
 /* 관절 원: 이어지는 두 부위의 선 두께보다 넉넉히 크게 그려 각도가 꺾여도 이음매가 끊겨 보이지 않게 한다 */
 .stickfig .joint { fill: var(--ink, #F5F3FF); opacity: .55; }
 .stickfig .joint-sm { opacity: .4; }
 
-/* 타겟 부위 하이라이트(highlightParts prop) */
+/* 배경색 외곽선: 팔·팔뚝·허벅지·정강이·발·손 각각에 본체보다 굵게(또는 크게) 배경색으로
+   먼저 깔아, 부위가 서로 겹쳐도 경계가 살아 사람 형태로 읽히게 한다. */
+.stickfig .upperarm-outline, .stickfig .forearm-outline,
+.stickfig .thigh-outline, .stickfig .shin-outline, .stickfig .foot-outline {
+  stroke: #0F0D1C;
+  stroke-linecap: round;
+}
+.stickfig .upperarm-outline { stroke-width: 11; }
+.stickfig .forearm-outline { stroke-width: 10; }
+.stickfig .thigh-outline { stroke-width: 13; }
+.stickfig .shin-outline { stroke-width: 10; }
+.stickfig .foot-outline { stroke-width: 9; }
+.stickfig .hand-outline { fill: #0F0D1C; stroke: none; }
+
+/* 타겟 부위 하이라이트(highlightParts prop) — 외곽선(-outline)은 항상 배경색을 유지하고
+   본체(hl 붙는 실제 부위)만 강조색으로 바뀐다. */
 .stickfig .hl { stroke: var(--g2, #FF4E7B); }
 .stickfig .head.hl { fill: var(--g2, #FF4E7B); }
 .stickfig .torso.hl { fill: var(--g2, #FF4E7B); stroke: var(--g2, #FF4E7B); }
+.stickfig .hand.hl { fill: var(--g2, #FF4E7B); }
 
 .stickfig .dirarrow { font-size: 15px; fill: var(--sky, #5AC8FA); opacity: .85; }
 
@@ -57,7 +78,8 @@
 .pose-squat .rot-arm-l, .pose-squat .rot-arm-r { animation: sq-arm var(--tempo-dur, 1.6s) ease-in-out infinite; }
 @keyframes sq-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(14px)} }
 @keyframes sq-thigh { 0%,100%{transform:rotate(0)} 50%{transform:rotate(50deg)} }
-@keyframes sq-shin { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-70deg)} }
+/* 정강이는 허벅지 회전을 상쇄해 항상 거의 수직을 유지한다(무릎이 발끝을 넘지 않는 스쿼트 자세) */
+@keyframes sq-shin { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-50deg)} }
 @keyframes sq-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-110deg)} }
 
 /* ── 2. pushup (몸을 눕혀 표현) ── */
@@ -73,10 +95,13 @@
 .pose-lunge .rot-shin-r { animation: lg-shin-r var(--tempo-dur, 1.8s) ease-in-out infinite; }
 .pose-lunge .rot-fig { animation: lg-fig var(--tempo-dur, 1.8s) ease-in-out infinite; }
 @keyframes lg-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(10px)} }
+/* 앞다리(L): 허벅지가 앞으로 나가고, 정강이는 그만큼 되돌아와 무릎 아래서 거의 수직을 유지한다. */
 @keyframes lg-thigh-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(45deg)} }
-@keyframes lg-shin-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-70deg)} }
-@keyframes lg-thigh-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-35deg)} }
-@keyframes lg-shin-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(55deg)} }
+@keyframes lg-shin-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-45deg)} }
+/* 뒷다리(R): 허벅지가 반대로 뒤로 빠지고, 정강이는 살짝만 더 뒤로 이어져 뒷다리가 편 채
+   뒤로 끌리는 모양이 된다 — 앞다리 정강이(수직)와 방향이 갈라져 두 다리가 X자로 겹치지 않는다. */
+@keyframes lg-thigh-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-45deg)} }
+@keyframes lg-shin-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(20deg)} }
 
 /* ── 4. plank (버티기 — 미세한 흔들림만) ── */
 .pose-plank .rot-fig { animation: pl-fig var(--tempo-dur, 2.4s) ease-in-out infinite; }

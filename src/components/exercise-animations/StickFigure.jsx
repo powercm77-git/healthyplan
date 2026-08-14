@@ -5,9 +5,12 @@
 // 쓰면 CSS가 속성을 완전히 덮어써 위치가 틀어지므로, 위치는 바깥 <g>(속성),
 // 회전은 안쪽 <g class="rot-...">(CSS 애니메이션)이 각각 담당한다.
 //
-// 2.5단계 개선: 관절 원 + 부위별 두께 구분, 동작 방향 표시, 타겟 부위 하이라이트
-// (highlightParts), 시작/종료 자세 정지 스냅샷(freeze).
+// 2.5단계: 관절 원 + 부위별 두께 구분, 동작 방향 표시, 시작/종료 자세 스냅샷(freeze).
+// 2.7단계 재작업: 실측(getBBox) 기반 포즈별 viewBox, 어깨-가슴 폭 분리, 부위별
+// 배경색 외곽선, 손/발, 척추선, 인체 각도 재조정 — scripts/calibrate-poses.mjs로
+// 산출한 값을 POSE_VIEWBOX에 반영한다.
 import './poses.css'
+import { POSE_VIEWBOX, DEFAULT_VIEWBOX } from './poseViewBox.js'
 
 export const POSE_KEYS = [
   'squat', 'pushup', 'lunge', 'plank', 'crunch', 'jumping-jack', 'bridge',
@@ -57,10 +60,26 @@ export function NoPosePlaceholder({ size = 96, className = '' }) {
   )
 }
 
-// rot-fig를 90도 눕혀 표현하는 포즈들(엎드려서 하는 동작). 몸통 좌표계가 "세워둔 사람" 기준으로
-// 잡혀 있어서 그대로 90도 돌리면 그림 중심이 상자 중심에서 한쪽으로 크게 밀려난다 — 이 포즈들만
-// 원점(outer translate)을 보정해 박스 정중앙에 오게 한다.
-const ROTATE90_POSES = new Set(['pushup', 'plank', 'mountain-climber', 'bridge'])
+// 선(팔·팔뚝·허벅지·정강이·발)과 배경색 외곽선을 한 쌍으로 그린다. 외곽선을 먼저(아래)
+// 그리고 본체를 그 위에 그리면, 부위가 서로 겹쳐도 경계가 살아 사람 형태로 읽힌다.
+function OutlinedLine({ base, hlClass, x1, y1, x2, y2 }) {
+  return (
+    <>
+      <line className={`${base}-outline`} x1={x1} y1={y1} x2={x2} y2={y2} />
+      <line className={`${base}${hlClass}`} x1={x1} y1={y1} x2={x2} y2={y2} />
+    </>
+  )
+}
+
+// 손/발 끝: 배경색 외곽 원을 먼저 깔고 본체 원을 그 위에 그린다.
+function OutlinedDot({ base, hlClass, cx = 0, cy = 0, r }) {
+  return (
+    <>
+      <circle className={`${base}-outline`} cx={cx} cy={cy} r={r + 2} />
+      <circle className={`${base}${hlClass}`} cx={cx} cy={cy} r={r} />
+    </>
+  )
+}
 
 export default function StickFigure({
   pose, size = 96, className = '', tempoSec, freeze, highlightParts, showDirection = false,
@@ -71,45 +90,64 @@ export default function StickFigure({
   const hl = (group) => (groups.has(group) ? ' hl' : '')
   const freezeClass = freeze ? ` freeze-paused freeze-${freeze}` : ''
   const dirIcon = showDirection ? POSE_DIRECTION[safePose] : null
-  const originX = ROTATE90_POSES.has(safePose) ? 124 : 50
-  const originY = ROTATE90_POSES.has(safePose) ? 103 : 74
+
+  // 포즈별 실측 viewBox(scripts/calibrate-poses.mjs 산출). 서 있는 포즈는 세로형,
+  // 눕는 포즈는 가로형 — 어느 쪽이든 인물 전체(시작+종료 자세 합)가 중앙에 들어온다.
+  const [vx, vy, vw, vh] = POSE_VIEWBOX[safePose] || DEFAULT_VIEWBOX
+  const dirX = vx + vw - 6
+  const dirY = vy + 14
 
   return (
     <svg
       className={`stickfig pose-${safePose}${freezeClass} ${className}`}
-      width={size} height={size} viewBox="0 0 100 130"
+      width={size} height={size} viewBox={`${vx} ${vy} ${vw} ${vh}`}
       style={tempoSec ? { '--tempo-dur': `${tempoSec}s` } : undefined}
       role="img" aria-label={`${safePose} 동작 애니메이션`}
     >
-      <g transform={`translate(${originX},${originY})`}>
+      {/* figure-root는 transform이 없는 순수 측정용 래퍼다 — getBBox()로 이 그룹을 재면
+          rot-fig의 회전·이동까지 전부 반영된 실제 렌더 범위를 얻는다(calibrate-poses.mjs). */}
+      <g className="figure-root">
         <g className="rot-fig">
           {/* 골반은 회전하지 않는 고정 조각이다 — 몸통 전체가 굽히기/비틀기 포즈에서 회전해도
               다리가 붙는 지점(골반)은 항상 제자리에 있어 다리가 떨어져 보이지 않는다. */}
           <path className={`torso pelvis${hl('torso')}`} d="M -6,-13 L 6,-13 L 9,0 L -9,0 Z" />
           <g className="rot-torso">
-            {/* 머리-목-가슴을 끊김 없는 하나의 덩어리로. 가슴 아랫변은 골반 조각과 겹치도록
-                피벗(어깨 아래 몸통 중심)에 가깝고 좁게 그려, 굽히기 포즈에서도 골반과 계속 겹친다. */}
-            <path className={`torso chest${hl('torso')}`} d="M -12,-36 L 12,-36 L 5,-11 L -5,-11 Z" />
+            {/* 머리-목-가슴을 끊김 없는 하나의 덩어리로. 가슴 폭(±10)을 어깨 관절(±14)보다
+                좁혀, 팔을 내려도 팔이 몸통 실루엣에 묻히지 않고 별도 부위로 보인다. */}
+            <path className={`torso chest${hl('torso')}`} d="M -10,-36 L 10,-36 L 5,-11 L -5,-11 Z" />
+            {/* 척추선: 가슴 아래~골반 위를 굵게 이어, 몸통이 굽혀지거나 비틀려도
+                가슴 조각과 골반 조각 사이가 끊겨 보이지 않게 한다(발주자 제안). */}
+            <line className={`spine${hl('torso')}`} x1="0" y1="-30" x2="0" y2="-8" />
             <line className={`neck${hl('head')}`} x1="0" y1="-42" x2="0" y2="-34" />
             <circle className={`head${hl('head')}`} cx="0" cy="-50" r="8" />
 
-            <g className="shoulder-l" transform="translate(-12,-36)">
+            <g className="shoulder-l" transform="translate(-14,-36)">
               <circle className="joint" cx="0" cy="0" r="5" />
               <g className="rot-arm-l">
-                <line className={`upperarm${hl('arms')}`} x1="0" y1="0" x2="0" y2="19" />
+                <OutlinedLine base="upperarm" hlClass={hl('arms')} x1="0" y1="0" x2="0" y2="19" />
                 <g transform="translate(0,19)">
                   <circle className="joint joint-sm" cx="0" cy="0" r="4" />
-                  <g className="rot-forearm-l"><line className={`forearm${hl('arms')}`} x1="0" y1="0" x2="0" y2="17" /></g>
+                  <g className="rot-forearm-l">
+                    <OutlinedLine base="forearm" hlClass={hl('arms')} x1="0" y1="0" x2="0" y2="17" />
+                    <g transform="translate(0,17)">
+                      <OutlinedDot base="hand" hlClass={hl('arms')} r="3.2" />
+                    </g>
+                  </g>
                 </g>
               </g>
             </g>
-            <g className="shoulder-r" transform="translate(12,-36)">
+            <g className="shoulder-r" transform="translate(14,-36)">
               <circle className="joint" cx="0" cy="0" r="5" />
               <g className="rot-arm-r">
-                <line className={`upperarm${hl('arms')}`} x1="0" y1="0" x2="0" y2="19" />
+                <OutlinedLine base="upperarm" hlClass={hl('arms')} x1="0" y1="0" x2="0" y2="19" />
                 <g transform="translate(0,19)">
                   <circle className="joint joint-sm" cx="0" cy="0" r="4" />
-                  <g className="rot-forearm-r"><line className={`forearm${hl('arms')}`} x1="0" y1="0" x2="0" y2="17" /></g>
+                  <g className="rot-forearm-r">
+                    <OutlinedLine base="forearm" hlClass={hl('arms')} x1="0" y1="0" x2="0" y2="17" />
+                    <g transform="translate(0,17)">
+                      <OutlinedDot base="hand" hlClass={hl('arms')} r="3.2" />
+                    </g>
+                  </g>
                 </g>
               </g>
             </g>
@@ -118,20 +156,32 @@ export default function StickFigure({
           <g className="hip-l" transform="translate(-9,0)">
             <circle className="joint" cx="0" cy="0" r="6" />
             <g className="rot-thigh-l">
-              <line className={`thigh${hl('legs')}`} x1="0" y1="0" x2="0" y2="25" />
+              <OutlinedLine base="thigh" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="25" />
               <g transform="translate(0,25)">
                 <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
-                <g className="rot-shin-l"><line className={`shin${hl('legs')}`} x1="0" y1="0" x2="0" y2="23" /></g>
+                <g className="rot-shin-l">
+                  <OutlinedLine base="shin" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="23" />
+                  <g transform="translate(0,23)">
+                    <circle className="joint joint-sm" cx="0" cy="0" r="3" />
+                    <OutlinedLine base="foot" hlClass={hl('legs')} x1="0" y1="0" x2="8" y2="0" />
+                  </g>
+                </g>
               </g>
             </g>
           </g>
           <g className="hip-r" transform="translate(9,0)">
             <circle className="joint" cx="0" cy="0" r="6" />
             <g className="rot-thigh-r">
-              <line className={`thigh${hl('legs')}`} x1="0" y1="0" x2="0" y2="25" />
+              <OutlinedLine base="thigh" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="25" />
               <g transform="translate(0,25)">
                 <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
-                <g className="rot-shin-r"><line className={`shin${hl('legs')}`} x1="0" y1="0" x2="0" y2="23" /></g>
+                <g className="rot-shin-r">
+                  <OutlinedLine base="shin" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="23" />
+                  <g transform="translate(0,23)">
+                    <circle className="joint joint-sm" cx="0" cy="0" r="3" />
+                    <OutlinedLine base="foot" hlClass={hl('legs')} x1="0" y1="0" x2="8" y2="0" />
+                  </g>
+                </g>
               </g>
             </g>
           </g>
@@ -139,7 +189,7 @@ export default function StickFigure({
       </g>
 
       {dirIcon && (
-        <text x="94" y="14" textAnchor="end" className="dirarrow">{dirIcon}</text>
+        <text x={dirX} y={dirY} textAnchor="end" className="dirarrow">{dirIcon}</text>
       )}
     </svg>
   )
