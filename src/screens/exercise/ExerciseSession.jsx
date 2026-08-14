@@ -1,8 +1,7 @@
 // ExerciseSession.jsx — 운동 실행 화면 (3-4): 세트/휴식 자동 타이머, 음성 안내, Wake Lock, 교체·건너뛰기
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { StickFigure } from '../../components/exercise-animations/index.js'
+import { StickFigure, POSE_KEYS } from '../../components/exercise-animations/index.js'
 import ExerciseVideoPlayer from '../../components/ExerciseVideoPlayer.jsx'
-import { getVideosFor } from '../../lib/exerciseVideos.js'
 import { suggestProgress, calcKcal } from '../../lib/exerciseEngine.js'
 import { addExerciseLog, bumpExerciseCompleted, bumpExerciseSwapped, getDay, setDay as dbSetDay } from '../../lib/db.js'
 import { useFeedback } from '../../components/Feedback.jsx'
@@ -71,7 +70,9 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const exMeta = meta?.get(ex?.id)
   const progress = useMemo(() => (ex ? suggestProgress(ex, exMeta) : null), [ex, exMeta])
   const totalSets = ex?.defaultSets || 1
-  const videos = ex ? getVideosFor(ex.id) : []
+  const videos = ex ? (ex.videos || []) : []
+  const hasVideo = videos.length > 0
+  const hasAnim = ex ? POSE_KEYS.includes(ex.animation) : false
   const workTarget = ex ? (progress?.type === 'reps' ? progress.reps : ex.defaultReps) : null
   const workTargetSec = ex && ex.repType === 'sec' ? workTarget : null
   const workTargetReps = ex && ex.repType !== 'sec' ? workTarget : null
@@ -303,22 +304,26 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
         <button className="mutebtn" onClick={() => setMuted((m) => !m)} aria-label="음소거">{muted ? '🔇' : '🔊'}</button>
       </div>
 
-      {showVideo && videos.length > 0 ? (
-        <ExerciseVideoPlayer videos={videos} size="small" onFail={() => setShowVideo(false)} />
-      ) : (
+      {hasVideo && (showVideo || !hasAnim) ? (
+        <ExerciseVideoPlayer
+          videos={videos} size="small"
+          onFail={() => setShowVideo(false)}
+          failFallbackText={hasAnim ? '영상을 불러오지 못했어요. 애니메이션으로 볼게요.' : '영상을 불러오지 못했어요. 아래 글 설명을 참고해주세요.'}
+        />
+      ) : hasAnim ? (
         <div className="detail-anim" style={{ padding: '10px 0' }}>
           <StickFigure pose={ex.animation} size={200} tempoSec={pacerActive ? cycleLen : undefined} highlightParts={ex.bodyParts} showDirection />
         </div>
-      )}
-      {videos.length > 0 ? (
+      ) : null}
+      {hasVideo && hasAnim ? (
         <div style={{ textAlign: 'center', marginTop: -4, marginBottom: 6 }}>
           <button type="button" className="videotogglebtn" onClick={() => setShowVideo((v) => !v)}>
             {showVideo ? '애니메이션 보기' : '▶ 영상'}
           </button>
         </div>
-      ) : (
-        <p className="novideo-hint">이 운동은 아래 그림 설명을 참고하세요</p>
-      )}
+      ) : !hasVideo && !hasAnim ? (
+        <p className="novideo-hint">그림과 영상이 없는 운동이에요. 아래 글 설명을 참고하세요</p>
+      ) : null}
 
       {pacerSub && (
         <div className="pacerbox">

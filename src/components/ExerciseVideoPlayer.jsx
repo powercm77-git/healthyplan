@@ -14,7 +14,7 @@ function useOnline() {
   return online
 }
 
-export default function ExerciseVideoPlayer({ videos, size = 'large', onFail }) {
+export default function ExerciseVideoPlayer({ videos, size = 'large', onFail, failFallbackText }) {
   const online = useOnline()
   const [idx, setIdx] = useState(0)
   const [failed, setFailed] = useState(false)
@@ -29,7 +29,7 @@ export default function ExerciseVideoPlayer({ videos, size = 'large', onFail }) 
 
   if (failed) {
     onFail?.()
-    return <p className="videooffline">영상을 불러오지 못했어요. 애니메이션을 참고해주세요.</p>
+    return <p className="videooffline">{failFallbackText || '영상을 불러오지 못했어요.'}</p>
   }
 
   const cur = videos[idx]
