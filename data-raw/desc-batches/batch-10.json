@@ -1,0 +1,349 @@
+[
+  {
+    "id": "kspo-0199",
+    "name": "밴드 어깨 뒤로 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 팔/어깨운동 중, 밴드 어깨 뒤로 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0200",
+    "name": "슈퍼맨 자세",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 슈퍼맨자세운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,척추세움근",
+    "bodyParts": [
+      "엉덩이",
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0201",
+    "name": "엎드려 팔 대고 버티기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 엎드려 팔 대고 버티기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "척추세움근,배곧은근,어깨세모근",
+    "bodyParts": [
+      "척추",
+      "복부",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0202",
+    "name": "옆으로 팔 대고 버티기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 옆으로 팔 대고 버티기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "작은볼기근,중간볼기근,배바깥빗근,어깨세모근",
+    "bodyParts": [
+      "엉덩이",
+      "복부",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0203",
+    "name": "앉아서 다리 펴고 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 앉아서 다리 펴고 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0204",
+    "name": "누워서 다리 펴고 원 그리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 누워서 다리 펴고 원 그리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0205",
+    "name": "팔꿈치 무릎 교차 닿기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 팔꿈치 무릎 교차 닿기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근,배바깥빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0206",
+    "name": "팔 구부려 등 모으기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 팔 구부려 등 모으기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "마름모근",
+    "bodyParts": [
+      "등"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0207",
+    "name": "다리 올려 의자 넘기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 다리 올려 의자 넘기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배가로근,배곧은근,배바깥빗근,배속빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0208",
+    "name": "밴드로 다리 올려 버티기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 밴드로 다리 올려 버티기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,배곧은근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "복부",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0209",
+    "name": "밴드 다리 올려 버티기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 밴드 다리 올려 버티기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0210",
+    "name": "밴드 앞으로 당기기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 밴드 앞으로 당기기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "앞톱니근,큰가슴근,어깨세모근",
+    "bodyParts": [
+      "가슴",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0211",
+    "name": "무릎 구부려 상체 비틀기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 무릎 구부려 상체 비틀기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근,배바깥빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0212",
+    "name": "공 잡고 상체 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 공 잡고 상체 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "척추세움근,위팔세갈래근",
+    "bodyParts": [
+      "척추",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "공",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0213",
+    "name": "팔로 써클링 누르기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 팔로 써클링 누르기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근",
+    "bodyParts": [
+      "가슴"
+    ],
+    "equipment": "써클링",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0214",
+    "name": "V자 버티기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, V자 버티기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근,배가로근,배곧은근,모음근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "복부",
+      "안쪽 넓적다리"
+    ],
+    "equipment": "써클링",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0215",
+    "name": "써클휠로 다리 끌어당기기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 써클휠로 다리 끌어당기기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "써클휠",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0216",
+    "name": "엎드려 다리 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 엎드려 다리 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근",
+    "bodyParts": [
+      "엉덩이"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0217",
+    "name": "무릎 굽혀 엉덩이 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 무릎 굽혀 엉덩이 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0218",
+    "name": "교차 다리 굽히기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 교차 다리 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0219",
+    "name": "앞으로 나가며 앉았다 일어서기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 앞으로 나가며 앉았다 일어서기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0220",
+    "name": "뒷발 의자 올려 굽히기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 뒷발 의자 올려 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

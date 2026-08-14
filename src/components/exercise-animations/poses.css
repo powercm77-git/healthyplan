@@ -4,6 +4,11 @@
    자식의 transform은 안전하게 rotate()만 사용한다. */
 
 .stickfig { overflow: visible; }
+.stickfig-none{
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  border-radius:12px;background:rgba(255,255,255,.04);border:1px dashed var(--line);
+  color:var(--sub);font-size:.72rem;line-height:1.4;
+}
 .stickfig .head { fill: var(--ink, #F5F3FF); }
 .stickfig line {
   stroke: var(--ink, #F5F3FF);

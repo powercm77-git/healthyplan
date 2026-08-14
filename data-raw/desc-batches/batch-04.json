@@ -1,0 +1,347 @@
+[
+  {
+    "id": "kspo-0067",
+    "name": "배 스트레칭",
+    "vdo_desc": "유연성 운동 중, 배 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0068",
+    "name": "넙다리 앞쪽 스트레칭",
+    "vdo_desc": "유연성 운동 중, 넙다리 앞쪽 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근,넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0069",
+    "name": "넙다리 안쪽 스트레칭",
+    "vdo_desc": "유연성 운동 중, 넙다리 안쪽 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "긴모음근,모음근",
+    "bodyParts": [
+      "안쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0070",
+    "name": "공에 엎드려서 상체 들어올리기",
+    "vdo_desc": "요통 강화 운동 중, 몸통운동에 해당하는 공에 엎드려서 상체 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "척추세움근",
+    "bodyParts": [
+      "척추"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0071",
+    "name": "옆으로 누워서 팔 앞으로 당기기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 옆으로 누워서 팔 앞으로 당기기운동을 설명한 운동처방 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "베개",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0072",
+    "name": "테이블 이용하여 팔 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 테이블 이용하여 팔 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "테이블",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0073",
+    "name": "테이블 이용하여 팔 옆으로 벌리기",
+    "vdo_desc": "오십견 운동 중, 테이블 이용하여 팔 옆으로 벌리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "테이블",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0074",
+    "name": "누워서 막대 잡고 팔 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 누워서 막대 잡고 팔 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": null,
+    "bodyParts": [],
+    "equipment": "막대",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0075",
+    "name": "누워서 막대 잡고 팔 회전하기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 누워서 막대 잡고 팔 회전하기운동을 설명한 운동처방 동영상",
+    "musclesKr": "가시아래근,가시윗근,어깨밑근,어깨세모근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "막대",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0076",
+    "name": "막대 잡고 대각선으로 팔 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 막대 잡고 대각선으로 팔 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "넓은등근,어깨세모근,작은원근,큰원근",
+    "bodyParts": [
+      "등",
+      "바깥쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "막대",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0077",
+    "name": "수건 잡고 팔 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 수건 잡고 팔 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "넓은등근,위팔세갈래근",
+    "bodyParts": [
+      "등",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0078",
+    "name": "탄력밴드 당기면서 팔 들어올리기",
+    "vdo_desc": "오십견 강화 운동 중, 탄력밴드 당기면서 팔 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "등세모근,마름모근,어깨세모근,어깨올림근,작은원근",
+    "bodyParts": [
+      "등",
+      "바깥쪽 어깨",
+      "위쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0079",
+    "name": "수건 이용하여 장딴지 늘리기",
+    "vdo_desc": "발목염좌 스트레칭 및 근력강화 운동 중, 스트레칭에 해당하는 수건 이용하여 장딴지 늘리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "장딴지근",
+    "bodyParts": [
+      "종아리"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0080",
+    "name": "수동적 관절가동범위 운동",
+    "vdo_desc": "발목염좌 스트레칭 및 근력강화 운동 중, 스트레칭에 해당하는 수동적 관절가동범위운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "긴발가락폄근,앞정강근",
+    "bodyParts": [
+      "발가락",
+      "정강이"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0081",
+    "name": "밴드 잡고 머리 위에서 팔꿈치 펴기",
+    "vdo_desc": "부동증후군 강화 운동 중, 팔/어깨운동에 해당하는 밴드 잡고 머리 위에서 팔꿈치 펴기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "등세모근,마름모근,아래쪽등세모근",
+    "bodyParts": [
+      "등"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0082",
+    "name": "서서 다리 모으고 벌리기",
+    "vdo_desc": "근력 운동 중, 서서 다리 모으고 벌리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간볼기근,넙다리근막긴장근,모음근",
+    "bodyParts": [
+      "엉덩이",
+      "바깥쪽 넓적다리",
+      "안쪽 넓적다리"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0083",
+    "name": "앉아서 팔꿈치 굽히기",
+    "vdo_desc": "근력 운동 중, 앉아서 팔꿈치 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔노근,위팔두갈래근",
+    "bodyParts": [
+      "앞쪽 위팔"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0084",
+    "name": "공 잡고 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 공 잡고 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,큰허리근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0085",
+    "name": "밴드 걸고 옆으로 누워 다리 올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 밴드 걸고 옆으로 누워 다리 올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "중간볼기근,넙다리근막긴장근",
+    "bodyParts": [
+      "엉덩이",
+      "바깥쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0086",
+    "name": "의자에 앉아 다리로 짐볼 쥐기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 의자에 앉아 다리로 짐볼 쥐기운동을 설명한 운동처방 동영상",
+    "musclesKr": "모음근",
+    "bodyParts": [
+      "안쪽 넓적다리"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0087",
+    "name": "밴드 잡고 누워서 다리 밀기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 밴드 잡고 누워서 다리 밀기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0088",
+    "name": "벽에서 팔 굽혀 펴기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 벽에서 팔굽혀 펴기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰가슴근,어깨세모근,위팔세갈래근",
+    "bodyParts": [
+      "가슴",
+      "바깥쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

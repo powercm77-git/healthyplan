@@ -1,0 +1,369 @@
+[
+  {
+    "id": "kspo-0133",
+    "name": "좌우 회전",
+    "vdo_desc": "경부통 자가운동법 운동 중, 스트레칭에 해당하는 좌우 회전운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "머리반가시근,목/머리널판근,목빗근",
+    "bodyParts": [
+      "뒤쪽 목",
+      "앞쪽 목"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0134",
+    "name": "진자운동",
+    "vdo_desc": "오십견 운동 중, 진자운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가시아래근,가시윗근,어깨밑근,작은원근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0135",
+    "name": "막대 잡고 팔 안쪽/바깥 돌림",
+    "vdo_desc": "오십견 운동 중, 막대 잡고 팔 안쪽/바깥 돌림운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,넓은등근,돌림근,가시아래근,뒤세모근,어깨밑근,작은원근",
+    "bodyParts": [
+      "가슴",
+      "등",
+      "척추",
+      "뒤쪽 어깨",
+      "옆쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "막대",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0136",
+    "name": "굽힘 밸런스운동",
+    "vdo_desc": "오십견 운동 중, 굽힘 밸런스운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가시아래근,가시윗근,어깨밑근,어깨세모근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0137",
+    "name": "벌림 밸런스 운동",
+    "vdo_desc": "오십견 운동 중, 벌림 밸런스운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "아령",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0138",
+    "name": "등척성운동(벌림)",
+    "vdo_desc": "오십견 강화훈련 운동 중, 등척성운동(벌림)을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0139",
+    "name": "등척성 운동(바깥돌림)",
+    "vdo_desc": "오십견 강화 운동 중, 등척성 운동(바깥돌림)을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가시아래근,뒤세모근,작은원근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "옆쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0140",
+    "name": "등척성 운동(안쪽돌림)",
+    "vdo_desc": "오십견 강화 운동 중, 등척성 운동(안쪽돌림)을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,넓은등근,앞세모근,어깨밑근,큰원근",
+    "bodyParts": [
+      "가슴",
+      "등",
+      "앞쪽 어깨",
+      "뒤쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0141",
+    "name": "고정식 자전거 타기",
+    "vdo_desc": "심폐지구력 운동 중, 고정식 자전거 타기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0142",
+    "name": "엎드려 다리 굽히기",
+    "vdo_desc": "근력 운동 중, 엎드려 다리 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0143",
+    "name": "누워서 가슴 밀기",
+    "vdo_desc": "근력 운동 중, 누워서 가슴 밀기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,어깨세모근,위팔세갈래근",
+    "bodyParts": [
+      "가슴",
+      "바깥쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0144",
+    "name": "팔꿈치 맞닿아 원그리기",
+    "vdo_desc": "유연성 운동 중, 팔꿈치 맞닿아 원그리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가시아래근,가시윗근,어깨밑근,작은원근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0145",
+    "name": "등/어깨뒤쪽 스트레칭",
+    "vdo_desc": "유연성 운동 중, 등/어깨뒤쪽 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넓은등근,위팔세갈래근,큰원근",
+    "bodyParts": [
+      "등",
+      "뒤쪽 위팔",
+      "안쪽 어깨"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0146",
+    "name": "몸 앞으로 굽히기",
+    "vdo_desc": "유연성 운동 중, 몸 앞으로 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넓은등근,척추세움근,허리엉덩갈비근",
+    "bodyParts": [
+      "엉덩이",
+      "등",
+      "척추",
+      "허리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0147",
+    "name": "내전근 스트레칭",
+    "vdo_desc": "유연성 운동 중, 내전근 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "긴모음근,두덩정강근,짧은 모음근",
+    "bodyParts": [
+      "안쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0148",
+    "name": "발가락 폄근 스트레칭",
+    "vdo_desc": "유연성 운동 중, 발가락 폄근 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "긴발가락폄근,긴엄지발가락폄근,앞정강근",
+    "bodyParts": [
+      "발가락",
+      "정강이"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0149",
+    "name": "어깨 안쪽 돌림",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 어깨 안쪽 돌림운동을 설명한 운동처방 동영상",
+    "musclesKr": "어깨밑근",
+    "bodyParts": [
+      "뒤쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0150",
+    "name": "스텝박스 오르내리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 스텝박스 오르내리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "넙다리네갈래근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0151",
+    "name": "엎드려 양발 교차로 당기기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 엎드려 양발 교차로 당기기운동을 설명한 운동처방 동영상",
+    "musclesKr": "엉덩관절굽힘근,배곧은근,어깨세모근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "복부",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0152",
+    "name": "엎드려서 다리 굽히기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 엎드려서 다리 굽히기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0153",
+    "name": "바벨 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 바벨들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,척추세움근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "척추",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0154",
+    "name": "서서 어깨 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 서서 어깨 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "등세모근",
+    "bodyParts": [
+      "등"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

@@ -1,0 +1,361 @@
+[
+  {
+    "id": "kspo-0221",
+    "name": "다리 옆으로 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 다리 옆으로 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간볼기근,넙다리근막긴장근,넙다리빗근",
+    "bodyParts": [
+      "엉덩이",
+      "바깥쪽 넓적다리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0222",
+    "name": "앞발 의자 올려 굽히기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 앞발 의자 올려 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩허리근,넙다리곧은근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0223",
+    "name": "앞발 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 앞발 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "앞정강근",
+    "bodyParts": [
+      "정강이"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0224",
+    "name": "밴드 한발 뒤로 들기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 밴드 한 발 뒤로 들기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "장딴지근",
+    "bodyParts": [
+      "종아리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0225",
+    "name": "의자에 앉아 다리 펴서 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 의자에 앉아 다리 펴서 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0226",
+    "name": "밴드 잡고 무릎 펴기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 밴드 잡고 무릎 펴기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0227",
+    "name": "밴드 잡고 다리 옆으로 벌리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 밴드 잡고 다리 옆으로 벌리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가쪽넓은근",
+    "bodyParts": [
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0228",
+    "name": "무릎 올려 공 닿기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 무릎 올려 공 닿기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근",
+    "bodyParts": [
+      "앞쪽 골반"
+    ],
+    "equipment": "큰공",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0229",
+    "name": "허리 비틀어 앉았다 일어서기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 하체운동 중, 허리 비틀어 앉았다 일어서기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,배빗근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "복부",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0230",
+    "name": "제자리 뛰기",
+    "vdo_desc": "유소년 심폐지구력을 위한 제자리 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근,볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0231",
+    "name": "왕복 달리기",
+    "vdo_desc": "유소년 심폐지구력을 위한 왕복 달리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,큰볼기근,가자미근,넙다리네갈래근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "콘",
+    "place": [
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0232",
+    "name": "1단 줄넘기",
+    "vdo_desc": "유소년 심폐지구력을 위한 1단 줄넘기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가자미근,장딴지근",
+    "bodyParts": [
+      "종아리"
+    ],
+    "equipment": "줄넘기",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0233",
+    "name": "박스 오르내리기",
+    "vdo_desc": "유소년 심폐지구력을 위한 박스 오르내리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "스텝박스",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0234",
+    "name": "다리 모았다 벌려 뛰기",
+    "vdo_desc": "유소년 심폐지구력을 위한 다리 모았다 벌려 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "스텝박스",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0235",
+    "name": "박스 옆으로 번갈아 뛰기",
+    "vdo_desc": "유소년 심폐지구력을 위한 박스 옆으로 번갈아 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "스텝박스",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0236",
+    "name": "한발 무릎 올려차기",
+    "vdo_desc": "유소년 심폐지구력을 위한 한 발 무릎 올려차기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근,볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "스텝박스",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0237",
+    "name": "무릎 굽혀 가슴 닿기",
+    "vdo_desc": "유소년 유연성을 위한 무릎 굽혀 가슴 닿기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0238",
+    "name": "발바닥 마주대고 끌어당기기",
+    "vdo_desc": "유소년 유연성을 위한 발바닥 마주대고 끌어당기기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리곧은근,넙다리빗근",
+    "bodyParts": [
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0239",
+    "name": "다리 굽혀(W자) 상체 뒤로 눕기",
+    "vdo_desc": "유소년 유연성을 위한 다리 굽혀(W자) 상체 뒤로 눕기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩허리근,넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0240",
+    "name": "발목 얹고 다리 잡아당기기",
+    "vdo_desc": "유소년 유연성을 위한 발목 얹고 다리 잡아당기기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0241",
+    "name": "다리 벌려 앞으로 상체 숙이기",
+    "vdo_desc": "유소년 유연성을 위한 다리 벌려 앞으로 상체 숙이기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0242",
+    "name": "다리 벌려 옆으로 상체 숙이기",
+    "vdo_desc": "유소년 유연성을 위한 다리 벌려 옆으로 상체 숙이기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

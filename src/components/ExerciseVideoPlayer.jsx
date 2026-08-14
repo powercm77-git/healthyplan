@@ -41,7 +41,9 @@ export default function ExerciseVideoPlayer({ videos, size = 'large', onFail }) 
       {videos.length > 1 && (
         <div className="chips" style={{ marginTop: 8 }}>
           {videos.map((v, i) => (
-            <span key={v.url} className={`chip${i === idx ? ' on' : ''}`} onClick={() => { setIdx(i); setFailed(false) }}>{v.title}</span>
+            <span key={v.url} className={`chip${i === idx ? ' on' : ''}`} onClick={() => { setIdx(i); setFailed(false) }}>
+              {v.ageGroup ? `${v.ageGroup}용` : v.title}
+            </span>
           ))}
         </div>
       )}

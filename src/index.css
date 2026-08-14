@@ -209,6 +209,14 @@ input::placeholder{color:#5E5980}
 }
 .exiname{font-weight:900;font-size:.98rem}
 .exisub{font-size:.78rem;color:var(--sub);margin-top:2px}
+.exi-video-badge{
+  display:inline-block;margin-left:6px;font-size:.68rem;color:var(--sky);
+  background:rgba(94,200,250,.14);border-radius:999px;padding:1px 6px;vertical-align:middle;
+}
+.exi-cat-badge{
+  display:inline-block;margin-left:4px;font-size:.68rem;color:var(--amber);
+  background:rgba(255,197,61,.14);border-radius:999px;padding:1px 6px;vertical-align:middle;
+}
 
 /* ── 운동 상세 ── */
 .detail-anim{display:flex;justify-content:center;align-items:center;padding:12px 0 4px}

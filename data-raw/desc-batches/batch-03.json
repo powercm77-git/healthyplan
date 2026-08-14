@@ -1,0 +1,376 @@
+[
+  {
+    "id": "kspo-0045",
+    "name": "네발기기 자세에서 손바닥으로 바닥밀기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 네발기기 자세에서 손바닥으로 바닥밀기운동을 설명한 운동처방 동영상",
+    "musclesKr": "앞톱니근,마름모근",
+    "bodyParts": [
+      "가슴",
+      "등"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0046",
+    "name": "짐볼에 엎드려서 팔 다리 들기",
+    "vdo_desc": "근력 운동 중, 짐볼에 엎드려서 팔 다리 들기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0047",
+    "name": "짐볼에 엎드려서 몸통 젖히기",
+    "vdo_desc": "근력 운동 중, 짐볼에 엎드려서 몸통 젖히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0048",
+    "name": "탄력밴드 어깨 가쪽 돌림",
+    "vdo_desc": "근력 운동 중, 탄력밴드 어깨 가쪽 돌림운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가시아래근,뒤세모근,작은원근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "옆쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0049",
+    "name": "네발기기 자세에서 다리 위로 뻗어올리기",
+    "vdo_desc": "근력 운동 중, 네발기기 자세에서 다리 위로 뻗어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0050",
+    "name": "허리 굽혀 팔 뒤로 들기",
+    "vdo_desc": "근력 운동 중, 허리 굽혀 팔 뒤로 들기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔세갈래근",
+    "bodyParts": [
+      "뒤쪽 위팔"
+    ],
+    "equipment": "물병",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0051",
+    "name": "물병 옆으로 들어올리기",
+    "vdo_desc": "근력 운동 중, 물병 옆으로 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "물병",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0052",
+    "name": "팔꿈치 굽히기",
+    "vdo_desc": "근력 운동 중, 팔꿈치 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔노근,위팔두갈래근",
+    "bodyParts": [
+      "앞쪽 위팔"
+    ],
+    "equipment": "물병",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0053",
+    "name": "앉았다 일어서면서 점프하기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 앉았다 일어서면서 점프하기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간볼기근,배곧은근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "복부",
+      "앞쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0054",
+    "name": "무릎 높여 제자리 달리기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 무릎 높여 제자리 달리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0055",
+    "name": "옆으로 펀치하기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 옆으로 펀치하기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "앞톱니근,배곧은근,배바깥빗근",
+    "bodyParts": [
+      "가슴",
+      "복부"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0056",
+    "name": "스텝퍼 뛰어서 오르내리기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 스텝퍼 뛰어서 오르내리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "스텝퍼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0057",
+    "name": "스텝퍼 옆으로 뛰어넘기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 스텝퍼 옆으로 뛰어넘기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간볼기근,넙다리네갈래근,모음근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리",
+      "안쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "스텝퍼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0058",
+    "name": "스텝퍼 올라가서 점프하여 착지하기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 스텝퍼 올라가서 점프하여 착지하기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "스텝퍼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0059",
+    "name": "사다리 안팎 뛰기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 사다리 안팎 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리네갈래근,모음근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리",
+      "안쪽 넓적다리"
+    ],
+    "equipment": "사다리",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0060",
+    "name": "사다리 옆으로 발 옮기기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 사다리 옆으로 발 옮기기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리네갈래근,모음근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리",
+      "안쪽 넓적다리"
+    ],
+    "equipment": "사다리",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0061",
+    "name": "점프 팔 굽혀 펴기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 점프 팔굽혀펴기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰가슴근,배곧은근",
+    "bodyParts": [
+      "가슴",
+      "복부"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0062",
+    "name": "계단 두발 뛰기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 계단 두발 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "계단",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0063",
+    "name": "계단 두 칸씩 두발 뛰기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 계단 두 칸씩 두발 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "계단",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 3,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0064",
+    "name": "계단 한발 뛰기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 계단 한발 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간볼기근,큰볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "계단",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 3,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0065",
+    "name": "아래 팔 스트레칭",
+    "vdo_desc": "유연성 운동 중, 아래 팔 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "손목폄근",
+    "bodyParts": [
+      "뒤쪽 아래팔"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0066",
+    "name": "허리 스트레칭",
+    "vdo_desc": "유연성 운동 중, 허리 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  }
+]

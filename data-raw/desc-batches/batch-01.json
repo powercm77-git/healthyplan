@@ -1,0 +1,363 @@
+[
+  {
+    "id": "kspo-0001",
+    "name": "몸통 들어올리기",
+    "vdo_desc": "근력 운동 중, 몸통 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "허리근",
+    "bodyParts": [
+      "앞쪽 골반"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0002",
+    "name": "목 스트레칭",
+    "vdo_desc": "유연성 운동 중, 목 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "머리가장긴근,머리반가시근,어깨올림근",
+    "bodyParts": [
+      "뒤쪽 목",
+      "위쪽 어깨"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0003",
+    "name": "몸통 비틀기",
+    "vdo_desc": "유연성 운동 중, 몸통 비틀기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "등가시근,허리네모근,배바깥빗근",
+    "bodyParts": [
+      "등",
+      "허리",
+      "복부"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0004",
+    "name": "몸통 옆으로 굽히기",
+    "vdo_desc": "근력 운동 중, 몸통 옆으로 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "앞톱니근,배빗근",
+    "bodyParts": [
+      "가슴",
+      "복부"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0005",
+    "name": "한발 앞으로 내밀고 앉았다 일어서기",
+    "vdo_desc": "근력 운동 중, 한발 앞으로 내밀고 앉았다 일어서기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0006",
+    "name": "뒤로 팔 굽혀 펴기",
+    "vdo_desc": "근력 운동 중, 뒤로 팔굽혀펴기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근,위팔세갈래근",
+    "bodyParts": [
+      "바깥쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "벤치",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0007",
+    "name": "엉덩이 스트레칭",
+    "vdo_desc": "유연성 운동 중, 엉덩이 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,돌림근",
+    "bodyParts": [
+      "엉덩이",
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0008",
+    "name": "계단 올라갔다 내려오기",
+    "vdo_desc": "심폐지구력 운동 중, 계단 올라갔다 내려오기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "계단",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0009",
+    "name": "누워서 밀기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 누워서 밀기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰가슴근,앞세모근,위팔세갈래근",
+    "bodyParts": [
+      "가슴",
+      "앞쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0010",
+    "name": "비스듬히 누워서 밀기",
+    "vdo_desc": "근력 운동 중, 비스듬히 누워서 밀기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근",
+    "bodyParts": [
+      "가슴"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0011",
+    "name": "거꾸로 누워서 밀기",
+    "vdo_desc": "근력 운동 중, 거꾸로 누워서 밀기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,어깨세모근,위팔세갈래근",
+    "bodyParts": [
+      "가슴",
+      "바깥쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0012",
+    "name": "앉아서 모으기",
+    "vdo_desc": "근력 운동 중, 앉아서 모으기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,위팔두갈래근",
+    "bodyParts": [
+      "가슴",
+      "앞쪽 위팔"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0013",
+    "name": "앉아서 위로 밀기",
+    "vdo_desc": "근력 운동 중, 앉아서 위로 밀기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "헬스기구",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0014",
+    "name": "바벨 들어 올리기",
+    "vdo_desc": "근력 운동 중, 바벨 들어 올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근,넙다리네갈래근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "gym"
+    ],
+    "level": 3,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0015",
+    "name": "원판 던지기",
+    "vdo_desc": "근력 운동 중, 원판 던지기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근,척추세움근,앞세모근,어깨세모근,넙다리네갈래근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "척추",
+      "앞쪽 어깨",
+      "바깥쪽 어깨",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "원판",
+    "place": [
+      "home"
+    ],
+    "level": 3,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0016",
+    "name": "파워클린",
+    "vdo_desc": "근력 운동 중, 파워클린운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "home"
+    ],
+    "level": 3,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0017",
+    "name": "바벨 끌어당기기",
+    "vdo_desc": "근력 운동 중, 바벨 끌어당기기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넓은등근,등세모근,마름모근,뒤세모근",
+    "bodyParts": [
+      "등",
+      "옆쪽 어깨"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "gym"
+    ],
+    "level": 3,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0018",
+    "name": "누워서 덤벨 들어올리기",
+    "vdo_desc": "근력 운동 중, 누워서 덤벨 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근",
+    "bodyParts": [
+      "가슴"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0019",
+    "name": "누워서 덤벨 모아들기",
+    "vdo_desc": "근력 운동 중, 누워서 덤벨 모아들기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근",
+    "bodyParts": [
+      "가슴"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0020",
+    "name": "서서 바벨 위로 밀기",
+    "vdo_desc": "근력 운동 중, 서서 바벨 위로 밀기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0021",
+    "name": "바벨 들어 팔꿈치 굽히기",
+    "vdo_desc": "근력 운동 중, 바벨 들어 팔꿈치 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔두갈래근",
+    "bodyParts": [
+      "앞쪽 위팔"
+    ],
+    "equipment": "바벨",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0022",
+    "name": "덤벨 옆으로 들어올리기",
+    "vdo_desc": "근력 운동 중, 덤벨 옆으로 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

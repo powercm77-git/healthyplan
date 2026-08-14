@@ -1,0 +1,376 @@
+[
+  {
+    "id": "kspo-0111",
+    "name": "누워서 배가로근 수축Ⅱ",
+    "vdo_desc": "근력 운동 중, 누워서 배가로근 수축운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,뭇갈래근,척추세움근",
+    "bodyParts": [
+      "엉덩이",
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0112",
+    "name": "누워서 다리 좌우로 움직이기",
+    "vdo_desc": "근력 운동 중, 누워서 다리 좌우로 움직이기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "공",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0113",
+    "name": "누워서 수직으로 다리 들어올리기",
+    "vdo_desc": "근력 운동 중, 누워서 수직으로 다리 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0114",
+    "name": "네발기기 자세로 팔 다리 들기",
+    "vdo_desc": "근력 운동 중, 네발기기 자세로 팔 다리 들기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간볼기근,큰볼기근,척추세움근",
+    "bodyParts": [
+      "엉덩이",
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0115",
+    "name": "서서 탄력밴드 당겨내리기/올리기",
+    "vdo_desc": "근력 운동 중, 서서 탄력밴드 당겨내리기/올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근",
+    "bodyParts": [
+      "가슴"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0116",
+    "name": "짐볼에 다리 올리고 좌우로 움직이기",
+    "vdo_desc": "근력 운동 중, 짐볼에 다리 올리고 좌우로 움직이기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0117",
+    "name": "스텝퍼 오르내리기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 스텝퍼 오르내리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "스텝퍼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0118",
+    "name": "스텝퍼 뛰어서 넘어가기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 스텝퍼 뛰어서 넘어가기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "스텝퍼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0119",
+    "name": "사다리 좌우 뛰기",
+    "vdo_desc": "민첩성 및 순발력 운동 중, 사다리 좌우 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,가자미근,넙다리네갈래근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "사다리",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0120",
+    "name": "등/어깨 뒤쪽 스트레칭",
+    "vdo_desc": "유연성 운동 중, 등/어깨 뒤쪽 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "뒤세모근,위팔세갈래근",
+    "bodyParts": [
+      "옆쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0121",
+    "name": "가슴/어깨 앞쪽 스트레칭",
+    "vdo_desc": "유연성 운동 중, 가슴/어깨 앞쪽 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,어깨세모근,위팔두갈래근",
+    "bodyParts": [
+      "가슴",
+      "바깥쪽 어깨",
+      "앞쪽 위팔"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0122",
+    "name": "넙다리 뒤쪽 스트레칭",
+    "vdo_desc": "유연성 운동 중, 넙다리 뒤쪽 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "뒤넙다리근",
+    "bodyParts": [
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0123",
+    "name": "하지 루틴 스트레칭1",
+    "vdo_desc": "유연성 운동 중, 하지 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근,볼기근,넙다리근막긴장근,넙다리네갈래근,뒤넙다리근,모음근,장딴지근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "엉덩이",
+      "바깥쪽 넓적다리",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리",
+      "안쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0124",
+    "name": "하지 루틴 스트레칭2",
+    "vdo_desc": "유산소 운동 중, 하지 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "궁둥구멍근,볼기근,엉덩허리근,넙다리근막긴장근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "바깥쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0125",
+    "name": "상지 루틴 스트레칭",
+    "vdo_desc": "유연성 운동 중, 상지 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,마름모근,손목굽힘근,어깨세모근,위팔세갈래근",
+    "bodyParts": [
+      "가슴",
+      "등",
+      "앞쪽 아래팔",
+      "바깥쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0126",
+    "name": "전신 루틴 스트레칭",
+    "vdo_desc": "유연성 운동 중, 전신 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "앞톱니근,넓은등근,작은원근",
+    "bodyParts": [
+      "가슴",
+      "등",
+      "안쪽 어깨"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0127",
+    "name": "유산소 운동 전 동적 루틴 스트레칭",
+    "vdo_desc": "유연성 운동 중, 유산소 운동 전 동적 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리네갈래근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0128",
+    "name": "좌식생활자를 위한 동적 루틴 스트레칭",
+    "vdo_desc": "유연성 운동 중, 좌식생활자를 위한 동적 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "허리근,넓은등근,허리네모근,배빗근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "등",
+      "허리",
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0129",
+    "name": "작은 공을 이용한 동적 루틴 스트레칭",
+    "vdo_desc": "유연성 운동 중, 작은 공을 이용한 동적 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,척추세움근,배빗근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "척추",
+      "복부",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "공",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0130",
+    "name": "자가근막이완술 루틴 스트레칭",
+    "vdo_desc": "유연성 운동 중, 자가근막이완술 루틴 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가자미근,장딴지근",
+    "bodyParts": [
+      "종아리"
+    ],
+    "equipment": "폼롤러",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0131",
+    "name": "앞 뒤 굴곡",
+    "vdo_desc": "경부통 자가운동법 운동 중, 스트레칭에 해당하는 앞 뒤 굴곡운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "머리널판근,목빗근",
+    "bodyParts": [
+      "뒤쪽 목",
+      "앞쪽 목"
+    ],
+    "equipment": "없음",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0132",
+    "name": "좌우 굴곡",
+    "vdo_desc": "경부통 자가운동법 운동 중, 스트레칭에 해당하는 좌우 굴곡운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "등세모근,머리반가시근,목/머리널판근,목빗근",
+    "bodyParts": [
+      "등",
+      "뒤쪽 목",
+      "앞쪽 목"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

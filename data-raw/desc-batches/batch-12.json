@@ -1,0 +1,183 @@
+[
+  {
+    "id": "kspo-0243",
+    "name": "앉아서 한발 앞으로 굽히기",
+    "vdo_desc": "유소년 유연성을 위한 앉아서 한발 앞으로 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "뒤넙다리근,장딴지근",
+    "bodyParts": [
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0244",
+    "name": "앉아서 옆구리 늘려주기",
+    "vdo_desc": "유소년 유연성을 위한 앉아서 옆구리 늘려주기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넓은등근,허리네모근,뒤넙다리근,모음근,장딴지근",
+    "bodyParts": [
+      "등",
+      "허리",
+      "뒤쪽 넓적다리",
+      "안쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0245",
+    "name": "무릎 대고 상체 뒤로 젖히기",
+    "vdo_desc": "유소년 유연성을 위한 무릎 대고 상체 뒤로 젖히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근,넙다리네갈래근",
+    "bodyParts": [
+      "복부",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0246",
+    "name": "엎드려 교차 발 잡아당기기",
+    "vdo_desc": "유소년 유연성을 위한 엎드려 교차 발 잡아당기기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0247",
+    "name": "한발 뒤로 빼고 앞으로 굽히기",
+    "vdo_desc": "유소년 유연성을 위한 한발 뒤로 빼고 앞으로 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0248",
+    "name": "무릎 대고 옆으로 기울이기",
+    "vdo_desc": "유소년 유연성을 위한 무릎 대고 옆으로 기울이기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배가로근,배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "써클링",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0249",
+    "name": "누워서 굽힌 다리 펴기",
+    "vdo_desc": "유소년 유연성을 위한 누워서 굽힌 다리 펴기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "써클링",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0250",
+    "name": "엎드려 어깨 늘리기",
+    "vdo_desc": "유소년 유연성을 위한 엎드려 어깨 늘리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넓은등근,어깨세모근",
+    "bodyParts": [
+      "등",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "써클휠",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0251",
+    "name": "활 자세",
+    "vdo_desc": "유소년 유연성을 위한 활 자세운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,배곧은근",
+    "bodyParts": [
+      "가슴",
+      "복부"
+    ],
+    "equipment": "써클링",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0252",
+    "name": "다리 모아 뒤로 눕기",
+    "vdo_desc": "유소년 유연성을 위한 다리 모아 뒤로 눕기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰가슴근,배곧은근,넙다리네갈래근",
+    "bodyParts": [
+      "가슴",
+      "복부",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "써클휠",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0253",
+    "name": "50M 달리기",
+    "vdo_desc": "유소년 순발력을 위한 50M 달리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근,볼기근,가자미근,넙다리네갈래근,뒤넙다리근,장딴지근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "콘",
+    "place": [
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  }
+]

@@ -1,0 +1,358 @@
+[
+  {
+    "id": "kspo-0177",
+    "name": "서서 균형잡으며 몸통 회전하기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 서서 균형잡으며 몸통 회전하기운동을 설명한 운동처방 동영상",
+    "musclesKr": "척추세움근,배곧은근,배빗근,넙다리네갈래근",
+    "bodyParts": [
+      "척추",
+      "복부",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "보슈",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0178",
+    "name": "베개 밟고 서기 루틴 프로그램",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 베개 밟고 서기 루틴 프로그램을 설명한 운동처방 동영상",
+    "musclesKr": null,
+    "bodyParts": [],
+    "equipment": "베개",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0179",
+    "name": "양팔 대각선으로 올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 양팔 대각선으로 올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "등세모근,어깨세모근",
+    "bodyParts": [
+      "등",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "물병",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0180",
+    "name": "누워서 다리 곧게 펴서 올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 누워서 다리 곧게 펴서 올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "모음근",
+    "bodyParts": [
+      "안쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0181",
+    "name": "사다리 좌/우 뛰기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 사다리 좌우 뛰기운동을 설명한 운동처방 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리근막긴장근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "바깥쪽 넓적다리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "줄사다리",
+    "place": [
+      "home",
+      "gym"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0182",
+    "name": "좌/우 회전(목 좌/우 회전)",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 경부통에 효과적인 운동으로 좌 우 회전(목 좌 우 회전)운동을 설명한 운동처방 동영상",
+    "musclesKr": "목빗근",
+    "bodyParts": [
+      "앞쪽 목"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0183",
+    "name": "진자 운동",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 진자운동을 설명한 운동처방 동영상",
+    "musclesKr": "가시아래근,가시윗근,어깨밑근,작은원근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "테이블",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0184",
+    "name": "벌림",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 등척성운동-벌림운동을 설명한 운동처방 동영상",
+    "musclesKr": "가시아래근,작은원근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0185",
+    "name": "바깥돌림",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 등척성운동-바깥돌림운동을 설명한 운동처방 동영상",
+    "musclesKr": "가시아래근,뒤세모근,작은원근",
+    "bodyParts": [
+      "뒤쪽 어깨",
+      "옆쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0186",
+    "name": "안쪽 돌림",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 오십견에 효과적인 운동으로 등척성운동-안쪽 돌림운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰가슴근,넓은등근,어깨밑근,큰원근",
+    "bodyParts": [
+      "가슴",
+      "등",
+      "뒤쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "수건",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0187",
+    "name": "엎드려 상체 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 몸통운동 중, 엎드려 상체 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "척추세움근",
+    "bodyParts": [
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0188",
+    "name": "어깨 스트레칭",
+    "vdo_desc": "유연성 운동 중, 어깨 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근,위팔노근,큰원근",
+    "bodyParts": [
+      "바깥쪽 어깨",
+      "앞쪽 위팔",
+      "안쪽 어깨"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0189",
+    "name": "실외 자전거타기",
+    "vdo_desc": "전신지구력 운동 중, 실외 자전거타기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "자전거",
+    "place": [
+      "outdoor"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0190",
+    "name": "엉덩이 스트레칭1",
+    "vdo_desc": "유연성 운동 중, 엉덩이 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,허리엉덩갈비근",
+    "bodyParts": [
+      "엉덩이",
+      "허리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0191",
+    "name": "엉덩이 스트레칭2",
+    "vdo_desc": "유연성 운동 중, 엉덩이 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "궁둥구멍근,큰볼기근",
+    "bodyParts": [
+      "엉덩이"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0192",
+    "name": "골반 스트레칭1",
+    "vdo_desc": "유연성 운동 중, 골반 스트레칭운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "가로돌기사이근,뭇갈래근",
+    "bodyParts": [
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0193",
+    "name": "한발 연속 뛰기",
+    "vdo_desc": "청소년 민첩성 운동 중, 한발 연속 뛰기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,가자미근,넙다리네갈래근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "종아리",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "사다리",
+    "place": [
+      "home",
+      "outdoor"
+    ],
+    "level": 1,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0194",
+    "name": "앉아서 엉덩이 들고 이동하기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 팔/어깨운동 중, 앉아서 엉덩이 들고 이동하기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔세갈래근,자쪽손목굽힘근,넙다리네갈래근,넙다리두갈래근,장딴지근",
+    "bodyParts": [
+      "뒤쪽 위팔",
+      "앞쪽 아래팔",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리",
+      "종아리"
+    ],
+    "equipment": "라바콘",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0195",
+    "name": "아령 앞으로 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 팔/어깨운동 중, 아령 앞으로 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔두갈래근",
+    "bodyParts": [
+      "앞쪽 위팔"
+    ],
+    "equipment": "아령",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0196",
+    "name": "아령 뒤로 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 팔/어깨운동 중, 아령 뒤로 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔세갈래근",
+    "bodyParts": [
+      "뒤쪽 위팔"
+    ],
+    "equipment": "아령",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0197",
+    "name": "의자 잡고 팔 뒤로 굽히기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 팔/어깨운동 중, 의자 잡고 팔 뒤로 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근,위팔세갈래근",
+    "bodyParts": [
+      "바깥쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0198",
+    "name": "밴드 앞 옆으로 들어올리기",
+    "vdo_desc": "유소년 근력/근지구력을 위한 팔/어깨운동 중, 밴드 앞 옆으로 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "어깨세모근",
+    "bodyParts": [
+      "바깥쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

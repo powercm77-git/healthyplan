@@ -45,10 +45,23 @@ const POSE_DIRECTION = {
   'stretch-neck': '‖', 'stretch-shoulder': '‖', 'stretch-back': '‖', 'stretch-hamstring': '‖',
 }
 
+// pose가 없거나 우리가 확신하는 20개 포즈에 없으면 절대 다른 포즈로 대신 보여주지 않는다.
+// (2.6단계에서 새로 들어온 700여 종 중 자신 있게 매핑되는 것만 pose를 붙였다 — 나머지는
+// null. 예전 코드는 이럴 때 'squat'으로 조용히 대체했는데, 이는 §8 "틀린 영상/자세 금지"
+// 원칙을 애니메이션에도 적용하지 않은 허점이었다.)
+export function NoPosePlaceholder({ size = 96, className = '' }) {
+  return (
+    <div className={`stickfig-none ${className}`} style={{ width: size, height: size }} role="img" aria-label="안내 그림 없음">
+      <span>영상으로<br />확인하세요</span>
+    </div>
+  )
+}
+
 export default function StickFigure({
   pose, size = 96, className = '', tempoSec, freeze, highlightParts, showDirection = false,
 }) {
-  const safePose = POSE_KEYS.includes(pose) ? pose : 'squat'
+  if (!POSE_KEYS.includes(pose)) return <NoPosePlaceholder size={size} className={className} />
+  const safePose = pose
   const groups = partsToGroups(highlightParts)
   const hl = (group) => (groups.has(group) ? ' hl' : '')
   const freezeClass = freeze ? ` freeze-paused freeze-${freeze}` : ''

@@ -1,0 +1,348 @@
+[
+  {
+    "id": "kspo-0023",
+    "name": "손목 펴기/굽히기",
+    "vdo_desc": "근력 운동 중, 손목 펴기/굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "손목굽힘근,손목폄근",
+    "bodyParts": [
+      "앞쪽 아래팔",
+      "뒤쪽 아래팔"
+    ],
+    "equipment": "아령",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0024",
+    "name": "앉아서 팔꿈치 굽히기/펴기",
+    "vdo_desc": "근력 운동 중, 앉아서 팔꿈치 굽히기/펴기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "위팔두갈래근,위팔세갈래근",
+    "bodyParts": [
+      "앞쪽 위팔",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "아령",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "stretch"
+  },
+  {
+    "id": "kspo-0025",
+    "name": "엎드려서 균형잡기",
+    "vdo_desc": "근력 운동 중, 엎드려서 균형잡기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근,척추세움근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "척추"
+    ],
+    "equipment": "보슈",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0026",
+    "name": "엎드려서 다리 차올리기",
+    "vdo_desc": "근력 운동 중, 엎드려서 다리 차올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근",
+    "bodyParts": [
+      "엉덩이"
+    ],
+    "equipment": "보슈",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0027",
+    "name": "짝 운동",
+    "vdo_desc": "근력 운동 중, 짝운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "허리근,배곧은근,배빗근,넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "복부",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "보슈",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0028",
+    "name": "서서 상체 일으키기",
+    "vdo_desc": "근력 운동 중, 서서 상체 일으키기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근,뒤넙다리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "물병",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0029",
+    "name": "의자에 한 다리 올리고 앉았다 일어서기",
+    "vdo_desc": "근력 운동 중, 의자에 한 다리 올리고 앉았다 일어서기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "큰볼기근,넙다리네갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0030",
+    "name": "의자에 앉아 다리 뻗어 올리기",
+    "vdo_desc": "근력 운동 중, 의자에 앉아 다리 뻗어 올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "넙다리네갈래근",
+    "bodyParts": [
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0031",
+    "name": "앉아서 엉덩관절 굽히기",
+    "vdo_desc": "근력 운동 중, 앉아서 엉덩관절 굽히기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "엉덩관절굽힘근",
+    "bodyParts": [
+      "앞쪽 골반"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0032",
+    "name": "한발 서서 균형잡기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 한발 서서 균형잡기운동을 설명한 운동처방 동영상",
+    "musclesKr": "넙다리네갈래근,넙다리두갈래근",
+    "bodyParts": [
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0033",
+    "name": "윗몸 올리기",
+    "vdo_desc": "근력 운동 중, 윗몸 올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0034",
+    "name": "짐볼 윗몸 올리기",
+    "vdo_desc": "근력 운동 중, 짐볼 윗몸 올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0035",
+    "name": "소파를 이용한 윗몸 올리기",
+    "vdo_desc": "근력 운동 중, 소파를 이용한 윗몸 올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근,배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "소파",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0036",
+    "name": "엎드려 버티기",
+    "vdo_desc": "근력 운동 중, 엎드려 버티기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0037",
+    "name": "옆으로 누워 버티기",
+    "vdo_desc": "근력 운동 중, 옆으로 누워 버티기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "작은볼기근,중간볼기근,허리네모근,배빗근",
+    "bodyParts": [
+      "엉덩이",
+      "허리",
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0038",
+    "name": "누워서 다리 들어올리기",
+    "vdo_desc": "근력 운동 중, 누워서 다리 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0039",
+    "name": "누워서 팔 다리 동시에 들어올리기",
+    "vdo_desc": "근력 운동 중, 누워서 팔 다리 동시에 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0040",
+    "name": "누워서 공들고 몸 기울이기",
+    "vdo_desc": "근력 운동 중, 누워서 공들고 몸 기울이기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근,배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "공",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0041",
+    "name": "누워서 하늘 자전거",
+    "vdo_desc": "근력 운동 중, 누워서 하늘 자전거운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "소파",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0042",
+    "name": "누워서 엉덩이 들어올리기",
+    "vdo_desc": "근력 운동 중, 누워서 엉덩이 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "중간볼기근,큰볼기근,척추세움근",
+    "bodyParts": [
+      "엉덩이",
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0043",
+    "name": "짐볼에 다리 올리고 엉덩이 들어올리기",
+    "vdo_desc": "근력 운동 중, 짐볼에 다리올리고 엉덩이 들어올리기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0044",
+    "name": "엎드려서 팔 다리 들기",
+    "vdo_desc": "근력 운동 중, 엎드려서 팔 다리 들기운동을 설명한 운동처방 가이드 동영상",
+    "musclesKr": "볼기근,허리근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 1,
+    "type": "strength"
+  }
+]

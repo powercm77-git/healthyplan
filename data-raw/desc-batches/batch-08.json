@@ -1,0 +1,360 @@
+[
+  {
+    "id": "kspo-0155",
+    "name": "매달려서 다리 들기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 매달려서 다리 들기운동을 설명한 운동처방 동영상",
+    "musclesKr": "엉덩허리근,배곧은근",
+    "bodyParts": [
+      "앞쪽 골반",
+      "복부"
+    ],
+    "equipment": "봉",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0156",
+    "name": "누워서 머리위로 팔꿈치 펴기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 누워서머리위로팔꿈치펴기운동을 설명한 운동처방 동영상",
+    "musclesKr": "위팔세갈래근",
+    "bodyParts": [
+      "뒤쪽 위팔"
+    ],
+    "equipment": "없음",
+    "place": [
+      "gym"
+    ],
+    "level": 1,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0157",
+    "name": "허리 굽혀 덤벨 뒤로 들기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 허리 굽혀 덤벨 뒤로 들기운동을 설명한 운동처방 동영상",
+    "musclesKr": "어깨세모근,위팔세갈래근",
+    "bodyParts": [
+      "바깥쪽 어깨",
+      "뒤쪽 위팔"
+    ],
+    "equipment": "덤벨",
+    "place": [
+      "gym"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0158",
+    "name": "엎드려 양팔 올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 엎드려 양팔 올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "등세모근,마름모근,가시아래근,작은원근",
+    "bodyParts": [
+      "등",
+      "뒤쪽 어깨",
+      "안쪽 어깨"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0159",
+    "name": "네발기기 자세에서 팔 다리 들기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 네발기기 자세에서 팔 다리 들기운동을 설명한 운동처방 동영상",
+    "musclesKr": "볼기근,허리근,척추세움근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "척추"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0160",
+    "name": "누워서 팔 다리 교차 뻗기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 누워서 팔 다리 교차 뻗기운동을 설명한 운동처방 동영상",
+    "musclesKr": "배가로근,배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0161",
+    "name": "봉잡고 앉았다 일어나기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 봉잡고 앉았다 일어나기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,넙다리네갈래근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "봉",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0162",
+    "name": "서서 상체 앞으로 숙였다 세우기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 서서 상체 앞으로 숙였다 세우기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,척추세움근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "척추",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0163",
+    "name": "좌/우 찍기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 좌우 찍기운동을 설명한 운동처방 동영상",
+    "musclesKr": "배곧은근,뒤정강근,모음근",
+    "bodyParts": [
+      "복부",
+      "발목",
+      "안쪽 넓적다리"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0164",
+    "name": "균형 걷기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 균형 걷기운동을 설명한 운동처방 동영상",
+    "musclesKr": "볼기근,넙다리네갈래근,앞정강근,장딴지근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 넓적다리",
+      "정강이",
+      "종아리"
+    ],
+    "equipment": "색테이프",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "cardio"
+  },
+  {
+    "id": "kspo-0165",
+    "name": "서서 다리 뒤로 차기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 서서 다리 뒤로 차기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,척추세움근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "척추",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "의자",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0166",
+    "name": "발바닥 굽힘",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 발등굽힘/발바닥굽힘운동을 설명한 운동처방 동영상",
+    "musclesKr": "앞정강근,장딴지근",
+    "bodyParts": [
+      "정강이",
+      "종아리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0167",
+    "name": "당겨내리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 서서 탄력밴드 당겨내리기/올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰가슴근,넓은등근,등세모근,어깨세모근",
+    "bodyParts": [
+      "가슴",
+      "등",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0168",
+    "name": "밴드 걸고 엎드려서 다리 구부리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 밴드 걸고 엎드려서 다리 구부리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,넙다리두갈래근",
+    "bodyParts": [
+      "엉덩이",
+      "뒤쪽 넓적다리"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0169",
+    "name": "밴드 걸고 누워서 다리 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 밴드 걸고 누워서 다리 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "넙다리네갈래근,앞정강근",
+    "bodyParts": [
+      "앞쪽 넓적다리",
+      "정강이"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0170",
+    "name": "밴드 머리 뒤로 들어올리기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 밴드 머리 뒤로 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "위팔세갈래근",
+    "bodyParts": [
+      "뒤쪽 위팔"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0171",
+    "name": "짐볼에 다리 올리고 좌/우로 움직이기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 짐볼에 다리 올리고 좌우로 움직이기운동을 설명한 운동처방 동영상",
+    "musclesKr": "배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0172",
+    "name": "볼 위에 앉아 밴드 양옆으로 당기기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 볼 위에 앉아 밴드 양옆으로 당기기운동을 설명한 운동처방 동영상",
+    "musclesKr": "넓은등근,마름모근,배곧은근,중간어깨세모근",
+    "bodyParts": [
+      "등",
+      "복부",
+      "바깥쪽 어깨"
+    ],
+    "equipment": "밴드",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0173",
+    "name": "짐볼 앉기 루틴 프로그램",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 짐볼 앉기 루틴 프로그램을 설명한 운동처방 동영상",
+    "musclesKr": "큰볼기근,큰허리근,배곧은근",
+    "bodyParts": [
+      "엉덩이",
+      "앞쪽 골반",
+      "복부"
+    ],
+    "equipment": "짐볼",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0174",
+    "name": "누워서 다리 좌/우로 움직이기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 누워서 다리 좌우로 움직이기운동을 설명한 운동처방 동영상",
+    "musclesKr": "배빗근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "공",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0175",
+    "name": "누워서 수직으로 다리 들어올리",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 누워서 수직으로 다리 들어올리기운동을 설명한 운동처방 동영상",
+    "musclesKr": "배곧은근",
+    "bodyParts": [
+      "복부"
+    ],
+    "equipment": "매트",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  },
+  {
+    "id": "kspo-0176",
+    "name": "서서 균형잡기",
+    "vdo_desc": "실내에서 할 수 있는 운동 중, 서서 균형잡기운동을 설명한 운동처방 동영상",
+    "musclesKr": "척추세움근,배곧은근,넙다리네갈래근",
+    "bodyParts": [
+      "척추",
+      "복부",
+      "앞쪽 넓적다리"
+    ],
+    "equipment": "보슈",
+    "place": [
+      "home"
+    ],
+    "level": 2,
+    "type": "strength"
+  }
+]

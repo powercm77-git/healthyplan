@@ -1,0 +1,378 @@
+[
+  {
+    "title": "루프밴드를 활용한 전신 근력운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01011.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01011/0AUDLJ08S_01011_SC_00002.jpeg",
+    "lenSec": 612,
+    "aggrpNm": "공통",
+    "desc": "초보자를 위한 전신근력운동 중, 루프밴드를 활용한 홈트레이닝 및 홈필라테스운동을 설명한 운동처방 가이드 동영상"
+  },
+  {
+    "title": "아쿠아로빅 루틴 프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00630.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00630/0AUDLJ08S_00630_FR_00003.jpeg",
+    "lenSec": 360,
+    "aggrpNm": "어르신",
+    "desc": "심폐지구력 운동 중, 아쿠아로빅 루틴 프로그램을 설명한 운동처방 가이드 동영상"
+  },
+  {
+    "title": "짐볼 앉기 루틴 프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00761.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00761/0AUDLJ08S_00761_SC_00033.jpeg",
+    "lenSec": 337,
+    "aggrpNm": "어르신",
+    "desc": "평형성 운동 중, 짐볼 앉기 루틴 프로그램운동을 설명한 운동처방 가이드 동영상"
+  },
+  {
+    "title": "우울증 예방을 위한 심폐지구력운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00793.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00793/0AUDLJ08S_00793_SC_00001.jpeg",
+    "lenSec": 350,
+    "aggrpNm": "어르신",
+    "desc": "목적별 예방 운동 중, 우울증 예방을 위한 심폐지구력운동을 설명한 운동처방 가이드 동영상"
+  },
+  {
+    "title": "테니스공을 활용한 뭉친근육 완화 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01017.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01017/0AUDLJ08S_01017_SC_00002.jpeg",
+    "lenSec": 331,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 근육 완화 운동 중, 공을 활용한 운동처방 동영상"
+  },
+  {
+    "title": "(기본편)이동성 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0CBNFIOKH_00032.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBNFIOKH_00032/0CBNFIOKH_00032_FR_00074.jpeg",
+    "lenSec": 657,
+    "aggrpNm": "유아기",
+    "desc": "유아기 기본운동기술-이동성운동"
+  },
+  {
+    "title": "(기본편)근력,근지구력-소근육",
+    "url": "https://openapi.kspo.or.kr/web/video/0CBJT14JC_00015.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBJT14JC_00015/0CBJT14JC_00015_SC_00016.jpeg",
+    "lenSec": 347,
+    "aggrpNm": "유아기",
+    "desc": "유아기 기본 소근육 운동"
+  },
+  {
+    "title": "(기본편)근력,근지구력-대근육",
+    "url": "https://openapi.kspo.or.kr/web/video/0CBJQ8GEW_00013.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBJQ8GEW_00013/0CBJQ8GEW_00013_SC_00009.jpeg",
+    "lenSec": 538,
+    "aggrpNm": "유아기",
+    "desc": "유아기 기본 대근육 운동"
+  },
+  {
+    "title": "(기본편)유연성",
+    "url": "https://openapi.kspo.or.kr/web/video/0CBLD1GBU_00020.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBLD1GBU_00020/0CBLD1GBU_00020_SC_00005.jpeg",
+    "lenSec": 726,
+    "aggrpNm": "유아기",
+    "desc": "유아기 기본 유연성 운동"
+  },
+  {
+    "title": "(기본편)안정성 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0CBN6AUEP_00030.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBN6AUEP_00030/0CBN6AUEP_00030_FR_00189.jpeg",
+    "lenSec": 617,
+    "aggrpNm": "유아기",
+    "desc": "유아기 기본 안정성 운동"
+  },
+  {
+    "title": "(기본편)조작성 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0CBNJ44DG_00034.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBNJ44DG_00034/0CBNJ44DG_00034_FR_00018.jpeg",
+    "lenSec": 552,
+    "aggrpNm": "유아기",
+    "desc": "유아기 기본운동기술-조작성운동"
+  },
+  {
+    "title": "(기본편)심폐지구력,협응성",
+    "url": "https://openapi.kspo.or.kr/web/video/0CBL9UY7E_00018.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0CBL9UY7E_00018/0CBL9UY7E_00018_FR_00022.jpeg",
+    "lenSec": 308,
+    "aggrpNm": "유아기",
+    "desc": "유아기 기본 심폐지구력, 협응성 운동"
+  },
+  {
+    "title": "5분 타바타 운동(하체)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01021.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01021/0AUDLJ08S_01021_SC_00008.jpeg",
+    "lenSec": 612,
+    "aggrpNm": "공통",
+    "desc": "중상급자를 위한 하체 챌린지 홈트 운동처방 동영상"
+  },
+  {
+    "title": "5분 타바타 운동(상체)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01020.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01020/0AUDLJ08S_01020_FR_00013.jpeg",
+    "lenSec": 570,
+    "aggrpNm": "공통",
+    "desc": "중상급자를 위한 상체 챌린지 홈트 운동처방 동영상"
+  },
+  {
+    "title": "성인기 1주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00033.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00033/0AUDLJ08S_00033_SC_00010.jpeg",
+    "lenSec": 1586,
+    "aggrpNm": "성인",
+    "desc": "성인을 위한 주간 운동프로그램 중 1주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "성인기 2주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00034.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00034/0AUDLJ08S_00034_FR_00002.jpeg",
+    "lenSec": 1577,
+    "aggrpNm": "성인",
+    "desc": "성인을 위한 주간 운동프로그램 중 2주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "성인기 3주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00035.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00035/0AUDLJ08S_00035_SC_00001.jpeg",
+    "lenSec": 1626,
+    "aggrpNm": "성인",
+    "desc": "성인을 위한 주간 운동프로그램 중 3주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "성인기 4주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00036.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00036/0AUDLJ08S_00036_SC_00001.jpeg",
+    "lenSec": 1601,
+    "aggrpNm": "성인",
+    "desc": "성인을 위한 주간 운동프로그램 중 4주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "어르신기 4주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00040.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00040/0AUDLJ08S_00040_SC_00310.jpeg",
+    "lenSec": 1920,
+    "aggrpNm": "어르신",
+    "desc": "어르신을 위한 주간 운동프로그램 중 4주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "어르신기 1주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00037.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00037/0AUDLJ08S_00037_SC_00001.jpeg",
+    "lenSec": 1846,
+    "aggrpNm": "어르신",
+    "desc": "어르신을 위한 주간 운동프로그램 중 1주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "어르신기 2주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00038.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00038/0AUDLJ08S_00038_FR_00002.jpeg",
+    "lenSec": 1835,
+    "aggrpNm": "어르신",
+    "desc": "어르신을 위한 주간 운동프로그램 중 2주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "어르신기 3주차 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00039.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00039/0AUDLJ08S_00039_SC_00001.jpeg",
+    "lenSec": 1883,
+    "aggrpNm": "어르신",
+    "desc": "어르신을 위한 주간 운동프로그램 중 3주차에 해당하는 표준운동프로그램"
+  },
+  {
+    "title": "요통 예방 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00041.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00041/0AUDLJ08S_00041_SC_00042.jpeg",
+    "lenSec": 2299,
+    "aggrpNm": "공통",
+    "desc": "요통을 예방하기 위한 운동프로그램"
+  },
+  {
+    "title": "낙상 예방 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00042.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00042/0AUDLJ08S_00042_SC_00001.jpeg",
+    "lenSec": 981,
+    "aggrpNm": "공통",
+    "desc": "낙상을 예방하기 위한 운동프로그램"
+  },
+  {
+    "title": "우울증 예방 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00043.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00043/0AUDLJ08S_00043_SC_00281.jpeg",
+    "lenSec": 2928,
+    "aggrpNm": "공통",
+    "desc": "우울증을 예방하기 위한 운동프로그램"
+  },
+  {
+    "title": "우울증 예방 운동프로그램(댄스운동 편)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00044.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00044/0AUDLJ08S_00044_SC_00045.jpeg",
+    "lenSec": 371,
+    "aggrpNm": "공통",
+    "desc": "우울증을 예방하기 위한 댄스운동프로그램"
+  },
+  {
+    "title": "고혈압 예방 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00045.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00045/0AUDLJ08S_00045_SC_00001.jpeg",
+    "lenSec": 2056,
+    "aggrpNm": "공통",
+    "desc": "고혈압을 예방하기 위한 운동프로그램"
+  },
+  {
+    "title": "당뇨병 예방 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00046.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00046/0AUDLJ08S_00046_FR_00003.jpeg",
+    "lenSec": 1098,
+    "aggrpNm": "공통",
+    "desc": "당뇨병을 예방하기 위한 운동프로그램"
+  },
+  {
+    "title": "골다공증 예방 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00047.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00047/0AUDLJ08S_00047_SC_00002.jpeg",
+    "lenSec": 830,
+    "aggrpNm": "공통",
+    "desc": "골다공증을 예방하기 위한 골밀도 강화 운동프로그램"
+  },
+  {
+    "title": "인지노쇠 예방 운동프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00048.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00048/0AUDLJ08S_00048_SC_00002.jpeg",
+    "lenSec": 1175,
+    "aggrpNm": "공통",
+    "desc": "인지노쇠를 예방하기 위한 운동프로그램"
+  },
+  {
+    "title": "짐볼을 활용한 스트레칭 프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00049.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00049/0AUDLJ08S_00049_SC_00002.jpeg",
+    "lenSec": 841,
+    "aggrpNm": "공통",
+    "desc": "짐볼을 활용한 유연성 운동 프로그램"
+  },
+  {
+    "title": "짐볼을 활용한 근력운동 프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00050.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00050/0AUDLJ08S_00050_SC_00001.jpeg",
+    "lenSec": 1224,
+    "aggrpNm": "공통",
+    "desc": "짐볼을 활용한 근력운동 프로그램"
+  },
+  {
+    "title": "품롤러를 활용한 스트레칭 프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00051.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00051/0AUDLJ08S_00051_SC_00002.jpeg",
+    "lenSec": 1239,
+    "aggrpNm": "공통",
+    "desc": "품롤러를 활용한 자가근막이완 및 스트레칭 프로그램"
+  },
+  {
+    "title": "품롤러를 활용한 근력운동 프로그램",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00052.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00052/0AUDLJ08S_00052_FR_00003.jpeg",
+    "lenSec": 865,
+    "aggrpNm": "공통",
+    "desc": "품롤러를 활용한 근력운동 프로그램"
+  },
+  {
+    "title": "PAPS 4-5등급 학생 체력증진 프로그램 1편(유연성 향상 편)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00053.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00053/0AUDLJ08S_00053_SC_00002.jpeg",
+    "lenSec": 1315,
+    "aggrpNm": "청소년",
+    "desc": "청소년 체력증진을 위한 유연성 향상 프로그램"
+  },
+  {
+    "title": "PAPS 4-5등급 학생 체력증진 프로그램 2편(근력·근지구력 향상 편)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00054.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00054/0AUDLJ08S_00054_SC_00002.jpeg",
+    "lenSec": 980,
+    "aggrpNm": "청소년",
+    "desc": "청소년 체력증진을 위한 근력/근지구력 향상 프로그램"
+  },
+  {
+    "title": "PAPS 4-5등급 학생 체력증진 프로그램 3편(민첩성·순발력 향상 편)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00055.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00055/0AUDLJ08S_00055_SC_00004.jpeg",
+    "lenSec": 1299,
+    "aggrpNm": "청소년",
+    "desc": "청소년 체력증진을 위한 민첩성/순발력 향상 프로그램"
+  },
+  {
+    "title": "직장인을 위한 운동프로그램(뭉친 어깨 안녕)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00056.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00056/0AUDLJ08S_00056_SC_00051.jpeg",
+    "lenSec": 1168,
+    "aggrpNm": "성인",
+    "desc": "직장인을 위한 뭉친 어깨 예방 운동프로그램"
+  },
+  {
+    "title": "직장인을 위한 운동프로그램(다리 부종 타파)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00057.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00057/0AUDLJ08S_00057_SC_00015.jpeg",
+    "lenSec": 822,
+    "aggrpNm": "성인",
+    "desc": "직장인을 위한 다리 부종 예방 운동프로그램"
+  },
+  {
+    "title": "직장인을 위한 운동프로그램(동료와 함께 짝운동)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_00058.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_00058/0AUDLJ08S_00058_SC_00044.jpeg",
+    "lenSec": 578,
+    "aggrpNm": "성인",
+    "desc": "직장인을 위한 동료 짝 운동프로그램"
+  },
+  {
+    "title": "물병을 활용한 유산소 전신 근력 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01012.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01012/0AUDLJ08S_01012_SC_00001.jpeg",
+    "lenSec": 435,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 유산소 전신 근력운동 중, 물병을 활용한 목적별루틴운동 "
+  },
+  {
+    "title": "계단을 활용한 유산소 전신 근력 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01013.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01013/0AUDLJ08S_01013_SC_00010.jpeg",
+    "lenSec": 348,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 유산소 전신 근력운동 중, 계단을 활용한 목적별루틴운동 "
+  },
+  {
+    "title": "냄비를 활용한 유산소 전신 근력 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01014.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01014/0AUDLJ08S_01014_SC_00001.jpeg",
+    "lenSec": 432,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 유산소 전신 근력운동 중, 냄비를 활용한 목적별루틴운동 "
+  },
+  {
+    "title": "마킹 테이프를 활용한 민첩성 순발력 협응력 집중력 근력 운동(기초)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01015.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01015/0AUDLJ08S_01015_SC_00003.jpeg",
+    "lenSec": 445,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 민첩성 및 순발력 운동 중, 마킹테이프(기초)를 활용한 목적별루틴운동"
+  },
+  {
+    "title": "수건을 활용한 스트레칭 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01018.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01018/0AUDLJ08S_01018_FR_00075.jpeg",
+    "lenSec": 443,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 스트레칭 운동 중, 수건을 활용한 목적별루틴운동"
+  },
+  {
+    "title": "마킹 테이프를 활용한 민첩성 순발력 협응력 집중력 근력 운동(응용)",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01016.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01016/0AUDLJ08S_01016_FR_00007.jpeg",
+    "lenSec": 638,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 민첩성 및 순발력 운동 중, 마킹테이프(응용)를 활용한 목적별루틴운동"
+  },
+  {
+    "title": "보온병을 활용한 스트레칭 운동",
+    "url": "https://openapi.kspo.or.kr/web/video/0AUDLJ08S_01019.mp4",
+    "thumbnail": "https://openapi.kspo.or.kr/web/image/0AUDLJ08S_01019/0AUDLJ08S_01019_SC_00002.jpeg",
+    "lenSec": 623,
+    "aggrpNm": "공통",
+    "desc": "소도구를 활용한 스트레칭 운동 중, 보온병을 활용한 목적별루틴운동"
+  }
+]

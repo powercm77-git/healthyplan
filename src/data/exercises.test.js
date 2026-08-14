@@ -44,10 +44,18 @@ describe('exercises.json — 데이터 무결성', () => {
     expect(bad).toEqual([])
   })
 
-  it('animation 필드는 20종 캐노니컬 포즈 중 하나여야 한다', () => {
-    const bad = exercises.filter((e) => !POSE_KEYS.includes(e.animation))
+  // 2.6단계: animation은 20종 캐노니컬 포즈 또는 null만 허용한다. 예전엔 확신 없는 동작도
+  // 'squat' 등으로 조용히 대체했는데, 이는 §8 "틀린 영상/자세 금지" 원칙을 애니메이션에는
+  // 적용하지 않은 허점이었다(StickFigure.jsx 참고). null인 항목은 UI에서 NoPosePlaceholder로
+  // 대체되고 영상으로 안내한다 — 틀린 그림보다 그림 없음이 낫다는 판단.
+  it('animation 필드는 20종 캐노니컬 포즈 또는 null(확신 없으면 억지로 맞추지 않음)이어야 한다', () => {
+    const bad = exercises.filter((e) => e.animation !== null && !POSE_KEYS.includes(e.animation))
     expect(bad.map((e) => e.id)).toEqual([])
     expect(POSE_KEYS.length).toBe(20)
+  })
+  it('animation이 null인 항목은 영상을 최소 1개는 갖는다(그림도 영상도 없는 항목 금지)', () => {
+    const bad = exercises.filter((e) => e.animation === null && !(e.videos?.length > 0))
+    expect(bad.map((e) => e.id)).toEqual([])
   })
 })
 

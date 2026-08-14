@@ -37,7 +37,10 @@ function pickUntilBudget(pool, budgetSec, exclude, maxCount = 6) {
   const picked = []
   const used = new Set()
   let remaining = budgetSec
-  const candidates = [...pool].sort(() => Math.random() - 0.5)
+  // 영상 보유 운동을 우선 배치한다(2.6단계 완료기준 7) — 각 그룹 안에서는 계속 무작위.
+  const withVideo = pool.filter((e) => e.videos?.length > 0).sort(() => Math.random() - 0.5)
+  const withoutVideo = pool.filter((e) => !(e.videos?.length > 0)).sort(() => Math.random() - 0.5)
+  const candidates = [...withVideo, ...withoutVideo]
   for (const ex of candidates) {
     if (picked.length >= maxCount) break
     if (used.has(ex.id) || exclude.has(ex.id)) continue
@@ -67,7 +70,10 @@ export function assignRoutine({ exercises, profile, place, minutes, meta = new M
     [...meta.entries()].filter(([, m]) => (m.swapCount || 0) >= 3).map(([id]) => id),
   )
 
-  const inPlace = exercises.filter((e) => e.place.includes(place) && allowedLevels.includes(e.level))
+  // 재활(질환자 표준운동)·수영장 운동은 라이브러리 검색으로는 찾을 수 있지만 자동 루틴
+  // 배정에서는 제외한다(2.6단계 발주자 지시) — 일반 사용자에게 의학적 맥락 없이
+  // 재활 단계별 운동이 섞여 나가면 위험할 수 있다.
+  const inPlace = exercises.filter((e) => e.place.includes(place) && allowedLevels.includes(e.level) && !e.excludeFromAutoRoutine)
   const stretchPool = inPlace.filter((e) => e.type === 'stretch')
   const strengthPoolAll = inPlace.filter((e) => e.type === 'strength')
   const cardioPoolAll = inPlace.filter((e) => e.type === 'cardio')
