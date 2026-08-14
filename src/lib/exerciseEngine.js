@@ -16,9 +16,11 @@ export function levelsForExperience(experience) {
   return [1]
 }
 
-// 시간형(repType:'sec') 운동은 defaultReps가 "초", 횟수형은 "회"다.
+// repType: 'sec'(시간형 — 유산소·수영처럼 계속 움직이는 시간), 'hold'(유지형 —
+// 스트레칭·플랭크처럼 자세를 버티는 시간), 그 외/'reps'(횟수형). 시간형·유지형 둘 다
+// defaultReps가 "초" 단위고 계산 방식은 같다 — 개념(계속 움직임 vs 자세 유지)만 다르다.
 function estimateSetSeconds(exercise) {
-  if (exercise.repType === 'sec') return exercise.defaultReps
+  if (exercise.repType === 'sec' || exercise.repType === 'hold') return exercise.defaultReps
   return exercise.defaultReps * 3 // 1회 약 3초로 추정
 }
 
@@ -123,23 +125,62 @@ export function assignRoutine({
   const cardioPool = rotate(cardioPoolAll)
 
   const totalSec = minutes * 60
-  const warmupSec = totalSec * 0.1
-  const cooldownSec = totalSec * 0.1
-  const mainSec = totalSec * 0.8
-
   const ratio = GOAL_RATIOS[profile.goal] || GOAL_RATIOS.keep
-  const mainRatioSum = ratio.strength + ratio.cardio || 1
-  const strengthSec = mainSec * (ratio.strength / mainRatioSum)
-  const cardioSec = mainSec * (ratio.cardio / mainRatioSum)
+
+  // 10~20분처럼 짧은 목표는 "준비 1 + 본운동(목표에 맞는 한쪽만) 1~2 + 마무리 1"로
+  // 충분하다(2.7-2단계 지시). 근력·유산소를 둘 다 넣으려 하면 카테고리별 최소 1개
+  // 원칙 때문에 목표의 2배까지 부풀어 오른다 — 시간 없는 사람에게 더 나쁜 문제다.
+  const SHORT_MINUTES = 20
+  const isShort = minutes <= SHORT_MINUTES
+  // 감량=유산소, 증량=근력 축. 유지처럼 동률이면 근력을 기본으로 삼는다(풀이 더 넓다).
+  const primaryIsCardio = ratio.cardio > ratio.strength
+
+  let warmupSec, cooldownSec, mainSec, strengthSec, cardioSec
+  let warmupCount, cooldownCount, strengthMaxCount, cardioMaxCount
+  if (isShort) {
+    warmupSec = totalSec * 0.15
+    cooldownSec = totalSec * 0.15
+    mainSec = totalSec * 0.7
+    warmupCount = 1
+    cooldownCount = 1
+    strengthMaxCount = primaryIsCardio ? 0 : 2
+    cardioMaxCount = primaryIsCardio ? 2 : 0
+    strengthSec = primaryIsCardio ? 0 : mainSec
+    cardioSec = primaryIsCardio ? mainSec : 0
+  } else {
+    warmupSec = totalSec * 0.1
+    cooldownSec = totalSec * 0.1
+    mainSec = totalSec * 0.8
+    warmupCount = 2
+    cooldownCount = 2
+    strengthMaxCount = 5
+    cardioMaxCount = 3
+    const mainRatioSum = ratio.strength + ratio.cardio || 1
+    strengthSec = mainSec * (ratio.strength / mainRatioSum)
+    cardioSec = mainSec * (ratio.cardio / mainRatioSum)
+  }
 
   const used = new Set()
-  const warmup = pickUntilBudget(stretchPool, warmupSec, excluded, 2, preferVideo)
+  const warmup = pickUntilBudget(stretchPool, warmupSec, excluded, warmupCount, preferVideo)
   warmup.forEach((e) => used.add(e.id))
-  const mainStrength = pickUntilBudget(strengthPool, strengthSec, new Set([...excluded, ...used]), 5, preferVideo)
+  let mainStrength = strengthMaxCount > 0
+    ? pickUntilBudget(strengthPool, strengthSec, new Set([...excluded, ...used]), strengthMaxCount, preferVideo) : []
   mainStrength.forEach((e) => used.add(e.id))
-  const mainCardio = pickUntilBudget(cardioPool, cardioSec, new Set([...excluded, ...used]), 3, preferVideo)
+  let mainCardio = cardioMaxCount > 0
+    ? pickUntilBudget(cardioPool, cardioSec, new Set([...excluded, ...used]), cardioMaxCount, preferVideo) : []
   mainCardio.forEach((e) => used.add(e.id))
-  const cooldown = pickUntilBudget(stretchPool, cooldownSec, new Set([...excluded, ...used]), 2, preferVideo)
+  // 짧은 목표에서 고른 한쪽 풀이 완전히 비어 있으면(예: 이 장소엔 유산소 후보가 없음)
+  // 본운동이 0개가 되는 것보다는 다른 쪽으로 대체하는 편이 낫다.
+  if (isShort && mainStrength.length === 0 && mainCardio.length === 0) {
+    if (primaryIsCardio) {
+      mainStrength = pickUntilBudget(strengthPool, mainSec, new Set([...excluded, ...used]), 2, preferVideo)
+      mainStrength.forEach((e) => used.add(e.id))
+    } else {
+      mainCardio = pickUntilBudget(cardioPool, mainSec, new Set([...excluded, ...used]), 2, preferVideo)
+      mainCardio.forEach((e) => used.add(e.id))
+    }
+  }
+  const cooldown = pickUntilBudget(stretchPool, cooldownSec, new Set([...excluded, ...used]), cooldownCount, preferVideo)
   cooldown.forEach((e) => used.add(e.id))
 
   const main = [...mainStrength, ...mainCardio].sort(() => Math.random() - 0.5)
@@ -189,11 +230,16 @@ export function assignRoutine({
   }
 
   // 3) 그래도 부족하면 운동을 추가한다. 근력 → 유산소 → 스트레칭 순, 전체 15개 상한.
+  // 짧은 목표(isShort)는 여기서도 "목표에 맞는 한쪽 축만" 원칙을 지킨다 — 그렇지 않으면
+  // 부족분을 채우다 반대쪽 축이 슬쩍 섞여 들어와 애써 뺀 카테고리가 되돌아온다.
   const GLOBAL_MAX_COUNT = 15
   const extraAdded = []
+  const growPools = isShort
+    ? (primaryIsCardio ? [cardioPool, stretchPool] : [strengthPool, stretchPool])
+    : [strengthPool, cardioPool, stretchPool]
   if (totalSecNow() < targetSec && allPicked.length < GLOBAL_MAX_COUNT) {
     const usedAll = new Set(allPicked.map((e) => e.id))
-    for (const pool of [strengthPool, cardioPool, stretchPool]) {
+    for (const pool of growPools) {
       if (allPicked.length >= GLOBAL_MAX_COUNT || totalSecNow() >= targetSec) break
       const slotsLeft = GLOBAL_MAX_COUNT - allPicked.length
       const extra = pickUntilBudget(pool, targetSec - totalSecNow(), new Set([...excluded, ...usedAll]), slotsLeft, preferVideo)
@@ -205,6 +251,36 @@ export function assignRoutine({
         usedAll.add(e.id)
       }
     }
+  }
+
+  // ── 반대 방향: 목표보다 20% 넘게 초과하면 늘리기와 같은 순서로 줄인다(2.7-2단계
+  // 지시) — 세트 수를 먼저 줄이고(최소 1세트), 그다음 유산소 시간을 줄인다(최소 1분).
+  // 항목을 빼지는 않는다 — 이미 고른 운동을 없애는 대신 강도만 낮춘다.
+  const TOLERANCE = 1.2
+  if (totalSecNow() > targetSec * TOLERANCE) {
+    let guard = 0
+    while (totalSecNow() > targetSec * TOLERANCE && guard < 200) {
+      guard++
+      const shrinkable = mainStrength.filter((e) => overrides.get(e.id).sets > 1)
+      if (!shrinkable.length) break
+      for (const e of shrinkable) {
+        if (totalSecNow() <= targetSec * TOLERANCE) break
+        overrides.get(e.id).sets -= 1
+      }
+    }
+    const CARDIO_FLOOR_SEC = 60
+    guard = 0
+    while (totalSecNow() > targetSec * TOLERANCE && guard < 200) {
+      guard++
+      const shrinkable = mainCardio.filter((e) => e.repType === 'sec' && overrides.get(e.id).reps > CARDIO_FLOOR_SEC)
+      if (!shrinkable.length) break
+      for (const e of shrinkable) {
+        if (totalSecNow() <= targetSec * TOLERANCE) break
+        overrides.get(e.id).reps = Math.max(CARDIO_FLOOR_SEC, overrides.get(e.id).reps - 60)
+      }
+    }
+    // 그래도 넘치면(예: 웜업/쿨다운 고정 비용만으로 이미 초과) 항목을 억지로 빼지 않고
+    // 정직하게 그대로 둔다 — estMinutes가 그 실제 값을 보여준다.
   }
 
   const routine = allPicked
@@ -236,7 +312,7 @@ export function assignRoutine({
 export function suggestProgress(exercise, meta) {
   const count = meta?.completedCount || 0
   if (count > 0 && count % 4 === 0) {
-    return exercise.repType === 'sec'
+    return (exercise.repType === 'sec' || exercise.repType === 'hold')
       ? { type: 'reps', message: `${exercise.name}, 이제 익숙하시죠? 시간을 조금 늘려볼까요?`, reps: exercise.defaultReps + 10 }
       : { type: 'reps', message: `${exercise.name}, 이제 익숙하시죠? 횟수를 늘려볼까요?`, reps: exercise.defaultReps + 2 }
   }

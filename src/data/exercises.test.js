@@ -112,8 +112,25 @@ describe('exercises.json — 2.5단계 §3-1: tempo 필드', () => {
     const bad = withTempo.filter((e) => !('down' in e.tempo && 'hold' in e.tempo && 'up' in e.tempo) || e.tempo.cue?.length !== 3)
     expect(bad.map((e) => e.id)).toEqual([])
   })
-  it('시간형(repType=sec) 운동은 tempo가 null이다(페이서 대신 카운트다운 사용)', () => {
-    const bad = exercises.filter((e) => e.repType === 'sec' && e.tempo !== null)
+  it('시간형·유지형(repType=sec/hold) 운동은 tempo가 null이다(페이서 대신 카운트다운 사용)', () => {
+    const bad = exercises.filter((e) => (e.repType === 'sec' || e.repType === 'hold') && e.tempo !== null)
+    expect(bad.map((e) => e.id)).toEqual([])
+  })
+})
+
+describe('exercises.json — 2.7-2단계: repType 3분류(시간형/유지형/횟수형)', () => {
+  it('repType은 sec·hold·reps 중 하나이거나(reps는 생략 가능) 값이 없어야 한다', () => {
+    const bad = exercises.filter((e) => e.repType && !['sec', 'hold', 'reps'].includes(e.repType))
+    expect(bad.map((e) => e.id)).toEqual([])
+  })
+  it('수영 카테고리 운동은 전부 시간형(sec)이다', () => {
+    const bad = exercises.filter((e) => e.category === '수영' && e.repType !== 'sec')
+    expect(bad.map((e) => e.id)).toEqual([])
+  })
+  // 신규 668종(kspo-*) 대상 — 원본 96종 중 "줄넘기"처럼 횟수로 세는 게 자연스러운
+  // 유산소 운동은 손으로 이미 그렇게 정했으므로 이 규칙에서 제외한다.
+  it('신규 유산소(type=cardio) 운동은 전부 시간형(sec)이다', () => {
+    const bad = exercises.filter((e) => e.id.startsWith('kspo-') && e.type === 'cardio' && e.repType !== 'sec')
     expect(bad.map((e) => e.id)).toEqual([])
   })
 })

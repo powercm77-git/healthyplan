@@ -74,8 +74,9 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const hasVideo = videos.length > 0
   const hasAnim = ex ? POSE_KEYS.includes(ex.animation) : false
   const workTarget = ex ? (progress?.type === 'reps' ? progress.reps : ex.defaultReps) : null
-  const workTargetSec = ex && ex.repType === 'sec' ? workTarget : null
-  const workTargetReps = ex && ex.repType !== 'sec' ? workTarget : null
+  const isTimeBased = ex && (ex.repType === 'sec' || ex.repType === 'hold')
+  const workTargetSec = isTimeBased ? workTarget : null
+  const workTargetReps = ex && !isTimeBased ? workTarget : null
   const cycleLen = ex?.tempo ? ex.tempo.down + ex.tempo.hold + ex.tempo.up : 0
 
   // ── Wake Lock ──

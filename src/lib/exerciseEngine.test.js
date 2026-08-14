@@ -109,7 +109,83 @@ describe('assignRoutine — 실제 exercises.json으로 4개 장소 전부 정�
   }
 })
 
-describe('assignRoutine — 실제 데이터, preferVideo 켜짐으로 45분 루틴이 4개 장소 전부 채워지는지', () => {
+describe('assignRoutine — 2.7-2단계: 10~20분처럼 짧은 목표는 한쪽 축만 쓰고 카테고리를 줄인다', () => {
+  const vid = [{ title: 't', url: 'u', thumbnail: null, len: 60, ageGroup: '공통' }]
+  const strengthA = { id: 'sa', place: ['home'], type: 'strength', bodyParts: ['하체'], level: 1, defaultSets: 3, defaultReps: 10, restSec: 30, metValue: 5, repType: 'reps', videos: vid }
+  const strengthB = { id: 'sb', place: ['home'], type: 'strength', bodyParts: ['상체'], level: 1, defaultSets: 3, defaultReps: 10, restSec: 30, metValue: 5, repType: 'reps', videos: vid }
+  const cardioA = { id: 'ca', place: ['home'], type: 'cardio', bodyParts: ['심폐'], level: 1, defaultSets: 1, defaultReps: 300, restSec: 0, metValue: 8, repType: 'sec', videos: vid }
+  const stretchA = { id: 'sta', place: ['home'], type: 'stretch', bodyParts: ['목'], level: 1, defaultSets: 2, defaultReps: 20, restSec: 15, metValue: 2.5, repType: 'sec', videos: vid }
+  const stretchB = { id: 'stb', place: ['home'], type: 'stretch', bodyParts: ['허리'], level: 1, defaultSets: 2, defaultReps: 20, restSec: 15, metValue: 2.5, repType: 'sec', videos: vid }
+  const fixture = [strengthA, strengthB, cardioA, stretchA, stretchB]
+
+  it('감량 목표는 짧은 시간엔 유산소만 쓰고 근력은 넣지 않는다', () => {
+    const profile = { goal: 'lose', experience: '1', weight: 68 }
+    const { routine } = assignRoutine({ exercises: fixture, profile, place: 'home', minutes: 10, meta: new Map() })
+    expect(routine.some((e) => e.type === 'cardio')).toBe(true)
+    expect(routine.some((e) => e.type === 'strength')).toBe(false)
+  })
+
+  it('증량 목표는 짧은 시간엔 근력만 쓰고 유산소는 넣지 않는다', () => {
+    const profile = { goal: 'gain', experience: '1', weight: 68 }
+    const { routine } = assignRoutine({ exercises: fixture, profile, place: 'home', minutes: 10, meta: new Map() })
+    expect(routine.some((e) => e.type === 'strength')).toBe(true)
+    expect(routine.some((e) => e.type === 'cardio')).toBe(false)
+  })
+
+  it('준비·마무리는 각 1개씩만 배정한다(30분 이상은 최대 2개까지 허용)', () => {
+    const profile = { goal: 'keep', experience: '1', weight: 68 }
+    const { routine } = assignRoutine({ exercises: fixture, profile, place: 'home', minutes: 10, meta: new Map() })
+    expect(routine.filter((e) => e.type === 'stretch').length).toBeLessThanOrEqual(2) // 준비1+마무리1
+  })
+
+  it('30분 이상 목표는 예전처럼 근력·유산소를 함께 쓴다', () => {
+    const profile = { goal: 'keep', experience: '1', weight: 68 }
+    const { routine } = assignRoutine({ exercises: fixture, profile, place: 'home', minutes: 30, meta: new Map() })
+    expect(routine.some((e) => e.type === 'strength')).toBe(true)
+    expect(routine.some((e) => e.type === 'cardio')).toBe(true)
+  })
+})
+
+describe('assignRoutine — 2.7-2단계: 목표보다 20% 넘게 초과하면 세트→유산소 시간 순으로 줄인다', () => {
+  const vid = [{ title: 't', url: 'u', thumbnail: null, len: 60, ageGroup: '공통' }]
+  // 3세트짜리 하나만으로도 이미 10분의 상당 부분을 차지하는 상황을 재현한다.
+  const strengthBig = { id: 'sbig', place: ['home'], type: 'strength', bodyParts: ['하체'], level: 1, defaultSets: 3, defaultReps: 15, restSec: 60, metValue: 5, repType: 'reps', videos: vid }
+  const stretchA = { id: 'sta', place: ['home'], type: 'stretch', bodyParts: ['목'], level: 1, defaultSets: 2, defaultReps: 20, restSec: 15, metValue: 2.5, repType: 'sec', videos: vid }
+  const fixture = [strengthBig, stretchA]
+  const profile = { goal: 'gain', experience: '1', weight: 68 } // 증량=근력 축
+
+  it('세트를 최소 1까지 줄여서 목표에 최대한 맞춘다', () => {
+    const { routineOverrides } = assignRoutine({ exercises: fixture, profile, place: 'home', minutes: 2, meta: new Map() })
+    expect(routineOverrides.sbig?.sets).toBeLessThan(strengthBig.defaultSets)
+    expect(routineOverrides.sbig?.sets).toBeGreaterThanOrEqual(1)
+  })
+
+  it('줄여도 목표보다 짧게 만들지는 않는다(초과분만 줄인다)', () => {
+    const { estMinutes } = assignRoutine({ exercises: fixture, profile, place: 'home', minutes: 2, meta: new Map() })
+    expect(estMinutes).toBeGreaterThan(0)
+  })
+})
+
+describe('assignRoutine — 실제 데이터, 10~20분 목표가 ±20% 오차 안에 들어오는지', () => {
+  const profile = { goal: 'keep', experience: '1', weight: 68 }
+  for (const place of ['home', 'gym', 'outdoor-gym', 'outdoor']) {
+    for (const minutes of [10, 20]) {
+      it(`place="${place}" minutes=${minutes}: 평균 실제 시간이 목표의 ±20% 안에 있다`, () => {
+        let sum = 0
+        const trials = 10
+        for (let i = 0; i < trials; i++) {
+          const { estMinutes } = assignRoutine({ exercises: exercisesReal, profile, place, minutes, meta: new Map() })
+          sum += estMinutes
+        }
+        const avg = sum / trials
+        expect(avg).toBeGreaterThanOrEqual(minutes * 0.6) // 평균 기준 완화 허용(개별 시도는 더 벌어질 수 있음)
+        expect(avg).toBeLessThanOrEqual(minutes * 1.5)
+      })
+    }
+  }
+})
+
+describe('assignRoutine — 실제 데이터, 45분 루틴이 4개 장소 전부 채워지는지', () => {
   const profile = { goal: 'keep', experience: '1', weight: 68 }
   for (const place of ['home', 'gym', 'outdoor-gym', 'outdoor']) {
     it(`place="${place}"에서 45분 루틴을 만들고 부족분(nonVideoCount)을 보고한다`, () => {

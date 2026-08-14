@@ -3364,7 +3364,8 @@
       "어르신",
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0002",
@@ -3384,7 +3385,7 @@
     "musclesKr": "머리가장긴근,머리반가시근,어깨올림근",
     "level": 1,
     "equipment": "의자",
-    "defaultReps": 10,
+    "defaultReps": 20,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -3446,7 +3447,8 @@
       "어르신",
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0003",
@@ -3528,7 +3530,8 @@
       "공통",
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0004",
@@ -3602,7 +3605,8 @@
       "공통",
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0005",
@@ -3676,7 +3680,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0006",
@@ -3751,7 +3756,8 @@
       "공통",
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0007",
@@ -3770,7 +3776,7 @@
     "musclesKr": "볼기근,돌림근",
     "level": 1,
     "equipment": "매트",
-    "defaultReps": 10,
+    "defaultReps": 20,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -3824,7 +3830,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0008",
@@ -3845,7 +3852,7 @@
     "musclesKr": "큰볼기근,가자미근,넙다리네갈래근,장딴지근",
     "level": 1,
     "equipment": "계단",
-    "defaultReps": 3,
+    "defaultReps": 120,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 6,
@@ -3892,7 +3899,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0009",
@@ -3960,7 +3968,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0010",
@@ -4026,7 +4035,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0011",
@@ -4094,7 +4104,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0012",
@@ -4160,7 +4171,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0013",
@@ -4226,7 +4238,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0014",
@@ -4297,7 +4310,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0015",
@@ -4367,7 +4381,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0016",
@@ -4435,7 +4450,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0017",
@@ -4502,7 +4518,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0018",
@@ -4568,7 +4585,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0019",
@@ -4633,7 +4651,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0020",
@@ -4698,7 +4717,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0021",
@@ -4764,7 +4784,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0022",
@@ -4830,7 +4851,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0023",
@@ -4897,7 +4919,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0024",
@@ -4961,7 +4984,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0025",
@@ -5027,7 +5051,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0026",
@@ -5092,7 +5117,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0027",
@@ -5158,7 +5184,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0028",
@@ -5224,7 +5251,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0029",
@@ -5291,7 +5319,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0030",
@@ -5355,7 +5384,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0031",
@@ -5418,7 +5448,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0032",
@@ -5484,7 +5515,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0033",
@@ -5548,7 +5580,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0034",
@@ -5613,7 +5646,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0035",
@@ -5677,7 +5711,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0036",
@@ -5741,7 +5776,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0037",
@@ -5808,7 +5844,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0038",
@@ -5873,7 +5910,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0039",
@@ -5937,7 +5975,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0040",
@@ -6000,7 +6039,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0041",
@@ -6064,7 +6104,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0042",
@@ -6129,7 +6170,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0043",
@@ -6196,7 +6238,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0044",
@@ -6262,7 +6305,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0045",
@@ -6328,7 +6372,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0046",
@@ -6394,7 +6439,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0047",
@@ -6460,7 +6506,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0048",
@@ -6528,7 +6575,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0049",
@@ -6593,7 +6641,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0050",
@@ -6659,7 +6708,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0051",
@@ -6725,7 +6775,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0052",
@@ -6791,7 +6842,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0053",
@@ -6859,7 +6911,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0054",
@@ -6927,7 +6980,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0055",
@@ -6993,7 +7047,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0056",
@@ -7060,7 +7115,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0057",
@@ -7128,7 +7184,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0058",
@@ -7195,7 +7252,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0059",
@@ -7264,7 +7322,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0060",
@@ -7333,7 +7392,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0061",
@@ -7400,7 +7460,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0062",
@@ -7468,7 +7529,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0063",
@@ -7536,7 +7598,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0064",
@@ -7604,7 +7667,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0065",
@@ -7670,7 +7734,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0066",
@@ -7737,7 +7802,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0067",
@@ -7803,7 +7869,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0068",
@@ -7871,7 +7938,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0069",
@@ -7936,7 +8004,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0070",
@@ -8001,7 +8070,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0071",
@@ -8019,7 +8089,7 @@
     "musclesKr": "어깨세모근",
     "level": 2,
     "equipment": "베개",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8066,7 +8136,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0072",
@@ -8084,7 +8155,7 @@
     "musclesKr": "어깨세모근",
     "level": 2,
     "equipment": "테이블",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8131,7 +8202,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0073",
@@ -8149,7 +8221,7 @@
     "musclesKr": "어깨세모근",
     "level": 2,
     "equipment": "테이블",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8196,7 +8268,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0074",
@@ -8212,7 +8285,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "막대",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8259,7 +8332,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0075",
@@ -8278,7 +8352,7 @@
     "musclesKr": "가시아래근,가시윗근,어깨밑근,어깨세모근",
     "level": 2,
     "equipment": "막대",
-    "defaultReps": 3,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8325,7 +8399,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0076",
@@ -8345,7 +8420,7 @@
     "musclesKr": "넓은등근,어깨세모근,작은원근,큰원근",
     "level": 2,
     "equipment": "막대",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8392,7 +8467,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0077",
@@ -8411,7 +8487,7 @@
     "musclesKr": "넓은등근,위팔세갈래근",
     "level": 2,
     "equipment": "수건",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8459,7 +8535,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0078",
@@ -8480,7 +8557,7 @@
     "musclesKr": "등세모근,마름모근,어깨세모근,어깨올림근,작은원근",
     "level": 2,
     "equipment": "밴드",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8527,7 +8604,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0079",
@@ -8545,7 +8623,7 @@
     "musclesKr": "장딴지근",
     "level": 2,
     "equipment": "수건",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 2.5,
@@ -8592,7 +8670,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0080",
@@ -8611,7 +8690,7 @@
     "musclesKr": "긴발가락폄근,앞정강근",
     "level": 2,
     "equipment": "의자",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -8658,7 +8737,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0081",
@@ -8722,7 +8802,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0082",
@@ -8789,7 +8870,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0083",
@@ -8854,7 +8936,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0084",
@@ -8922,7 +9005,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0085",
@@ -8989,7 +9073,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0086",
@@ -9054,7 +9139,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0087",
@@ -9122,7 +9208,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0088",
@@ -9190,7 +9277,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0089",
@@ -9257,7 +9345,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0090",
@@ -9322,7 +9411,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0091",
@@ -9387,7 +9477,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0092",
@@ -9451,7 +9542,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0093",
@@ -9470,7 +9562,7 @@
     "musclesKr": "앞톱니근,배곧은근",
     "level": 2,
     "equipment": "짐볼",
-    "defaultReps": 10,
+    "defaultReps": 7,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -9518,7 +9610,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0094",
@@ -9582,7 +9675,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0095",
@@ -9649,7 +9743,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0096",
@@ -9714,7 +9809,8 @@
       "공통",
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0097",
@@ -9735,7 +9831,7 @@
     "musclesKr": "볼기근,척추세움근,배곧은근,배빗근,앞정강근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -9781,7 +9877,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0098",
@@ -9801,7 +9898,7 @@
     "musclesKr": "중간볼기근,어깨세모근,넙다리근막긴장근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -9848,7 +9945,8 @@
       "어르신",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0099",
@@ -9906,7 +10004,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0100",
@@ -9967,7 +10066,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0101",
@@ -10026,7 +10126,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0102",
@@ -10084,7 +10185,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0103",
@@ -10143,7 +10245,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0104",
@@ -10201,7 +10304,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0105",
@@ -10258,7 +10362,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0106",
@@ -10316,7 +10421,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0107",
@@ -10374,7 +10480,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0108",
@@ -10432,7 +10539,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0109",
@@ -10490,7 +10598,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0110",
@@ -10547,7 +10656,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0111",
@@ -10606,7 +10716,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0112",
@@ -10664,7 +10775,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0113",
@@ -10722,7 +10834,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0114",
@@ -10782,7 +10895,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0115",
@@ -10840,7 +10954,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0116",
@@ -10898,7 +11013,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0117",
@@ -10958,7 +11074,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0118",
@@ -11018,7 +11135,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0119",
@@ -11080,7 +11198,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0120",
@@ -11140,7 +11259,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0121",
@@ -11201,7 +11321,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0122",
@@ -11259,7 +11380,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0123",
@@ -11284,7 +11406,7 @@
     "musclesKr": "엉덩관절굽힘근,볼기근,넙다리근막긴장근,넙다리네갈래근,뒤넙다리근,모음근,장딴지근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -11325,7 +11447,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0124",
@@ -11346,7 +11469,7 @@
     "musclesKr": "궁둥구멍근,볼기근,엉덩허리근,넙다리근막긴장근,뒤넙다리근",
     "level": 1,
     "equipment": "매트",
-    "defaultReps": 10,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -11386,7 +11509,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0125",
@@ -11409,7 +11533,7 @@
     "musclesKr": "큰가슴근,마름모근,손목굽힘근,어깨세모근,위팔세갈래근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -11450,7 +11574,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0126",
@@ -11470,7 +11595,7 @@
     "musclesKr": "앞톱니근,넓은등근,작은원근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -11510,7 +11635,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0127",
@@ -11570,7 +11696,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0128",
@@ -11631,7 +11758,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0129",
@@ -11692,7 +11820,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0130",
@@ -11710,7 +11839,7 @@
     "musclesKr": "가자미근,장딴지근",
     "level": 1,
     "equipment": "폼롤러",
-    "defaultReps": 10,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -11750,7 +11879,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0131",
@@ -11770,7 +11900,7 @@
     "musclesKr": "머리널판근,목빗근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -11810,7 +11940,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0132",
@@ -11831,7 +11962,7 @@
     "musclesKr": "등세모근,머리반가시근,목/머리널판근,목빗근",
     "level": 2,
     "equipment": "의자",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -11871,7 +12002,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0133",
@@ -11890,7 +12022,7 @@
     "musclesKr": "머리반가시근,목/머리널판근,목빗근",
     "level": 2,
     "equipment": "의자",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -11930,7 +12062,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0134",
@@ -11949,7 +12082,7 @@
     "musclesKr": "가시아래근,가시윗근,어깨밑근,작은원근",
     "level": 2,
     "equipment": "의자",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -11988,7 +12121,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0135",
@@ -12011,7 +12145,7 @@
     "musclesKr": "큰가슴근,넓은등근,돌림근,가시아래근,뒤세모근,어깨밑근,작은원근",
     "level": 2,
     "equipment": "막대",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -12051,7 +12185,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0136",
@@ -12070,7 +12205,7 @@
     "musclesKr": "가시아래근,가시윗근,어깨밑근,어깨세모근",
     "level": 2,
     "equipment": "덤벨",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -12109,7 +12244,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0137",
@@ -12127,7 +12263,7 @@
     "musclesKr": "어깨세모근",
     "level": 2,
     "equipment": "아령",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -12166,7 +12302,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0138",
@@ -12223,7 +12360,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0139",
@@ -12283,7 +12421,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0140",
@@ -12345,7 +12484,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0141",
@@ -12364,7 +12504,7 @@
     "musclesKr": "볼기근,넙다리네갈래근",
     "level": 2,
     "equipment": "헬스기구",
-    "defaultReps": 10,
+    "defaultReps": 1350,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 6,
@@ -12403,7 +12543,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0142",
@@ -12462,7 +12603,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0143",
@@ -12522,7 +12664,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0144",
@@ -12581,7 +12724,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0145",
@@ -12641,7 +12785,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0146",
@@ -12701,7 +12846,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0147",
@@ -12759,7 +12905,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0148",
@@ -12816,7 +12963,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0149",
@@ -12873,7 +13021,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0150",
@@ -12933,7 +13082,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0151",
@@ -12992,7 +13142,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0152",
@@ -13051,7 +13202,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0153",
@@ -13111,7 +13263,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0154",
@@ -13169,7 +13322,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0155",
@@ -13229,7 +13383,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0156",
@@ -13285,7 +13440,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0157",
@@ -13345,7 +13501,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0158",
@@ -13403,7 +13560,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0159",
@@ -13462,7 +13620,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0160",
@@ -13518,7 +13677,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0161",
@@ -13577,7 +13737,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0162",
@@ -13637,7 +13798,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0163",
@@ -13696,7 +13858,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0164",
@@ -13756,7 +13919,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0165",
@@ -13815,7 +13979,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0166",
@@ -13873,7 +14038,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0167",
@@ -13932,7 +14098,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0168",
@@ -13990,7 +14157,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0169",
@@ -14048,7 +14216,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0170",
@@ -14104,7 +14273,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0171",
@@ -14161,7 +14331,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0172",
@@ -14220,7 +14391,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0173",
@@ -14279,7 +14451,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0174",
@@ -14336,7 +14509,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0175",
@@ -14392,7 +14566,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0176",
@@ -14451,7 +14626,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0177",
@@ -14511,7 +14687,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0178",
@@ -14567,7 +14744,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0179",
@@ -14626,7 +14804,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0180",
@@ -14685,7 +14864,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0181",
@@ -14748,7 +14928,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0182",
@@ -14766,7 +14947,7 @@
     "musclesKr": "목빗근",
     "level": 2,
     "equipment": "의자",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -14806,7 +14987,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0183",
@@ -14865,7 +15047,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0184",
@@ -14924,7 +15107,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0185",
@@ -14984,7 +15168,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0186",
@@ -15045,7 +15230,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0187",
@@ -15118,7 +15304,8 @@
       "유소년",
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0188",
@@ -15192,7 +15379,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0189",
@@ -15259,7 +15447,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0190",
@@ -15325,7 +15514,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0191",
@@ -15391,7 +15581,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0192",
@@ -15457,7 +15648,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0193",
@@ -15525,7 +15717,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0194",
@@ -15586,7 +15779,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0195",
@@ -15644,7 +15838,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0196",
@@ -15702,7 +15897,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0197",
@@ -15761,7 +15957,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0198",
@@ -15819,7 +16016,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0199",
@@ -15876,7 +16074,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0200",
@@ -15934,7 +16133,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0201",
@@ -15993,7 +16193,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0202",
@@ -16052,7 +16253,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0203",
@@ -16109,7 +16311,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0204",
@@ -16166,7 +16369,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0205",
@@ -16223,7 +16427,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0206",
@@ -16280,7 +16485,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0207",
@@ -16337,7 +16543,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0208",
@@ -16396,7 +16603,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0209",
@@ -16453,7 +16661,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0210",
@@ -16511,7 +16720,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0211",
@@ -16568,7 +16778,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0212",
@@ -16625,7 +16836,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0213",
@@ -16682,7 +16894,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0214",
@@ -16702,7 +16915,7 @@
     "musclesKr": "엉덩관절굽힘근,배가로근,배곧은근,모음근",
     "level": 2,
     "equipment": "써클링",
-    "defaultReps": 13,
+    "defaultReps": 8,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -16741,7 +16954,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0215",
@@ -16797,7 +17011,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0216",
@@ -16854,7 +17069,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0217",
@@ -16912,7 +17128,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0218",
@@ -16970,7 +17187,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0219",
@@ -17029,7 +17247,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0220",
@@ -17088,7 +17307,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0221",
@@ -17148,7 +17368,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0222",
@@ -17207,7 +17428,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0223",
@@ -17263,7 +17485,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0224",
@@ -17321,7 +17544,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0225",
@@ -17378,7 +17602,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0226",
@@ -17434,7 +17659,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0227",
@@ -17491,7 +17717,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0228",
@@ -17548,7 +17775,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0229",
@@ -17609,7 +17837,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0230",
@@ -17669,7 +17898,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0231",
@@ -17728,7 +17958,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0232",
@@ -17747,7 +17978,7 @@
     "musclesKr": "가자미근,장딴지근",
     "level": 2,
     "equipment": "줄넘기",
-    "defaultReps": 4,
+    "defaultReps": 120,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 6,
@@ -17785,7 +18016,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0233",
@@ -17844,7 +18076,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0234",
@@ -17902,7 +18135,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0235",
@@ -17960,7 +18194,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0236",
@@ -18019,7 +18254,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0237",
@@ -18078,7 +18314,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0238",
@@ -18134,7 +18371,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0239",
@@ -18192,7 +18430,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0240",
@@ -18250,7 +18489,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0241",
@@ -18308,7 +18548,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0242",
@@ -18328,7 +18569,7 @@
     "musclesKr": "넙다리두갈래근,장딴지근",
     "level": 2,
     "equipment": "매트",
-    "defaultReps": 3,
+    "defaultReps": 18,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 5,
@@ -18367,7 +18608,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0243",
@@ -18425,7 +18667,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0244",
@@ -18486,7 +18729,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0245",
@@ -18545,7 +18789,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0246",
@@ -18602,7 +18847,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0247",
@@ -18660,7 +18906,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0248",
@@ -18717,7 +18964,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0249",
@@ -18775,7 +19023,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0250",
@@ -18832,7 +19081,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0251",
@@ -18890,7 +19140,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0252",
@@ -18950,7 +19201,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0253",
@@ -18972,7 +19224,7 @@
     "musclesKr": "엉덩관절굽힘근,볼기근,가자미근,넙다리네갈래근,뒤넙다리근,장딴지근",
     "level": 2,
     "equipment": "콘",
-    "defaultReps": 4,
+    "defaultReps": 15,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 6,
@@ -19012,7 +19264,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0254",
@@ -19080,7 +19333,8 @@
       "유소년",
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0255",
@@ -19152,7 +19406,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0256",
@@ -19172,7 +19427,7 @@
     "musclesKr": "큰볼기근,가자미근,넙다리네갈래근,장딴지근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 1350,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 6,
@@ -19223,7 +19478,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0257",
@@ -19239,7 +19495,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "매트",
-    "defaultReps": 7,
+    "defaultReps": 4,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -19284,7 +19540,8 @@
       "유소년",
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0258",
@@ -19345,7 +19602,8 @@
       "유소년",
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0259",
@@ -19411,7 +19669,8 @@
       "유소년",
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0260",
@@ -19475,7 +19734,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0261",
@@ -19539,7 +19799,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0262",
@@ -19555,7 +19816,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "매트",
-    "defaultReps": 12,
+    "defaultReps": 6,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -19600,7 +19861,8 @@
       "청소년",
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0263",
@@ -19660,7 +19922,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0264",
@@ -19721,7 +19984,8 @@
       "공통",
       "성인"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0265",
@@ -19777,7 +20041,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0266",
@@ -19835,7 +20100,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0267",
@@ -19891,7 +20157,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0268",
@@ -19947,7 +20214,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0269",
@@ -20005,7 +20273,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0270",
@@ -20062,7 +20331,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0271",
@@ -20118,7 +20388,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0272",
@@ -20176,7 +20447,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0273",
@@ -20196,7 +20468,7 @@
     "musclesKr": "뒤넙다리근,장딴지근",
     "level": 2,
     "equipment": "없음",
-    "defaultReps": 3,
+    "defaultReps": 20,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 5,
@@ -20233,7 +20505,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0274",
@@ -20253,7 +20526,7 @@
     "musclesKr": "넙다리두갈래근,반막모양근,반힘줄모양근,장딴지근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 3,
+    "defaultReps": 18,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 5,
@@ -20290,7 +20563,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0275",
@@ -20346,7 +20620,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0276",
@@ -20405,7 +20680,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0277",
@@ -20461,7 +20737,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0278",
@@ -20518,7 +20795,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0279",
@@ -20575,7 +20853,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0280",
@@ -20633,7 +20912,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0281",
@@ -20691,7 +20971,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0282",
@@ -20748,7 +21029,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0283",
@@ -20804,7 +21086,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0284",
@@ -20864,7 +21147,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0285",
@@ -20921,7 +21205,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0286",
@@ -20981,7 +21266,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0287",
@@ -21040,7 +21326,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0288",
@@ -21098,7 +21385,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0289",
@@ -21155,7 +21443,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0290",
@@ -21211,7 +21500,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0291",
@@ -21267,7 +21557,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0292",
@@ -21323,7 +21614,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0293",
@@ -21379,7 +21671,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0294",
@@ -21400,7 +21693,7 @@
     "musclesKr": "척추세움근,배곧은근,넙다리곧은근",
     "level": 2,
     "equipment": "훌라후프",
-    "defaultReps": 3,
+    "defaultReps": 750,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -21437,7 +21730,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0295",
@@ -21493,7 +21787,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0296",
@@ -21549,7 +21844,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0297",
@@ -21607,7 +21903,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0298",
@@ -21663,7 +21960,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0299",
@@ -21718,7 +22016,8 @@
     "ageGroups": [
       "유소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0300",
@@ -21775,7 +22074,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0301",
@@ -21831,7 +22131,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0302",
@@ -21888,7 +22189,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0303",
@@ -21943,7 +22245,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0304",
@@ -21999,7 +22302,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0305",
@@ -22018,7 +22322,7 @@
     "musclesKr": "볼기근,넙다리네갈래근",
     "level": 1,
     "equipment": "스텝박스",
-    "defaultReps": 10,
+    "defaultReps": 2250,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 6,
@@ -22055,7 +22359,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0306",
@@ -22110,7 +22415,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0307",
@@ -22166,7 +22472,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0308",
@@ -22221,7 +22528,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0309",
@@ -22278,7 +22586,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0310",
@@ -22333,7 +22642,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0311",
@@ -22390,7 +22700,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0312",
@@ -22447,7 +22758,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0313",
@@ -22503,7 +22815,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0314",
@@ -22559,7 +22872,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0315",
@@ -22616,7 +22930,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0316",
@@ -22671,7 +22986,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0317",
@@ -22727,7 +23043,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0318",
@@ -22782,7 +23099,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0319",
@@ -22838,7 +23156,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0320",
@@ -22895,7 +23214,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0321",
@@ -22951,7 +23271,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0322",
@@ -23007,7 +23328,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0323",
@@ -23064,7 +23386,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0324",
@@ -23120,7 +23443,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0325",
@@ -23177,7 +23501,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0326",
@@ -23235,7 +23560,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0327",
@@ -23294,7 +23620,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0328",
@@ -23352,7 +23679,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0329",
@@ -23409,7 +23737,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0330",
@@ -23467,7 +23796,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0331",
@@ -23525,7 +23855,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0332",
@@ -23585,7 +23916,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0333",
@@ -23642,7 +23974,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0334",
@@ -23699,7 +24032,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0335",
@@ -23758,7 +24092,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0336",
@@ -23814,7 +24149,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0337",
@@ -23833,7 +24169,7 @@
     "musclesKr": "어깨올림근,작은원근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 3,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -23870,7 +24206,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0338",
@@ -23889,7 +24226,7 @@
     "musclesKr": "큰가슴근,어깨세모근",
     "level": 1,
     "equipment": "매트",
-    "defaultReps": 3,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -23926,7 +24263,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0339",
@@ -23982,7 +24320,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0340",
@@ -24039,7 +24378,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0341",
@@ -24095,7 +24435,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0342",
@@ -24151,7 +24492,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0343",
@@ -24207,7 +24549,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0344",
@@ -24264,7 +24607,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0345",
@@ -24321,7 +24665,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0346",
@@ -24376,7 +24721,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0347",
@@ -24433,7 +24779,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0348",
@@ -24490,7 +24837,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0349",
@@ -24546,7 +24894,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0350",
@@ -24603,7 +24952,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0351",
@@ -24660,7 +25010,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0352",
@@ -24717,7 +25068,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0353",
@@ -24773,7 +25125,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0354",
@@ -24829,7 +25182,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0355",
@@ -24885,7 +25239,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0356",
@@ -24941,7 +25296,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0357",
@@ -24998,7 +25354,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0358",
@@ -25055,7 +25412,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0359",
@@ -25112,7 +25470,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0360",
@@ -25168,7 +25527,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0361",
@@ -25225,7 +25585,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0362",
@@ -25279,7 +25640,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0363",
@@ -25336,7 +25698,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0364",
@@ -25390,7 +25753,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0365",
@@ -25447,7 +25811,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0366",
@@ -25505,7 +25870,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0367",
@@ -25564,7 +25930,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0368",
@@ -25622,7 +25989,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0369",
@@ -25679,7 +26047,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0370",
@@ -25736,7 +26105,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0371",
@@ -25796,7 +26166,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0372",
@@ -25854,7 +26225,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0373",
@@ -25912,7 +26284,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0374",
@@ -25969,7 +26342,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0375",
@@ -26024,7 +26398,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0376",
@@ -26081,7 +26456,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0377",
@@ -26138,7 +26514,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0378",
@@ -26195,7 +26572,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0379",
@@ -26256,7 +26634,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0380",
@@ -26313,7 +26692,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0381",
@@ -26373,7 +26753,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0382",
@@ -26433,7 +26814,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0383",
@@ -26494,7 +26876,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0384",
@@ -26556,7 +26939,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0385",
@@ -26613,7 +26997,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0386",
@@ -26673,7 +27058,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0387",
@@ -26731,7 +27117,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0388",
@@ -26789,7 +27176,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0389",
@@ -26850,7 +27238,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0390",
@@ -26903,7 +27292,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0391",
@@ -26961,7 +27351,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0392",
@@ -27020,7 +27411,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0393",
@@ -27080,7 +27472,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0394",
@@ -27141,7 +27534,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0395",
@@ -27201,7 +27595,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0396",
@@ -27260,7 +27655,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0397",
@@ -27285,7 +27681,7 @@
     "musclesKr": "큰볼기근,배곧은근,어깨세모근,넙다리근막긴장근,넙다리네갈래근,넙다리두갈래근,장딴지세갈래근",
     "level": 2,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 6,
@@ -27322,7 +27718,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0398",
@@ -27375,7 +27772,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0399",
@@ -27432,7 +27830,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0400",
@@ -27491,7 +27890,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0401",
@@ -27550,7 +27950,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0402",
@@ -27607,7 +28008,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0403",
@@ -27669,7 +28071,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0404",
@@ -27723,7 +28126,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0405",
@@ -27782,7 +28186,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0406",
@@ -27839,7 +28244,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0407",
@@ -27896,7 +28302,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0408",
@@ -27957,7 +28364,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0409",
@@ -28017,7 +28425,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0410",
@@ -28075,7 +28484,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0411",
@@ -28132,7 +28542,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0412",
@@ -28190,7 +28601,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0413",
@@ -28248,7 +28660,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0414",
@@ -28309,7 +28722,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0415",
@@ -28366,7 +28780,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0416",
@@ -28423,7 +28838,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0417",
@@ -28481,7 +28897,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0418",
@@ -28537,7 +28954,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0419",
@@ -28595,7 +29013,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0420",
@@ -28652,7 +29071,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0421",
@@ -28671,7 +29091,7 @@
     "musclesKr": "배곧은근",
     "level": 3,
     "equipment": "메디신볼",
-    "defaultReps": 10,
+    "defaultReps": 15,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -28708,7 +29128,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0422",
@@ -28764,7 +29185,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0423",
@@ -28820,7 +29242,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0424",
@@ -28876,7 +29299,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0425",
@@ -28932,7 +29356,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0426",
@@ -28989,7 +29414,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0427",
@@ -29044,7 +29470,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0428",
@@ -29099,7 +29526,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0429",
@@ -29154,7 +29582,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0430",
@@ -29210,7 +29639,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0431",
@@ -29268,7 +29698,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0432",
@@ -29324,7 +29755,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0433",
@@ -29379,7 +29811,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0434",
@@ -29434,7 +29867,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0435",
@@ -29492,7 +29926,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0436",
@@ -29547,7 +29982,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0437",
@@ -29602,7 +30038,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0438",
@@ -29657,7 +30094,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0439",
@@ -29712,7 +30150,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0440",
@@ -29769,7 +30208,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0441",
@@ -29827,7 +30267,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0442",
@@ -29883,7 +30324,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0443",
@@ -29940,7 +30382,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0444",
@@ -29998,7 +30441,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0445",
@@ -30055,7 +30499,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0446",
@@ -30111,7 +30556,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0447",
@@ -30167,7 +30613,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0448",
@@ -30224,7 +30671,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0449",
@@ -30281,7 +30729,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0450",
@@ -30337,7 +30786,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0451",
@@ -30393,7 +30843,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0452",
@@ -30449,7 +30900,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0453",
@@ -30504,7 +30956,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0454",
@@ -30560,7 +31013,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0455",
@@ -30617,7 +31071,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0456",
@@ -30672,7 +31127,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0457",
@@ -30727,7 +31183,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0458",
@@ -30782,7 +31239,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0459",
@@ -30839,7 +31297,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0460",
@@ -30896,7 +31355,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0461",
@@ -30952,7 +31412,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0462",
@@ -31008,7 +31469,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0463",
@@ -31064,7 +31526,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0464",
@@ -31119,7 +31582,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0465",
@@ -31175,7 +31639,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0466",
@@ -31231,7 +31696,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0467",
@@ -31249,7 +31715,7 @@
     "musclesKr": "넙다리빗근",
     "level": 1,
     "equipment": "매트",
-    "defaultReps": 3,
+    "defaultReps": 20,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 5,
@@ -31286,7 +31752,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0468",
@@ -31342,7 +31809,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0469",
@@ -31399,7 +31867,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0470",
@@ -31456,7 +31925,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0471",
@@ -31511,7 +31981,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0472",
@@ -31568,7 +32039,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0473",
@@ -31625,7 +32097,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0474",
@@ -31682,7 +32155,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0475",
@@ -31742,7 +32216,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0476",
@@ -31800,7 +32275,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0477",
@@ -31857,7 +32333,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0478",
@@ -31914,7 +32391,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0479",
@@ -31971,7 +32449,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0480",
@@ -32028,7 +32507,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0481",
@@ -32087,7 +32567,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0482",
@@ -32144,7 +32625,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0483",
@@ -32200,7 +32682,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0484",
@@ -32258,7 +32741,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0485",
@@ -32316,7 +32800,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0486",
@@ -32337,7 +32822,7 @@
     "musclesKr": "척추세움근,어깨세모근,넙다리네갈래근",
     "level": 3,
     "equipment": "없음",
-    "defaultReps": 3,
+    "defaultReps": 20,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 5,
@@ -32374,7 +32859,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0487",
@@ -32430,7 +32916,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0488",
@@ -32488,7 +32975,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0489",
@@ -32544,7 +33032,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0490",
@@ -32564,7 +33053,7 @@
     "musclesKr": "넓은등근,배곧은근,배바깥빗근",
     "level": 3,
     "equipment": "매트",
-    "defaultReps": 3,
+    "defaultReps": 20,
     "defaultSets": 1,
     "restSec": 60,
     "metValue": 5,
@@ -32601,7 +33090,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0491",
@@ -32659,7 +33149,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0492",
@@ -32714,7 +33205,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0493",
@@ -32769,7 +33261,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0494",
@@ -32824,7 +33317,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0495",
@@ -32879,7 +33373,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0496",
@@ -32935,7 +33430,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0497",
@@ -32991,7 +33487,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0498",
@@ -33047,7 +33544,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0499",
@@ -33104,7 +33602,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0500",
@@ -33161,7 +33660,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0501",
@@ -33218,7 +33718,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0502",
@@ -33275,7 +33776,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0503",
@@ -33332,7 +33834,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0504",
@@ -33389,7 +33892,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0505",
@@ -33446,7 +33950,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0506",
@@ -33503,7 +34008,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0507",
@@ -33561,7 +34067,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0508",
@@ -33617,7 +34124,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0509",
@@ -33638,7 +34146,7 @@
     "musclesKr": "넓은등근,척추세움근,넙다리네갈래근",
     "level": 2,
     "equipment": "없음",
-    "defaultReps": 2,
+    "defaultReps": 15,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -33675,7 +34183,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0510",
@@ -33732,7 +34241,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0511",
@@ -33789,7 +34299,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0512",
@@ -33846,7 +34357,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0513",
@@ -33902,7 +34414,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0514",
@@ -33959,7 +34472,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0515",
@@ -34016,7 +34530,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0516",
@@ -34073,7 +34588,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0517",
@@ -34130,7 +34646,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0518",
@@ -34186,7 +34703,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0519",
@@ -34241,7 +34759,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0520",
@@ -34296,7 +34815,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0521",
@@ -34352,7 +34872,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0522",
@@ -34409,7 +34930,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0523",
@@ -34429,7 +34951,7 @@
     "musclesKr": "넙다리곧은근,장딴지근",
     "level": 1,
     "equipment": "매트",
-    "defaultReps": 10,
+    "defaultReps": 20,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -34466,7 +34988,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0524",
@@ -34523,7 +35046,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0525",
@@ -34579,7 +35103,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0526",
@@ -34634,7 +35159,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0527",
@@ -34690,7 +35216,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0528",
@@ -34746,7 +35273,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0529",
@@ -34802,7 +35330,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0530",
@@ -34860,7 +35389,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0531",
@@ -34918,7 +35448,8 @@
     "ageGroups": [
       "청소년"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0532",
@@ -34971,7 +35502,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0533",
@@ -35024,7 +35556,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0534",
@@ -35077,7 +35610,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0535",
@@ -35130,7 +35664,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0536",
@@ -35183,7 +35718,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0537",
@@ -35236,7 +35772,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0538",
@@ -35289,7 +35826,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0539",
@@ -35342,7 +35880,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0540",
@@ -35395,7 +35934,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0541",
@@ -35448,7 +35988,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0542",
@@ -35501,7 +36042,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0543",
@@ -35554,7 +36096,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0544",
@@ -35607,7 +36150,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0545",
@@ -35660,7 +36204,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0546",
@@ -35713,7 +36258,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0547",
@@ -35766,7 +36312,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0548",
@@ -35819,7 +36366,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0549",
@@ -35872,7 +36420,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0550",
@@ -35925,7 +36474,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0551",
@@ -35978,7 +36528,8 @@
     "ageGroups": [
       "성인"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0552",
@@ -36031,7 +36582,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0553",
@@ -36084,7 +36636,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "reps"
   },
   {
     "id": "kspo-0554",
@@ -36137,7 +36690,8 @@
     "ageGroups": [
       "어르신"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "sec"
   },
   {
     "id": "kspo-0555",
@@ -36193,7 +36747,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0556",
@@ -36251,7 +36806,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0557",
@@ -36307,7 +36863,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0558",
@@ -36366,7 +36923,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0559",
@@ -36385,7 +36943,7 @@
     "musclesKr": "검지손가락폄근,긴엄지손가락굽힘근,새끼손가락폄근",
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 3,
+    "defaultReps": 20,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -36422,7 +36980,8 @@
     "ageGroups": [
       "유아기"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0560",
@@ -36447,7 +37006,7 @@
     "musclesKr": "배가로근,배곧은근,어깨세모근,위팔근,위팔두갈래근,위팔세갈래근,자쪽손목굽힘근,자쪽손목폄근,가자미근,앞정강근,장딴지근",
     "level": 2,
     "equipment": "매트",
-    "defaultReps": 3,
+    "defaultReps": 8,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -36484,7 +37043,8 @@
     "ageGroups": [
       "유아기"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0561",
@@ -36507,7 +37067,7 @@
     "musclesKr": "척추세움근,넙다리네갈래근,넙다리두갈래근,뒤정강근,앞정강근,장딴지근",
     "level": 2,
     "equipment": "사다리",
-    "defaultReps": 3,
+    "defaultReps": 10,
     "defaultSets": 4,
     "restSec": 60,
     "metValue": 5,
@@ -36544,7 +37104,8 @@
     "ageGroups": [
       "유아기"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0562",
@@ -36568,7 +37129,7 @@
     "musclesKr": "큰가슴근,큰볼기근,넓은등근,척추세움근,위팔근,가자미근,넙다리두갈래근",
     "level": 2,
     "equipment": "헬멧",
-    "defaultReps": 4,
+    "defaultReps": 35,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -36605,7 +37166,8 @@
     "ageGroups": [
       "유아기"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0563",
@@ -36624,7 +37186,7 @@
     "musclesKr": "긴발가락폄근,긴엄지발가락폄근,앞정강근",
     "level": 2,
     "equipment": "발판",
-    "defaultReps": 3,
+    "defaultReps": 35,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -36661,7 +37223,8 @@
     "ageGroups": [
       "유아기"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0564",
@@ -36681,7 +37244,7 @@
     "musclesKr": "검지손가락폄근,긴엄지손가락굽힘근,노쪽 손목 폄근,노쪽손목굽힘근,새끼손가락폄근,손목굽힘근,손목폄근",
     "level": 2,
     "equipment": "고무줄",
-    "defaultReps": 3,
+    "defaultReps": 180,
     "defaultSets": 2,
     "restSec": 60,
     "metValue": 5,
@@ -36718,7 +37281,8 @@
     "ageGroups": [
       "유아기"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0565",
@@ -36735,7 +37299,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "색테이프",
-    "defaultReps": 3,
+    "defaultReps": 20,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -36772,7 +37336,8 @@
     "ageGroups": [
       "유아기"
     ],
-    "excludeFromAutoRoutine": false
+    "excludeFromAutoRoutine": false,
+    "repType": "hold"
   },
   {
     "id": "kspo-0566",
@@ -36825,7 +37390,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0567",
@@ -36878,7 +37444,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0568",
@@ -36894,7 +37461,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "테이블",
-    "defaultReps": 10,
+    "defaultReps": 3,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -36931,7 +37498,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0569",
@@ -36984,7 +37552,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0570",
@@ -37037,7 +37606,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0571",
@@ -37090,7 +37660,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0572",
@@ -37106,7 +37677,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "수건",
-    "defaultReps": 10,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -37143,7 +37714,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0573",
@@ -37159,7 +37731,7 @@
     "musclesKr": null,
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 4,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -37196,7 +37768,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0574",
@@ -37249,7 +37822,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0575",
@@ -37302,7 +37876,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0576",
@@ -37355,7 +37930,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0577",
@@ -37408,7 +37984,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0578",
@@ -37461,7 +38038,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0579",
@@ -37514,7 +38092,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0580",
@@ -37567,7 +38146,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0581",
@@ -37620,7 +38200,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0582",
@@ -37673,7 +38254,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0583",
@@ -37726,7 +38308,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0584",
@@ -37778,7 +38361,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0585",
@@ -37831,7 +38415,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0586",
@@ -37884,7 +38469,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0587",
@@ -37937,7 +38523,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0588",
@@ -37990,7 +38577,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0589",
@@ -38043,7 +38631,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0590",
@@ -38096,7 +38685,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0591",
@@ -38149,7 +38739,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0592",
@@ -38202,7 +38793,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0593",
@@ -38255,7 +38847,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0594",
@@ -38308,7 +38901,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0595",
@@ -38361,7 +38955,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0596",
@@ -38414,7 +39009,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0597",
@@ -38430,7 +39026,7 @@
     "musclesKr": null,
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 4,
+    "defaultReps": 13,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -38467,7 +39063,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0598",
@@ -38483,7 +39080,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "물병",
-    "defaultReps": 4,
+    "defaultReps": 6,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -38520,7 +39117,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0599",
@@ -38536,7 +39134,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "물병",
-    "defaultReps": 10,
+    "defaultReps": 4,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 2.5,
@@ -38573,7 +39171,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0600",
@@ -38626,7 +39225,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0601",
@@ -38679,7 +39279,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0602",
@@ -38732,7 +39333,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0603",
@@ -38785,7 +39387,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0604",
@@ -38838,7 +39441,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0605",
@@ -38891,7 +39495,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0606",
@@ -38944,7 +39549,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0607",
@@ -38960,7 +39566,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "매트",
-    "defaultReps": 12,
+    "defaultReps": 6,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -38997,7 +39603,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0608",
@@ -39013,7 +39620,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "짐볼",
-    "defaultReps": 3,
+    "defaultReps": 30,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -39050,7 +39657,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0609",
@@ -39066,7 +39674,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "짐볼",
-    "defaultReps": 3,
+    "defaultReps": 30,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -39103,7 +39711,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0610",
@@ -39156,7 +39765,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0611",
@@ -39209,7 +39819,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0612",
@@ -39225,7 +39836,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "짐볼",
-    "defaultReps": 3,
+    "defaultReps": 16,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -39262,7 +39873,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0613",
@@ -39315,7 +39927,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0614",
@@ -39368,7 +39981,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0615",
@@ -39421,7 +40035,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0616",
@@ -39474,7 +40089,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0617",
@@ -39490,7 +40106,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "짐볼",
-    "defaultReps": 3,
+    "defaultReps": 25,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -39527,7 +40143,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0618",
@@ -39580,7 +40197,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0619",
@@ -39633,7 +40251,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0620",
@@ -39649,7 +40268,7 @@
     "musclesKr": null,
     "level": 2,
     "equipment": "짐볼",
-    "defaultReps": 2,
+    "defaultReps": 16,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -39686,7 +40305,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0621",
@@ -39739,7 +40359,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0622",
@@ -39792,7 +40413,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0623",
@@ -39844,7 +40466,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0624",
@@ -39897,7 +40520,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0625",
@@ -39950,7 +40574,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0626",
@@ -40003,7 +40628,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0627",
@@ -40056,7 +40682,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0628",
@@ -40109,7 +40736,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0629",
@@ -40162,7 +40790,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0630",
@@ -40215,7 +40844,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0631",
@@ -40268,7 +40898,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0632",
@@ -40321,7 +40952,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0633",
@@ -40374,7 +41006,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0634",
@@ -40427,7 +41060,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0635",
@@ -40480,7 +41114,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0636",
@@ -40533,7 +41168,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0637",
@@ -40586,7 +41222,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0638",
@@ -40639,7 +41276,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0639",
@@ -40692,7 +41330,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0640",
@@ -40745,7 +41384,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0641",
@@ -40798,7 +41438,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0642",
@@ -40814,7 +41455,7 @@
     "musclesKr": null,
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 3,
+    "defaultReps": 10,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -40851,7 +41492,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0643",
@@ -40904,7 +41546,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0644",
@@ -40957,7 +41600,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0645",
@@ -41010,7 +41654,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0646",
@@ -41063,7 +41708,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0647",
@@ -41116,7 +41762,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0648",
@@ -41169,7 +41816,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0649",
@@ -41222,7 +41870,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0650",
@@ -41275,7 +41924,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0651",
@@ -41328,7 +41978,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0652",
@@ -41381,7 +42032,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0653",
@@ -41433,7 +42085,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "sec"
   },
   {
     "id": "kspo-0654",
@@ -41486,7 +42139,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0655",
@@ -41539,7 +42193,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0656",
@@ -41592,7 +42247,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0657",
@@ -41645,7 +42301,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0658",
@@ -41698,7 +42355,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0659",
@@ -41751,7 +42409,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0660",
@@ -41804,7 +42463,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0661",
@@ -41857,7 +42517,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0662",
@@ -41910,7 +42571,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0663",
@@ -41926,7 +42588,7 @@
     "musclesKr": null,
     "level": 1,
     "equipment": "없음",
-    "defaultReps": 10,
+    "defaultReps": 3,
     "defaultSets": 3,
     "restSec": 60,
     "metValue": 5,
@@ -41963,7 +42625,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0664",
@@ -42016,7 +42679,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0665",
@@ -42069,7 +42733,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "hold"
   },
   {
     "id": "kspo-0666",
@@ -42122,7 +42787,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0667",
@@ -42175,7 +42841,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "kspo-0668",
@@ -42228,7 +42895,8 @@
     "ageGroups": [
       "공통"
     ],
-    "excludeFromAutoRoutine": true
+    "excludeFromAutoRoutine": true,
+    "repType": "reps"
   },
   {
     "id": "squat-jump",

@@ -18,7 +18,7 @@ export default function ExerciseBriefing({ routineIds, byId, profile, routineOve
           <div key={`${e.id}-${i}`} className="briefrow">
             <span className="briefidx">{i + 1}</span>
             <span className="briefname">{e.name}</span>
-            <span className="briefspec">{e.defaultSets}세트 × {e.defaultReps}{e.repType === 'sec' ? '초' : '회'}</span>
+            <span className="briefspec">{e.defaultSets}세트 × {e.defaultReps}{(e.repType === 'sec' || e.repType === 'hold') ? '초' : '회'}</span>
           </div>
         ))}
       </div>
