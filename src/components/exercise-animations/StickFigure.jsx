@@ -57,6 +57,11 @@ export function NoPosePlaceholder({ size = 96, className = '' }) {
   )
 }
 
+// rot-fig를 90도 눕혀 표현하는 포즈들(엎드려서 하는 동작). 몸통 좌표계가 "세워둔 사람" 기준으로
+// 잡혀 있어서 그대로 90도 돌리면 그림 중심이 상자 중심에서 한쪽으로 크게 밀려난다 — 이 포즈들만
+// 원점(outer translate)을 보정해 박스 정중앙에 오게 한다.
+const ROTATE90_POSES = new Set(['pushup', 'plank', 'mountain-climber', 'bridge'])
+
 export default function StickFigure({
   pose, size = 96, className = '', tempoSec, freeze, highlightParts, showDirection = false,
 }) {
@@ -66,6 +71,8 @@ export default function StickFigure({
   const hl = (group) => (groups.has(group) ? ' hl' : '')
   const freezeClass = freeze ? ` freeze-paused freeze-${freeze}` : ''
   const dirIcon = showDirection ? POSE_DIRECTION[safePose] : null
+  const originX = ROTATE90_POSES.has(safePose) ? 124 : 50
+  const originY = ROTATE90_POSES.has(safePose) ? 103 : 74
 
   return (
     <svg
@@ -74,7 +81,7 @@ export default function StickFigure({
       style={tempoSec ? { '--tempo-dur': `${tempoSec}s` } : undefined}
       role="img" aria-label={`${safePose} 동작 애니메이션`}
     >
-      <g transform="translate(50,74)">
+      <g transform={`translate(${originX},${originY})`}>
         <g className="rot-fig">
           {/* 골반은 회전하지 않는 고정 조각이다 — 몸통 전체가 굽히기/비틀기 포즈에서 회전해도
               다리가 붙는 지점(골반)은 항상 제자리에 있어 다리가 떨어져 보이지 않는다. */}
