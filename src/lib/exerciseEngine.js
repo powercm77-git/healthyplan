@@ -1,6 +1,11 @@
-// exerciseEngine.js — 자동 루틴 배정, 점진적 증가/난이도 제안, 칼로리 계산.
+// exerciseEngine.js — 자동 루틴 배정, 점진적 증가/난이도 제안.
 // 순수 함수로 구성한다: IndexedDB 접근은 화면(screens)에서 하고 여기는
 // 이미 로드된 데이터(exercises, meta, yesterdayBodyParts)만 받아 계산한다.
+
+// calcKcal은 2.7단계부터 calories.js가 원본이다 — 기존 import(exerciseEngine.js에서
+// calcKcal을 가져오던 화면들)를 깨지 않도록 그대로 재노출하고, 이 파일 내부(assignRoutine 등)에서도 계속 쓴다.
+import { calcKcal } from './calories.js'
+export { calcKcal }
 
 // 목표별 강도(근력)·유산소·스트레칭 비율
 export const GOAL_RATIOS = {
@@ -41,11 +46,6 @@ export function withOverride(exercise, override) {
     defaultSets: override.sets ?? exercise.defaultSets,
     defaultReps: override.reps ?? exercise.defaultReps,
   }
-}
-
-export function calcKcal(weightKg, metValue, seconds) {
-  const hours = seconds / 3600
-  return Math.round(weightKg * metValue * hours)
 }
 
 function pickUntilBudget(pool, budgetSec, exclude, maxCount = 6, preferVideo = true) {

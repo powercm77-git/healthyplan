@@ -62,11 +62,14 @@ export async function getMealsByDate(date) {
   return db.getAllFromIndex('meals', 'date', date)
 }
 
-// 식단 기록이 하나라도 있는 날짜 집합 (스트릭 계산용)
+// 식단 또는 운동 기록이 하나라도 있는 날짜 집합 (스트릭 계산용).
+// 2.7단계 §1-6: 운동도 스트릭에 포함되도록 exerciseLogs 날짜를 합친다.
+// getAllKeysFromIndex는 인덱스 값(date 문자열)이 아니라 오브젝트스토어의 기본 키(자동증가 id)를
+// 반환한다 — 여기선 실제 레코드를 읽어 date 필드를 직접 뽑아야 한다.
 export async function getActiveDates() {
   const db = await getDB()
-  const dates = await db.getAllKeysFromIndex('meals', 'date')
-  return new Set(dates)
+  const [meals, exerciseLogs] = await Promise.all([db.getAll('meals'), db.getAll('exerciseLogs')])
+  return new Set([...meals.map((m) => m.date), ...exerciseLogs.map((e) => e.date)])
 }
 
 // 자주 먹은 음식 이름 (많이 기록한 순). 검색창을 비워둔 상태에서 상단 노출용.
@@ -127,6 +130,17 @@ export async function getRecentExerciseSummary(dateKeys) {
     row.count += 1
   }
   return dateKeys.map((d) => byDate.get(d))
+}
+
+// 같은 운동의 가장 최근 기록(오늘 이전)을 반환한다 — 없으면 null("첫 도전").
+// 2.7단계 §1-4: "지난번엔 8회였어요 — 오늘은 10회!" 비교의 근거 데이터.
+export async function getLastExerciseLog(exerciseId, beforeDate) {
+  const db = await getDB()
+  const all = await db.getAll('exerciseLogs')
+  const prior = all.filter((log) => log.exerciseId === exerciseId && log.date < beforeDate)
+  if (prior.length === 0) return null
+  prior.sort((a, b) => (a.date < b.date ? 1 : -1))
+  return prior[0]
 }
 
 // ── 운동별 누적 통계(점진적 증가 · 3회 이상 교체 제외 규칙용) ──

@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { StickFigure, POSE_KEYS } from '../../components/exercise-animations/index.js'
 import ExerciseVideoPlayer from '../../components/ExerciseVideoPlayer.jsx'
+import { compareExercises } from '../../lib/compareExercises.js'
 
 const REASONS = [
   { v: '통증', label: '아파요' },
@@ -134,7 +135,14 @@ export default function ExerciseDetail({ exercise: ex, byId, inRoutine, onBack, 
               <div className="apic">
                 <StickFigure pose={byId[swapTarget === 'easier' ? ex.easier : ex.harder]?.animation} size={30} />
               </div>
-              <div><div className="anm">{byId[swapTarget === 'easier' ? ex.easier : ex.harder]?.name}</div></div>
+              <div>
+                <div className="anm">{byId[swapTarget === 'easier' ? ex.easier : ex.harder]?.name}</div>
+                {(() => {
+                  const alt = byId[swapTarget === 'easier' ? ex.easier : ex.harder]
+                  const why = alt ? compareExercises(ex, alt) : []
+                  return why.length > 0 ? <div className="why">{why.join(' · ')}</div> : null
+                })()}
+              </div>
             </div>
           )}
         </div>
@@ -148,10 +156,14 @@ export default function ExerciseDetail({ exercise: ex, byId, inRoutine, onBack, 
           {ex.alternatives.map((id) => {
             const alt = byId[id]
             if (!alt) return null
+            const why = compareExercises(ex, alt)
             return (
               <div className="alt" key={id} onClick={() => onOpenDetail(id)}>
                 <div className="apic"><StickFigure pose={alt.animation} size={30} /></div>
-                <div><div className="anm">{alt.name}</div><div className="why">{alt.bodyParts.join(' · ')}</div></div>
+                <div>
+                  <div className="anm">{alt.name}</div>
+                  <div className="why">{why.length > 0 ? why.join(' · ') : alt.bodyParts.join(' · ')}</div>
+                </div>
               </div>
             )
           })}

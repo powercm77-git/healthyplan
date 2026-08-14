@@ -281,6 +281,18 @@ input::placeholder{color:#5E5980}
 .counter b{color:var(--ink)}
 .timerbig{text-align:center;font-size:3.4rem;line-height:1.1;margin-top:2px}
 
+/* ── 2.7단계: 상시 진행 바 · 실시간 칼로리/음식 환산 · 지난 기록 비교 ── */
+.sessionprogress{margin-bottom:10px}
+.sessionprogress .toprow{display:flex;justify-content:space-between;gap:8px;font-size:.78rem;color:var(--sub);margin-bottom:6px}
+.sessionprogress .bar{height:7px;border-radius:5px;background:rgba(255,255,255,.08);overflow:hidden}
+.sessionprogress .bar i{display:block;height:100%;border-radius:5px;background:var(--grad);transition:width .3s ease}
+.livekcal{text-align:center;margin:6px 0 2px}
+.livekcal .num{font-size:1.6rem}
+.livekcal .num b{font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.livekcal .lbl{font-size:.72rem;color:var(--sub);letter-spacing:.04em}
+.foodline{text-align:center;font-size:.85rem;color:var(--amber);font-weight:700;margin:2px 0 8px}
+.historynote{text-align:center;font-size:.78rem;color:var(--sky);margin:-2px 0 8px;font-weight:600}
+
 .sessionsteps{
   margin-top:8px;background:rgba(255,255,255,.04);border:1px solid var(--line);
   border-radius:14px;padding:12px 14px;font-size:.83rem;line-height:1.55;color:var(--ink);

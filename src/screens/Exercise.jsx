@@ -76,7 +76,7 @@ export default function Exercise({ profile, onFullscreenChange, onUpdateProfile 
     const nextRoutine = day.routine.map((id) => (id === oldId ? newId : id))
     const next = await dbSetDay(today, { routine: nextRoutine })
     setDayState(next)
-    toast(`바꿨어요! (${reasonLabel}) 다음 배정에도 기억해둘게요 ✓`)
+    toast(`잘 골랐어요! (${reasonLabel}) 다음 배정에도 기억해둘게요 ✓`)
     if (detailId === oldId) setDetailId(newId)
   }
 

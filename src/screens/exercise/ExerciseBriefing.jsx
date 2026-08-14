@@ -1,5 +1,6 @@
 // ExerciseBriefing.jsx — 운동 실행 전 1화면 브리핑(3-5): 오늘 할 운동 전체·예상 시간·칼로리·준비물
 import { estimateExerciseSeconds, calcKcal, withOverride } from '../../lib/exerciseEngine.js'
+import { formatKcal } from '../../lib/calories.js'
 
 export default function ExerciseBriefing({ routineIds, byId, profile, routineOverrides, onStart, onBack }) {
   const list = routineIds.map((id) => withOverride(byId[id], routineOverrides?.[id])).filter(Boolean)
@@ -25,7 +26,7 @@ export default function ExerciseBriefing({ routineIds, byId, profile, routineOve
 
       <div className="macros">
         <div className="macro"><div className="name">예상 시간</div><div className="val" style={{ fontSize: '1.05rem', color: 'var(--ink)' }}><b>{Math.max(1, Math.round(totalSec / 60))}분</b></div></div>
-        <div className="macro"><div className="name">예상 칼로리</div><div className="val" style={{ fontSize: '1.05rem', color: 'var(--ink)' }}><b>{totalKcal}kcal</b></div></div>
+        <div className="macro"><div className="name">예상 칼로리</div><div className="val" style={{ fontSize: '1.05rem', color: 'var(--ink)' }}><b>{formatKcal(totalKcal)}</b></div></div>
         <div className="macro"><div className="name">운동 수</div><div className="val" style={{ fontSize: '1.05rem', color: 'var(--ink)' }}><b>{list.length}개</b></div></div>
       </div>
 

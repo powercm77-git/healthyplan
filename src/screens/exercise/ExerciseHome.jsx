@@ -4,6 +4,7 @@ import { StickFigure } from '../../components/exercise-animations/index.js'
 import { estimateExerciseSeconds, calcKcal, withOverride } from '../../lib/exerciseEngine.js'
 import { getRecentExerciseSummary } from '../../lib/db.js'
 import { addDays, todayKey, formatDisplay } from '../../lib/date.js'
+import { formatKcal, roundKcalForDisplay } from '../../lib/calories.js'
 
 const WEEKDAYS = ['일', '월', '화', '수', '목', '금', '토']
 function weekdayOf(dateKey) {
@@ -55,7 +56,7 @@ export default function ExerciseHome({
         <div className="exo">
           <div className="pic"><StickFigure pose={routine[0]?.animation || 'squat'} size={40} /></div>
           <div>
-            <div className="nm">약 {estMinutes}분 · {estKcal}kcal 예상</div>
+            <div className="nm">약 {estMinutes}분 · {formatKcal(estKcal)} 예상</div>
             <div className="st">{doneCount}/{routine.length}개 완료</div>
           </div>
         </div>
@@ -112,7 +113,7 @@ export default function ExerciseHome({
         <p className="eyebrow">최근 7일</p>
         <div className="recordstrip">
           {recent.map((r) => (
-            <div className="recordday" key={r.date} title={`${formatDisplay(r.date)} · ${r.kcal}kcal`}>
+            <div className="recordday" key={r.date} title={`${formatDisplay(r.date)} · 약 ${roundKcalForDisplay(r.kcal)}kcal`}>
               <div className="rbar" style={{ height: `${Math.max(6, (r.kcal / maxKcal) * 48)}px` }} />
               <div className="rlbl">{weekdayOf(r.date)}</div>
             </div>
