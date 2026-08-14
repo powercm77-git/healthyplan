@@ -74,51 +74,57 @@ export default function StickFigure({
       style={tempoSec ? { '--tempo-dur': `${tempoSec}s` } : undefined}
       role="img" aria-label={`${safePose} 동작 애니메이션`}
     >
-      <g transform="translate(50,72)">
+      <g transform="translate(50,74)">
         <g className="rot-fig">
+          {/* 골반은 회전하지 않는 고정 조각이다 — 몸통 전체가 굽히기/비틀기 포즈에서 회전해도
+              다리가 붙는 지점(골반)은 항상 제자리에 있어 다리가 떨어져 보이지 않는다. */}
+          <path className={`torso pelvis${hl('torso')}`} d="M -6,-13 L 6,-13 L 9,0 L -9,0 Z" />
           <g className="rot-torso">
-            <circle className={`head${hl('head')}`} cx="0" cy="-51" r="11" />
-            <line className={`torso${hl('torso')}`} x1="0" y1="-40" x2="0" y2="-1" />
+            {/* 머리-목-가슴을 끊김 없는 하나의 덩어리로. 가슴 아랫변은 골반 조각과 겹치도록
+                피벗(어깨 아래 몸통 중심)에 가깝고 좁게 그려, 굽히기 포즈에서도 골반과 계속 겹친다. */}
+            <path className={`torso chest${hl('torso')}`} d="M -12,-36 L 12,-36 L 5,-11 L -5,-11 Z" />
+            <line className={`neck${hl('head')}`} x1="0" y1="-42" x2="0" y2="-34" />
+            <circle className={`head${hl('head')}`} cx="0" cy="-50" r="8" />
 
-            <g className="shoulder-l" transform="translate(0,-33)">
-              <circle className="joint" cx="0" cy="0" r="3" />
+            <g className="shoulder-l" transform="translate(-12,-36)">
+              <circle className="joint" cx="0" cy="0" r="5" />
               <g className="rot-arm-l">
                 <line className={`upperarm${hl('arms')}`} x1="0" y1="0" x2="0" y2="19" />
                 <g transform="translate(0,19)">
-                  <circle className="joint joint-sm" cx="0" cy="0" r="2.4" />
+                  <circle className="joint joint-sm" cx="0" cy="0" r="4" />
                   <g className="rot-forearm-l"><line className={`forearm${hl('arms')}`} x1="0" y1="0" x2="0" y2="17" /></g>
                 </g>
               </g>
             </g>
-            <g className="shoulder-r" transform="translate(0,-33)">
-              <circle className="joint" cx="0" cy="0" r="3" />
+            <g className="shoulder-r" transform="translate(12,-36)">
+              <circle className="joint" cx="0" cy="0" r="5" />
               <g className="rot-arm-r">
                 <line className={`upperarm${hl('arms')}`} x1="0" y1="0" x2="0" y2="19" />
                 <g transform="translate(0,19)">
-                  <circle className="joint joint-sm" cx="0" cy="0" r="2.4" />
+                  <circle className="joint joint-sm" cx="0" cy="0" r="4" />
                   <g className="rot-forearm-r"><line className={`forearm${hl('arms')}`} x1="0" y1="0" x2="0" y2="17" /></g>
                 </g>
               </g>
             </g>
           </g>
 
-          <g className="hip-l" transform="translate(0,0)">
-            <circle className="joint" cx="0" cy="0" r="3" />
+          <g className="hip-l" transform="translate(-9,0)">
+            <circle className="joint" cx="0" cy="0" r="6" />
             <g className="rot-thigh-l">
-              <line className={`thigh${hl('legs')}`} x1="0" y1="0" x2="0" y2="24" />
-              <g transform="translate(0,24)">
-                <circle className="joint joint-sm" cx="0" cy="0" r="2.4" />
-                <g className="rot-shin-l"><line className={`shin${hl('legs')}`} x1="0" y1="0" x2="0" y2="22" /></g>
+              <line className={`thigh${hl('legs')}`} x1="0" y1="0" x2="0" y2="25" />
+              <g transform="translate(0,25)">
+                <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
+                <g className="rot-shin-l"><line className={`shin${hl('legs')}`} x1="0" y1="0" x2="0" y2="23" /></g>
               </g>
             </g>
           </g>
-          <g className="hip-r" transform="translate(0,0)">
-            <circle className="joint" cx="0" cy="0" r="3" />
+          <g className="hip-r" transform="translate(9,0)">
+            <circle className="joint" cx="0" cy="0" r="6" />
             <g className="rot-thigh-r">
-              <line className={`thigh${hl('legs')}`} x1="0" y1="0" x2="0" y2="24" />
-              <g transform="translate(0,24)">
-                <circle className="joint joint-sm" cx="0" cy="0" r="2.4" />
-                <g className="rot-shin-r"><line className={`shin${hl('legs')}`} x1="0" y1="0" x2="0" y2="22" /></g>
+              <line className={`thigh${hl('legs')}`} x1="0" y1="0" x2="0" y2="25" />
+              <g transform="translate(0,25)">
+                <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
+                <g className="rot-shin-r"><line className={`shin${hl('legs')}`} x1="0" y1="0" x2="0" y2="23" /></g>
               </g>
             </g>
           </g>

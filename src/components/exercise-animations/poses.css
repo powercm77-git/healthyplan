@@ -14,23 +14,35 @@
   stroke: var(--ink, #F5F3FF);
   stroke-linecap: round;
 }
-/* 부위별 두께 구분: 몸통·허벅지는 굵게, 팔뚝·정강이는 가늘게 — 관절이 구분되는 실루엣 */
-.stickfig .torso, .stickfig .thigh { stroke-width: 8; }
+/* 몸통은 어깨너비→골반너비 사다리꼴 면(선이 아니라 채운 도형) — 머리·목·팔다리가 여기 이어 붙는다 */
+.stickfig .torso { fill: var(--ink, #F5F3FF); stroke: var(--ink, #F5F3FF); stroke-width: 1; stroke-linejoin: round; }
+/* 부위별 두께 구분: 허벅지는 굵게, 팔뚝·정강이는 가늘게 — 관절이 구분되는 실루엣 */
+.stickfig .neck { stroke-width: 7; }
+.stickfig .thigh { stroke-width: 8; }
 .stickfig .upperarm { stroke-width: 6.5; }
 .stickfig .forearm, .stickfig .shin { stroke-width: 5.5; }
+/* 관절 원: 이어지는 두 부위의 선 두께보다 넉넉히 크게 그려 각도가 꺾여도 이음매가 끊겨 보이지 않게 한다 */
 .stickfig .joint { fill: var(--ink, #F5F3FF); opacity: .55; }
 .stickfig .joint-sm { opacity: .4; }
 
 /* 타겟 부위 하이라이트(highlightParts prop) */
 .stickfig .hl { stroke: var(--g2, #FF4E7B); }
 .stickfig .head.hl { fill: var(--g2, #FF4E7B); }
+.stickfig .torso.hl { fill: var(--g2, #FF4E7B); stroke: var(--g2, #FF4E7B); }
 
 .stickfig .dirarrow { font-size: 15px; fill: var(--sky, #5AC8FA); opacity: .85; }
 
-.stickfig .rot-fig, .stickfig .rot-torso,
+.stickfig .rot-fig,
 .stickfig .rot-arm-l, .stickfig .rot-arm-r, .stickfig .rot-forearm-l, .stickfig .rot-forearm-r,
 .stickfig .rot-thigh-l, .stickfig .rot-thigh-r, .stickfig .rot-shin-l, .stickfig .rot-shin-r {
   transform-box: fill-box;
+  transform-origin: 0 0;
+}
+/* rot-torso는 예외: 안에 머리·팔까지 들어 있어 fill-box 바운딩박스 기준 피벗이 어깨/머리 쪽으로
+   쏠린다(굽히기·비틀기 포즈에서 다리와 벌어져 보이던 원인). view-box 기준 "0 0"은 조상 translate가
+   이미 반영된 현재 지점의 로컬 원점(=골반)을 정확히 가리켜, 회전해도 골반에서 계속 이어진다. */
+.stickfig .rot-torso {
+  transform-box: view-box;
   transform-origin: 0 0;
 }
 
