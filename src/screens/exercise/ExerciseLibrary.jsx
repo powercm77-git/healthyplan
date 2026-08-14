@@ -1,8 +1,9 @@
 // ExerciseLibrary.jsx — 운동 라이브러리 (3-2): 검색(초성 지원, 1단계 chosung.js 재사용) + 필터
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import exercises from '../../data/exercises.json'
 import { matchFoodItem, rankFoodItem } from '../../lib/chosung.js'
 import { StickFigure } from '../../components/exercise-animations/index.js'
+import { libraryFilterState, resetLibraryFilters } from '../../lib/libraryFilterState.js'
 
 const PLACE_LABEL = { home: '집', gym: '헬스장', 'outdoor-gym': '야외기구', outdoor: '야외', pool: '수영장' }
 const LEVEL_LABEL = { 1: '입문', 2: '중급', 3: '고급' }
@@ -14,19 +15,44 @@ const BODY_PART_COUNTS = exercises
   .flatMap((e) => e.bodyParts)
   .reduce((m, bp) => m.set(bp, (m.get(bp) || 0) + 1), new Map())
 const ALL_BODY_PARTS = [...BODY_PART_COUNTS.entries()].sort((a, b) => b[1] - a[1]).map(([bp]) => bp)
+const EQUIPMENT_COUNTS = exercises
+  .reduce((m, e) => m.set(e.equipment, (m.get(e.equipment) || 0) + 1), new Map())
+const ALL_EQUIPMENT = [...EQUIPMENT_COUNTS.entries()].sort((a, b) => b[1] - a[1]).map(([eq]) => eq)
+
+const hasNonDefaultFilter = (s) =>
+  !!(s.query || s.place || s.bodyPart || s.equipment || s.level || s.ageGroup || s.videoOnly)
 
 export default function ExerciseLibrary({ onBack, onOpenDetail }) {
-  const [query, setQuery] = useState('')
-  const [place, setPlace] = useState(null)
-  const [bodyPart, setBodyPart] = useState(null)
-  const [level, setLevel] = useState(null)
-  const [ageGroup, setAgeGroup] = useState(null)
-  const [videoOnly, setVideoOnly] = useState(false)
+  // 필터·스크롤 상태는 libraryFilterState(모듈 스코프)에서 초기값을 읽어온다 — 상세로
+  // 들어갔다 뒤로가기는 물론, 운동 탭을 완전히 벗어났다 돌아와도(부모가 통째로 unmount)
+  // 직전 상태가 그대로 남아 있게 하기 위해서다.
+  const [query, setQuery] = useState(libraryFilterState.query)
+  const [place, setPlace] = useState(libraryFilterState.place)
+  const [bodyPart, setBodyPart] = useState(libraryFilterState.bodyPart)
+  const [equipment, setEquipment] = useState(libraryFilterState.equipment)
+  const [level, setLevel] = useState(libraryFilterState.level)
+  const [ageGroup, setAgeGroup] = useState(libraryFilterState.ageGroup)
+  const [videoOnly, setVideoOnly] = useState(libraryFilterState.videoOnly)
+
+  const sectionRef = useRef(null)
+  const restoredScroll = useRef(false)
+
+  // 필터가 바뀔 때마다 모듈 스코프 상태에 그대로 반영한다(다음 마운트 때 다시 읽음).
+  useEffect(() => {
+    libraryFilterState.query = query
+    libraryFilterState.place = place
+    libraryFilterState.bodyPart = bodyPart
+    libraryFilterState.equipment = equipment
+    libraryFilterState.level = level
+    libraryFilterState.ageGroup = ageGroup
+    libraryFilterState.videoOnly = videoOnly
+  }, [query, place, bodyPart, equipment, level, ageGroup, videoOnly])
 
   const results = useMemo(() => {
     let list = exercises
     if (place) list = list.filter((e) => e.place.includes(place))
     if (bodyPart) list = list.filter((e) => e.bodyParts.includes(bodyPart))
+    if (equipment) list = list.filter((e) => e.equipment === equipment)
     if (level) list = list.filter((e) => e.level === level)
     if (ageGroup) list = list.filter((e) => !e.ageGroups?.length || e.ageGroups.includes(ageGroup))
     if (videoOnly) list = list.filter((e) => e.videos?.length > 0)
@@ -39,10 +65,29 @@ export default function ExerciseLibrary({ onBack, onOpenDetail }) {
         .map(({ e }) => e)
     }
     return list.slice(0, 60)
-  }, [query, place, bodyPart, level, ageGroup, videoOnly])
+  }, [query, place, bodyPart, equipment, level, ageGroup, videoOnly])
+
+  // 결과 목록이 그려진 뒤 저장해둔 스크롤 위치로 한 번만 복원한다.
+  useEffect(() => {
+    if (restoredScroll.current) return
+    if (sectionRef.current && libraryFilterState.scrollTop > 0) {
+      sectionRef.current.scrollTop = libraryFilterState.scrollTop
+    }
+    restoredScroll.current = true
+  }, [results])
+
+  function handleScroll(e) {
+    libraryFilterState.scrollTop = e.currentTarget.scrollTop
+  }
+
+  function handleReset() {
+    resetLibraryFilters()
+    setQuery(''); setPlace(null); setBodyPart(null); setEquipment(null)
+    setLevel(null); setAgeGroup(null); setVideoOnly(false)
+  }
 
   return (
-    <section className="screen active">
+    <section className="screen active" ref={sectionRef} onScroll={handleScroll}>
       <div className="datebar" style={{ marginBottom: 10 }}>
         <button onClick={onBack}>◀</button>
         <span className="dt">운동 찾아보기</span>
@@ -77,6 +122,14 @@ export default function ExerciseLibrary({ onBack, onOpenDetail }) {
             <span key={bp} className={`chip${bodyPart === bp ? ' on' : ''}`} onClick={() => setBodyPart(bodyPart === bp ? null : bp)}>{bp}</span>
           ))}
         </div>
+        <div className="chips" style={{ marginTop: 8 }}>
+          {ALL_EQUIPMENT.slice(0, 10).map((eq) => (
+            <span key={eq} className={`chip${equipment === eq ? ' on' : ''}`} onClick={() => setEquipment(equipment === eq ? null : eq)}>{eq}</span>
+          ))}
+        </div>
+        {hasNonDefaultFilter({ query, place, bodyPart, equipment, level, ageGroup, videoOnly }) && (
+          <button type="button" className="filterresetbtn" onClick={handleReset}>✕ 필터 초기화</button>
+        )}
       </div>
 
       <div className="exlist">
@@ -87,7 +140,9 @@ export default function ExerciseLibrary({ onBack, onOpenDetail }) {
             <div className="exiinfo">
               <div className="exiname">
                 {e.name}
-                {e.videos?.length > 0 && <span className="exi-video-badge">▶</span>}
+                {e.videos?.length > 0
+                  ? <span className="exi-video-badge">▶ 영상</span>
+                  : <span className="exi-pic-badge">🖼 그림</span>}
                 {e.category && <span className="exi-cat-badge">{e.category}</span>}
               </div>
               <div className="exisub">{e.bodyParts.join(' · ')} · {LEVEL_LABEL[e.level]} · {PLACE_LABEL[e.place[0]]}</div>

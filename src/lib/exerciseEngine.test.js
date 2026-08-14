@@ -64,6 +64,35 @@ describe('assignRoutine — 합성 데이터로 필터·비율 검증', () => {
   })
 })
 
+describe('assignRoutine — preferVideo(영상 있는 운동만 추천받기)', () => {
+  const vid = [{ title: 't', url: 'u', thumbnail: null, len: 60, ageGroup: '공통' }]
+  const stretchVid = { id: 'sv1', place: ['home'], type: 'stretch', bodyParts: ['목'], level: 1, defaultSets: 2, defaultReps: 20, restSec: 15, metValue: 2.5, repType: 'sec', videos: vid }
+  const strengthVid = { id: 'stv1', place: ['home'], type: 'strength', bodyParts: ['하체'], level: 1, defaultSets: 3, defaultReps: 10, restSec: 45, metValue: 5, repType: 'reps', videos: vid }
+  const strengthNoVid = { id: 'stn1', place: ['home'], type: 'strength', bodyParts: ['상체'], level: 1, defaultSets: 3, defaultReps: 10, restSec: 45, metValue: 5, repType: 'reps' }
+  const cardioNoVid = { id: 'cn1', place: ['home'], type: 'cardio', bodyParts: ['심폐'], level: 1, defaultSets: 1, defaultReps: 300, restSec: 0, metValue: 8, repType: 'sec' }
+  const profileBeginner = { goal: 'lose', experience: '0', weight: 70 }
+
+  it('영상 있는 운동만으로 채울 수 있으면 nonVideoCount는 0이다', () => {
+    const fixture = [stretchVid, strengthVid]
+    const { routine, nonVideoCount } = assignRoutine({ exercises: fixture, profile: profileBeginner, place: 'home', minutes: 20, meta: new Map(), preferVideo: true })
+    expect(nonVideoCount).toBe(0)
+    expect(routine.every((e) => e.videos?.length > 0)).toBe(true)
+  })
+
+  it('영상 있는 운동만으로 부족하면 부족분만 영상 없는 운동으로 채우고 개수를 알려준다', () => {
+    const fixture = [stretchVid, strengthVid, strengthNoVid, cardioNoVid]
+    const { routine, nonVideoCount } = assignRoutine({ exercises: fixture, profile: profileBeginner, place: 'home', minutes: 45, meta: new Map(), preferVideo: true })
+    expect(routine.length).toBeGreaterThan(0)
+    expect(nonVideoCount).toBe(routine.filter((e) => !(e.videos?.length > 0)).length)
+  })
+
+  it('preferVideo가 꺼져 있으면 nonVideoCount를 항상 0으로 보고한다(끔=신경 안 씀)', () => {
+    const fixture = [stretchVid, strengthVid, strengthNoVid, cardioNoVid]
+    const { nonVideoCount } = assignRoutine({ exercises: fixture, profile: profileBeginner, place: 'home', minutes: 45, meta: new Map(), preferVideo: false })
+    expect(nonVideoCount).toBe(0)
+  })
+})
+
 describe('assignRoutine — 실제 exercises.json으로 4개 장소 전부 정상 동작 확인', () => {
   const profile = { goal: 'keep', experience: '1', weight: 68 }
   for (const place of ['home', 'gym', 'outdoor-gym', 'outdoor']) {
@@ -71,6 +100,20 @@ describe('assignRoutine — 실제 exercises.json으로 4개 장소 전부 정�
       const { routine } = assignRoutine({ exercises: exercisesReal, profile, place, minutes: 30, meta: new Map() })
       expect(routine.length).toBeGreaterThan(0)
       expect(routine.every((e) => e.place.includes(place))).toBe(true)
+    })
+  }
+})
+
+describe('assignRoutine — 실제 데이터, preferVideo 켜짐으로 45분 루틴이 4개 장소 전부 채워지는지', () => {
+  const profile = { goal: 'keep', experience: '1', weight: 68 }
+  for (const place of ['home', 'gym', 'outdoor-gym', 'outdoor']) {
+    it(`place="${place}"에서 45분 루틴을 만들고 부족분(nonVideoCount)을 보고한다`, () => {
+      const { routine, estMinutes, nonVideoCount } = assignRoutine({
+        exercises: exercisesReal, profile, place, minutes: 45, meta: new Map(), preferVideo: true,
+      })
+      expect(routine.length).toBeGreaterThan(0)
+      expect(estMinutes).toBeGreaterThan(0)
+      expect(nonVideoCount).toBe(routine.filter((e) => !(e.videos?.length > 0)).length)
     })
   }
 })

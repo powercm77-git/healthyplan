@@ -19,7 +19,9 @@ const PLACES = [
 ]
 const MINUTES = [10, 20, 30, 45, 60]
 
-export default function ExerciseHome({ day, byId, profile, onPlace, onMinutes, onOpenLibrary, onOpenDetail, onStart }) {
+export default function ExerciseHome({
+  day, byId, profile, onPlace, onMinutes, preferVideoOnly, onPreferVideoOnly, onOpenLibrary, onOpenDetail, onStart,
+}) {
   const [recent, setRecent] = useState([])
   const routine = day.routine.map((id) => byId[id]).filter(Boolean)
   const doneCount = day.routineDone.length
@@ -71,6 +73,11 @@ export default function ExerciseHome({ day, byId, profile, onPlace, onMinutes, o
           </span>
         ))}
       </div>
+      <div className="chips">
+        <span className={`chip${preferVideoOnly ? ' on' : ''}`} onClick={() => onPreferVideoOnly(!preferVideoOnly)}>
+          {preferVideoOnly ? '✓ ' : ''}▶ 영상 있는 운동만 추천받기
+        </span>
+      </div>
 
       <div className="card" style={{ marginTop: 16 }}>
         <p className="eyebrow">루틴 미리보기</p>
@@ -79,7 +86,10 @@ export default function ExerciseHome({ day, byId, profile, onPlace, onMinutes, o
           <div className="alt" key={ex.id} onClick={() => onOpenDetail(ex.id)}>
             <div className="apic"><StickFigure pose={ex.animation} size={30} /></div>
             <div>
-              <div className="anm">{ex.name}{day.routineDone.includes(ex.id) ? ' ✔' : ''}</div>
+              <div className="anm">
+                {ex.name}{day.routineDone.includes(ex.id) ? ' ✔' : ''}
+                {ex.videos?.length > 0 ? <span className="exi-video-badge">▶</span> : <span className="exi-pic-badge">🖼</span>}
+              </div>
               <div className="why">{ex.bodyParts.join(' · ')}</div>
             </div>
           </div>

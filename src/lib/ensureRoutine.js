@@ -11,7 +11,7 @@ export async function ensureTodayRoutine(profile, today, dayRow) {
   const [yesterday, meta] = await Promise.all([getDay(addDays(today, -1)), getAllExerciseMeta()])
   const { routine, mainBodyParts } = assignRoutine({
     exercises, profile, place: dayRow.exercisePlace, minutes: dayRow.exerciseMinutes,
-    meta, yesterdayBodyParts: yesterday.routineBodyParts,
+    meta, yesterdayBodyParts: yesterday.routineBodyParts, preferVideo: profile.preferVideoOnly !== false,
   })
   return dbSetDay(today, {
     routine: routine.map((e) => e.id), routineDone: [], routineBodyParts: mainBodyParts,

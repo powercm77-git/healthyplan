@@ -18,7 +18,7 @@ function Chip({ label, active, onClick }) {
   return <span className={`chip${active ? ' on' : ''}`} onClick={onClick}>{label}</span>
 }
 
-export default function Settings({ profile, onSave, onBack }) {
+export default function Settings({ profile, onSave, onUpdateProfile, onBack }) {
   const { toast } = useFeedback()
   const [sex, setSex] = useState(profile.sex)
   const [age, setAge] = useState(String(profile.age))
@@ -26,6 +26,13 @@ export default function Settings({ profile, onSave, onBack }) {
   const [weight, setWeight] = useState(String(profile.weight))
   const [activity, setActivity] = useState(profile.activity)
   const [goal, setGoal] = useState(profile.goal)
+  const [preferVideoOnly, setPreferVideoOnly] = useState(profile.preferVideoOnly !== false)
+
+  async function togglePreferVideoOnly() {
+    const next = !preferVideoOnly
+    setPreferVideoOnly(next)
+    await onUpdateProfile?.({ preferVideoOnly: next })
+  }
 
   async function save() {
     if (!sex || !age || !height || !weight || !activity || !goal) {
@@ -75,6 +82,13 @@ export default function Settings({ profile, onSave, onBack }) {
         {GOAL_OPTIONS.map((o) => (
           <Chip key={o.v} label={o.label} active={goal === o.v} onClick={() => setGoal(o.v)} />
         ))}
+      </div>
+
+      <label className="f">운동 추천</label>
+      <div className="chips">
+        <span className={`chip${preferVideoOnly ? ' on' : ''}`} onClick={togglePreferVideoOnly}>
+          {preferVideoOnly ? '✓ ' : ''}▶ 영상 있는 운동만 추천받기
+        </span>
       </div>
 
       <div style={{ minHeight: 20 }} />

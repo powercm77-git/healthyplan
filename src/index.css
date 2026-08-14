@@ -217,6 +217,14 @@ input::placeholder{color:#5E5980}
   display:inline-block;margin-left:4px;font-size:.68rem;color:var(--amber);
   background:rgba(255,197,61,.14);border-radius:999px;padding:1px 6px;vertical-align:middle;
 }
+.exi-pic-badge{
+  display:inline-block;margin-left:6px;font-size:.68rem;color:var(--sub);
+  background:rgba(148,163,184,.14);border-radius:999px;padding:1px 6px;vertical-align:middle;
+}
+.filterresetbtn{
+  display:block;margin:10px 0 0;background:none;border:1px solid var(--line);color:var(--sub);
+  border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:700;cursor:pointer;
+}
 
 /* ── 운동 상세 ── */
 .detail-anim{display:flex;justify-content:center;align-items:center;padding:12px 0 4px}

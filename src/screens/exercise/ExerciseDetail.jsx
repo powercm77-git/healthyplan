@@ -35,6 +35,11 @@ export default function ExerciseDetail({ exercise: ex, byId, inRoutine, onBack, 
         <span className="dt">{ex.name}</span>
         <span style={{ width: 38 }} />
       </div>
+      <div style={{ textAlign: 'center', marginBottom: 4 }}>
+        {hasVideo
+          ? <span className="exi-video-badge">▶ 영상 있음</span>
+          : <span className="exi-pic-badge">🖼 그림 설명</span>}
+      </div>
 
       {hasAnim && (
         <>

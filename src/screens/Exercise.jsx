@@ -14,7 +14,7 @@ import ExerciseSession from './exercise/ExerciseSession.jsx'
 
 export const byId = Object.fromEntries(exercises.map((e) => [e.id, e]))
 
-export default function Exercise({ profile, onFullscreenChange }) {
+export default function Exercise({ profile, onFullscreenChange, onUpdateProfile }) {
   const { toast } = useFeedback()
   const today = todayKey()
   const [day, setDayState] = useState(null)
@@ -35,21 +35,31 @@ export default function Exercise({ profile, onFullscreenChange }) {
 
   useEffect(() => { reload() }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
-  async function reassign(place, minutes, metaMap = meta) {
+  const preferVideo = profile.preferVideoOnly !== false // 기본값 켜짐
+
+  // preferVideoOverride: 토글 직후처럼 profile state가 아직 리렌더에 반영되기 전에
+  // 새 값으로 바로 재배정해야 할 때만 넘긴다.
+  async function reassign(place, minutes, preferVideoOverride = preferVideo) {
     const yesterday = await getDay(addDays(today, -1))
-    const { routine, mainBodyParts } = assignRoutine({
-      exercises, profile, place, minutes, meta: metaMap, yesterdayBodyParts: yesterday.routineBodyParts,
+    const { routine, mainBodyParts, nonVideoCount } = assignRoutine({
+      exercises, profile, place, minutes, meta, yesterdayBodyParts: yesterday.routineBodyParts,
+      preferVideo: preferVideoOverride,
     })
     const next = await dbSetDay(today, {
       exercisePlace: place, exerciseMinutes: minutes,
       routine: routine.map((e) => e.id), routineDone: [], routineBodyParts: mainBodyParts,
     })
     setDayState(next)
+    if (nonVideoCount > 0) toast(`영상이 없는 운동 ${nonVideoCount}개가 포함됐어요`)
     return next
   }
 
   function handlePlace(place) { reassign(place, day.exerciseMinutes) }
   function handleMinutes(minutes) { reassign(day.exercisePlace, minutes) }
+  async function handlePreferVideoOnly(next) {
+    await onUpdateProfile?.({ preferVideoOnly: next })
+    reassign(day.exercisePlace, day.exerciseMinutes, next)
+  }
 
   function openDetail(id, from = 'library') {
     setDetailId(id); setDetailFrom(from); setSub('detail')
@@ -94,6 +104,7 @@ export default function Exercise({ profile, onFullscreenChange }) {
         <ExerciseHome
           day={day} byId={byId} profile={profile}
           onPlace={handlePlace} onMinutes={handleMinutes}
+          preferVideoOnly={preferVideo} onPreferVideoOnly={handlePreferVideoOnly}
           onOpenLibrary={() => setSub('library')}
           onOpenDetail={(id) => openDetail(id, 'routine')}
           onStart={() => setSub('briefing')}

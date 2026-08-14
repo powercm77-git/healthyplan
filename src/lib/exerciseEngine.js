@@ -33,14 +33,21 @@ export function calcKcal(weightKg, metValue, seconds) {
   return Math.round(weightKg * metValue * hours)
 }
 
-function pickUntilBudget(pool, budgetSec, exclude, maxCount = 6) {
+function pickUntilBudget(pool, budgetSec, exclude, maxCount = 6, preferVideo = true) {
   const picked = []
   const used = new Set()
   let remaining = budgetSec
-  // 영상 보유 운동을 우선 배치한다(2.6단계 완료기준 7) — 각 그룹 안에서는 계속 무작위.
-  const withVideo = pool.filter((e) => e.videos?.length > 0).sort(() => Math.random() - 0.5)
-  const withoutVideo = pool.filter((e) => !(e.videos?.length > 0)).sort(() => Math.random() - 0.5)
-  const candidates = [...withVideo, ...withoutVideo]
+  // preferVideo(기본 켜짐, 2.7단계): 영상 보유 운동을 다 쓸 때까지는 영상 없는 운동을
+  // 전혀 섞지 않는다 — 영상 없는 운동은 시간을 못 채울 때만 부족분을 메우는 용도로만
+  // 등장한다. preferVideo가 꺼지면 영상 유무를 구분하지 않고 무작위로 섞는다.
+  let candidates
+  if (preferVideo) {
+    const withVideo = pool.filter((e) => e.videos?.length > 0).sort(() => Math.random() - 0.5)
+    const withoutVideo = pool.filter((e) => !(e.videos?.length > 0)).sort(() => Math.random() - 0.5)
+    candidates = [...withVideo, ...withoutVideo]
+  } else {
+    candidates = [...pool].sort(() => Math.random() - 0.5)
+  }
   for (const ex of candidates) {
     if (picked.length >= maxCount) break
     if (used.has(ex.id) || exclude.has(ex.id)) continue
@@ -63,8 +70,12 @@ function pickUntilBudget(pool, budgetSec, exclude, maxCount = 6) {
  * @param {number} opts.minutes - 선택한 총 운동 시간(분)
  * @param {Map} opts.meta - exerciseId -> { completedCount, swapCount, firstCompletedAt, lastCompletedAt }
  * @param {string[]} opts.yesterdayBodyParts - 어제 메인 운동 부위 목록(연속 이틀 회피용)
+ * @param {boolean} opts.preferVideo - 영상 있는 운동만 추천받기(기본 true). 부족하면 영상
+ *   없는 운동으로 자동 보충하고, 몇 개 보충됐는지 nonVideoCount로 알려준다.
  */
-export function assignRoutine({ exercises, profile, place, minutes, meta = new Map(), yesterdayBodyParts = [] }) {
+export function assignRoutine({
+  exercises, profile, place, minutes, meta = new Map(), yesterdayBodyParts = [], preferVideo = true,
+}) {
   const allowedLevels = levelsForExperience(profile.experience)
   const excluded = new Set(
     [...meta.entries()].filter(([, m]) => (m.swapCount || 0) >= 3).map(([id]) => id),
@@ -98,13 +109,13 @@ export function assignRoutine({ exercises, profile, place, minutes, meta = new M
   const cardioSec = mainSec * (ratio.cardio / mainRatioSum)
 
   const used = new Set()
-  const warmup = pickUntilBudget(stretchPool, warmupSec, excluded, 2)
+  const warmup = pickUntilBudget(stretchPool, warmupSec, excluded, 2, preferVideo)
   warmup.forEach((e) => used.add(e.id))
-  const mainStrength = pickUntilBudget(strengthPool, strengthSec, new Set([...excluded, ...used]), 5)
+  const mainStrength = pickUntilBudget(strengthPool, strengthSec, new Set([...excluded, ...used]), 5, preferVideo)
   mainStrength.forEach((e) => used.add(e.id))
-  const mainCardio = pickUntilBudget(cardioPool, cardioSec, new Set([...excluded, ...used]), 3)
+  const mainCardio = pickUntilBudget(cardioPool, cardioSec, new Set([...excluded, ...used]), 3, preferVideo)
   mainCardio.forEach((e) => used.add(e.id))
-  const cooldown = pickUntilBudget(stretchPool, cooldownSec, new Set([...excluded, ...used]), 2)
+  const cooldown = pickUntilBudget(stretchPool, cooldownSec, new Set([...excluded, ...used]), 2, preferVideo)
 
   const main = [...mainStrength, ...mainCardio].sort(() => Math.random() - 0.5)
   const routine = [...warmup, ...main, ...cooldown]
@@ -114,8 +125,11 @@ export function assignRoutine({ exercises, profile, place, minutes, meta = new M
     (sum, e) => sum + calcKcal(profile.weight, e.metValue, estimateExerciseSeconds(e)), 0,
   )
   const estMinutes = Math.round(routine.reduce((s, e) => s + estimateExerciseSeconds(e), 0) / 60)
+  // preferVideo가 켜진 상태에서도 장소·시간 조합에 따라 영상 있는 운동만으로는 못 채울 수
+  // 있다 — 그럴 때만 의미 있는 값이라 preferVideo가 꺼져 있으면 항상 0으로 둔다.
+  const nonVideoCount = preferVideo ? routine.filter((e) => !(e.videos?.length > 0)).length : 0
 
-  return { routine, mainBodyParts, estKcal, estMinutes }
+  return { routine, mainBodyParts, estKcal, estMinutes, nonVideoCount }
 }
 
 // 같은 운동 4회 이상 완료 시 강도(횟수/세트) 상향 제안

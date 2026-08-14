@@ -29,6 +29,13 @@ function AppShell() {
     setProfile(newProfile)
   }
 
+  async function updateProfile(partial) {
+    const next = { ...profile, ...partial }
+    await saveProfile(next)
+    setProfile(next)
+    return next
+  }
+
   if (loading) return null
   if (!profile) return <Onboarding onComplete={handleOnboardingComplete} />
 
@@ -39,10 +46,10 @@ function AppShell() {
       {screen === 'home' && <Home profile={profile} onOpenSettings={() => setScreen('settings')} onOpenExercise={() => setScreen('exercise')} />}
       {screen === 'meals' && <Meals />}
       {screen === 'exercise' && (
-        <Exercise profile={profile} onFullscreenChange={setExerciseFullscreen} />
+        <Exercise profile={profile} onFullscreenChange={setExerciseFullscreen} onUpdateProfile={updateProfile} />
       )}
       {screen === 'settings' && (
-        <Settings profile={profile} onSave={handleSettingsSave} onBack={() => setScreen('home')} />
+        <Settings profile={profile} onSave={handleSettingsSave} onUpdateProfile={updateProfile} onBack={() => setScreen('home')} />
       )}
       {showTabBar && <TabBar active={screen} onNavigate={setScreen} />}
     </>
