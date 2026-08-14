@@ -1,8 +1,8 @@
 // ExerciseBriefing.jsx — 운동 실행 전 1화면 브리핑(3-5): 오늘 할 운동 전체·예상 시간·칼로리·준비물
-import { estimateExerciseSeconds, calcKcal } from '../../lib/exerciseEngine.js'
+import { estimateExerciseSeconds, calcKcal, withOverride } from '../../lib/exerciseEngine.js'
 
-export default function ExerciseBriefing({ routineIds, byId, profile, onStart, onBack }) {
-  const list = routineIds.map((id) => byId[id]).filter(Boolean)
+export default function ExerciseBriefing({ routineIds, byId, profile, routineOverrides, onStart, onBack }) {
+  const list = routineIds.map((id) => withOverride(byId[id], routineOverrides?.[id])).filter(Boolean)
   const totalSec = list.reduce((s, e) => s + estimateExerciseSeconds(e), 0)
   const totalKcal = Math.round(list.reduce((s, e) => s + calcKcal(profile.weight, e.metValue, estimateExerciseSeconds(e)), 0))
   const equipment = [...new Set(list.map((e) => e.equipment).filter((eq) => eq && eq !== '없음'))]

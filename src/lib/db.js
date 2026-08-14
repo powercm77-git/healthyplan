@@ -86,6 +86,7 @@ const DAY_DEFAULTS = {
   exercisePlace: 'home', exerciseMinutes: 30,
   routine: [], routineDone: [], exerciseKcal: 0,
   routineBodyParts: [], // 어제 메인 운동 부위(연속 이틀 회피용)
+  routineOverrides: {}, // 2.7단계: 이번 세션에 늘린 세트/유산소 시간({id:{sets,reps}})
 }
 
 export async function getDay(date) {

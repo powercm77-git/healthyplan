@@ -41,16 +41,20 @@ export default function Exercise({ profile, onFullscreenChange, onUpdateProfile 
   // 새 값으로 바로 재배정해야 할 때만 넘긴다.
   async function reassign(place, minutes, preferVideoOverride = preferVideo) {
     const yesterday = await getDay(addDays(today, -1))
-    const { routine, mainBodyParts, nonVideoCount } = assignRoutine({
+    const { routine, mainBodyParts, nonVideoCount, routineOverrides, estMinutes } = assignRoutine({
       exercises, profile, place, minutes, meta, yesterdayBodyParts: yesterday.routineBodyParts,
       preferVideo: preferVideoOverride,
     })
     const next = await dbSetDay(today, {
       exercisePlace: place, exerciseMinutes: minutes,
-      routine: routine.map((e) => e.id), routineDone: [], routineBodyParts: mainBodyParts,
+      routine: routine.map((e) => e.id), routineDone: [], routineBodyParts: mainBodyParts, routineOverrides,
     })
     setDayState(next)
+    // 세트·유산소 시간을 늘리고 운동을 15개까지 추가해봐도 목표 시간을 못 채우면 숨기지
+    // 않고 그대로 알려준다(2.7단계 지시) — nonVideoCount 안내와 같이 뜨면 영상 부족
+    // 안내를 우선한다.
     if (nonVideoCount > 0) toast(`영상이 없는 운동 ${nonVideoCount}개가 포함됐어요`)
+    else if (estMinutes < minutes - 2) toast(`이 장소에서는 약 ${estMinutes}분 루틴이 준비됐어요 (선택하신 ${minutes}분보다 짧아요)`)
     return next
   }
 
@@ -112,7 +116,7 @@ export default function Exercise({ profile, onFullscreenChange, onUpdateProfile 
       )}
       {sub === 'briefing' && (
         <ExerciseBriefing
-          routineIds={day.routine} byId={byId} profile={profile}
+          routineIds={day.routine} byId={byId} profile={profile} routineOverrides={day.routineOverrides}
           onStart={() => startSession(null)}
           onBack={backToHome}
         />
@@ -136,7 +140,7 @@ export default function Exercise({ profile, onFullscreenChange, onUpdateProfile 
       {sub === 'session' && (
         <ExerciseSession
           exerciseIds={queueIds} startIndex={sessionSolo ? 0 : sessionStartIndex}
-          byId={byId} profile={profile} meta={meta} today={today}
+          byId={byId} profile={profile} meta={meta} today={today} routineOverrides={day.routineOverrides}
           onFinish={endSession}
         />
       )}

@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { StickFigure, POSE_KEYS } from '../../components/exercise-animations/index.js'
 import ExerciseVideoPlayer from '../../components/ExerciseVideoPlayer.jsx'
-import { suggestProgress, calcKcal } from '../../lib/exerciseEngine.js'
+import { suggestProgress, calcKcal, withOverride } from '../../lib/exerciseEngine.js'
 import { addExerciseLog, bumpExerciseCompleted, bumpExerciseSwapped, getDay, setDay as dbSetDay } from '../../lib/db.js'
 import { useFeedback } from '../../components/Feedback.jsx'
 
@@ -40,7 +40,7 @@ function pacerSubPhase(elapsed, tempo) {
   return { label: cue[2], remaining: cycle - pos, total: up || 1 }
 }
 
-export default function ExerciseSession({ exerciseIds: initialIds, startIndex, byId, profile, meta, today, onFinish }) {
+export default function ExerciseSession({ exerciseIds: initialIds, startIndex, byId, profile, meta, today, routineOverrides, onFinish }) {
   const { toast, burst } = useFeedback()
   const [ids, setIds] = useState(initialIds)
   const [idx, setIdx] = useState(startIndex)
@@ -66,7 +66,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const announcedRef = useRef(new Set()) // 이번 phase에서 이미 안내한 문구(10초 남음 등) 중복 방지
   const lastAnnouncedRepRef = useRef(0) // 음성 카운트 중복 방지
 
-  const ex = byId[ids[idx]]
+  const ex = withOverride(byId[ids[idx]], routineOverrides?.[ids[idx]])
   const exMeta = meta?.get(ex?.id)
   const progress = useMemo(() => (ex ? suggestProgress(ex, exMeta) : null), [ex, exMeta])
   const totalSets = ex?.defaultSets || 1

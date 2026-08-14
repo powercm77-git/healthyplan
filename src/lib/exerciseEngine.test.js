@@ -99,7 +99,12 @@ describe('assignRoutine — 실제 exercises.json으로 4개 장소 전부 정�
     it(`place="${place}"에서 예외 없이 루틴을 만든다`, () => {
       const { routine } = assignRoutine({ exercises: exercisesReal, profile, place, minutes: 30, meta: new Map() })
       expect(routine.length).toBeGreaterThan(0)
-      expect(routine.every((e) => e.place.includes(place))).toBe(true)
+      // 야외기구(outdoor-gym)는 유산소 영상이 없어 outdoor(걷기·달리기)를 유산소로
+      // 빌려오는 예외를 둔다(2.7단계 지시) — 그 항목만 outdoor 태그를 허용한다.
+      const placeOk = place === 'outdoor-gym'
+        ? (e) => e.place.includes(place) || (e.type === 'cardio' && e.place.includes('outdoor'))
+        : (e) => e.place.includes(place)
+      expect(routine.every(placeOk)).toBe(true)
     })
   }
 })
@@ -108,14 +113,60 @@ describe('assignRoutine — 실제 데이터, preferVideo 켜짐으로 45분 루
   const profile = { goal: 'keep', experience: '1', weight: 68 }
   for (const place of ['home', 'gym', 'outdoor-gym', 'outdoor']) {
     it(`place="${place}"에서 45분 루틴을 만들고 부족분(nonVideoCount)을 보고한다`, () => {
-      const { routine, estMinutes, nonVideoCount } = assignRoutine({
+      const { routine, estMinutes, nonVideoCount, requestedMinutes } = assignRoutine({
         exercises: exercisesReal, profile, place, minutes: 45, meta: new Map(), preferVideo: true,
       })
       expect(routine.length).toBeGreaterThan(0)
+      expect(routine.length).toBeLessThanOrEqual(15)
       expect(estMinutes).toBeGreaterThan(0)
+      expect(requestedMinutes).toBe(45)
       expect(nonVideoCount).toBe(routine.filter((e) => !(e.videos?.length > 0)).length)
     })
   }
+})
+
+describe('assignRoutine — 2.7단계: 세트↑ → 유산소 시간↑ → 개수↑(15개 상한) 순서로 시간을 채운다', () => {
+  const vid = [{ title: 't', url: 'u', thumbnail: null, len: 60, ageGroup: '공통' }]
+  const strengthVid = { id: 'stv1', place: ['home'], type: 'strength', bodyParts: ['하체'], level: 1, defaultSets: 3, defaultReps: 10, restSec: 30, metValue: 5, repType: 'reps', videos: vid }
+  const cardioVid = { id: 'cv1', place: ['home'], type: 'cardio', bodyParts: ['심폐'], level: 1, defaultSets: 1, defaultReps: 300, restSec: 0, metValue: 8, repType: 'sec', videos: vid }
+  const stretchVid = { id: 'sv1', place: ['home'], type: 'stretch', bodyParts: ['목'], level: 1, defaultSets: 2, defaultReps: 20, restSec: 15, metValue: 2.5, repType: 'sec', videos: vid }
+  const fixture = [strengthVid, cardioVid, stretchVid]
+
+  it('"처음이에요"는 세트를 최대 3세트까지만 올린다', () => {
+    const profileBeginner = { goal: 'keep', experience: '0', weight: 70 }
+    const { routineOverrides } = assignRoutine({ exercises: fixture, profile: profileBeginner, place: 'home', minutes: 60, meta: new Map() })
+    if (routineOverrides.stv1) expect(routineOverrides.stv1.sets).toBeLessThanOrEqual(3)
+  })
+
+  it('경험이 있으면 세트를 최대 4세트까지 올릴 수 있다', () => {
+    const profileExp = { goal: 'keep', experience: '1', weight: 70 } // level 1 후보를 포함하려면 [1,2] 허용인 '1' 사용
+    const { routineOverrides } = assignRoutine({ exercises: fixture, profile: profileExp, place: 'home', minutes: 60, meta: new Map() })
+    expect(routineOverrides.stv1?.sets).toBeGreaterThanOrEqual(4)
+  })
+
+  it('세트를 최대로 늘려도 부족하면 유산소 시간을 늘린다', () => {
+    const profileExp = { goal: 'keep', experience: '1', weight: 70 } // level 1 후보를 포함하려면 [1,2] 허용인 '1' 사용
+    const { routineOverrides } = assignRoutine({ exercises: fixture, profile: profileExp, place: 'home', minutes: 60, meta: new Map() })
+    expect(routineOverrides.cv1?.reps).toBeGreaterThan(cardioVid.defaultReps)
+  })
+})
+
+describe('assignRoutine — 2.7단계: 야외기구는 outdoor 유산소를 빌려 쓴다', () => {
+  const vid = [{ title: 't', url: 'u', thumbnail: null, len: 60, ageGroup: '공통' }]
+  const strengthOG = { id: 'stog1', place: ['outdoor-gym'], type: 'strength', bodyParts: ['하체'], level: 1, defaultSets: 3, defaultReps: 10, restSec: 30, metValue: 5, repType: 'reps', videos: vid }
+  const cardioOutdoor = { id: 'cout1', place: ['outdoor'], type: 'cardio', bodyParts: ['심폐'], level: 1, defaultSets: 1, defaultReps: 300, restSec: 0, metValue: 8, repType: 'sec', videos: vid }
+  const fixture = [strengthOG, cardioOutdoor]
+  const profile = { goal: 'keep', experience: '1', weight: 68 }
+
+  it('outdoor-gym 루틴에 outdoor 유산소가 포함될 수 있다', () => {
+    const { routine } = assignRoutine({ exercises: fixture, profile, place: 'outdoor-gym', minutes: 30, meta: new Map() })
+    expect(routine.some((e) => e.id === 'cout1')).toBe(true)
+  })
+
+  it('outdoor 단독 배정에는 outdoor-gym 전용 운동이 섞이지 않는다', () => {
+    const { routine } = assignRoutine({ exercises: fixture, profile, place: 'outdoor', minutes: 30, meta: new Map() })
+    expect(routine.some((e) => e.id === 'stog1')).toBe(false)
+  })
 })
 
 describe('suggestProgress — 4회 완료마다 강도 상향 제안', () => {
