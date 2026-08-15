@@ -25,6 +25,7 @@ const REQUIRED_SHOTS = [
   { pose: 'plank', freeze: 'start', label: 'plank' },
   { pose: 'pushup', freeze: 'end', label: 'pushup' },
   { pose: 'bridge', freeze: 'end', label: 'bridge' },
+  { pose: 'crunch', freeze: 'end', label: 'crunch' },
 ]
 
 function waitForServer(url, timeoutMs = 20000) {

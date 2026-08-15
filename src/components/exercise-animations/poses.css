@@ -82,14 +82,22 @@
 @keyframes sq-thigh { 0%,100%{transform:rotate(0)} 50%{transform:rotate(50deg)} }
 /* 정강이는 허벅지 회전을 상쇄해 항상 거의 수직을 유지한다(무릎이 발끝을 넘지 않는 스쿼트 자세) */
 @keyframes sq-shin { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-50deg)} }
-/* 팔은 균형용 — 수평 정도까지만 든다(다이빙하듯 위로 뻗지 않게 -110deg에서 완화) */
-@keyframes sq-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-90deg)} }
+/* 팔은 균형용 — 어깨 높이에서 수평으로 쭉 뻗으면 머리와 이어지는 대각선처럼 보여
+   상체가 숙여진 것처럼 착시를 준다. 앞으로-아래 방향으로 낮춰 잡는다. */
+@keyframes sq-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-65deg)} }
 
-/* ── 2. pushup (몸을 눕혀 표현) ── */
+/* ── 2. pushup (몸을 눕혀 표현) ──
+   rot-fig가 90도 돌아 있어, 팔의 "로컬 회전 0"은 몸통과 나란한 방향(=화면상 몸과 평행)이
+   된다 — 예전 값(20deg~-40deg)이 딱 그 근처라 팔이 바닥을 짚지 못하고 몸 옆에 뜬 것처럼
+   보였다. 로컬 -90deg 근방이어야 부모의 90도 회전을 상쇄해 화면상 "바닥으로 수직" 방향이
+   된다. 위팔은 거의 수직으로 짚고(상단 -95deg), 내려갈 때 팔꿈치가 옆으로 굽으며(-65deg)
+   몸이 낮아진다. 아래팔도 같이 굽혀야 짚는 손 위치가 자연스럽다. */
 .pose-pushup .rot-fig { animation: pu-fig var(--tempo-dur, 1.4s) ease-in-out infinite; }
 .pose-pushup .rot-arm-l, .pose-pushup .rot-arm-r { animation: pu-arm var(--tempo-dur, 1.4s) ease-in-out infinite; }
+.pose-pushup .rot-forearm-l, .pose-pushup .rot-forearm-r { animation: pu-forearm var(--tempo-dur, 1.4s) ease-in-out infinite; }
 @keyframes pu-fig { 0%,100%{transform:rotate(90deg) translateX(0)} 50%{transform:rotate(90deg) translateX(-10px)} }
-@keyframes pu-arm { 0%,100%{transform:rotate(20deg)} 50%{transform:rotate(-40deg)} }
+@keyframes pu-arm { 0%,100%{transform:rotate(-95deg)} 50%{transform:rotate(-65deg)} }
+@keyframes pu-forearm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-45deg)} }
 
 /* ── 3. lunge ── */
 .pose-lunge .rot-thigh-l { animation: lg-thigh-l var(--tempo-dur, 1.8s) ease-in-out infinite; }
@@ -98,16 +106,31 @@
 .pose-lunge .rot-shin-r { animation: lg-shin-r var(--tempo-dur, 1.8s) ease-in-out infinite; }
 .pose-lunge .rot-fig { animation: lg-fig var(--tempo-dur, 1.8s) ease-in-out infinite; }
 @keyframes lg-fig { 0%,100%{transform:translateY(0)} 50%{transform:translateY(10px)} }
-/* 앞다리(L): 허벅지가 앞으로 나가고, 정강이는 그만큼 되돌아와 무릎 아래서 거의 수직을 유지한다. */
-@keyframes lg-thigh-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(45deg)} }
-@keyframes lg-shin-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-45deg)} }
-/* 뒷다리(R): 허벅지가 반대로 뒤로 빠지고, 정강이는 살짝만 더 뒤로 이어져 뒷다리가 편 채
-   뒤로 끌리는 모양이 된다 — 앞다리 정강이(수직)와 방향이 갈라져 두 다리가 X자로 겹치지 않는다. */
-@keyframes lg-thigh-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-45deg)} }
-@keyframes lg-shin-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(20deg)} }
+/* 이전 버전은 두 허벅지가 좌우(+45/-45deg)로 벌어져 가랑이를 찢는 모양이었다 — 회전
+   부호가 "좌우로 벌림"이 되는 값이었기 때문이다. 런지는 한 발을 앞뒤로 내딛는 동작이라
+   한쪽은 정면(+x) 방향, 반대쪽은 후면(-x) 방향으로 회전해야 한다(스쿼트 팔 각도 계산과
+   같은 부호 규약: 음수 회전이 전방, 양수 회전이 후방).
+   골반의 왼쪽 관절(hip-l, x=-9)은 이미 화면상 뒤쪽에 있고 오른쪽 관절(hip-r, x=+9)은
+   이미 앞쪽에 있다 — 앞다리를 hip-l에, 뒷다리를 hip-r에 배정하면 각 다리가 원래
+   반대쪽으로 뻗어나가며 서로의 경로를 가로질러(교차해) 엉켜 보인다. 그래서 "이미 앞쪽인
+   관절"을 앞다리로, "이미 뒤쪽인 관절"을 뒷다리로 배정해 서로 반대편으로 교차하지 않게
+   한다.
+   앞다리(R, hip-r): 허벅지가 앞으로 나가고(-55deg), 정강이는 그만큼 되돌아와(+55deg
+   상대) 무릎 아래서 거의 수직 — 스쿼트와 같은 "무릎이 발끝을 넘지 않는" 형태. */
+@keyframes lg-thigh-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-55deg)} }
+@keyframes lg-shin-r { 0%,100%{transform:rotate(0)} 50%{transform:rotate(55deg)} }
+/* 뒷다리(L, hip-l): 허벅지가 뒤로 뻗되(+35deg) 수직에 가깝게 낮춰 무릎이 몸 아래·바닥
+   쪽으로 내려가게 하고, 정강이는 같은 방향으로 더 이어져(+15deg 상대, 절대 50deg)
+   뒷무릎에서 발까지 계속 뒤로-아래로 뻗어 뒤쪽 바닥 가까이 낮아지는 모양이 된다. */
+@keyframes lg-thigh-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(35deg)} }
+@keyframes lg-shin-l { 0%,100%{transform:rotate(0)} 50%{transform:rotate(15deg)} }
 
-/* ── 4. plank (버티기 — 미세한 흔들림만) ── */
+/* ── 4. plank (버티기 — 미세한 흔들림만) ──
+   팔에 회전을 안 주면 로컬 0deg(=부모 90도 회전과 합쳐 몸과 나란한 방향)로 남아 팔이 바닥을
+   안 짚고 몸 옆에 뜬 것처럼 보인다(푸시업과 같은 문제) — 정적 자세이므로 애니메이션 없이
+   고정 각도로 바닥을 짚게 한다. */
 .pose-plank .rot-fig { animation: pl-fig var(--tempo-dur, 2.4s) ease-in-out infinite; }
+.pose-plank .rot-arm-l, .pose-plank .rot-arm-r { transform: rotate(-90deg); }
 @keyframes pl-fig { 0%,100%{transform:rotate(90deg)} 50%{transform:rotate(86deg)} }
 
 /* ── 5. crunch ── */
