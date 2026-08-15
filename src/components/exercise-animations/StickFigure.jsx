@@ -7,10 +7,14 @@
 //
 // 2.5단계: 관절 원 + 부위별 두께 구분, 동작 방향 표시, 시작/종료 자세 스냅샷(freeze).
 // 2.7단계 재작업: 실측(getBBox) 기반 포즈별 viewBox, 어깨-가슴 폭 분리, 부위별
-// 배경색 외곽선, 손/발, 척추선, 인체 각도 재조정 — scripts/calibrate-poses.mjs로
-// 산출한 값을 POSE_VIEWBOX에 반영한다.
+// 배경색 외곽선, 손/발, 척추선.
+// 최종 설계값 적용(2026.8.14 스틱피겨_최종설계값.md): 20개 포즈 전부 실제 렌더링
+// 검증을 거친 관절 각도로 교체. 문서가 요구하는 머리 단독 회전(rot-head)·발 회전
+// (rot-foot-l/r)을 새로 추가했고, z-order를 "다리→팔→골반→척추→가슴→목→머리"에
+// 맞추기 위해 팔을 감싸는 rot-torso-arms를 rot-torso와 별도로 두어 회전은 동기화하되
+// 골반보다 먼저 그려지게 했다(골반은 여전히 회전하지 않는 고정 조각).
 import './poses.css'
-import { POSE_VIEWBOX, DEFAULT_VIEWBOX } from './poseViewBox.js'
+import { POSE_VIEWBOX, DEFAULT_VIEWBOX, POSE_FLOOR_Y } from './poseViewBox.js'
 
 export const POSE_KEYS = [
   'squat', 'pushup', 'lunge', 'plank', 'crunch', 'jumping-jack', 'bridge',
@@ -20,8 +24,8 @@ export const POSE_KEYS = [
 ]
 
 // 바닥에 서 있거나 눕는 포즈 — 발밑/손밑에 바닥선을 그려 "뜬 자세"로 안 보이게 한다.
-// 매달리거나(pullup) 딛는 곳이 바닥이 아닌(dips) 포즈는 제외한다 — 바닥선을 넣으면 오히려
-// 틀린 정보가 된다.
+// 매달리거나(pullup) 지지대에 몸을 띄우는(dips) 포즈는 제외한다 — 바닥선을 넣으면
+// 오히려 틀린 정보가 된다.
 const GROUND_POSES = new Set([
   'squat', 'lunge', 'pushup', 'plank', 'bridge', 'crunch', 'mountain-climber',
   'deadlift', 'jumping-jack', 'walk', 'run', 'press', 'row',
@@ -100,8 +104,7 @@ export default function StickFigure({
   const freezeClass = freeze ? ` freeze-paused freeze-${freeze}` : ''
   const dirIcon = showDirection ? POSE_DIRECTION[safePose] : null
 
-  // 포즈별 실측 viewBox(scripts/calibrate-poses.mjs 산출). 서 있는 포즈는 세로형,
-  // 눕는 포즈는 가로형 — 어느 쪽이든 인물 전체(시작+종료 자세 합)가 중앙에 들어온다.
+  // 포즈별 실측 viewBox(스틱피겨_최종설계값.md 표 그대로 — 자동 계산 스크립트로 덮어쓰지 않는다).
   const [vx, vy, vw, vh] = POSE_VIEWBOX[safePose] || DEFAULT_VIEWBOX
   const dirX = vx + vw - 6
   const dirY = vy + 14
@@ -114,24 +117,61 @@ export default function StickFigure({
       role="img" aria-label={`${safePose} 동작 애니메이션`}
     >
       {/* 바닥선: figure-root 밖에 그린다 — figure-root 안에 두면 getBBox() 측정에
-          바닥선 자신의 폭까지 섞여 들어가 calibrate-poses.mjs의 인물 경계 계산이
-          틀어진다(실제로 겪은 버그). 회전을 받지 않아 항상 화면에 수평으로 고정되고,
-          포즈별 viewBox 하단 근처에 둬 손/발이 닿는 지점과 맞춘다. */}
+          바닥선 자신의 폭까지 섞여 들어가 포즈별 인물 경계 계산이 틀어진다(실제로 겪은
+          버그). 회전을 받지 않아 항상 화면에 수평으로 고정되고, 포즈별로 지정된
+          바닥선 y 위치를 쓴다. */}
       {GROUND_POSES.has(safePose) && (
-        <line className="floor" x1={vx + 4} y1={vy + vh - 6} x2={vx + vw - 4} y2={vy + vh - 6} />
+        <line className="floor" x1={vx + 3} y1={POSE_FLOOR_Y[safePose] ?? vy + vh - 6} x2={vx + vw - 3} y2={POSE_FLOOR_Y[safePose] ?? vy + vh - 6} />
       )}
       {/* figure-root는 transform이 없는 순수 측정용 래퍼다 — getBBox()로 이 그룹을 재면
-          rot-fig의 회전·이동까지 전부 반영된 실제 렌더 범위를 얻는다(calibrate-poses.mjs). */}
+          rot-fig의 회전·이동까지 전부 반영된 실제 렌더 범위를 얻는다. */}
       <g className="figure-root">
         <g className="rot-fig">
-          {/* 골반은 회전하지 않는 고정 조각이다 — 몸통 전체가 굽히기/비틀기 포즈에서 회전해도
-              다리가 붙는 지점(골반)은 항상 제자리에 있어 다리가 떨어져 보이지 않는다. */}
-          <path className={`torso pelvis${hl('torso')}`} d="M -6,-13 L 6,-13 L 9,0 L -9,0 Z" />
-          <g className="rot-torso">
-            {/* 팔을 가슴보다 먼저 그린다(=아래 레이어) — 스쿼트처럼 팔이 크게 앞으로 돌면
-                몸통 앞을 가로지르는 구간이 생기는데, 나중에 그리는 가슴(채운 도형)이 그
-                구간을 덮어 "팔이 몸통 뒤로 지나간다"처럼 자연스럽게 가려준다. 먼저 그린
-                채로 두면 두꺼운 팔이 가슴 위에 얹혀 숙인 것처럼 보이는 착시를 줬었다. */}
+          {/* z-order(설계 문서 §5): 다리 → 팔 → 골반 → 척추 → 가슴 → 목 → 머리.
+              팔이 골반보다 먼저 그려져야, 팔이 크게 돌아 몸통 앞을 지나가는 구간을
+              나중에 그리는 가슴(채운 도형)이 자연스럽게 가려준다. */}
+          <g className="hip-l" transform="translate(-9,0)">
+            <circle className="joint" cx="0" cy="0" r="6" />
+            <g className="rot-thigh-l">
+              <OutlinedLine base="thigh" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="25" />
+              <g transform="translate(0,25)">
+                <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
+                <g className="rot-shin-l">
+                  <OutlinedLine base="shin" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="23" />
+                  <g transform="translate(0,23)">
+                    <circle className="joint joint-sm" cx="0" cy="0" r="3" />
+                    <g className="rot-foot-l">
+                      <OutlinedLine base="foot" hlClass={hl('legs')} x1="0" y1="0" x2="8" y2="0" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g className="hip-r" transform="translate(9,0)">
+            <circle className="joint" cx="0" cy="0" r="6" />
+            <g className="rot-thigh-r">
+              <OutlinedLine base="thigh" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="25" />
+              <g transform="translate(0,25)">
+                <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
+                <g className="rot-shin-r">
+                  <OutlinedLine base="shin" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="23" />
+                  <g transform="translate(0,23)">
+                    <circle className="joint joint-sm" cx="0" cy="0" r="3" />
+                    <g className="rot-foot-r">
+                      <OutlinedLine base="foot" hlClass={hl('legs')} x1="0" y1="0" x2="8" y2="0" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+
+          {/* 팔: 몸통 회전과 함께 움직여야 하므로(예: row는 상체를 숙인 채로 팔을 당김)
+              rot-torso와 똑같은 회전을 받는 rot-torso-arms로 감싼다 — rot-torso 자체가
+              아니라 별도 그룹인 이유는 순서상 골반보다 먼저 그려져야 하기 때문이다(같은
+              그룹일 수 없다 — 골반은 이 회전을 받으면 안 된다). */}
+          <g className="rot-torso-arms">
             <g className="shoulder-l" transform="translate(-14,-36)">
               <circle className="joint" cx="0" cy="0" r="5" />
               <g className="rot-arm-l">
@@ -162,46 +202,25 @@ export default function StickFigure({
                 </g>
               </g>
             </g>
+          </g>
 
+          {/* 골반: 회전하지 않는 고정 조각이다 — 몸통 전체가 굽히기·비틀기 포즈에서
+              회전해도 다리가 붙는 지점(골반)은 항상 제자리에 있어 다리가 떨어져
+              보이지 않는다. */}
+          <path className={`torso pelvis${hl('torso')}`} d="M -6,-13 L 6,-13 L 9,0 L -9,0 Z" />
+
+          <g className="rot-torso">
+            {/* 척추선: 가슴 아래~골반 위를 굵게 이어, 몸통이 굽혀지거나 비틀려도
+                가슴 조각과 골반 조각 사이가 끊겨 보이지 않게 한다. */}
+            <line className={`spine${hl('torso')}`} x1="0" y1="-30" x2="0" y2="-8" />
             {/* 머리-목-가슴을 끊김 없는 하나의 덩어리로. 가슴 폭(±10)을 어깨 관절(±14)보다
                 좁혀, 팔을 내려도 팔이 몸통 실루엣에 묻히지 않고 별도 부위로 보인다. */}
             <path className={`torso chest${hl('torso')}`} d="M -10,-36 L 10,-36 L 5,-11 L -5,-11 Z" />
-            {/* 척추선: 가슴 아래~골반 위를 굵게 이어, 몸통이 굽혀지거나 비틀려도
-                가슴 조각과 골반 조각 사이가 끊겨 보이지 않게 한다(발주자 제안). */}
-            <line className={`spine${hl('torso')}`} x1="0" y1="-30" x2="0" y2="-8" />
             <line className={`neck${hl('head')}`} x1="0" y1="-42" x2="0" y2="-34" />
-            <circle className={`head${hl('head')}`} cx="0" cy="-50" r="8" />
-          </g>
-
-          <g className="hip-l" transform="translate(-9,0)">
-            <circle className="joint" cx="0" cy="0" r="6" />
-            <g className="rot-thigh-l">
-              <OutlinedLine base="thigh" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="25" />
-              <g transform="translate(0,25)">
-                <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
-                <g className="rot-shin-l">
-                  <OutlinedLine base="shin" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="23" />
-                  <g transform="translate(0,23)">
-                    <circle className="joint joint-sm" cx="0" cy="0" r="3" />
-                    <OutlinedLine base="foot" hlClass={hl('legs')} x1="0" y1="0" x2="8" y2="0" />
-                  </g>
-                </g>
-              </g>
-            </g>
-          </g>
-          <g className="hip-r" transform="translate(9,0)">
-            <circle className="joint" cx="0" cy="0" r="6" />
-            <g className="rot-thigh-r">
-              <OutlinedLine base="thigh" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="25" />
-              <g transform="translate(0,25)">
-                <circle className="joint joint-sm" cx="0" cy="0" r="4.5" />
-                <g className="rot-shin-r">
-                  <OutlinedLine base="shin" hlClass={hl('legs')} x1="0" y1="0" x2="0" y2="23" />
-                  <g transform="translate(0,23)">
-                    <circle className="joint joint-sm" cx="0" cy="0" r="3" />
-                    <OutlinedLine base="foot" hlClass={hl('legs')} x1="0" y1="0" x2="8" y2="0" />
-                  </g>
-                </g>
+            {/* 머리는 목 위 지점(0,-42)을 피벗으로 몸통과 별도로 회전한다(목 스트레칭 등). */}
+            <g transform="translate(0,-42)">
+              <g className="rot-head">
+                <circle className={`head${hl('head')}`} cx="0" cy="-8" r="8" />
               </g>
             </g>
           </g>
