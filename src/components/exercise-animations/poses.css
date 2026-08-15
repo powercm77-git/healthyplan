@@ -53,18 +53,20 @@
 
 .stickfig .dirarrow { font-size: 15px; fill: var(--sky, #5AC8FA); opacity: .85; }
 
+/* 바닥선: 연한 회색 — 손·발이 닿는 기준선을 줘서 뜬 자세로 안 보이게 한다 */
+.stickfig .floor { stroke: #8A84AC; stroke-width: 2; stroke-linecap: round; opacity: .4; }
+
+/* 모든 회전 그룹을 view-box 기준 "0 0"으로 고정한다. 예전엔 rot-fig·rot-torso만 이렇게
+   두고 나머지(rot-arm·rot-thigh 등)는 fill-box를 썼는데, fill-box 피벗은 "그 요소의
+   현재 렌더된 내용물" 바운딩박스에서 계산돼 자식이 동시에 애니메이션하면(예: 푸시업에서
+   rot-arm과 rot-forearm이 같이 움직임, 스쿼트에서 rot-thigh와 rot-shin이 같이 움직임)
+   피벗 자체가 매 프레임 흔들린다 — 어깨/고관절에 고정돼야 할 회전축이 팔꿈치·무릎이
+   움직이는 대로 끌려다녀 각도를 아무리 계산해도 화면 결과가 안 맞았다. view-box 기준
+   "0 0"은 내용물과 무관하게 그 요소 자신의 로컬 좌표 원점(=이 그룹이 위치한 관절)에
+   고정되므로, 자식이 동시에 애니메이션해도 흔들리지 않는다. */
+.stickfig .rot-fig, .stickfig .rot-torso,
 .stickfig .rot-arm-l, .stickfig .rot-arm-r, .stickfig .rot-forearm-l, .stickfig .rot-forearm-r,
 .stickfig .rot-thigh-l, .stickfig .rot-thigh-r, .stickfig .rot-shin-l, .stickfig .rot-shin-r {
-  transform-box: fill-box;
-  transform-origin: 0 0;
-}
-/* rot-fig·rot-torso는 예외: 안에 팔다리·머리까지 들어 있어 fill-box 바운딩박스 기준 피벗이
-   내용물(특히 애니메이션 중인 팔)에 끌려다닌다 — 굽히기·비틀기에서 다리와 벌어지고, 90도로
-   눕는 포즈(푸시업 등)에서는 피벗 자체가 흔들려 화면 밖으로 튕겨나가던 원인이었다. figure-root가
-   transform 없는 안정된 부모라 rot-fig/rot-torso의 로컬 (0,0)은 조상 translate 없이 항상 SVG
-   좌표계의 원점(=골반)과 일치한다 — view-box 기준 "0 0"으로 고정하면 포즈별 viewBox가 달라져도
-   내용과 무관하게 항상 골반을 피벗으로 회전한다. */
-.stickfig .rot-fig, .stickfig .rot-torso {
   transform-box: view-box;
   transform-origin: 0 0;
 }

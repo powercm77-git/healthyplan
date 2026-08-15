@@ -19,6 +19,15 @@ export const POSE_KEYS = [
   'stretch-back', 'stretch-hamstring',
 ]
 
+// 바닥에 서 있거나 눕는 포즈 — 발밑/손밑에 바닥선을 그려 "뜬 자세"로 안 보이게 한다.
+// 매달리거나(pullup) 딛는 곳이 바닥이 아닌(dips) 포즈는 제외한다 — 바닥선을 넣으면 오히려
+// 틀린 정보가 된다.
+const GROUND_POSES = new Set([
+  'squat', 'lunge', 'pushup', 'plank', 'bridge', 'crunch', 'mountain-climber',
+  'deadlift', 'jumping-jack', 'walk', 'run', 'press', 'row',
+  'stretch-neck', 'stretch-shoulder', 'stretch-back', 'stretch-hamstring',
+])
+
 // 우리 exercises.json의 bodyParts 어휘 -> 스틱 피겨의 4개 시각 영역 매핑.
 // (실제 근육 단위가 아니라 "머리/몸통/팔/다리" 수준의 큰 영역 강조 — 단순 실루엣의 한계)
 const HIGHLIGHT_GROUPS = {
@@ -104,6 +113,13 @@ export default function StickFigure({
       style={tempoSec ? { '--tempo-dur': `${tempoSec}s` } : undefined}
       role="img" aria-label={`${safePose} 동작 애니메이션`}
     >
+      {/* 바닥선: figure-root 밖에 그린다 — figure-root 안에 두면 getBBox() 측정에
+          바닥선 자신의 폭까지 섞여 들어가 calibrate-poses.mjs의 인물 경계 계산이
+          틀어진다(실제로 겪은 버그). 회전을 받지 않아 항상 화면에 수평으로 고정되고,
+          포즈별 viewBox 하단 근처에 둬 손/발이 닿는 지점과 맞춘다. */}
+      {GROUND_POSES.has(safePose) && (
+        <line className="floor" x1={vx + 4} y1={vy + vh - 6} x2={vx + vw - 4} y2={vy + vh - 6} />
+      )}
       {/* figure-root는 transform이 없는 순수 측정용 래퍼다 — getBBox()로 이 그룹을 재면
           rot-fig의 회전·이동까지 전부 반영된 실제 렌더 범위를 얻는다(calibrate-poses.mjs). */}
       <g className="figure-root">
@@ -112,15 +128,10 @@ export default function StickFigure({
               다리가 붙는 지점(골반)은 항상 제자리에 있어 다리가 떨어져 보이지 않는다. */}
           <path className={`torso pelvis${hl('torso')}`} d="M -6,-13 L 6,-13 L 9,0 L -9,0 Z" />
           <g className="rot-torso">
-            {/* 머리-목-가슴을 끊김 없는 하나의 덩어리로. 가슴 폭(±10)을 어깨 관절(±14)보다
-                좁혀, 팔을 내려도 팔이 몸통 실루엣에 묻히지 않고 별도 부위로 보인다. */}
-            <path className={`torso chest${hl('torso')}`} d="M -10,-36 L 10,-36 L 5,-11 L -5,-11 Z" />
-            {/* 척추선: 가슴 아래~골반 위를 굵게 이어, 몸통이 굽혀지거나 비틀려도
-                가슴 조각과 골반 조각 사이가 끊겨 보이지 않게 한다(발주자 제안). */}
-            <line className={`spine${hl('torso')}`} x1="0" y1="-30" x2="0" y2="-8" />
-            <line className={`neck${hl('head')}`} x1="0" y1="-42" x2="0" y2="-34" />
-            <circle className={`head${hl('head')}`} cx="0" cy="-50" r="8" />
-
+            {/* 팔을 가슴보다 먼저 그린다(=아래 레이어) — 스쿼트처럼 팔이 크게 앞으로 돌면
+                몸통 앞을 가로지르는 구간이 생기는데, 나중에 그리는 가슴(채운 도형)이 그
+                구간을 덮어 "팔이 몸통 뒤로 지나간다"처럼 자연스럽게 가려준다. 먼저 그린
+                채로 두면 두꺼운 팔이 가슴 위에 얹혀 숙인 것처럼 보이는 착시를 줬었다. */}
             <g className="shoulder-l" transform="translate(-14,-36)">
               <circle className="joint" cx="0" cy="0" r="5" />
               <g className="rot-arm-l">
@@ -151,6 +162,15 @@ export default function StickFigure({
                 </g>
               </g>
             </g>
+
+            {/* 머리-목-가슴을 끊김 없는 하나의 덩어리로. 가슴 폭(±10)을 어깨 관절(±14)보다
+                좁혀, 팔을 내려도 팔이 몸통 실루엣에 묻히지 않고 별도 부위로 보인다. */}
+            <path className={`torso chest${hl('torso')}`} d="M -10,-36 L 10,-36 L 5,-11 L -5,-11 Z" />
+            {/* 척추선: 가슴 아래~골반 위를 굵게 이어, 몸통이 굽혀지거나 비틀려도
+                가슴 조각과 골반 조각 사이가 끊겨 보이지 않게 한다(발주자 제안). */}
+            <line className={`spine${hl('torso')}`} x1="0" y1="-30" x2="0" y2="-8" />
+            <line className={`neck${hl('head')}`} x1="0" y1="-42" x2="0" y2="-34" />
+            <circle className={`head${hl('head')}`} cx="0" cy="-50" r="8" />
           </g>
 
           <g className="hip-l" transform="translate(-9,0)">
