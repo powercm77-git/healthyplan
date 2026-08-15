@@ -22,7 +22,12 @@ body.no-scroll{overflow:hidden}
    .phone을 뷰포트 높이에 고정해야 .sheet/.tabbar(position:absolute)가
    항상 화면 안에 보인다(고정 안 하면 내용만큼 늘어나며 문서 맨 아래로 밀려난다). */
 .phone{
-  width:100%;max-width:420px;height:100vh;height:100dvh;position:relative;overflow:hidden;
+  /* width는 100%가 아니라 100vw다 — .phone은 body(flex)의 flex item이고, 퍼센트 폭은
+     flex-basis 계산을 거치며 내부 콘텐츠 상태에 따라 의도치 않게 max-width(420px)까지
+     벌어지는 경우가 실측으로 확인됐다(원인을 좁히지 못했다 — min-width:0을 줘도 재현됨).
+     뷰포트 단위는 flex 계산을 거치지 않고 항상 실제 뷰포트 폭으로 고정되므로 이 문제를
+     원천적으로 피한다. body가 overflow:hidden이라 스크롤바로 인한 100vw 오차도 없다. */
+  width:100vw;max-width:420px;height:100vh;height:100dvh;position:relative;overflow:hidden;
   background:
     radial-gradient(120% 50% at 85% -8%, rgba(139,92,246,.32), transparent 60%),
     radial-gradient(100% 42% at 0% 4%, rgba(255,78,123,.20), transparent 55%),
@@ -144,7 +149,8 @@ input::placeholder{color:#5E5980}
 }
 .alt:active{border-color:var(--g2)}
 .alt .apic{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:1.4rem}
-.alt .anm{font-weight:700;font-size:.95rem}
+.alt > div{min-width:0}
+.alt .anm{font-weight:700;font-size:.95rem;overflow-wrap:break-word}
 .alt .why{font-size:.78rem;color:var(--mint)}
 .donebtn{
   margin-top:13px;width:100%;padding:13px;border-radius:14px;border:1.5px solid rgba(62,233,164,.5);
@@ -335,6 +341,49 @@ input::placeholder{color:#5E5980}
 .recordday{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
 .recordday .rbar{width:100%;max-width:22px;border-radius:5px 5px 3px 3px;background:var(--grad)}
 .recordday .rlbl{font-size:.7rem;color:var(--sub)}
+
+/* ── 식단 계획: 계획 미리보기(오늘 탭) ── */
+.fooditem.planned{opacity:.62}
+
+/* ── 식단 계획: 주간 편성 ── */
+.wd-mealrow{
+  display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--line);
+  font-size:.86rem;
+}
+.wd-mealrow:last-child{border-bottom:none}
+.wd-mealtype{flex-shrink:0;width:38px;color:var(--sub);font-weight:700;font-size:.78rem}
+.wd-mealnames{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wd-mealkcal{flex-shrink:0;color:var(--sub);font-size:.8rem}
+
+/* ── 장보기 목록 ── */
+.grocery-item{
+  display:flex;align-items:center;gap:11px;padding:12px 4px;border-bottom:1px solid var(--line);cursor:pointer;
+}
+.grocery-check{
+  flex-shrink:0;width:22px;height:22px;border-radius:7px;border:1.5px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--mint);font-weight:900;
+}
+.grocery-item.checked .grocery-check{background:rgba(62,233,164,.15);border-color:var(--mint)}
+.grocery-item.checked .grocery-label{color:var(--sub);text-decoration:line-through}
+.grocery-label{font-size:.93rem}
+
+/* ── 월간 현황 달력 ── */
+.monthgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.monthgrid-head{margin-bottom:6px}
+.monthcell-label{text-align:center;font-size:.72rem;color:var(--sub);font-weight:700}
+.monthcell{
+  aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  border-radius:10px;font-size:.8rem;
+}
+.monthcell.dim{opacity:.28}
+.monthcell.today{background:rgba(255,255,255,.07);font-weight:900}
+.monthcell-day{line-height:1}
+.monthcell-dot{width:6px;height:6px;border-radius:999px}
+.dot-hit{background:var(--mint)}
+.dot-over{background:var(--g2)}
+.dot-under{background:var(--amber)}
+.monthlegend{display:flex;gap:14px;justify-content:center;margin-top:12px;font-size:.74rem;color:var(--sub)}
+.monthlegend i{display:inline-block;width:7px;height:7px;border-radius:999px;margin-right:5px;vertical-align:middle}
 
 /* ── 설정 ── */
 .disclaimer{font-size:.78rem;color:var(--sub);line-height:1.6;padding:14px;border:1px solid var(--line);border-radius:14px;margin-top:20px}

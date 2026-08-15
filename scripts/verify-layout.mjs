@@ -129,6 +129,58 @@ async function checkExerciseFlow(page, label) {
   await page.waitForSelector('.tabbar.show')
 }
 
+// 3단계(식단 편성): 식단 탭의 오늘/주간/월간 서브탭과 주간 편성의 시트(끼니 교체·장보기)가
+// 뷰포트 안에 있는지 확인한다. 주간 화면은 카드가 많아 스크롤이 필요한데, 시트는 그
+// 스크롤 오프셋에 영향받지 않고 항상 화면 하단에 고정돼야 한다(실측으로 잡은 버그 —
+// .screen 밖으로 시트를 옮겨 고쳤다).
+async function checkMealPlanFlow(page, label) {
+  await page.locator('.tabbar .tab', { hasText: '식단' }).click()
+  await page.waitForTimeout(800)
+
+  await page.locator('.chip', { hasText: '주간' }).click()
+  await page.waitForTimeout(800)
+  await elementWithinViewport(page, page.locator('.btn', { hasText: '자동으로 짜기' }), `${label} 주간 자동편성버튼`)
+
+  await page.getByText('🪄 자동으로 짜기').click()
+  await page.waitForTimeout(800)
+  await elementWithinViewport(page, page.locator('.wd-mealrow').first(), `${label} 주간 첫끼니행`)
+  // .phone은 body(flex)의 flex item이라 min-width:0이 없으면 긴 조합 텍스트가 내용
+  // 기준 최소폭을 밀어올려 화면 밖으로 넘친다(실측으로 잡은 버그) — 폭 자체가
+  // 뷰포트 안에 있는지 여기서 같이 확인한다.
+  await elementWithinViewport(page, page.locator('.phone'), `${label} 주간 편성 후 .phone 폭`)
+
+  // 목록을 끝까지 스크롤한 뒤 마지막 끼니 행을 눌러 시트를 연다 — 스크롤된 상태에서도
+  // 시트가 뷰포트 안에 있어야 한다(실측으로 잡은 버그 — .screen 밖으로 시트를 옮겨 고쳤다).
+  const lastRow = page.locator('.wd-mealrow').last()
+  await lastRow.scrollIntoViewIfNeeded()
+  await lastRow.click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.sheet.open').first(), `${label} 주간 끼니교체시트(스크롤 후)`)
+  await elementWithinViewport(page, page.locator('.swap-panel').first(), `${label} 주간 대안목록`)
+  await page.locator('.sheet-bg').first().click({ position: { x: 10, y: 10 } })
+  await page.waitForTimeout(300)
+
+  const groceryBtn = page.getByText('🛒 장보기 목록 보기')
+  await groceryBtn.scrollIntoViewIfNeeded()
+  await groceryBtn.click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.sheet.open').first(), `${label} 주간 장보기시트(스크롤 후)`)
+  await page.locator('.sheet-bg').first().click({ position: { x: 10, y: 10 } })
+  await page.waitForTimeout(300)
+
+  await page.locator('.chip', { hasText: '월간' }).click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.monthgrid').last(), `${label} 월간 달력`)
+
+  await page.locator('.chip', { hasText: '오늘' }).click()
+  await page.waitForTimeout(300)
+  await elementWithinViewport(page, page.locator('.card').first(), `${label} 오늘 첫끼니카드(계획 미리보기)`)
+  console.log(`[PASS] ${label}: 식단 오늘/주간/월간 + 끼니교체·장보기 시트 전부 뷰포트 안에서 보임`)
+
+  await page.reload()
+  await page.waitForSelector('.tabbar.show')
+}
+
 async function checkPhoneCentered(page, vw) {
   const box = await page.locator('.phone').boundingBox()
   const leftGap = box.x
@@ -158,6 +210,7 @@ async function main() {
       await checkSearchVisible(page, '모바일 390x844', 'ㄱㅊㅉ', '김치찌개')
       await checkSearchVisible(page, '모바일 390x844', '김치찌개', '김치찌개')
       await checkExerciseFlow(page, '모바일 390x844')
+      await checkMealPlanFlow(page, '모바일 390x844')
       await context.close()
     }
 
@@ -170,6 +223,7 @@ async function main() {
       await checkSearchVisible(page, '데스크톱 1280x950', 'ㄱㅊㅉ', '김치찌개')
       await checkSearchVisible(page, '데스크톱 1280x950', '김치찌개', '김치찌개')
       await checkExerciseFlow(page, '데스크톱 1280x950')
+      await checkMealPlanFlow(page, '데스크톱 1280x950')
       await context.close()
     }
 

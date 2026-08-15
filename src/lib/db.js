@@ -2,7 +2,7 @@
 import { openDB } from 'idb'
 
 const DB_NAME = 'healthyplan-db'
-const DB_VERSION = 2
+const DB_VERSION = 3
 
 let dbPromise = null
 
@@ -28,6 +28,12 @@ function getDB() {
         // 운동별 누적 통계 (2단계): 완료 횟수·최근 완료일·교체 횟수 — 자동 루틴 배정의 점진적 증가·제외 규칙에 사용
         if (!db.objectStoreNames.contains('exerciseMeta')) {
           db.createObjectStore('exerciseMeta', { keyPath: 'id' })
+        }
+        // 식단 "계획"(3단계): 실제 기록인 meals와 분리한다. 자동 편성·직접 추가로 미리
+        // 짜둔 끼니이며, 그 날이 되면 화면에 미리 표시되고 "먹었어요"로 meals에 복사된다.
+        if (!db.objectStoreNames.contains('mealPlans')) {
+          const store = db.createObjectStore('mealPlans', { keyPath: 'id', autoIncrement: true })
+          store.createIndex('date', 'date')
         }
       },
     })
@@ -79,6 +85,55 @@ export async function getFrequentFoodNames(limit = 8) {
   const counts = new Map()
   for (const m of all) counts.set(m.name, (counts.get(m.name) || 0) + 1)
   return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit).map(([name]) => name)
+}
+
+// 최근 n일간의 날짜별 실제 섭취 칼로리 합계(월간 현황 달력용). getRecentExerciseSummary와
+// 같은 패턴: meals 전체를 한 번 읽어 날짜 집합으로 걸러 합산한다.
+export async function getMealsSummaryForDates(dateKeys) {
+  const db = await getDB()
+  const all = await db.getAll('meals')
+  const set = new Set(dateKeys)
+  const byDate = new Map(dateKeys.map((d) => [d, { date: d, kcal: 0, count: 0 }]))
+  for (const m of all) {
+    if (!set.has(m.date)) continue
+    const row = byDate.get(m.date)
+    row.kcal += m.kcal
+    row.count += 1
+  }
+  return dateKeys.map((d) => byDate.get(d))
+}
+
+// ── 식단 계획(3단계 주간 편성) ───────────────────────
+export async function addMealPlanItem(entry) {
+  const db = await getDB()
+  return db.add('mealPlans', entry)
+}
+
+export async function deleteMealPlanItem(id) {
+  const db = await getDB()
+  await db.delete('mealPlans', id)
+}
+
+export async function getMealPlansByDate(date) {
+  const db = await getDB()
+  return db.getAllFromIndex('mealPlans', 'date', date)
+}
+
+// 여러 날짜(주간)를 한 번에 읽어 date -> 항목 배열로 묶는다.
+export async function getMealPlansByDates(dateKeys) {
+  const lists = await Promise.all(dateKeys.map((d) => getMealPlansByDate(d)))
+  return new Map(dateKeys.map((d, i) => [d, lists[i]]))
+}
+
+// 특정 날짜·끼니의 계획을 통째로 교체한다(자동 편성·끼니 교체에서 사용) —
+// 기존 항목을 지우고 새 항목들을 추가한다.
+export async function replaceMealPlanSlot(date, meal, items) {
+  const db = await getDB()
+  const tx = db.transaction('mealPlans', 'readwrite')
+  const existing = await tx.store.index('date').getAll(date)
+  await Promise.all(existing.filter((e) => e.meal === meal).map((e) => tx.store.delete(e.id)))
+  await Promise.all(items.map((item) => tx.store.add({ ...item, date, meal })))
+  await tx.done
 }
 
 // ── 날짜별 기타 기록(물 · 체중 · 운동) ──────────────────

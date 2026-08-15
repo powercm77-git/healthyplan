@@ -44,7 +44,7 @@ function AppShell() {
   return (
     <>
       {screen === 'home' && <Home profile={profile} onOpenSettings={() => setScreen('settings')} onOpenExercise={() => setScreen('exercise')} onUpdateProfile={updateProfile} />}
-      {screen === 'meals' && <Meals />}
+      {screen === 'meals' && <Meals profile={profile} onUpdateProfile={updateProfile} />}
       {screen === 'exercise' && (
         <Exercise profile={profile} onFullscreenChange={setExerciseFullscreen} onUpdateProfile={updateProfile} />
       )}

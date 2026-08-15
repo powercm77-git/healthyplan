@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { calcTargets } from '../lib/tdee.js'
 import { useFeedback } from '../components/Feedback.jsx'
+import { MEAL_TYPES, DEFAULT_MEAL_SETTINGS } from '../lib/mealPlanner.js'
 
 const ACT_OPTIONS = [
   { v: '1.2', label: '🪑 거의 앉아서 지내요' },
@@ -27,11 +28,46 @@ export default function Settings({ profile, onSave, onUpdateProfile, onBack }) {
   const [activity, setActivity] = useState(profile.activity)
   const [goal, setGoal] = useState(profile.goal)
   const [preferVideoOnly, setPreferVideoOnly] = useState(profile.preferVideoOnly !== false)
+  const [avoidFoods, setAvoidFoods] = useState(profile.avoidFoods || [])
+  const [avoidInput, setAvoidInput] = useState('')
+  const [mealSettings, setMealSettings] = useState(profile.mealSettings || DEFAULT_MEAL_SETTINGS)
 
   async function togglePreferVideoOnly() {
     const next = !preferVideoOnly
     setPreferVideoOnly(next)
     await onUpdateProfile?.({ preferVideoOnly: next })
+  }
+
+  // 기피 음식(3단계 §2-1): 온보딩 당시엔 받지 않았던 값이라 여기서 나중에 채울 수 있게 했다.
+  // 자동 식단 편성에서 이 단어가 이름에 들어간 음식을 뺀다(부분 일치 — "새우"를 넣으면
+  // "새우볶음밥"도 함께 빠진다).
+  async function addAvoidFood() {
+    const term = avoidInput.trim()
+    setAvoidInput('')
+    if (!term || avoidFoods.includes(term)) return
+    const next = [...avoidFoods, term]
+    setAvoidFoods(next)
+    await onUpdateProfile?.({ avoidFoods: next })
+  }
+  async function removeAvoidFood(term) {
+    const next = avoidFoods.filter((t) => t !== term)
+    setAvoidFoods(next)
+    await onUpdateProfile?.({ avoidFoods: next })
+  }
+
+  // 끼니별 자동 편성 설정(3단계 §1-2): 급식처럼 직접 정할 수 없는 끼니는 자동 편성에서
+  // 빼고, 평균 칼로리만 하루 총량 계산에 더한다.
+  async function toggleMealEditable(meal) {
+    const cur = mealSettings[meal] || DEFAULT_MEAL_SETTINGS[meal]
+    const next = { ...mealSettings, [meal]: { ...cur, editable: !cur.editable } }
+    setMealSettings(next)
+    await onUpdateProfile?.({ mealSettings: next })
+  }
+  async function setMealFixedKcal(meal, value) {
+    const cur = mealSettings[meal] || DEFAULT_MEAL_SETTINGS[meal]
+    const next = { ...mealSettings, [meal]: { ...cur, fixedKcal: value } }
+    setMealSettings(next)
+    await onUpdateProfile?.({ mealSettings: next })
   }
 
   async function save() {
@@ -90,6 +126,49 @@ export default function Settings({ profile, onSave, onUpdateProfile, onBack }) {
           {preferVideoOnly ? '✓ ' : ''}▶ 영상 있는 운동만 추천받기
         </span>
       </div>
+
+      <label className="f">기피 음식 (알레르기 등)</label>
+      <div style={{ display: 'flex', gap: 8 }}>
+        <input
+          type="text" placeholder="예: 새우, 땅콩" value={avoidInput}
+          onChange={(e) => setAvoidInput(e.target.value)}
+          onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); addAvoidFood() } }}
+        />
+        <button type="button" className="swapbtn" style={{ flexShrink: 0 }} onClick={addAvoidFood}>추가</button>
+      </div>
+      {avoidFoods.length > 0 && (
+        <div className="chips" style={{ marginTop: 9 }}>
+          {avoidFoods.map((t) => (
+            <span key={t} className="chip on" onClick={() => removeAvoidFood(t)}>{t} ✕</span>
+          ))}
+        </div>
+      )}
+      <p style={{ fontSize: '.78rem', color: 'var(--sub)', marginTop: 6 }}>자동 식단 편성에서 이 단어가 들어간 음식은 빼드려요.</p>
+
+      <label className="f">끼니별 자동 편성</label>
+      <p style={{ fontSize: '.82rem', color: 'var(--sub)', marginBottom: 9, lineHeight: 1.5 }}>
+        급식처럼 직접 정할 수 없는 끼니는 꺼두세요. 대략의 칼로리만 하루 총량에 반영돼요.
+      </p>
+      {MEAL_TYPES.map((meal) => {
+        const s = mealSettings[meal] || DEFAULT_MEAL_SETTINGS[meal]
+        return (
+          <div key={meal} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 0', borderBottom: '1px solid var(--line)' }}>
+            <span className={`chip${s.editable ? ' on' : ''}`} style={{ flexShrink: 0 }} onClick={() => toggleMealEditable(meal)}>
+              {s.editable ? '✓ ' : ''}{meal} 직접 정함
+            </span>
+            {!s.editable && (
+              <>
+                <input
+                  type="number" inputMode="numeric" value={s.fixedKcal}
+                  style={{ width: 90, padding: '8px 10px', fontSize: '.92rem' }}
+                  onChange={(e) => setMealFixedKcal(meal, +e.target.value)}
+                />
+                <span style={{ fontSize: '.78rem', color: 'var(--sub)' }}>kcal (평균)</span>
+              </>
+            )}
+          </div>
+        )
+      })}
 
       <div style={{ minHeight: 20 }} />
       <button className="btn" onClick={save}>목표 다시 계산하고 저장</button>
