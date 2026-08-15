@@ -53,16 +53,18 @@
 
 .stickfig .dirarrow { font-size: 15px; fill: var(--sky, #5AC8FA); opacity: .85; }
 
-.stickfig .rot-fig,
 .stickfig .rot-arm-l, .stickfig .rot-arm-r, .stickfig .rot-forearm-l, .stickfig .rot-forearm-r,
 .stickfig .rot-thigh-l, .stickfig .rot-thigh-r, .stickfig .rot-shin-l, .stickfig .rot-shin-r {
   transform-box: fill-box;
   transform-origin: 0 0;
 }
-/* rot-torso는 예외: 안에 머리·팔까지 들어 있어 fill-box 바운딩박스 기준 피벗이 어깨/머리 쪽으로
-   쏠린다(굽히기·비틀기 포즈에서 다리와 벌어져 보이던 원인). view-box 기준 "0 0"은 조상 translate가
-   이미 반영된 현재 지점의 로컬 원점(=골반)을 정확히 가리켜, 회전해도 골반에서 계속 이어진다. */
-.stickfig .rot-torso {
+/* rot-fig·rot-torso는 예외: 안에 팔다리·머리까지 들어 있어 fill-box 바운딩박스 기준 피벗이
+   내용물(특히 애니메이션 중인 팔)에 끌려다닌다 — 굽히기·비틀기에서 다리와 벌어지고, 90도로
+   눕는 포즈(푸시업 등)에서는 피벗 자체가 흔들려 화면 밖으로 튕겨나가던 원인이었다. figure-root가
+   transform 없는 안정된 부모라 rot-fig/rot-torso의 로컬 (0,0)은 조상 translate 없이 항상 SVG
+   좌표계의 원점(=골반)과 일치한다 — view-box 기준 "0 0"으로 고정하면 포즈별 viewBox가 달라져도
+   내용과 무관하게 항상 골반을 피벗으로 회전한다. */
+.stickfig .rot-fig, .stickfig .rot-torso {
   transform-box: view-box;
   transform-origin: 0 0;
 }
@@ -80,7 +82,8 @@
 @keyframes sq-thigh { 0%,100%{transform:rotate(0)} 50%{transform:rotate(50deg)} }
 /* 정강이는 허벅지 회전을 상쇄해 항상 거의 수직을 유지한다(무릎이 발끝을 넘지 않는 스쿼트 자세) */
 @keyframes sq-shin { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-50deg)} }
-@keyframes sq-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-110deg)} }
+/* 팔은 균형용 — 수평 정도까지만 든다(다이빙하듯 위로 뻗지 않게 -110deg에서 완화) */
+@keyframes sq-arm { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-90deg)} }
 
 /* ── 2. pushup (몸을 눕혀 표현) ── */
 .pose-pushup .rot-fig { animation: pu-fig var(--tempo-dur, 1.4s) ease-in-out infinite; }

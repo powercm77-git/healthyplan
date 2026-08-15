@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { StickFigure, POSE_KEYS } from '../../components/exercise-animations/index.js'
 import ExerciseVideoPlayer from '../../components/ExerciseVideoPlayer.jsx'
 import { suggestProgress, calcKcal, withOverride, estimateExerciseSeconds } from '../../lib/exerciseEngine.js'
-import { formatKcal } from '../../lib/calories.js'
+import { formatKcal, formatKcalLive } from '../../lib/calories.js'
 import { describeKcalAsFood } from '../../lib/foodEquivalent.js'
 import { compareExercises } from '../../lib/compareExercises.js'
 import { addExerciseLog, bumpExerciseCompleted, bumpExerciseSwapped, getDay, setDay as dbSetDay, getLastExerciseLog } from '../../lib/db.js'
@@ -80,6 +80,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const [kcalTick, setKcalTick] = useState(0) // 실시간 칼로리 갱신용 — 1초 간격으로만 재계산(§3: 매 프레임 금지)
   const [historyNote, setHistoryNote] = useState('')
   const [priorMetric, setPriorMetric] = useState(null)
+  const [stepsExpanded, setStepsExpanded] = useState(false) // 운동방법 단계 카드를 눌러 전체 순서 펼치기
 
   const sessionStartRef = useRef(Date.now())
   const logRef = useRef([]) // 완료된 운동별 기록
@@ -185,6 +186,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
     setRepCount(0)
     setRepOffset(0)
     setShowVideo(false)
+    setStepsExpanded(false)
   }, [phase, idx, curSet])
 
   function elapsedInPhase() {
@@ -398,8 +400,15 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
   const pacerActive = phase === 'work' && pacerOn && ex.tempo && workTargetReps != null
   const pacerSub = pacerActive ? pacerSubPhase(el, ex.tempo) : null
 
+  // 운동방법: 목록을 전부 펼쳐 스크롤하던 방식 대신 현재 단계 하나만 크게 보여주고, 경과
+  // 시간에 맞춰 자동으로 다음 단계로 넘어간다(§1). 시간형은 목표 시간을 단계 수만큼 나누고,
+  // 횟수형은 목표 시간을 몰라 4초 간격으로 순환한다 — 마지막 단계에서 멈춰 있는다.
+  const stepList = ex.howto?.length > 0 ? [...ex.howto, ex.breathing].filter(Boolean) : []
+  const stepDurationSec = workTargetSec != null ? Math.max(2, workTargetSec / stepList.length) : 4
+  const stepIndex = stepList.length > 0 ? Math.min(stepList.length - 1, Math.floor(el / stepDurationSec)) : 0
+
   return (
-    <section className="screen active">
+    <section className="screen active sessionscreen">
       <div className="sessionprogress">
         <div className="toprow">
           <span>오늘 운동 {idx + 1}/{ids.length} · 남은 시간 약 {remainingMinutes}분</span>
@@ -413,7 +422,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
       </div>
 
       <div className="livekcal">
-        <div className="num">현재까지 <b>{formatKcal(liveKcalDisplay)}</b></div>
+        <div className="num">현재까지 <b>{formatKcalLive(liveKcalDisplay)}</b></div>
       </div>
       {foodLine && <p className="foodline">{foodLine}</p>}
 
@@ -424,8 +433,8 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
           failFallbackText={hasAnim ? '영상을 불러오지 못했어요. 애니메이션으로 볼게요.' : '영상을 불러오지 못했어요. 아래 글 설명을 참고해주세요.'}
         />
       ) : hasAnim ? (
-        <div className="detail-anim" style={{ padding: '10px 0' }}>
-          <StickFigure pose={ex.animation} size={200} tempoSec={pacerActive ? cycleLen : undefined} highlightParts={ex.bodyParts} showDirection />
+        <div className="detail-anim">
+          <StickFigure pose={ex.animation} size={120} tempoSec={pacerActive ? cycleLen : undefined} highlightParts={ex.bodyParts} showDirection />
         </div>
       ) : null}
       {hasVideo && hasAnim ? (
@@ -451,7 +460,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
         </div>
       )}
 
-      <p style={{ textAlign: 'center', fontWeight: 900, fontSize: '1.15rem' }}>{ex.name}</p>
+      <p style={{ textAlign: 'center', fontWeight: 900, fontSize: '1rem', marginTop: 2 }}>{ex.name}</p>
       {historyNote && <p className="historynote">{historyNote}</p>}
 
       {phase === 'work' && ex.mistakes?.length > 0 && (
@@ -460,18 +469,39 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
         </div>
       )}
 
-      {phase === 'work' && (
-        <div className="sessionsteps">
-          {ex.howto.map((step, i) => (
-            <div className="stepline" key={i}>
-              <span className="stepnum">{i + 1}</span>
-              <span>{step}</span>
-            </div>
-          ))}
-          <div className="stepline" style={{ marginTop: 8 }}>
-            <span className="stepnum breath">♦</span>
-            <span>{ex.breathing}</span>
-          </div>
+      {phase === 'work' && stepList.length > 0 && (
+        <div className="stepcard" onClick={() => setStepsExpanded((v) => !v)} role="button" tabIndex={0}>
+          {!stepsExpanded ? (
+            <>
+              <div className="stepline cur">
+                <span className={`stepnum${stepIndex === stepList.length - 1 && ex.breathing ? ' breath' : ''}`}>
+                  {stepIndex === stepList.length - 1 && ex.breathing ? '♦' : stepIndex + 1}
+                </span>
+                <span>{stepList[stepIndex]}</span>
+              </div>
+              {stepList.length > 1 && (
+                <div className="stepdots">
+                  {stepList.map((_, i) => <i key={i} className={i === stepIndex ? 'on' : ''} />)}
+                </div>
+              )}
+              <div className="stepcard-hint">전체 순서 보기 ▾</div>
+            </>
+          ) : (
+            <>
+              <div className="stepcard-full">
+                {stepList.map((step, i) => {
+                  const isBreath = i === stepList.length - 1 && ex.breathing
+                  return (
+                    <div className={`stepline${i === stepIndex ? ' cur' : ''}`} key={i}>
+                      <span className={`stepnum${isBreath ? ' breath' : ''}`}>{isBreath ? '♦' : i + 1}</span>
+                      <span>{step}</span>
+                    </div>
+                  )
+                })}
+              </div>
+              <div className="stepcard-hint">접기 ▴</div>
+            </>
+          )}
         </div>
       )}
 
@@ -494,7 +524,7 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
       <div className="timerbig display">
         {phase === 'rest' ? fmtTime(restRemaining) : (workTargetSec != null ? fmtTime(workRemaining) : fmtTime(el))}
       </div>
-      <div className="lbl" style={{ textAlign: 'center', color: 'var(--sub)', marginTop: -8, marginBottom: 10 }}>
+      <div className="lbl" style={{ textAlign: 'center', color: 'var(--sub)', marginTop: -4, marginBottom: 4 }}>
         {phase === 'rest' ? '휴식 중' : (workTargetSec != null ? '남은 시간' : '경과 시간')}
       </div>
 
@@ -510,11 +540,11 @@ export default function ExerciseSession({ exerciseIds: initialIds, startIndex, b
         </button>
       )}
 
-      <div className="row2" style={{ marginTop: 12 }}>
+      <div className="row2" style={{ marginTop: 8 }}>
         <button className="swapbtn" onClick={togglePause}>{pausedAt ? '▶ 계속' : '⏸ 일시정지'}</button>
         <button className="swapbtn" onClick={handleSkip}>건너뛰기 ⏭</button>
       </div>
-      <div className="row2" style={{ marginTop: 8 }}>
+      <div className="row2" style={{ marginTop: 6 }}>
         <button className="swapbtn" onClick={() => setSwapOpen((v) => !v)}>바꾸기 ⇄</button>
         <button className="swapbtn" onClick={handleEndEarly}>종료</button>
       </div>

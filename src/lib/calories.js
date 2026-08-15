@@ -14,3 +14,10 @@ export function roundKcalForDisplay(kcal) {
 export function formatKcal(kcal) {
   return `약 ${roundKcalForDisplay(kcal)}kcal`
 }
+
+// 운동 실행 중 실시간 표시 전용(§3): 10 단위 반올림을 쓰면 초반 수십 초 동안 계속 "약
+// 0kcal"로 보여 동기부여가 역효과를 낸다. 진행 중에는 정수로만 반올림해 시작 직후부터
+// 숫자가 움직이게 한다. 완료 후 요약·홈 화면은 formatKcal(10 단위)을 그대로 쓴다.
+export function formatKcalLive(kcal) {
+  return `약 ${Math.max(0, Math.round(kcal))}kcal`
+}
