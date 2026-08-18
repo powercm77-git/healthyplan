@@ -38,6 +38,8 @@ export default function Home({ profile, onOpenSettings, onOpenExercise, onUpdate
   const [streak, setStreak] = useState(0)
   const [weekStats, setWeekStats] = useState({ count: 0, kcal: 0 })
   const [weightInput, setWeightInput] = useState(false)
+  const [stepsInput, setStepsInput] = useState(false)
+  const [sleepInput, setSleepInput] = useState(false)
   const firedRef = useRef({ milestone50: false, milestone90: false })
 
   async function load() {
@@ -99,6 +101,26 @@ export default function Home({ profile, onOpenSettings, onOpenExercise, onUpdate
     setDayState(next)
     setWeightInput(false)
     toast('체중 기록 완료!')
+  }
+
+  async function handleSteps(e) {
+    e.preventDefault()
+    const v = +new FormData(e.target).get('steps')
+    if (!v) return
+    const next = await dbSetDay(today, { steps: v })
+    setDayState(next)
+    setStepsInput(false)
+    toast('걸음 수 기록 완료!')
+  }
+
+  async function handleSleep(e) {
+    e.preventDefault()
+    const v = +new FormData(e.target).get('sleepHours')
+    if (!v) return
+    const next = await dbSetDay(today, { sleepHours: v })
+    setDayState(next)
+    setSleepInput(false)
+    toast('수면 시간 기록 완료!')
   }
 
   return (
@@ -167,6 +189,44 @@ export default function Home({ profile, onOpenSettings, onOpenExercise, onUpdate
           )}
           <div style={{ fontSize: '.78rem', color: 'var(--sub)', marginTop: 10 }}>
             {weightInput ? '입력 후 엔터' : '탭해서 오늘 체중 기록'}
+          </div>
+        </div>
+        <div className="widget">
+          <div className="t">👟 걸음 수</div>
+          {stepsInput ? (
+            <form onSubmit={handleSteps}>
+              <input
+                name="steps" type="number" inputMode="numeric" autoFocus placeholder="0"
+                style={{ marginTop: 6, padding: 8, fontSize: '.95rem' }}
+                onBlur={(e) => e.target.form.requestSubmit()}
+              />
+            </form>
+          ) : (
+            <div className="v display" onClick={() => setStepsInput(true)} style={{ cursor: 'pointer' }}>
+              {day.steps > 0 ? day.steps.toLocaleString() : '—'}{day.steps > 0 ? '보' : ''}
+            </div>
+          )}
+          <div style={{ fontSize: '.78rem', color: 'var(--sub)', marginTop: 10 }}>
+            {stepsInput ? '입력 후 엔터' : '탭해서 오늘 걸음 수 기록'}
+          </div>
+        </div>
+        <div className="widget">
+          <div className="t">🌙 수면</div>
+          {sleepInput ? (
+            <form onSubmit={handleSleep}>
+              <input
+                name="sleepHours" type="number" inputMode="decimal" step="0.5" autoFocus placeholder="0"
+                style={{ marginTop: 6, padding: 8, fontSize: '.95rem' }}
+                onBlur={(e) => e.target.form.requestSubmit()}
+              />
+            </form>
+          ) : (
+            <div className="v display" onClick={() => setSleepInput(true)} style={{ cursor: 'pointer' }}>
+              {day.sleepHours ?? '—'}{day.sleepHours ? '시간' : ''}
+            </div>
+          )}
+          <div style={{ fontSize: '.78rem', color: 'var(--sub)', marginTop: 10 }}>
+            {sleepInput ? '입력 후 엔터' : '탭해서 어젯밤 수면 시간 기록'}
           </div>
         </div>
       </div>

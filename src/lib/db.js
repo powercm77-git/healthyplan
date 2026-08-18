@@ -139,6 +139,7 @@ export async function replaceMealPlanSlot(date, meal, items) {
 // ── 날짜별 기타 기록(물 · 체중 · 운동) ──────────────────
 const DAY_DEFAULTS = {
   water: 0, weight: null,
+  steps: 0, sleepHours: null,
   milestone50: false, milestone90: false,
   // 2단계(운동): 오늘 선택한 장소·시간, 배정된 루틴(운동 id 목록), 완료한 운동 id, 오늘 소모 칼로리
   exercisePlace: 'home', exerciseMinutes: 30,
